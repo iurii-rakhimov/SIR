@@ -1,23 +1,17 @@
-<!DOCTYPE html>
-<html>
-<body>
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML = "Hello JavaScript!";
-</script>
-
-<noscript>Sorry, your browser does not support JavaScript!</noscript>
-
-<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
-
-
-<canvas id="myCanvas" width="600" height="800" style="border:1px solid #000000;">
-Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
-
-<script>
-<!-- Title Begin -->
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.font = "14px Arial";
-ctx.fillText("Баланс",225,20);
+HTML-Invoice	01	<!DOCTYPE html>
+HTML-Invoice	02	<html>
+HTML-Invoice	03	<body>
+HTML-Invoice	04	<p id="demo"></p>
+HTML-Invoice	05	<script>
+HTML-Invoice	06	document.getElementById("demo").innerHTML = "Hello JavaScript!";
+HTML-Invoice	07	</script>
+HTML-Invoice	08	<noscript>Sorry, your browser does not support JavaScript!</noscript>
+HTML-Invoice	09	<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+HTML-Invoice	10	<canvas id="myCanvas" width="600" height="800" style="border:1px solid #000000;">
+HTML-Invoice	11	Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
+HTML-Invoice	12	<script>
+HTML-Invoice	13	<!-- Title Begin -->
+HTML-Invoice	14	var c = document.getElementById("myCanvas");
+HTML-Invoice	15	var ctx = c.getContext("2d");
+HTML-Invoice	16	ctx.font = "14px Arial";
+HTML-Invoice	17	ctx.fillText("Баланс",225,20);
