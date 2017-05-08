@@ -54,7 +54,7 @@ Help	53	Настройки	(#1)	confic_20.png
 Help	54	копировать	(#2)	copyText20.png
 Help	55	редактировать	(#3)	EditText20.png
 Help	56	Выход из программы	(#5)	exit_left-20.png
-Help	57	exit_left-20.png	(#6)	exit_right-20.png
+Help	57	Выход из программы	(#6)	exit_right-20.png
 Help	58	Помощь	(#7)	Help_20.png
 Help	59	Указатель редактируемой записи	(#8)	IconSmall-20.png
 Help	60	Предыдущая страница	(#11)	left_20.png
