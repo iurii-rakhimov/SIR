@@ -1,17 +1,95 @@
-HTML-Invoice	01	<!DOCTYPE html>
-HTML-Invoice	02	<html>
-HTML-Invoice	03	<body>
-HTML-Invoice	04	<p id="demo"></p>
-HTML-Invoice	05	<script>
-HTML-Invoice	06	document.getElementById("demo").innerHTML = "Hello JavaScript!";
-HTML-Invoice	07	</script>
-HTML-Invoice	08	<noscript>Sorry, your browser does not support JavaScript!</noscript>
-HTML-Invoice	09	<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
-HTML-Invoice	10	<canvas id="myCanvas" width="600" height="800" style="border:1px solid #000000;">
-HTML-Invoice	11	Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
-HTML-Invoice	12	<script>
-HTML-Invoice	13	<!-- Title Begin -->
-HTML-Invoice	14	var c = document.getElementById("myCanvas");
-HTML-Invoice	15	var ctx = c.getContext("2d");
-HTML-Invoice	16	ctx.font = "14px Arial";
-HTML-Invoice	17	ctx.fillText("Баланс",225,20);
+#Array HTML-Invoice
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+<canvas id="myCanvas" width="600" height="800" style="border:1px solid #000000;">
+Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
+<script>
+<!-- Title Begin -->
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "14px Arial";
+ctx.fillText("Баланс",225,20);
+<!--#textY=70-->
+<!--#moveToY=60-->
+<!--#lineToY=75-->
+<!--#heightTable=15-->
+<!--#countRecordsTable=48--
+<!— Header -->
+ctx.moveTo(10,#moveToY+1);
+ctx.lineTo(575,#moveToY+1);
+ctx.stroke();
+ctx.moveTo(10,#moveToY);
+ctx.lineTo(10,#lineToY);
+ctx.stroke();
+ctx.moveTo(70,#moveToY);
+ctx.lineTo(70,#lineToY);
+ctx.stroke();
+ctx.moveTo(130,#moveToY);
+ctx.lineTo(130,#lineToY);
+ctx.stroke();
+ctx.moveTo(190,#moveToY);
+ctx.lineTo(190,#lineToY);
+ctx.stroke();
+ctx.moveTo(250,#moveToY);
+ctx.lineTo(250,#lineToY);
+ctx.stroke();
+ctx.moveTo(375,#moveToY);
+ctx.lineTo(375,#lineToY);
+ctx.stroke();
+ctx.moveTo(575,#moveToY);
+ctx.lineTo(575,#lineToY);
+ctx.stroke();
+ctx.fillText("Дата",35,#textY);
+ctx.fillText("Кредит",85,#textY);
+ctx.fillText("Дебет",145,#textY);
+ctx.fillText("Баланс",200,#textY);
+ctx.fillText("Контрагент",285,#textY);
+ctx.fillText("Комментарий",440,#textY);
+ctx.moveTo(10,#lineToY);
+ctx.lineTo(575,#lineToY);
+ctx.stroke();
+<!— Table -->
+ctx.font = "10px Arial";
+ctx.fillText("#1",15,#textY);
+ctx.font = "10px PT Mono";
+ctx.fillText("#2",75,#textY);
+ctx.fillText("#4",135,#textY);
+ctx.fillText("#7",192,#textY);
+ctx.font = "10px Arial";
+ctx.fillText("#3",255,#textY);
+ctx.fillText("#5",255,#textY);
+ctx.fillText("#6",380,#textY);
+ctx.moveTo(10,#moveToY);
+ctx.lineTo(10,#lineToY);
+ctx.stroke();
+ctx.moveTo(70,#moveToY);
+ctx.lineTo(70,#lineToY);
+ctx.stroke();
+ctx.moveTo(130,#moveToY);
+ctx.lineTo(130,#lineToY);
+ctx.stroke();
+ctx.moveTo(190,#moveToY);
+ctx.lineTo(190,#lineToY);
+ctx.stroke();
+ctx.moveTo(250,#moveToY);
+ctx.lineTo(250,#lineToY);
+ctx.stroke();
+ctx.moveTo(375,#moveToY);
+ctx.lineTo(375,#lineToY);
+ctx.stroke();
+ctx.moveTo(575,#moveToY);
+ctx.lineTo(575,#lineToY);
+ctx.stroke();
+ctx.moveTo(10,#lineToY);
+ctx.lineTo(575,#lineToY);
+ctx.stroke();
+<!-- Footer —>
+</script>
+</body></html>
