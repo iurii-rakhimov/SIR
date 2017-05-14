@@ -20,7 +20,7 @@ ctx.fillText("Баланс",225,20);
 <!--#moveToY=60-->
 <!--#lineToY=75-->
 <!--#heightTable=15-->
-<!--#countRecordsTable=48--
+<!--#countRecordsTable=48-->
 <!— Header -->
 ctx.moveTo(10,#moveToY+1);
 ctx.lineTo(575,#moveToY+1);
