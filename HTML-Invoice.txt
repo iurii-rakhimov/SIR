@@ -1,11 +1,19 @@
 #Array HTML-Invoice
 <!DOCTYPE html>
 <html><body>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = "Страница #listNumber";
+</script>
 </script><canvas id="myCanvas" width="600" height="800" style="border:1px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
 <script>var c = document.getElementById("myCanvas");var ctx = c.getContext("2d");
 <!-- Title -->
 ctx.font = "14px Arial";
 ctx.fillText("Баланс",225,20);
+ctx.font = "12px Arial";
+ctx.fillText("по контрагенту: #Name",160,35);
+ctx.font = "10px Ubuntu Mono";
+ctx.fillText("на  #Period",200,50);
 <!--#textY=70-->
 <!--#moveToY=60-->
 <!--#lineToY=75-->
