@@ -4,7 +4,6 @@
 <p id="demo"></p>
 <script>
 document.getElementById("demo").innerHTML = "Страница #listNumber";
-</script>
 </script><canvas id="myCanvas" width="600" height="800" style="border:1px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
 <script>var c = document.getElementById("myCanvas");var ctx = c.getContext("2d");
 <!-- Title -->
