@@ -27,38 +27,38 @@ p.fillText("#Param3[1]",50,65);
 p.font = "10px Arial";
 p.fillText("Образец заполнения платежного поручения:",150,80);
 
+p.moveTo(20,86);
+p.lineTo(535,85+1);
+p.stroke();
+p.moveTo(20,85);
+p.lineTo(20,100);
+p.stroke();
+p.moveTo(160,85);
+p.lineTo(160,100);
+p.stroke();
+p.moveTo(350,85);
+p.lineTo(350,100);
+p.stroke();
+p.moveTo(400,85);
+p.lineTo(400,100);
+p.stroke();
+p.moveTo(535,85);
+p.lineTo(535,100);
+p.stroke();
+p.font = "14px Arial";
+p.fillText("ИНН",35,102);
+p.font = "12px Arial";
+p.fillText("#Param3[4]",70,102);
+p.font = "14px Arial";
+p.fillText("КПП",175,102);
+p.font = "12px Arial";
+p.fillText("#Param3[5]",210,102);
 <!--#textY=70-->
 <!--#moveToY=85-->
 <!--#lineToY=100-->
 <!--#heightTable=15-->
 <!--#countRecordsTable=45-->
 <!-- Header -->
-p.moveTo(20,#moveToY+1);
-p.lineTo(535,#moveToY+1);
-p.stroke();
-p.moveTo(20,#moveToY);
-p.lineTo(20,#lineToY);
-p.stroke();
-p.moveTo(160,#moveToY);
-p.lineTo(160,#lineToY);
-p.stroke();
-p.moveTo(350,#moveToY);
-p.lineTo(350,#lineToY);
-p.stroke();
-p.moveTo(400,#moveToY);
-p.lineTo(400,#lineToY);
-p.stroke();
-p.moveTo(535,#moveToY);
-p.lineTo(535,#lineToY);
-p.stroke();
-p.font = "14px Arial";
-p.fillText("ИНН",35,102);
-p.font = "12px Arial";
-p.fillText("#Param3[4]",70,35);
-p.font = "14px Arial";
-p.fillText("КПП",175,102);
-p.font = "12px Arial";
-p.fillText("#Param3[5]",70,35);
 
 <!-- Table -->
 p.font = "10px Ubuntu Mono";
