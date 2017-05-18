@@ -2,38 +2,42 @@
 <!DOCTYPE html>
 <html><body>
 <p id="myList»></p>
-<script>document.getElementById("myList").innerHTML = "Страница #listNumber";</script>
+<script>
+document.getElementById("myList").innerHTML = "Страница #listNumber";
+</script>
 <canvas id="myCanvas" width="600" height="800" style="border:1px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
-<script>var c = document.getElementById("myCanvas");var ctx = c.getContext("2d");
+<script>
+var c = document.getElementById("myCanvas");
+var p = c.getContext("2d");
 <!-- Title -->
-ctx.font = "20px Arial";
-ctx.fillText("#Param3[0]",150,20);
-ctx.font = "10px Arial";
-ctx.fillText("Адрес:",20,35);
-ctx.font = "12px Arial";
-ctx.fillText("#Param3[2]",150,35);
-ctx.font = "10px Arial";
-ctx.fillText("Факт.адрес:»,20,50);
-ctx.font = "12px Arial";
-ctx.fillText("#Param3[3]",150,50);
-ctx.font = "10px Arial";
-ctx.fillText("Тел:»,20,65);
-ctx.font = "12px Arial";
-ctx.fillText("#Param3[2]",150,65);
+p.font = "20px Arial";
+p.fillText("#Param3[0]",150,20);
+p.font = "10px Arial";
+p.fillText("Адрес:",20,35);
+p.font = "12px Arial";
+p.fillText("#Param3[2]",150,35);
+p.font = "10px Arial";
+p.fillText("Факт.адрес:",20,50);
+p.font = "12px Arial";
+p.fillText("#Param3[3]",150,50);
+p.font = "10px Arial";
+p.fillText("Тел:",20,65);
+p.font = "12px Arial";
+p.fillText("#Param3[2]",150,65);
 <!--#textY=70-->
 <!--#moveToY=60-->
 <!--#lineToY=75-->
 <!--#heightTable=15-->
 <!--#countRecordsTable=48—>
 <!-- Header -->
-ctx.moveTo(10,#moveToY+1);
-ctx.lineTo(575,#moveToY+1);
-ctx.stroke();
-ctx.moveTo(10,#moveToY);
-ctx.lineTo(10,#lineToY);
-ctx.stroke();
+p.moveTo(10,#moveToY+1);
+p.lineTo(575,#moveToY+1);
+p.stroke();
+p.moveTo(10,#moveToY);
+p.lineTo(10,#lineToY);
+p.stroke();
 <!-- Table -->
-ctx.font = "10px Ubuntu Mono";
+p.font = "10px Ubuntu Mono";
 <!-- Footer -->
 </script>
 </body></html>
