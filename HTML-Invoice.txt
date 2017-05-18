@@ -52,7 +52,7 @@ p.moveTo(535,#moveToY);
 p.lineTo(535,#lineToY);
 p.stroke();
 p.font = "14px Arial";
-p.fillText("ИНН»,35,82);
+p.fillText("ИНН",35,102);
 
 <!-- Table -->
 p.font = "10px Ubuntu Mono";
