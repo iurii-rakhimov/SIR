@@ -28,10 +28,10 @@ p.font = "10px Arial";
 p.fillText("Образец заполнения платежного поручения:",150,80);
 
 <!--#textY=70-->
-<!--#moveToY=85—>
-<!--#lineToY=100—>
+<!--#moveToY=85-->
+<!--#lineToY=100-->
 <!--#heightTable=15-->
-<!--#countRecordsTable=45—>
+<!--#countRecordsTable=45-->
 <!-- Header -->
 p.moveTo(20,#moveToY+1);
 p.lineTo(535,#moveToY+1);
