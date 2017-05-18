@@ -15,18 +15,18 @@ p.fillText("#Param3[0]",150,20);
 p.font = "10px Arial";
 p.fillText("Адрес:",20,35);
 p.font = "12px Arial";
-p.fillText("#Param3[2]",150,35);
+p.fillText("#Param3[2]»,70,35);
 p.font = "10px Arial";
 p.fillText("Факт.адрес:",20,50);
 p.font = "12px Arial";
-p.fillText("#Param3[3]",150,50);
+p.fillText("#Param3[3]»,90,50);
 p.font = "10px Arial";
 p.fillText("Тел:",20,65);
 p.font = "12px Arial";
-p.fillText("#Param3[2]",150,65);
+p.fillText("#Param3[2]",50,65);
 <!--#textY=70-->
-<!--#moveToY=60-->
-<!--#lineToY=75-->
+<!--#moveToY=80-->
+<!--#lineToY=95-->
 <!--#heightTable=15-->
 <!--#countRecordsTable=48—>
 <!-- Header -->
