@@ -1,25 +1,25 @@
 #Array HTML-Invoice
 <!DOCTYPE html>
 <html><body>
-<p id="demo"></p>
-<script>document.getElementById("demo").innerHTML = "Страница #listNumber";</script>
+<p id="myList»></p>
+<script>document.getElementById("myList").innerHTML = "Страница #listNumber";</script>
 <canvas id="myCanvas" width="600" height="800" style="border:1px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
 <script>var c = document.getElementById("myCanvas");var ctx = c.getContext("2d");
 <!-- Title -->
-ctx.font = «20px Arial";
-ctx.fillText(#3,150,20);
+ctx.font = "20px Arial";
+ctx.fillText(#Param3[0],150,20);
 ctx.font = "10px Arial";
 ctx.fillText("Адрес:",20,35);
 ctx.font = "12px Arial";
-ctx.fillText(#4,70,35);
+ctx.fillText(#Param3[2],150,20);
 ctx.font = "10px Arial";
 ctx.fillText("Факт.адрес:»,20,50);
 ctx.font = "12px Arial";
-ctx.fillText(#5,90,50);
+ctx.fillText(#Param3[3],150,20);
 ctx.font = "10px Arial";
 ctx.fillText("Тел:»,20,65);
 ctx.font = "12px Arial";
-ctx.fillText(#6,50,65);
+ctx.fillText(#Param3[2],150,20);
 <!--#textY=70-->
 <!--#moveToY=60-->
 <!--#lineToY=75-->
@@ -31,33 +31,6 @@ ctx.lineTo(575,#moveToY+1);
 ctx.stroke();
 ctx.moveTo(10,#moveToY);
 ctx.lineTo(10,#lineToY);
-ctx.stroke();
-ctx.moveTo(70,#moveToY);
-ctx.lineTo(70,#lineToY);
-ctx.stroke();
-ctx.moveTo(130,#moveToY);
-ctx.lineTo(130,#lineToY);
-ctx.stroke();
-ctx.moveTo(190,#moveToY);
-ctx.lineTo(190,#lineToY);
-ctx.stroke();
-ctx.moveTo(250,#moveToY);
-ctx.lineTo(250,#lineToY);
-ctx.stroke();
-ctx.moveTo(375,#moveToY);
-ctx.lineTo(375,#lineToY);
-ctx.stroke();
-ctx.moveTo(575,#moveToY);
-ctx.lineTo(575,#lineToY);
-ctx.stroke();
-ctx.fillText("Дата",35,#textY);
-ctx.fillText("Кредит",85,#textY);
-ctx.fillText("Дебет",145,#textY);
-ctx.fillText("Баланс",200,#textY);
-ctx.fillText("Контрагент",285,#textY);
-ctx.fillText("Комментарий",440,#textY);
-ctx.moveTo(10,#lineToY);
-ctx.lineTo(575,#lineToY);
 ctx.stroke();
 <!-- Table -->
 ctx.font = "10px Ubuntu Mono";
