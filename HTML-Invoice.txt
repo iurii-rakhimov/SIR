@@ -39,6 +39,21 @@ p.stroke();
 p.moveTo(20,#moveToY);
 p.lineTo(20,#lineToY);
 p.stroke();
+p.moveTo(160,#moveToY);
+p.lineTo(160,#lineToY);
+p.stroke();
+p.moveTo(350,#moveToY);
+p.lineTo(350,#lineToY);
+p.stroke();
+p.moveTo(400,#moveToY);
+p.lineTo(400,#lineToY);
+p.stroke();
+p.moveTo(535,#moveToY);
+p.lineTo(535,#lineToY);
+p.stroke();
+p.font = "14px Arial";
+p.fillText("ИНН»,35,82);
+
 <!-- Table -->
 p.font = "10px Ubuntu Mono";
 <!-- Footer -->
