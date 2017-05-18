@@ -24,17 +24,20 @@ p.font = "10px Arial";
 p.fillText("Тел:",20,65);
 p.font = "12px Arial";
 p.fillText("#Param3[1]",50,65);
+p.font = "10px Arial";
+p.fillText("Образец заполнения платежного поручения:",150,80);
+
 <!--#textY=70-->
-<!--#moveToY=80-->
-<!--#lineToY=95-->
+<!--#moveToY=85—>
+<!--#lineToY=100—>
 <!--#heightTable=15-->
-<!--#countRecordsTable=48—>
+<!--#countRecordsTable=45—>
 <!-- Header -->
-p.moveTo(10,#moveToY+1);
-p.lineTo(575,#moveToY+1);
+p.moveTo(20,#moveToY+1);
+p.lineTo(535,#moveToY+1);
 p.stroke();
-p.moveTo(10,#moveToY);
-p.lineTo(10,#lineToY);
+p.moveTo(20,#moveToY);
+p.lineTo(20,#lineToY);
 p.stroke();
 <!-- Table -->
 p.font = "10px Ubuntu Mono";
