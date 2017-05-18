@@ -23,7 +23,7 @@ p.fillText("#Param3[3]",90,50);
 p.font = "10px Arial";
 p.fillText("Тел:",20,65);
 p.font = "12px Arial";
-p.fillText("#Param3[2]",50,65);
+p.fillText("#Param3[1]»,50,65);
 <!--#textY=70-->
 <!--#moveToY=80-->
 <!--#lineToY=95-->
