@@ -53,6 +53,12 @@ p.lineTo(535,#lineToY);
 p.stroke();
 p.font = "14px Arial";
 p.fillText("ИНН",35,102);
+p.font = "12px Arial";
+p.fillText("#Param3[4]",70,35);
+p.font = "14px Arial";
+p.fillText("КПП",175,102);
+p.font = "12px Arial";
+p.fillText("#Param3[5]",70,35);
 
 <!-- Table -->
 p.font = "10px Ubuntu Mono";
