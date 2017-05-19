@@ -133,6 +133,9 @@ p.fillText("№",25,300);
 p.fillText("Наименование",120,300);
 p.fillText("Ед.изм.",303,300);
 p.fillText("Кол-во",355,300);
+p.moveTo(20,325);
+p.lineTo(580,325);
+p.stroke();
 
 <!-- Table -->
 p.font = "10px Ubuntu Mono";
