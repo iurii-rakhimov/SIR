@@ -127,12 +127,12 @@ p.moveTo(580,280);
 p.lineTo(580,325);
 p.stroke();
 p.font = "10px Arial";
-p.fillText("Цена",425,336);
-p.fillText("Сумма",510,336);
-p.fillText("№",25,351);
-p.fillText("Наименование",120,351);
-p.fillText("Ед.изм.",303,351);
-p.fillText("Кол-во",355,351);
+p.fillText("Цена",425,300);
+p.fillText("Сумма",510,300);
+p.fillText("№",25,300);
+p.fillText("Наименование",120,300);
+p.fillText("Ед.изм.",303,300);
+p.fillText("Кол-во",355,300);
 
 <!-- Table -->
 p.font = "10px Ubuntu Mono";
