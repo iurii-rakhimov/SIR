@@ -141,6 +141,7 @@ p.stroke();
 
 <!-- Table -->
 p.font = "10px Ubuntu Mono";
+p.fillText("#1",15,#textY);
 <!-- Footer -->
 </script>
 </body></html>
