@@ -78,6 +78,12 @@ p.fillText("#Param3[8]",405,172);
 p.moveTo(20,175);
 p.lineTo(535,175);
 p.stroke();
+p.font = "20px Arial";
+p.fillText("Счет",35,200);
+p.font = "12px Arial";
+p.fillText("#Param2",90,200);
+p.fillText("от",170,200);
+p.fillText("#Param1",210,200);
 
 <!--#textY=70-->
 <!--#moveToY=85-->
