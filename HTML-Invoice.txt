@@ -59,7 +59,7 @@ p.stroke();
 p.fillText("Получатель:",35,116);
 p.font = "11px Arial";
 p.fillText("Сч.№",360,120);
-p.font = "12px Arial";
+p.font = "11px Arial";
 p.fillText("#Param3[6]",405,120);
 p.font = "11px Arial";
 p.fillText("#Param3[0]",35,135);
