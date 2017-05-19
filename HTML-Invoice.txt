@@ -90,7 +90,7 @@ p.fillText("Заказчик:",35,225);
 p.font = "10px Arial";
 p.fillText("#Param4",150,225);
 p.font = "12px Arial";
-p.fillText("Заказчик:",35,250);
+p.fillText("Плательщик:",35,250);
 p.font = "10px Arial";
 p.fillText("#Param5",150,250);
 p.font = "12px Arial";
