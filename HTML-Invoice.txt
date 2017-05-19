@@ -103,7 +103,28 @@ p.fillText("#Param6",250,275);
 <!--#countRecordsTable=45-->
 <!-- Header -->
 p.moveTo(20,280);
-p.lineTo(535,280);
+p.lineTo(580,280);
+p.stroke();
+p.moveTo(20,280);
+p.lineTo(20,325);
+p.stroke();
+p.moveTo(45,280);
+p.lineTo(45,325);
+p.stroke();
+p.moveTo(300,280);
+p.lineTo(300,325);
+p.stroke();
+p.moveTo(340,280);
+p.lineTo(340,325);
+p.stroke();
+p.moveTo(400,280);
+p.lineTo(400,325);
+p.stroke();
+p.moveTo(480,280);
+p.lineTo(480,325);
+p.stroke();
+p.moveTo(580,280);
+p.lineTo(580,325);
 p.stroke();
 
 <!-- Table -->
