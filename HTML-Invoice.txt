@@ -83,6 +83,18 @@ p.fillText("Счет",35,200);
 p.fillText("#Param2",90,200);
 p.fillText("от",170,200);
 p.fillText("#Param1",210,200);
+p.font = "12px Arial";
+p.fillText("Заказчик:",35,225);
+p.font = "10px Arial";
+p.fillText("#Param4",150,225);
+p.font = "12px Arial";
+p.fillText("Заказчик:",35,250);
+p.font = "10px Arial";
+p.fillText("#Param5",150,250);
+p.font = "12px Arial";
+p.fillText("Дополнительные  сведения:",35,275);
+p.font = "10px Arial";
+p.fillText("#Param6",150,275);
 
 <!--#textY=70-->
 <!--#moveToY=85-->
