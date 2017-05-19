@@ -28,7 +28,7 @@ p.font = "10px Arial";
 p.fillText("Образец заполнения платежного поручения:",150,80);
 
 p.moveTo(20,86);
-p.lineTo(535,85+1);
+p.lineTo(535,86);
 p.stroke();
 p.moveTo(20,85);
 p.lineTo(20,145);
@@ -46,23 +46,30 @@ p.moveTo(535,85);
 p.lineTo(535,145);
 p.stroke();
 p.font = "14px Arial";
-p.fillText("ИНН",35,100);
+p.fillText("ИНН",35,98);
 p.font = "12px Arial";
-p.fillText("#Param3[4]",70,100);
+p.fillText("#Param3[4]",70,98);
 p.font = "14px Arial";
-p.fillText("КПП",175,100);
+p.fillText("КПП",175,98);
 p.font = "12px Arial";
-p.fillText("#Param3[5]",210,100);
+p.fillText("#Param3[5]",210,98);
 p.moveTo(20,100);
 p.lineTo(350,100);
 p.stroke();
 p.fillText("Получатель:",35,124);
 p.font = "10px Arial";
-p.fillText("Сч.№",360,102);
+p.fillText("Сч.№",360,124);
 p.fillText("#Param3[6]",410,124);
-
 p.font = "12px Arial";
 p.fillText("#Param3[0]",35,139);
+p.moveTo(20,142);
+p.lineTo(535,142);
+p.stroke();
+p.fillText("БАНК Получателя:",35,153);
+p.fillText("#Param3[7]",410,153);
+p.moveTo(20,157);
+p.lineTo(535,157);
+p.stroke();
 
 <!--#textY=70-->
 <!--#moveToY=85-->
