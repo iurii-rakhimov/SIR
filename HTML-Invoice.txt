@@ -98,7 +98,7 @@ p.fillText("Дополнительные  сведения:",35,275);
 p.font = "10px Arial";
 p.fillText("#Param6",250,275);
 
-<!--#textY=70-->
+<!--#textY=330-->
 <!--#moveToY=85-->
 <!--#lineToY=100-->
 <!--#heightTable=15-->
