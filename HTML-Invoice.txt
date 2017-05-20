@@ -98,7 +98,7 @@ p.fillText("Дополнительные  сведения:",35,275);
 p.font = "10px Arial";
 p.fillText("#Param6",250,275);
 
-<!--#textY=330-->
+<!--#textY=320-->
 <!--#moveToY=280-->
 <!--#lineToY=325-->
 <!--#heightTable=15-->
@@ -174,8 +174,8 @@ p.fillText("#2",310,#textY);
 p.fillText("#3",380,#textY);
 p.fillText("#4",420,#textY);
 p.fillText("#5",500,#textY);
-p.moveTo(20,#lineToY+15);
-p.lineTo(580,#lineToY+15);
+p.moveTo(20,#lineToY);
+p.lineTo(580,#lineToY);
 p.stroke();
 <!-- Footer -->
 </script>
