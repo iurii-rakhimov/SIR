@@ -98,12 +98,12 @@ p.fillText("Дополнительные  сведения:",35,275);
 p.font = "10px Arial";
 p.fillText("#Param6",250,275);
 
+<!-- Header -->
 <!--#textY=330-->
 <!--#moveToY=85-->
 <!--#lineToY=100-->
 <!--#heightTable=15-->
 <!--#countRecordsTable=45-->
-<!-- Header -->
 p.moveTo(20,280);
 p.lineTo(580,280);
 p.stroke();
@@ -129,8 +129,12 @@ p.moveTo(580,280);
 p.lineTo(580,325);
 p.stroke();
 p.font = "10px Arial";
-p.fillText("Цена",425,305);
+p.fillText("Цена",425,285);
+p.fillText("руб.",430,300);
+p.fillText("#Param7",430,315);
 p.fillText("Сумма",510,305);
+p.fillText("руб.",515,300);
+p.fillText("#Param7",515,315);
 p.fillText("№",25,305);
 p.fillText("Наименование",120,305);
 p.fillText("Ед.изм.",303,305);
