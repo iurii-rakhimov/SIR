@@ -1,0 +1,97 @@
+#Array HTML-Balance
+<!DOCTYPE html>
+<html><body>
+<p id="myList»></p>
+<script>
+document.getElementById("myList").innerHTML = "Страница #listNumber";
+</script>
+<canvas id="myCanvas" width="600" height="800" style="border:1px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var p = c.getContext("2d");
+<!-- Title -->
+p.font = "14px Arial";
+p.fillText("Баланс",225,20);
+p.font = "12px Arial";
+p.fillText("по контрагенту: #Param0",160,35);
+p.font = "10px Ubuntu Mono";
+p.fillText("на  #Param1",200,50);
+<!--#textY=70-->
+<!--#moveToY=60-->
+<!--#lineToY=75-->
+<!--#heightTable=15-->
+<!--#countRecordsTable=45-->
+
+<!-- Header -->
+p.moveTo(10,#moveToY+1);
+p.lineTo(575,#moveToY+1);
+p.stroke();
+p.moveTo(10,#moveToY);
+p.lineTo(10,#lineToY);
+p.stroke();
+p.moveTo(70,#moveToY);
+p.lineTo(70,#lineToY);
+p.stroke();
+p.moveTo(130,#moveToY);
+p.lineTo(130,#lineToY);
+p.stroke();
+p.moveTo(190,#moveToY);
+p.lineTo(190,#lineToY);
+p.stroke();
+p.moveTo(250,#moveToY);
+p.lineTo(250,#lineToY);
+p.stroke();
+p.moveTo(375,#moveToY);
+p.lineTo(375,#lineToY);
+p.stroke();
+p.moveTo(575,#moveToY);
+p.lineTo(575,#lineToY);
+p.stroke();
+p.fillText("Дата",35,#textY);
+p.fillText("Кредит",85,#textY);
+p.fillText("Дебет",145,#textY);
+p.fillText("Баланс",200,#textY);
+p.fillText("Контрагент",285,#textY);
+p.fillText("Комментарий",440,#textY);
+p.moveTo(10,#lineToY);
+p.lineTo(575,#lineToY);
+p.stroke();
+
+<!-- Table -->
+p.font = "10px Arial";
+p.fillText("#1",15,#textY);
+p.font = "10px PT Mono";
+p.fillText("#2",75,#textY);
+p.fillText("#4",135,#textY);
+p.fillText("#7",192,#textY);
+p.font = "10px Arial";
+p.fillText("#3",255,#textY);
+p.fillText("#5",255,#textY);
+p.fillText("#6",380,#textY);
+p.moveTo(10,#moveToY);
+p.lineTo(10,#lineToY);
+p.stroke();
+p.moveTo(70,#moveToY);
+p.lineTo(70,#lineToY);
+p.stroke();
+p.moveTo(130,#moveToY);
+p.lineTo(130,#lineToY);
+p.stroke();
+p.moveTo(190,#moveToY);
+p.lineTo(190,#lineToY);
+p.stroke();
+p.moveTo(250,#moveToY);
+p.lineTo(250,#lineToY);
+p.stroke();
+p.moveTo(375,#moveToY);
+p.lineTo(375,#lineToY);
+p.stroke();
+p.moveTo(575,#moveToY);
+p.lineTo(575,#lineToY);
+p.stroke();
+p.moveTo(10,#lineToY);
+p.lineTo(575,#lineToY);
+p.stroke();
+<!-- Footer -->
+</script>
+</body></html>
