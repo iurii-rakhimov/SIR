@@ -103,6 +103,7 @@ p.fillText("#Param6",250,275);
 <!--#lineToY=325-->
 <!--#heightTable=15-->
 <!--#countRecordsTable=45-->
+<!--#X4=420-->
 
 <!-- Header -->
 p.moveTo(20,#moveToY);
@@ -172,8 +173,7 @@ p.fillText("#0",30,#textY);
 p.fillText("#1",50,#textY);
 p.fillText("#2",310,#textY);
 p.fillText("#3",380,#textY);
-var x4=420
-p.fillText("#4",x4,#textY);
+p.fillText("$4",#X4,#textY);
 p.fillText("#5",500,#textY);
 p.moveTo(20,#lineToY);
 p.lineTo(580,#lineToY);
