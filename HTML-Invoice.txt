@@ -146,6 +146,7 @@ p.lineTo(580,#lineToY);
 p.stroke();
 
 <!-- Table -->
+#L1=56;
 p.moveTo(20,#moveToY);
 p.lineTo(20,#lineToY);
 p.stroke();
