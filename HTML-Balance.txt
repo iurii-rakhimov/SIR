@@ -58,12 +58,13 @@ p.lineTo(575,#lineToY);
 p.stroke();
 
 <!-- Table -->
+#L1=56;
 p.font = "10px Arial";
 p.fillText("#1",15,#textY);
 p.font = "10px PT Mono";
-p.fillText("$2",#X=125,#textY);
-p.fillText("$4",#X=185,#textY);
-p.fillText("$7",#X=245,#textY);
+p.fillText("$2",#X=128,#textY);
+p.fillText("$4",#X=188,#textY);
+p.fillText("$7",#X=248,#textY);
 p.font = "10px Arial";
 p.fillText("#3",255,#textY);
 p.fillText("#5",255,#textY);
