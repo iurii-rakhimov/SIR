@@ -29,22 +29,16 @@ p.fillText("Образец заполнения платежного поруч�
 
 p.moveTo(20,86);
 p.lineTo(535,86);
-p.stroke();
 p.moveTo(20,85);
 p.lineTo(20,175);
-p.stroke();
 p.moveTo(160,85);
 p.lineTo(160,100);
-p.stroke();
 p.moveTo(350,85);
 p.lineTo(350,175);
-p.stroke();
 p.moveTo(400,85);
 p.lineTo(400,175);
-p.stroke();
 p.moveTo(535,85);
 p.lineTo(535,175);
-p.stroke();
 p.font = "14px Arial";
 p.fillText("ИНН",35,98);
 p.font = "12px Arial";
@@ -55,7 +49,6 @@ p.font = "12px Arial";
 p.fillText("#Param3[5]",210,98);
 p.moveTo(20,100);
 p.lineTo(350,100);
-p.stroke();
 p.fillText("Получатель:",35,116);
 p.font = "11px Arial";
 p.fillText("Сч.№",360,120);
@@ -65,21 +58,18 @@ p.font = "11px Arial";
 p.fillText("#Param3[0]",35,135);
 p.moveTo(20,144);
 p.lineTo(535,144);
-p.stroke();
 p.font = "12px Arial";
 p.fillText("БАНК Получателя:",35,156);
 p.font = "11px Arial";
 p.fillText("#Param3[7]",405,156);
 p.moveTo(20,160);
 p.lineTo(535,160);
-p.stroke();
 p.font = "11px Arial";
 p.fillText("#Param3[9]",35,172);
 p.font = "11px Arial";
 p.fillText("#Param3[8]",405,172);
 p.moveTo(20,175);
 p.lineTo(535,175);
-p.stroke();
 p.font = "20px Arial";
 p.fillText("Счет",35,200);
 p.fillText("#Param2",90,200);
@@ -97,7 +87,7 @@ p.font = "12px Arial";
 p.fillText("Дополнительные  сведения:",35,275);
 p.font = "10px Arial";
 p.fillText("#Param6",250,275);
-
+p.stroke();
 <!--#textY=320-->
 <!--#moveToY=280-->
 <!--#lineToY=325-->
@@ -107,29 +97,20 @@ p.fillText("#Param6",250,275);
 <!-- Header -->
 p.moveTo(20,#moveToY);
 p.lineTo(580,#moveToY);
-p.stroke();
 p.moveTo(20,#moveToY);
 p.lineTo(20,#lineToY);
-p.stroke();
 p.moveTo(45,#moveToY);
 p.lineTo(45,#lineToY);
-p.stroke();
 p.moveTo(300,#moveToY);
 p.lineTo(300,#lineToY);
-p.stroke();
 p.moveTo(340,#moveToY);
 p.lineTo(340,#lineToY);
-p.stroke();
 p.moveTo(400,#moveToY);
 p.lineTo(400,#lineToY);
-p.stroke();
 p.moveTo(480,#moveToY);
 p.lineTo(480,#lineToY);
-p.stroke();
 p.moveTo(580,#moveToY);
 p.lineTo(580,#lineToY);
-p.stroke();
-
 p.font = "10px Arial";
 p.fillText("Цена",425,#moveToY+10);
 p.fillText("руб.",430,#moveToY+25);
@@ -147,29 +128,20 @@ p.stroke();
 
 <!-- Table -->
 <!--#L1=56-->
-p.moveTo(20,#lineToY);
-p.lineTo(580,#lineToY);
 p.moveTo(20,#moveToY);
 p.lineTo(20,#lineToY);
-p.stroke();
 p.moveTo(45,#moveToY);
 p.lineTo(45,#lineToY);
-p.stroke();
 p.moveTo(300,#moveToY);
 p.lineTo(300,#lineToY);
-p.stroke();
 p.moveTo(340,#moveToY);
 p.lineTo(340,#lineToY);
-p.stroke();
 p.moveTo(400,#moveToY);
 p.lineTo(400,#lineToY);
-p.stroke();
 p.moveTo(480,#moveToY);
 p.lineTo(480,#lineToY);
-p.stroke();
 p.moveTo(580,#moveToY);
 p.lineTo(580,#lineToY);
-p.stroke();
 p.font = "10px Ubuntu Mono";
 p.fillText("#0",30,#textY);
 p.fillText("#1",50,#textY);
@@ -177,6 +149,10 @@ p.fillText("#2",310,#textY);
 p.fillText("#3",380,#textY);
 p.fillText("$4",#X=475,#textY);
 p.fillText("$5",#X=570,#textY);
+<!-- LineBegin -->
+p.moveTo(20,#lineToY);
+p.lineTo(580,#lineToY);
+<!-- LineEnd -->
 p.stroke();
 <!-- Footer -->
 </script>
