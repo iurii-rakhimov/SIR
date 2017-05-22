@@ -155,5 +155,11 @@ p.lineTo(580,#lineToY);
 <!-- LineEnd -->
 p.stroke();
 <!-- Footer -->
+p.moveTo(580,#moveToY+15);
+p.lineTo(580,#lineToY+15);
+p.font = "10px Arial";
+p.fillText("Сумма по счету:",340,#textY+15);
+p.fillText("#Param7",345,#textY+15);
+p.stroke();
 </script>
 </body></html>
