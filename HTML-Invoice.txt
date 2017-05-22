@@ -147,6 +147,8 @@ p.stroke();
 
 <!-- Table -->
 <!--#L1=56-->
+p.moveTo(20,#lineToY);
+p.lineTo(580,#lineToY);
 p.moveTo(20,#moveToY);
 p.lineTo(20,#lineToY);
 p.stroke();
@@ -175,8 +177,6 @@ p.fillText("#2",310,#textY);
 p.fillText("#3",380,#textY);
 p.fillText("$4",#X=475,#textY);
 p.fillText("$5",#X=570,#textY);
-p.moveTo(20,#lineToY);
-p.lineTo(580,#lineToY);
 p.stroke();
 <!-- Footer -->
 </script>
