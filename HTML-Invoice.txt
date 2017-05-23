@@ -114,10 +114,10 @@ p.lineTo(580,#lineToY);
 p.font = "10px Arial";
 p.fillText("Цена",425,#moveToY+10);
 p.fillText("руб.",430,#moveToY+25);
-p.fillText("#Param8",430,#moveToY+40);
+p.fillText("#Param8",405,#moveToY+40);
 p.fillText("Сумма",510,#moveToY+10);
 p.fillText("руб.",515,#moveToY+25);
-p.fillText("#Param8",515,#moveToY+40);
+p.fillText("#Param3[10]",505,#moveToY+40);
 p.fillText("№",25,#moveToY+25);
 p.fillText("Наименование",120,#moveToY+25);
 p.fillText("Ед.изм.",303,#moveToY+25);
@@ -162,8 +162,8 @@ p.lineTo(580,#lineToY+15);
 p.moveTo(480,#lineToY+15);
 p.lineTo(580,#lineToY+15);
 p.font = "12px Arial";
-p.fillText("Сумма по счету:",340,#textY+15);
-p.fillText("#Param7",445,#textY+15);
+p.fillText("Сумма по счету:",340,#textY+10);
+p.fillText("#Param3[11]",445,#textY+10);
 p.stroke();
 </script>
 </body></html>
