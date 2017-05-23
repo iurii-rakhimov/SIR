@@ -163,7 +163,10 @@ p.moveTo(480,#lineToY+15);
 p.lineTo(580,#lineToY+15);
 p.font = "12px Arial";
 p.fillText("Сумма по счету:",340,#textY+10);
-p.fillText("#Param3[11]",445,#textY+10);
-p.stroke();
+p.fillText("$Param3[11]",#X=557,#textY+10);
+p.fillText("Сумма НДС",340,#textY+25);
+p.fillText("$Param3[12]",#X=557,#textY+25);
+p.fillText("Всего к оплате:",340,#textY+40);p.stroke();
+p.fillText("$Param3[11]",#X=557,#textY+40);
 </script>
 </body></html>
