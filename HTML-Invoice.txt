@@ -154,19 +154,23 @@ p.moveTo(20,#lineToY);
 p.lineTo(580,#lineToY);
 <!-- LineEnd -->
 p.stroke();
+
 <!-- Footer -->
-p.moveTo(480,#moveToY+15);
-p.lineTo(480,#lineToY+15);
+p.moveTo(480,#moveToY+20);
+p.lineTo(480,#lineToY+45);
 p.moveTo(580,#moveToY+15);
-p.lineTo(580,#lineToY+15);
+p.lineTo(580,#lineToY+45);
 p.moveTo(480,#lineToY+15);
 p.lineTo(580,#lineToY+15);
+p.moveTo(480,#lineToY+30);
+p.lineTo(580,#lineToY+30);
 p.font = "12px Arial";
 p.fillText("Сумма по счету:",340,#textY+10);
 p.fillText("$Param3[11]",#X=557,#textY+10);
 p.fillText("Сумма НДС",340,#textY+25);
 p.fillText("$Param3[12]",#X=557,#textY+25);
-p.fillText("Всего к оплате:",340,#textY+40);p.stroke();
+p.fillText("Всего к оплате:",340,#textY+40);
 p.fillText("$Param3[11]",#X=557,#textY+40);
+p.stroke();
 </script>
 </body></html>
