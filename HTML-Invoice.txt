@@ -174,10 +174,10 @@ p.fillText("Всего к оплате:",340,#textY+45);
 p.fillText("$Param3[13]",#X=562,#textY+45);
 p.moveTo(480,#lineToY+45);
 p.lineTo(580,#lineToY+45);
-p.fillText("Генеральный директор",50,#textY+55);
-p.fillText("#Param3[10]",505,#textY+55);
-p.fillText("Главный бухгалтер",50,#textY+70);
-p.fillText("#Param3[11]",505,#textY+70);
+p.fillText("Генеральный директор",50,#textY+70);
+p.fillText("#Param3[10]",340,#textY+70);
+p.fillText("Главный бухгалтер",50,#textY+100);
+p.fillText("#Param3[11]",340,#textY+100);
 p.stroke();
 </script>
 </body></html>
