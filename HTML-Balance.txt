@@ -58,7 +58,7 @@ p.lineTo(575,#lineToY);
 p.stroke();
 
 <!-- Table -->
-#L1=56;
+<!--#L1=56-->
 p.font = "10px Arial";
 p.fillText("#1",15,#textY);
 p.font = "10px PT Mono";
