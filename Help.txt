@@ -53,25 +53,25 @@ Help	52	Возможные иконки и их использование
 Help	53	Настройки	(#1)	confic_20.png
 Help	54	копировать	(#2)	copyText20.png
 Help	55	редактировать	(#3)	EditText20.png
-Help	56	Выход из программы	(#5)	exit_left-20.png
-Help	57	Выход из программы	(#6)	exit_right-20.png
-Help	58	Помощь	(#7)	Help_20.png
-Help	59	Указатель редактируемой записи	(#8)	IconSmall-20.png
-Help	60	Предыдущая страница	(#11)	left_20.png
-Help	61	Возврат	(#12)	Left-20.png
-Help	62	Дата на Год минус	(#13)	left.png
-Help	63	Дата на Месяц минус	(#14)	LeftSmall.png
-Help	64	Подтверждение выбранной даты	(#15)	ok_20.png
-Help	65	Вывод на печать	(#16)	printer-20.png
-Help	66	Следующая страница	(#17)	right_20.png
-Help	67	Дата на Год плюс	(#18)	right.png
+Help	56	Удаление	(#26)	trash_20.png
+Help	57	Добавление	(#27)	add_20.png
+Help	58	Выход из программы	(#5)	exit_left-20.png
+Help	59	Выход из программы	(#6)	exit_right-20.png
+Help	60	Помощь	(#7)	Help_20.png
+Help	61	Указатель редактируемой записи	(#8)	IconSmall-20.png
+Help	62	Просмотр предыдущей страницы	(#11)	left_20.png
+Help	63	Просмотр следующей страницы	(#17)	right_20.png
+Help	64	Возврат на предыдущий экран	(#12)	Left-20.png
+Help	65	Дата на Год минус	(#13)	left.png
+Help	66	Дата на Год плюс	(#18)	right.png
+Help	67	Дата на Месяц минус	(#14)	LeftSmall.png
 Help	68	Дата на Месяц плюс	(#19)	RightSmall-40.png
-Help	69	Сортировка по убыванию	(#20)	sort_ZA-20.png
-Help	70	Сохранить данные	(#21)	SaveText20.png
-Help	71	Сервис базы данных	(#22)	service_20.png
+Help	69	Подтверждение выбранной даты	(#15)	ok_20.png
+Help	70	Вывод на печать	(#16)	printer-20.png
+Help	71	Сортировка по убыванию	(#20)	sort_ZA-20.png
 Help	72	Сортировка по возрастанию	(#23)	sort_AZ-20.png
-Help	73	Передача данных	(#24)	telegram-20.png
-Help	74	Обмен с базой данных	(#25)	change_20.png
-Help	75	Удаление	(#26)	trash_20.png
-Help	76	Добавление	(#27)	add_20.png
+Help	73	Сохранить данные	(#21)	SaveText20.png
+Help	74	Сервис базы данных	(#22)	service_20.png
+Help	75	Передача данных	(#24)	telegram-20.png
+Help	76	Обмен с базой данных	(#25)	change_20.png
 Help	77	- - - - - - - - - - - - - - - - - - -
