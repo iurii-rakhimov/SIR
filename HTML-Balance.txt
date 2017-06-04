@@ -13,9 +13,9 @@ var p = c.getContext("2d");
 p.font = "14px Arial";
 p.fillText("Баланс",225,20);
 p.font = "12px Arial";
-p.fillText("по контрагенту: #Param0",160,35);
+p.fillText("по контрагенту: #ArrayParam[11]",160,35);
 p.font = "10px Ubuntu Mono";
-p.fillText("на  #Param1",200,50);
+p.fillText("на  #ArrayParam[12]",200,50);
 <!--#textY=70-->
 <!--#moveToY=60-->
 <!--#lineToY=75-->
