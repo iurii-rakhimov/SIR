@@ -148,7 +148,7 @@ p.fillText("#1",50,#textY);
 <!--#L2=7-->
 p.fillText("#2",310,#textY);
 <!--#L3=10-->
-p.fillText("#3",380,#textY);
+p.fillText("#3",370,#textY);
 p.fillText("$4",#X=475,#textY);
 p.fillText("$5",#X=570,#textY);
 <!-- LineBegin -->
@@ -168,6 +168,7 @@ p.fillText("$ArrayParam[23]",#X=572,#textY+5);
 p.moveTo(480,#lineToY+5);
 p.lineTo(580,#lineToY+5);
 p.fillText("Сумма НДС",340,#textY+25);
+p.fillText("#ArrayParam[25]",400,#textY+25);
 p.fillText("$ArrayParam[24]",#X=572,#textY+25);
 p.moveTo(480,#lineToY+25);
 p.lineTo(580,#lineToY+25);
