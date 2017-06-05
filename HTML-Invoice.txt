@@ -127,7 +127,6 @@ p.lineTo(580,#lineToY);
 p.stroke();
 
 <!-- Table -->
-<!--#L1=56-->
 p.moveTo(20,#moveToY);
 p.lineTo(20,#lineToY);
 p.moveTo(45,#moveToY);
@@ -144,8 +143,11 @@ p.moveTo(580,#moveToY);
 p.lineTo(580,#lineToY);
 p.font = "10px Ubuntu Mono";
 p.fillText("#0",30,#textY);
+<!--#L1=56-->
 p.fillText("#1",50,#textY);
+<!--#L2=7-->
 p.fillText("#2",310,#textY);
+<!--#L3=10-->
 p.fillText("#3",380,#textY);
 p.fillText("$4",#X=475,#textY);
 p.fillText("$5",#X=570,#textY);
