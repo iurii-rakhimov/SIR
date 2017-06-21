@@ -11,60 +11,75 @@ var c = document.getElementById("myCanvas");
 var p = c.getContext("2d");
 <!-- Title -->
 p.font = "6px Arial";
-p.fillText("Унифицированная форма № ТОРГ-12. Утверждена постановленнием",190,10);
-p.fillText("Государственного комитета РФ по статистике от 25.12.1998г. № 132.",190,20);
-p.moveTo(185,1);
-p.lineTo(185,26);
-p.moveTo(390,1);
-p.lineTo(390,26);
-p.moveTo(185,26);
-p.lineTo(390,26);
-p.fillText("Код",535,18);
-p.moveTo(510,20);
-p.lineTo(570,20);
-p.fillText("Номер документа",175,270);
-p.fillText("Дата составления",250,270);
+p.fillText("Приложение №1 к Правилам",570,10);
+p.fillText("ведения журналов учета полученных и выставленных счетов-фактур. книг покупок и",570,18);
+p.fillText("книг продаж при расчетах по налогу на добавленную стоимость. утвержденным",570,26);
+p.fillText("постановлением правительства Российской Федерации от 02.12.2000г. № 914 (в",570,34);
+p.fillText("в редакции постановлений правительства РФ от 15.03.2001г. No 169 от 27.07.2002г. № 575",570,42);
+p.fillText("от 16.02.2004г. No 84 от 11 мая 205г. No283 от 26 мая 2009 No451)",570,50);
 p.font = "12px Arial";
-p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18,295);
-p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18.3,295);
-p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18.6,295);
-p.fillText("#ArrayParam[1]",180,294);
-p.fillText("#ArrayParam[0]",250,294);
+p.fillText("Счет-фактура",18,25);
+p.fillText("Счет-фактура",18.3,25);
+p.fillText("Счет-фактура",18.6,25);
+p.fillText("#ArrayParam[1]",150,25);
+p.fillText("от",200,25);
+p.fillText("от",200.3,25);
+p.fillText("от",200.6,25);
+p.fillText("#ArrayParam[0]",250,25);
+
+p.font = "10px Arial";
+p.fillText("Продавец:",18,50);
+p.fillText("Продавец:",18.3,50);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[25]",520,55);
-p.font = "8px Arial";
-p.fillText("#ArrayParam[16], #ArrayParam[18],",100,40);
-p.fillText("#ArrayParam[24],",100,50);
-p.fillText("расч.сч. № #ArrayParam[21], БИК № #ArrayParam[22], к/с № #ArrayParam[23],",100,60);
-p.fillText("#ArrayParam[17], ИНН #ArrayParam[19], КПП #ArrayParam[20], ",100,70);
-p.fillText("#ArrayParam[7]",100,90);
-p.fillText("#ArrayParam[8]",520,90);
+p.fillText("#ArrayParam[36]",70,50);
+
+p.font = "10px Arial";
+p.fillText("Адрес:",18,65);
+p.fillText("Адрес:",18.3,65);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[35]",520,120);
-p.font = "8px Arial";
-p.fillText("#ArrayParam[26], #ArrayParam[28],",100,110);
-p.fillText("#ArrayParam[34],",100,120);
-p.fillText("расч.сч. № #ArrayParam[31], БИК № #ArrayParam[32], к/с № #ArrayParam[33],",100,130);
-p.fillText("#ArrayParam[27], ИНН #ArrayParam[29], КПП #ArrayParam[30], ",100,140);
+p.fillText("#ArrayParam[38]",70,65);
+
+p.font = "10px Arial";
+p.fillText("ИНН / КПП продавца:",18,80);
+p.fillText("ИНН / КПП продавца:",18.3,80);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[45]",520,165);
-p.font = "8px Arial";
-p.fillText("#ArrayParam[36], #ArrayParam[38],",100,152);
-p.fillText("#ArrayParam[44],",100,162);
-p.fillText("расч.сч. № #ArrayParam[41], БИК № #ArrayParam[42], к/с № #ArrayParam[43],",100,172);
-p.fillText("#ArrayParam[37], ИНН #ArrayParam[39], КПП #ArrayParam[40], ",100,182);
+p.fillText("#ArrayParam[39] / #ArrayParam[40]",120,80);
+
+p.font = "10px Arial";
+p.fillText("Грузоотправитель и его адрес:",18,95);
+p.fillText("Грузоотправитель и его адрес:",18.3,95);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[55]",520,205);
-p.font = "8px Arial";
-p.fillText("#ArrayParam[46], #ArrayParam[48],",100,194);
-p.fillText("#ArrayParam[54],",100,204);
-p.fillText("расч.сч. № #ArrayParam[51], БИК № #ArrayParam[52], к/с № #ArrayParam[53],",100,214);
-p.fillText("#ArrayParam[47], ИНН #ArrayParam[49], КПП #ArrayParam[50], ",100,224);
+p.fillText("#ArrayParam[16], #ArrayParam[18]",180,95);
+
+p.font = "10px Arial";
+p.fillText("Грузоополучатель и его адрес:",18,110);
+p.fillText("Грузоополучатель и его адрес:",18.3,110);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[2]",100,235);
-p.font = "8px Arial";
-p.fillText("#ArrayParam[10]",520,272);
-p.fillText("#ArrayParam[11]",520,287);
+p.fillText("#ArrayParam[26], #ArrayParam[28]",180,110);
+
+p.font = "10px Arial";
+p.fillText("К платежно-расчетному документу №",18,135);
+p.fillText("К платежно-расчетному документу №",18.3,135);
+p.font = "9px Arial";
+p.fillText("#ArrayParam[12]",180,135);
+
+p.font = "10px Arial";
+p.fillText("Покупатель:",18,155);
+p.fillText("Покупатель:",18.3,155);
+p.font = "9px Arial";
+p.fillText("#ArrayParam[46]",80,155);
+
+p.font = "10px Arial";
+p.fillText("Адрес:",18,170);
+p.fillText("Адрес:",18.3,170);
+p.font = "9px Arial";
+p.fillText("#ArrayParam[48]",70,170);
+
+p.font = "10px Arial";
+p.fillText("ИНН / КПП покупателя:",18,185);
+p.fillText("ИНН / КПП покупателя:",18.3,185);
+p.font = "9px Arial";
+p.fillText("#ArrayParam[49] / #ArrayParam[50]",120,185);
 
 <!--#textY=370-->
 <!--#moveToY=360-->
