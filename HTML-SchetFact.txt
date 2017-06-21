@@ -70,11 +70,11 @@ p.font = "10px Arial";
 p.fillText("ИНН / КПП покупателя:",18,240);
 p.fillText("ИНН / КПП покупателя:",18.3,240);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[49] / #ArrayParam[50]",120,240);
+p.fillText("#ArrayParam[49] / #ArrayParam[50]",130,240);
 
-<!--#textY=265-->
-<!--#moveToY=255-->
-<!--#lineToY=270-->
+<!--#textY=300-->
+<!--#moveToY=300-->
+<!--#lineToY=315-->
 <!--#heightTable=15-->
 <!--#countRecordsTable=40-->
     
