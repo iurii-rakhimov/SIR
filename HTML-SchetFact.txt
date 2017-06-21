@@ -52,10 +52,10 @@ p.fillText("Грузоополучатель и его адрес:",18.3,165);
 p.font = "9px Arial";
 p.fillText("#ArrayParam[26], #ArrayParam[28]",180,165);
 p.font = "10px Arial";
-p.fillText("К платежно-расчетному документу №",18,180);
-p.fillText("К платежно-расчетному документу №",18.3,180);
+p.fillText("К платежно-расчетному документу №",18,190);
+p.fillText("К платежно-расчетному документу №",18.3,190);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[12]",180,180);
+p.fillText("#ArrayParam[12]",180,190);
 p.font = "10px Arial";
 p.fillText("Покупатель:",18,210);
 p.fillText("Покупатель:",18.3,210);
@@ -86,17 +86,40 @@ p.lineTo(570,300);
 /*	Вертикальная линия */
 p.moveTo(18,255);
 p.lineTo(18,311);
+p.moveTo(570,255);
+p.lineTo(570,311);
 
 p.font = "8px Arial";
 p.fillText("Наименование товара (описание",30,265);
 p.fillText("выполнненных работ. оказанных",30,275);
 p.fillText("услуг). имущественного права",32,285);
-
+/*	Вертикальная линия */
+p.moveTo(160,255);
+p.lineTo(160,311);
+p.fillText("Единица",162,265);
+p.fillText("изме-",167,275);
+p.fillText("рения",166,285);
+/*	Вертикальная линия */
+p.moveTo(196,255);
+p.lineTo(196,311);
+p.fillText("Кол-во",200,265);
+p.fillText("(масса",200,275);
+p.fillText("нетто)",200,285);
+/*	Вертикальная линия */
+p.moveTo(227,255);
+p.lineTo(227,311);
 p.font = "8px Arial";
-p.fillText("1",23,#textY+10);
-p.fillText("2",100,#textY+10);
-p.moveTo(18,#moveToY+15);
-p.lineTo(570,#moveToY+15);
+p.fillText("Цена (тариф)",229,265);
+p.fillText("за единицу",235,275);
+p.fillText("измерения",234,285);
+/*	Вертикальная линия */
+p.moveTo(269,255);
+p.lineTo(269,311);
+p.fillText("Стоимость товаров",263,263);
+p.fillText("(работ. услуг).",271,271);
+p.fillText("имущественных)",279,279);
+p.fillText("прав всего без)",287,279);
+p.fillText("налога)",288,295);
 
 <!-- Table -->
 p.moveTo(18,#moveToY);
