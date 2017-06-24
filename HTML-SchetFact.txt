@@ -226,9 +226,6 @@ p.fillText("ВСЕГО К ОПЛАТЕ",20,#textY+3);
 p.font = "8px Arial";
 p.fillText("$ArrayParam[15]",433,#textY+3);
 p.fillText("$ArrayParam[14]",493,#textY+3);
-//    /* Горизонтальная линия */
-//p.moveTo(18,#lineToY+30);
-//p.lineTo(570,#lineToY+30);
     /*	Вертикальные линии */
 p.moveTo(18,#moveToY+15);
 p.lineTo(18,#lineToY+15);
