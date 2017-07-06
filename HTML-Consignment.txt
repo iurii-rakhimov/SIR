@@ -135,7 +135,7 @@ p.fillText("#ArrayParam[16], #ArrayParam[18],",100,40);
 p.fillText("#ArrayParam[24],",100,50);
 p.fillText("расч.сч. № #ArrayParam[21], БИК № #ArrayParam[22], к/с № #ArrayParam[23],",100,60);
 p.fillText("#ArrayParam[17], ИНН #ArrayParam[19], КПП #ArrayParam[20], ",100,70);
-p.fillText("#ArrayParam[2]",100,90); //
+p.fillText("#ArrayParam[2]",100,90);
 p.fillText("#ArrayParam[8]",520,90);
 p.font = "9px Arial";
 p.fillText("#ArrayParam[38]",520,120);
@@ -159,7 +159,7 @@ p.fillText("#ArrayParam[57],",100,204);
 p.fillText("расч.сч. № #ArrayParam[54], БИК № #ArrayParam[55], к/с № #ArrayParam[56],",100,214);
 p.fillText("#ArrayParam[50], ИНН #ArrayParam[52], КПП #ArrayParam[53], ",100,224);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[7]",100,235);//
+p.fillText("#ArrayParam[7]",100,235);
 p.font = "8px Arial";
 p.fillText("#ArrayParam[10]",520,272);
 p.fillText("#ArrayParam[11]",520,287);
