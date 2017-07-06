@@ -30,17 +30,17 @@ p.font = "10px Arial";
 p.fillText("Продавец:",18,105);
 p.fillText("Продавец:",18.3,105);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[36]",70,105);
+p.fillText("#ArrayParam[39]",70,105);
 p.font = "10px Arial";
 p.fillText("Адрес:",18,120);
 p.fillText("Адрес:",18.3,120);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[38]",70,120);
+p.fillText("#ArrayParam[41]",70,120);
 p.font = "10px Arial";
 p.fillText("ИНН / КПП продавца:",18,135);
 p.fillText("ИНН / КПП продавца:",18.3,135);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[39] / #ArrayParam[40]",120,135);
+p.fillText("#ArrayParam[42] / #ArrayParam[43]",120,135);
 p.font = "10px Arial";
 p.fillText("Грузоотправитель и его адрес:",18,150);
 p.fillText("Грузоотправитель и его адрес:",18.3,150);
@@ -50,7 +50,7 @@ p.font = "10px Arial";
 p.fillText("Грузоополучатель и его адрес:",18,165);
 p.fillText("Грузоополучатель и его адрес:",18.3,165);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[26], #ArrayParam[28]",180,165);
+p.fillText("#ArrayParam[29], #ArrayParam[31]",180,165);
 p.font = "10px Arial";
 p.fillText("К платежно-расчетному документу №",18,190);
 p.fillText("К платежно-расчетному документу №",18.3,190);
@@ -60,23 +60,24 @@ p.font = "10px Arial";
 p.fillText("Покупатель:",18,210);
 p.fillText("Покупатель:",18.3,210);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[46]",80,210);
+p.fillText("#ArrayParam[49]",80,210);
 p.font = "10px Arial";
 p.fillText("Адрес:",18,225);
 p.fillText("Адрес:",18.3,225);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[48]",70,225);
+p.fillText("#ArrayParam[51]",70,225);
 p.font = "10px Arial";
 p.fillText("ИНН / КПП покупателя:",18,240);
 p.fillText("ИНН / КПП покупателя:",18.3,240);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[49] / #ArrayParam[50]",130,240);
+p.fillText("#ArrayParam[52] / #ArrayParam[53]",130,240);
     
 <!--#textY=303-->
 <!--#moveToY=280-->
 <!--#lineToY=295-->
 <!--#heightTable=15-->
 <!--#countRecordsTable=40-->
+
     
 <!-- Header -->
 p.moveTo(18,255);
