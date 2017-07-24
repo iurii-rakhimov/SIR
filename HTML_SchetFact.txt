@@ -1,22 +1,22 @@
 #Array HTML_SchetFact
 <!DOCTYPE html>
-<html><body>
+<html><body style="transform: rotate(90deg);”>
 <p id="myList"></p>
 <script>
 document.getElementById("myList").innerHTML = "Страница #listNumber";
 </script>
-<canvas id="myCanvas" width="1200" height="400" style="border:1px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
+<canvas id="myCanvas" width="600" height="400" style="border:1px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
 <script>
 var c = document.getElementById("myCanvas");
 var p = c.getContext("2d");
 <!-- Title -->
 p.font = "6px Arial";
-p.fillText("Приложение №1 к Правилам",970,10);
-p.fillText("ведения журналов учета полученных и выставленных счетов-фактур. книг покупок и",390,18);
-p.fillText("книг продаж при расчетах по налогу на добавленную стоимость. утвержденным",950,26);
-p.fillText("постановлением правительства Российской Федерации от 02.12.2000г. № 914 (в",950,34);
-p.fillText("редакции постановлений правительства РФ от 15.03.2001г. No 169 от 27.07.2002г. № 575",950,42);
-p.fillText("от 16.02.2004г. No 84 от 11 мая 205г. No283 от 26 мая 2009 No451)",950,50);
+p.fillText("Приложение №1 к Правилам",370,10);
+p.fillText("ведения журналов учета полученных и выставленных счетов-фактур. книг покупок и",350,18);
+p.fillText("книг продаж при расчетах по налогу на добавленную стоимость. утвержденным",350,26);
+p.fillText("постановлением правительства Российской Федерации от 02.12.2000г. № 914 (в",350,34);
+p.fillText("редакции постановлений правительства РФ от 15.03.2001г. No 169 от 27.07.2002г. № 575",350,42);
+p.fillText("от 16.02.2004г. No 84 от 11 мая 205г. No283 от 26 мая 2009 No451)",350,50);
 p.font = "12px Arial";
 p.fillText("Счет-фактура",18,80);
 p.fillText("Счет-фактура",18.3,80);
@@ -35,12 +35,12 @@ p.font = "10px Arial";
 p.fillText("Адрес:",18,120);
 p.fillText("Адрес:",18.3,120);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[41]",70,120);
+p.fillText("#ArrayParam[38]",70,120);
 p.font = "10px Arial";
 p.fillText("ИНН / КПП продавца:",18,135);
 p.fillText("ИНН / КПП продавца:",18.3,135);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[42] / #ArrayParam[43]",120,135);
+p.fillText("#ArrayParam[39] / #ArrayParam[40]",120,135);
 p.font = "10px Arial";
 p.fillText("Грузоотправитель и его адрес:",18,150);
 p.fillText("Грузоотправитель и его адрес:",18.3,150);
@@ -50,7 +50,7 @@ p.font = "10px Arial";
 p.fillText("Грузоополучатель и его адрес:",18,165);
 p.fillText("Грузоополучатель и его адрес:",18.3,165);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[29], #ArrayParam[31]",180,165);
+p.fillText("#ArrayParam[26], #ArrayParam[28]",180,165);
 p.font = "10px Arial";
 p.fillText("К платежно-расчетному документу №",18,190);
 p.fillText("К платежно-расчетному документу №",18.3,190);
@@ -60,17 +60,17 @@ p.font = "10px Arial";
 p.fillText("Покупатель:",18,210);
 p.fillText("Покупатель:",18.3,210);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[49]",80,210);
+p.fillText("#ArrayParam[46]",80,210);
 p.font = "10px Arial";
 p.fillText("Адрес:",18,225);
 p.fillText("Адрес:",18.3,225);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[51]",70,225);
+p.fillText("#ArrayParam[48]",70,225);
 p.font = "10px Arial";
 p.fillText("ИНН / КПП покупателя:",18,240);
 p.fillText("ИНН / КПП покупателя:",18.3,240);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[52] / #ArrayParam[53]",130,240);
+p.fillText("#ArrayParam[49] / #ArrayParam[50]",130,240);
     
 <!--#textY=303-->
 <!--#moveToY=280-->
@@ -80,14 +80,14 @@ p.fillText("#ArrayParam[52] / #ArrayParam[53]",130,240);
     
 <!-- Header -->
 p.moveTo(18,255);
-p.lineTo(1170,255);
+p.lineTo(570,255);
 p.moveTo(18,300);
-p.lineTo(1170,300);
+p.lineTo(570,300);
     /*	Вертикальная линия */
 p.moveTo(18,255);
 p.lineTo(18,311);
-p.moveTo(1170,255);
-p.lineTo(1170,311);
+p.moveTo(570,255);
+p.lineTo(570,311);
     
 p.font = "8px Arial";
 p.fillText("Наименование товара (описание",30,265);
