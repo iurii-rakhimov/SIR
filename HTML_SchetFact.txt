@@ -10,12 +10,12 @@ document.getElementById("myList").innerHTML = "Страница #listNumber";
 var c = document.getElementById("myCanvas");
 var p = c.getContext("2d");
 <!-- Title -->
-p.font = "8px Ubuntu Mono";
-p.fillText("                                                 Приложение №1",790,12);
-p.fillText("                                 к постановлению Правительства",790,20);
-p.fillText("                                          Российской Федерации",790,28);
-p.fillText("                                          от 26.12.2011 № 1137",790,36);
-p.fillText("(в редакции Постановления Правительства РФ от 25.05.2017 № 625",790,44);
+p.font = "8px Arial";
+p.fillText("Приложение №1",880,12);
+p.fillText("к постановлению Правительства",820,20);
+p.fillText("Российской Федерации",855,28);
+p.fillText("от 26.12.2011 № 1137",862,36);
+p.fillText("(в редакции Постановления Правительства РФ от 25.05.2017 № 625)",682,44);
 p.font = "12px Arial";
 p.fillText("СЧЕТ-ФАКТУРА",18,80);
 p.fillText("СЧЕТ-ФАКТУРА",18.3,80);
