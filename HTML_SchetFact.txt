@@ -59,27 +59,27 @@ p.font = "10px";
 p.fillText("Грузоополучатель и его адрес:",18,180);
 p.fillText("Грузоополучатель и его адрес:",18.3,180);
 p.font = "9px";
-p.fillText("#ArrayParam[26], #ArrayParam[28]",200,180);
+p.fillText("#ArrayParam[29], #ArrayParam[31]",200,180);
 p.font = "10px";
 p.fillText("К платежно-расчетному документу №",18,195);
 p.fillText("К платежно-расчетному документу №",18.3,195);
 p.font = "9px";
-p.fillText("#ArrayParam[10]",220,195);
+p.fillText("#ArrayParam[10]",230,195);
 p.font = "10px";
 p.fillText("Покупатель:",18,210);
 p.fillText("Покупатель:",18.3,210);
 p.font = "9px";
-p.fillText("#ArrayParam[46]",90,210);
+p.fillText("#ArrayParam[49]",90,210);
 p.font = "10px";
 p.fillText("Адрес:",18,225);
 p.fillText("Адрес:",18.3,225);
 p.font = "9px";
-p.fillText("#ArrayParam[48]",70,225);
+p.fillText("#ArrayParam[51]",70,225);
 p.font = "10px";
 p.fillText("ИНН / КПП покупателя:",18,240);
 p.fillText("ИНН / КПП покупателя:",18.3,240);
 p.font = "9px";
-p.fillText("#ArrayParam[49] / #ArrayParam[50]",150,240);
+p.fillText("#ArrayParam[52] / #ArrayParam[53]",150,240);
 p.font = "10px";
 p.fillText("Валюта: наименование, код ",18,255);
 p.fillText("Валюта: наименование, код ",18.3,255);
@@ -88,7 +88,7 @@ p.fillText("#ArrayParam[12]",170,255);
 p.fillText("Идентификатор государственного контракта, договора (соглашения) ",18,270);
 p.fillText("Идентификатор государственного контракта, договора (соглашения) ",18.3,270);
 p.font = "9px";
-p.fillText("#ArrayParam[13]",250,270);
+p.fillText("#ArrayParam[13]",350,270);
     
 <!--#textY=333-->
 <!--#moveToY=310-->
@@ -108,15 +108,15 @@ p.moveTo(920,285);
 p.lineTo(920,341);
     
 p.font = "8px";
-p.fillText("Наименование товара (описание",30,300);
-p.fillText("выполнненных работ. оказанных услуг),",30,315);
-p.fillText(" имущественного права",32,325);
+p.fillText("Наименование товара (описание",45,300);
+p.fillText("выполнненных работ. оказанных услуг),",25,315);
+p.fillText(" имущественного права",55,325);
     /*	Вертикальная линия */
 p.moveTo(253,285);
 p.lineTo(253,341);
-p.fillText("Единица",256,300);
-p.fillText("изме-",260,315);
-p.fillText("рения",260,325);
+p.fillText("Единица",257,300);
+p.fillText("изме-",275,315);
+p.fillText("рения",265,325);
     /*	Вертикальная линия */
 p.moveTo(310,285);
 p.lineTo(310,341);
