@@ -136,7 +136,7 @@ p.fillText("Стоимость товаров",432,293);
 p.fillText("(работ. услуг),",445,301);
 p.fillText("имущественных",440,310);
 p.fillText("прав без налога -",437,319);
-p.fillText("всего",467,328);
+p.fillText("всего",457,328);
     /*	Вертикальная линия */
 p.moveTo(519,285);
 p.lineTo(519,341);
@@ -163,26 +163,31 @@ p.lineTo(680,341);
 p.font = "9px Arial";
 p.fillText("Стоимость товаров",687,293);
 p.fillText("(работ. услуг),",700,301);
-p.fillText("имущественных",690,309);
-p.fillText("прав с налогом -",700,317);
+p.fillText("имущественных",695,309);
+p.fillText("прав с налогом -",690,317);
 p.fillText("всего",720,325);
     /*	Вертикальная линия */
 p.moveTo(775,285);
 p.lineTo(775,341);
 p.font = "9px Arial";
 p.fillText("Страна",800,293);
+p.font = "8px Arial";
 p.fillText("происхождения товара",775,301);
     /* Горизонтальная линия */
 p.moveTo(775,310);
-p.lineTo(851,310);
-p.fillText("цифровой",790,320);
-p.fillText("код",800,328);
+p.lineTo(871,310);
+p.fillText("цифровой",772,320);
+p.fillText("код",790,328);
     /*	Вертикальная линия */
-p.moveTo(851,285);
-p.lineTo(851,341);
-p.fillText("Номер",887,300);
+p.moveTo(820,310);
+p.lineTo(820,341);
+    /*	Вертикальная линия */
+p.moveTo(871,285);
+p.lineTo(871,341);
+p.font = "9px Arial";
+p.fillText("Номер",877,300);
 p.fillText("таможенной",867,310);
-p.fillText("декларации",867,320);
+p.fillText("декларации",868,320);
     /* 1 2 3 4 . . . 11 */
 p.fillText("1",135,338);
 p.fillText("2",281,338);
@@ -194,7 +199,7 @@ p.fillText("7",577,338);
 p.fillText("8",640,338);
 p.fillText("9",725,338);
 p.fillText("10",798,338);
-p.fillText("11",871,338);
+p.fillText("11",900,338);
     /* Горизонтальная линия */
 p.moveTo(18,340);
 p.lineTo(920,340);
@@ -221,8 +226,8 @@ p.moveTo(680,#moveToY+15);
 p.lineTo(680,#lineToY+15);
 p.moveTo(775,#moveToY+15);
 p.lineTo(775,#lineToY+15);
-p.moveTo(851,#moveToY+15);
-p.lineTo(851,#lineToY+15);
+p.moveTo(871,#moveToY+15);
+p.lineTo(871,#lineToY+15);
 p.moveTo(920,#moveToY+15);
 p.lineTo(920,#lineToY+15);
 p.font = "10px MonoCondencedDi";
