@@ -172,18 +172,20 @@ p.lineTo(775,341);
 p.font = "9px Arial";
 p.fillText("Страна",800,293);
 p.font = "8px Arial";
-p.fillText("происхождения товара",775,301);
+p.fillText("происхождения товара",780,301);
     /* Горизонтальная линия */
 p.moveTo(775,310);
-p.lineTo(871,310);
-p.fillText("цифровой",772,320);
+p.lineTo(866,310);
+p.fillText("цифровой",777,320);
 p.fillText("код",790,328);
     /*	Вертикальная линия */
 p.moveTo(820,310);
 p.lineTo(820,341);
+p.fillText("краткое",840,320);
+p.fillText("наименование",821,328);
     /*	Вертикальная линия */
-p.moveTo(871,285);
-p.lineTo(871,341);
+p.moveTo(866,285);
+p.lineTo(866,341);
 p.font = "9px Arial";
 p.fillText("Номер",877,300);
 p.fillText("таможенной",867,310);
@@ -198,8 +200,9 @@ p.fillText("6",534,338);
 p.fillText("7",577,338);
 p.fillText("8",640,338);
 p.fillText("9",725,338);
-p.fillText("10",798,338);
-p.fillText("11",900,338);
+p.fillText("10",788,338);
+p.fillText("10а",830,338);
+p.fillText("11",880,338);
     /* Горизонтальная линия */
 p.moveTo(18,340);
 p.lineTo(920,340);
@@ -226,8 +229,8 @@ p.moveTo(680,#moveToY+15);
 p.lineTo(680,#lineToY+15);
 p.moveTo(775,#moveToY+15);
 p.lineTo(775,#lineToY+15);
-p.moveTo(871,#moveToY+15);
-p.lineTo(871,#lineToY+15);
+p.moveTo(866,#moveToY+15);
+p.lineTo(866,#lineToY+15);
 p.moveTo(920,#moveToY+15);
 p.lineTo(920,#lineToY+15);
 p.font = "10px MonoCondencedDi";
