@@ -88,7 +88,7 @@ p.fillText("#ArrayParam[12]",170,255);
 p.fillText("Идентификатор государственного контракта, договора (соглашения) ",18,270);
 p.fillText("Идентификатор государственного контракта, договора (соглашения) ",18.3,270);
 p.font = "9px";
-p.fillText("#ArrayParam[13]",350,270);
+p.fillText("#ArrayParam[10]",450,270);
     
 <!--#textY=333-->
 <!--#moveToY=310-->
@@ -115,18 +115,18 @@ p.fillText(" имущественного права",55,325);
 p.moveTo(253,285);
 p.lineTo(253,341);
 p.fillText("Единица",257,300);
-p.fillText("изме-",275,315);
+p.fillText("изме-",270,315);
 p.fillText("рения",265,325);
     /*	Вертикальная линия */
 p.moveTo(310,285);
 p.lineTo(310,341);
-p.fillText("Кол-во",316,300);
-p.fillText("(масса",316,315);
-p.fillText("нетто)",316,325);
+p.fillText("Коли-",326,300);
+p.fillText("чество",316,315);
+p.fillText("(объём)",316,325);
     /*	Вертикальная линия */
 p.moveTo(359,285);
 p.lineTo(359,341);
-p.font = "6px";
+p.font = "6px Arial";
 p.fillText("Цена (тариф)",362,300);
 p.fillText("за единицу",367,315);
 p.fillText("измерения",367,325);
@@ -152,13 +152,13 @@ p.fillText("ставка",560,315);
     /*	Вертикальная линия */
 p.moveTo(604,285);
 p.lineTo(604,341);
-p.font = "8px";
+p.font = "8px Arial";
 p.fillText("Сумма",620,300);
 p.fillText("налога",620,315);
     /*	Вертикальная линия */
 p.moveTo(680,285);
 p.lineTo(680,341);
-p.font = "6px";
+p.font = "6px Arial";
 p.fillText("Стоимость товаров",684,293);
 p.fillText("(работ. услуг).",700,301);
 p.fillText("имущественных",700,309);
@@ -177,17 +177,17 @@ p.fillText("Номер",847,300);
 p.fillText("таможенной",837,310);
 p.fillText("декларации",837,320);
     /* 1 2 3 4 . . . 11 */
-p.fillText("1",135,337);
-p.fillText("2",281,337);
-p.fillText("3",334,337);
-p.fillText("4",390,337);
-p.fillText("5",472,337);
-p.fillText("6",534,337);
-p.fillText("7",577,337);
-p.fillText("8",640,337);
-p.fillText("9",725,337);
-p.fillText("10",798,337);
-p.fillText("11",871,337);
+p.fillText("1",135,340);
+p.fillText("2",281,340);
+p.fillText("3",334,340);
+p.fillText("4",390,340);
+p.fillText("5",472,340);
+p.fillText("6",534,340);
+p.fillText("7",577,340);
+p.fillText("8",640,340);
+p.fillText("9",725,340);
+p.fillText("10",798,340);
+p.fillText("11",871,340);
     /* Горизонтальная линия */
 p.moveTo(18,340);
 p.lineTo(570,340);
