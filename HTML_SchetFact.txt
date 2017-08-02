@@ -16,6 +16,7 @@ var arrayDate = dateDoc.split("/");
 var numberMes = arrayDate[1]
 numberMes = numberMes - 1
 var nameMes = arrayMes[numberMes]
+<!-- Title -->
 p.font = "8px MonoCondencedDi";
 p.fillText("Приложение №1",880,12);
 p.fillText("к постановлению Правительства",825,20);
