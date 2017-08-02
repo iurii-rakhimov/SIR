@@ -9,13 +9,13 @@ document.getElementById("myList").innerHTML = "Страница #listNumber";
 <script>
 var c = document.getElementById("myCanvas");
 var p = c.getContext("2d");
-var mes = "Января Февраля Марта Апреля Мая Июня Июля Августа Сентября Октября Ноября Декабря"
+var mes = "Января Февраля Марта Апреля Мая Июня Июля Августа Сентября Октября Ноября Декабря";
 var arrayMes = mes.split(" ");
 var dateDoc = "10/07/2017";
 var arrayDate = dateDoc.split("/");
-var numberMes = arrayDate[1]
-numberMes = numberMes - 1
-var nameMes = arrayMes[numberMes]
+var numberMes = arrayDate[1];
+numberMes = numberMes - 1;
+var nameMes = arrayMes[numberMes];
 <!-- Title -->
 p.font = "8px MonoCondencedDi";
 p.fillText("Приложение №1",880,12);
