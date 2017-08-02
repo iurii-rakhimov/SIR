@@ -11,31 +11,26 @@ var c = document.getElementById("myCanvas");
 var p = c.getContext("2d");
 var mes = "Января Февраля Марта Апреля Мая Июня Июля Августа Сентября Октября Ноября Декабря"
 var arrayMes = mes.split(" ");
-var date = "#ArrayParam[0]";
-var dateDoc = "02/07/2017"
+var dateDoc = "10/07/2017";
 var arrayDate = dateDoc.split("/");
 var numberMes = arrayDate[1]
 numberMes = numberMes - 1
 var nameMes = arrayMes[numberMes]
-var dateText = den.concat(" ",mes);
-dateText = dateText.concat(" ",god);
-dateText = dateText.concat(" ","г.");
-<!-- Title -->
 p.font = "8px MonoCondencedDi";
 p.fillText("Приложение №1",880,12);
 p.fillText("к постановлению Правительства",825,20);
-p.fillText("Российской Федерации",856,28);
+p.fillText("Российской Федерации",859,28);
 p.fillText("от 26.12.2011 № 1137",861,36);
 p.fillText("(в редакции Постановления Правительства РФ от 25.05.2017 № 625)",701,44);
 p.font = "12px Arial";
 p.fillText("СЧЕТ-ФАКТУРА №",18,80);
 p.fillText("СЧЕТ-ФАКТУРА №",18.3,80);
 p.fillText("СЧЕТ-ФАКТУРА №",18.6,80);
-p.fillText("#ArrayParam[1]",150,80);
+p.fillText("ЖДК/1",150,80);
 p.fillText("от",200,80);
 p.fillText("от",200.3,80);
 p.fillText("от",200.6,80);
-p.fillText(dateText,220,80);
+p.fillText(nameMes,220,80);
 p.fillText("ИСПРАВЛЕНИЕ № __ от _________________",18,100);
 p.fillText("ИСПРАВЛЕНИЕ № __ от _________________",18.3,100);
 p.fillText("ИСПРАВЛЕНИЕ № __ от _________________",18.6,100);
