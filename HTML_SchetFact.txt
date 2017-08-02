@@ -170,19 +170,19 @@ p.fillText("всего",720,325);
 p.moveTo(775,285);
 p.lineTo(775,341);
 p.font = "9px Arial";
-p.fillText("Страна",810,293);
+p.fillText("Страна",810,295);
 p.font = "8px Arial";
-p.fillText("происхождения товара",778,301);
+p.fillText("происхождения товара",783,305);
     /* Горизонтальная линия */
 p.moveTo(775,310);
 p.lineTo(876,310);
-p.fillText("цифровой",777,320);
+p.fillText("цифровой",780,320);
 p.fillText("код",790,328);
     /*	Вертикальная линия */
-p.moveTo(815,310);
-p.lineTo(815,341);
-p.fillText("краткое",840,320);
-p.fillText("наименование",816,328);
+p.moveTo(820,310);
+p.lineTo(820,341);
+p.fillText("краткое",830,320);
+p.fillText("наименование",821,328);
     /*	Вертикальная линия */
 p.moveTo(876,285);
 p.lineTo(876,341);
@@ -200,8 +200,8 @@ p.fillText("6",534,338);
 p.fillText("7",577,338);
 p.fillText("8",640,338);
 p.fillText("9",725,338);
-p.fillText("10",788,338);
-p.fillText("10а",830,338);
+p.fillText("10",792,338);
+p.fillText("10а",835,338);
 p.fillText("11",900,338);
     /* Горизонтальная линия */
 p.moveTo(18,340);
@@ -241,7 +241,7 @@ p.fillText("#2",264,#textY+3);    /* единица измерения */
 p.fillText("$3",#X=356,#textY+3); /* кол-во */
 p.fillText("$4",#X=422,#textY+3); /* цена */
 p.fillText("$5",#X=772,#textY+3);  /* сумма всего */
-p.fillText("$6",#X=570,#textY+3);  /* процент налога */
+p.fillText("$6",#X=580,#textY+3);  /* процент налога */
 p.fillText("$7",#X=516,#textY+3);  /* сумма без налога */
 p.fillText("$8",#X=677,#textY+3);  /* сумма налога */
 <!-- LineBegin -->
@@ -256,7 +256,7 @@ p.moveTo(18,#lineToY+15);
 p.lineTo(775,#lineToY+15);
 p.font = "9px Arial";
 p.fillText("ВСЕГО К ОПЛАТЕ",20,#textY+3);
-p.font = "8px Arial";
+p.font = "10px Arial";
 p.fillText("$ArrayParam[15]",516,#textY+3);
 p.fillText("$ArrayParam[14]",772,#textY+3);
     /*	Вертикальные линии */
@@ -273,22 +273,31 @@ p.lineTo(680,#lineToY+15);
 p.moveTo(775,#moveToY+15);
 p.lineTo(775,#lineToY+15);
     
+p.font = "10px Arial";
 p.fillText("Руководитель организации",18,#textY+25);
-p.fillText("или иное уполномоченное лицо  _______________",18,#textY+40);
-p.fillText("#ArrayParam[3]",200,#textY+40);
-p.fillText("Главный бухгалтер",300,#textY+25);
-p.fillText("или иное уполномоченное лицо _________________",300,#textY+40);
-p.fillText("#ArrayParam[4]",775,#textY+40);
+p.fillText("или иное уполномоченное лицо     _______________",18,#textY+40);
+p.fillText("#ArrayParam[3]",300,#textY+40);
+p.fillText("_________________",300,#textY+40);
 p.font = "6px Arial";
-p.fillText("(подпись)",160,#textY+46);
-p.fillText("(ф.и.о.)",210,#textY+46);
-p.fillText("(подпись)",770,#textY+46);
+p.fillText("(подпись)",260,#textY+46);
+p.fillText("(ф.и.о.)",310,#textY+46);
+p.font = "10px Arial";
+p.fillText("Главный бухгалтер",500,#textY+25);
+p.fillText("или иное уполномоченное лицо    _________________",500,#textY+40);
+p.fillText("#ArrayParam[4]",680,#textY+40);
+p.fillText("_________________",680,#textY+40);
+p.font = "6px Arial";
+p.fillText("(подпись)",680,#textY+46);
 p.fillText("(ф.и.о.)",820,#textY+46);
+p.font = "10px Arial";
+p.fillText("индивидуальный предприниматель  _______________       _______________________________",18,#textY+60);
+p.font = "6px Arial";
+p.fillText("(подпись)",260,#textY+66);
+p.fillText("(ф.и.о.)",310,#textY+66);
     
 p.font = "7px Arial";
-p.fillText("Примечание: Первый экземпляр (оригинал) - покупателю. Второй экземпляр (копия) - продавцу.",55,#textY+56);
-p.fillText("(реквизиты свидетельства о государственной",400,#textY+56);
-p.fillText("регистрации индивидуального предпринимателя)",395,#textY+66);
+p.fillText("(реквизиты свидетельства о государственной",400,#textY+66);
+p.fillText("регистрации индивидуального предпринимателя)",395,#textY+76);
     
 p.stroke();
 </script>
