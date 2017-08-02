@@ -112,13 +112,13 @@ p.fillText("Наименование товара (описание",65,300);
 p.fillText("выполнненных работ. оказанных услуг),",50,312);
 p.fillText(" имущественного права",85,325);
     /*	Вертикальная линия */
-p.moveTo(253,285);
-p.lineTo(253,341);
+p.moveTo(243,285);
+p.lineTo(243,341);
 p.fillText("Единица",262,293);
 p.fillText("измерения",257,302);
     /* Горизонтальная линия */
-p.moveTo(253,306);
-p.lineTo(310,306);
+p.moveTo(243,306);
+p.lineTo(320,306);
 p.fillText("Код",256,320);
     /*	Вертикальная линия */
 p.moveTo(275,306);
@@ -128,12 +128,12 @@ p.fillText("условное",276,312);
 p.fillText("обозначение",276,320);
 p.fillText("(национальное)",276,328);
     /*	Вертикальная линия */
-p.moveTo(310,285);
-p.lineTo(310,341);
+p.moveTo(320,285);
+p.lineTo(320,341);
 p.font = "9px Arial";
-p.fillText("Коли-",325,300);
-p.fillText("чество",321,312);
-p.fillText("(объём)",319,325);
+p.fillText("Коли-",330,300);
+p.fillText("чество",326,312);
+p.fillText("(объём)",324,325);
     /*	Вертикальная линия */
 p.moveTo(359,285);
 p.lineTo(359,341);
@@ -203,8 +203,8 @@ p.fillText("таможенной",877,310);
 p.fillText("декларации",878,320);
     /* 1 2 3 4 . . . 11 */
 p.fillText("1",135,338);
-p.fillText("2",240,338);
-p.fillText("2а",280,338);
+p.fillText("2",260,338);
+p.fillText("2а",290,338);
 p.fillText("3",334,338);
 p.fillText("4",390,338);
 p.fillText("5",472,338);
@@ -223,10 +223,10 @@ p.lineTo(930,340);
     /*	Вертикальные линии */
 p.moveTo(18,#moveToY+15);
 p.lineTo(18,#lineToY+15);
-p.moveTo(253,#moveToY+15);
-p.lineTo(253,#lineToY+15);
-p.moveTo(310,#moveToY+15);
-p.lineTo(310,#lineToY+15);
+p.moveTo(243,#moveToY+15);
+p.lineTo(243,#lineToY+15);
+p.moveTo(320,#moveToY+15);
+p.lineTo(320,#lineToY+15);
 p.moveTo(359,#moveToY+15);
 p.lineTo(359,#lineToY+15);
 p.moveTo(426,#moveToY+15);
