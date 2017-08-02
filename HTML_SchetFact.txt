@@ -259,9 +259,12 @@ p.fillText("$4",#X=432,#textY+3); /* цена */
 p.fillText("$5",#X=772,#textY+3);  /* сумма всего */
 p.fillText("$6",#X=583,#textY+3);  /* процент налога */
 p.fillText("$7",#X=516,#textY+3);  /* сумма без налога */
-p.fillText("без акциза",520,#textY+3);    /* акциз */
 p.fillText("$8",#X=677,#textY+3);  /* сумма налога */
-p.fillText("--",777,#textY+3);    /* код единицы измерения */
+p.fillText("--",792,#textY+3);    /* код единицы измерения */
+p.fillText("--",835,#textY+3);    /* код единицы измерения */
+p.fillText("--",900,#textY+3);    /* код единицы измерения */
+p.font = "6px MonoCondencedDi";
+p.fillText("без акциза",520,#textY+3);    /* акциз */
 <!-- LineBegin -->
 p.moveTo(18,#lineToY+15);
 p.lineTo(930,#lineToY+15);
