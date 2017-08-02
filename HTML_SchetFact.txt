@@ -277,7 +277,7 @@ p.moveTo(18,#lineToY+15);
 p.lineTo(775,#lineToY+15);
 p.font = "9px Arial";
 p.fillText("ВСЕГО К ОПЛАТЕ",20,#textY+3);
-var arr = $ArrayParam[14].split("*");
+var arr = "$ArrayParam[14]".split("*");
 p.font = "10px Arial";
 p.fillText("$ArrayParam[15]",516,#textY+3);
 p.fillText(arr[0],772,#textY+3);
