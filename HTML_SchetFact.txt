@@ -151,18 +151,18 @@ p.fillText("всего",470,328);
 p.moveTo(519,285);
 p.lineTo(519,341);
 p.font = "9px Arial";
-p.fillText("В том",522,293);
-p.fillText("числе",522,302);
-p.fillText("сумма",522,311);
-p.fillText("акциза",521,320);
+p.fillText("В том",524,293);
+p.fillText("числе",524,302);
+p.fillText("сумма",524,311);
+p.fillText("акциза",523,320);
     /*	Вертикальная линия */
-p.moveTo(551,285);
-p.lineTo(551,341);
-p.fillText("Налоговая",555,300);
-p.fillText("ставка",565,315);
+p.moveTo(556,285);
+p.lineTo(556,341);
+p.fillText("Налоговая",560,300);
+p.fillText("ставка",570,315);
     /*	Вертикальная линия */
-p.moveTo(604,285);
-p.lineTo(604,341);
+p.moveTo(609,285);
+p.lineTo(609,341);
 p.font = "9px Arial";
 p.fillText("Сумма налога,",612,300);
 p.fillText("предъявляемая",610,312);
@@ -234,10 +234,10 @@ p.moveTo(435,#moveToY+15);
 p.lineTo(435,#lineToY+15);
 p.moveTo(519,#moveToY+15);
 p.lineTo(519,#lineToY+15);
-p.moveTo(551,#moveToY+15);
-p.lineTo(551,#lineToY+15);
-p.moveTo(604,#moveToY+15);
-p.lineTo(604,#lineToY+15);
+p.moveTo(556,#moveToY+15);
+p.lineTo(556,#lineToY+15);
+p.moveTo(609,#moveToY+15);
+p.lineTo(609,#lineToY+15);
 p.moveTo(680,#moveToY+15);
 p.lineTo(680,#lineToY+15);
 p.moveTo(775,#moveToY+15);
@@ -263,8 +263,8 @@ p.fillText("$8",#X=677,#textY+3);  /* сумма налога */
 p.fillText("--",792,#textY+3);    /* код единицы измерения */
 p.fillText("--",835,#textY+3);    /* код единицы измерения */
 p.fillText("--",900,#textY+3);    /* код единицы измерения */
-p.font = "6px MonoCondencedDi";
-p.fillText("без акциза",520,#textY+3);    /* акциз */
+p.font = "7px MonoCondencedDi";
+p.fillText("без акциза",521,#textY+3);    /* акциз */
 <!-- LineBegin -->
 p.moveTo(18,#lineToY+15);
 p.lineTo(930,#lineToY+15);
@@ -287,8 +287,8 @@ p.moveTo(435,#moveToY+15);
 p.lineTo(435,#lineToY+15);
 p.moveTo(519,#moveToY+15);
 p.lineTo(519,#lineToY+15);
-p.moveTo(604,#moveToY+15);
-p.lineTo(604,#lineToY+15);
+p.moveTo(609,#moveToY+15);
+p.lineTo(609,#lineToY+15);
 p.moveTo(680,#moveToY+15);
 p.lineTo(680,#lineToY+15);
 p.moveTo(775,#moveToY+15);
