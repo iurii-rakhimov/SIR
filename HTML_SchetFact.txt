@@ -98,14 +98,14 @@ p.fillText("#ArrayParam[10]",410,270);
     
 <!-- Header -->
 p.moveTo(18,285);
-p.lineTo(920,285);
+p.lineTo(930,285);
 p.moveTo(18,330);
-p.lineTo(920,330);
+p.lineTo(930,330);
     /*	Вертикальная линия */
 p.moveTo(18,285);
 p.lineTo(18,341);
-p.moveTo(920,285);
-p.lineTo(920,341);
+p.moveTo(930,285);
+p.lineTo(930,341);
     
 p.font = "9px Arial";
 p.fillText("Наименование товара (описание",65,300);
@@ -170,26 +170,26 @@ p.fillText("всего",720,325);
 p.moveTo(775,285);
 p.lineTo(775,341);
 p.font = "9px Arial";
-p.fillText("Страна",800,293);
+p.fillText("Страна",810,293);
 p.font = "8px Arial";
-p.fillText("происхождения товара",780,301);
+p.fillText("происхождения товара",778,301);
     /* Горизонтальная линия */
 p.moveTo(775,310);
 p.lineTo(866,310);
 p.fillText("цифровой",777,320);
 p.fillText("код",790,328);
     /*	Вертикальная линия */
-p.moveTo(820,310);
-p.lineTo(820,341);
+p.moveTo(815,310);
+p.lineTo(815,341);
 p.fillText("краткое",840,320);
-p.fillText("наименование",821,328);
+p.fillText("наименование",816,328);
     /*	Вертикальная линия */
 p.moveTo(866,285);
 p.lineTo(866,341);
 p.font = "9px Arial";
-p.fillText("Номер",877,300);
-p.fillText("таможенной",867,310);
-p.fillText("декларации",868,320);
+p.fillText("Номер",887,300);
+p.fillText("таможенной",877,310);
+p.fillText("декларации",878,320);
     /* 1 2 3 4 . . . 11 */
 p.fillText("1",135,338);
 p.fillText("2",281,338);
@@ -205,7 +205,7 @@ p.fillText("10а",830,338);
 p.fillText("11",880,338);
     /* Горизонтальная линия */
 p.moveTo(18,340);
-p.lineTo(920,340);
+p.lineTo(930,340);
    
 <!-- Table -->
     /*	Вертикальные линии */
@@ -231,8 +231,8 @@ p.moveTo(775,#moveToY+15);
 p.lineTo(775,#lineToY+15);
 p.moveTo(866,#moveToY+15);
 p.lineTo(866,#lineToY+15);
-p.moveTo(920,#moveToY+15);
-p.lineTo(920,#lineToY+15);
+p.moveTo(930,#moveToY+15);
+p.lineTo(930,#lineToY+15);
 p.font = "10px MonoCondencedDi";
 p.fillText("#0",21,#textY+3);     /* номер */
 <!--#L1=20-->
@@ -246,14 +246,14 @@ p.fillText("$7",#X=516,#textY+3);  /* сумма без налога */
 p.fillText("$8",#X=677,#textY+3);  /* сумма налога */
 <!-- LineBegin -->
 p.moveTo(18,#lineToY+15);
-p.lineTo(920,#lineToY+15);
+p.lineTo(930,#lineToY+15);
 <!-- LineEnd -->
 p.stroke();
     
 <!-- Footer -->
     /* Горизонтальная линия */
 p.moveTo(18,#lineToY+15);
-p.lineTo(920,#lineToY+15);
+p.lineTo(775,#lineToY+15);
 p.font = "9px Arial";
 p.fillText("ВСЕГО К ОПЛАТЕ",20,#textY+3);
 p.font = "8px";
@@ -262,8 +262,8 @@ p.fillText("$ArrayParam[14]",772,#textY+3);
     /*	Вертикальные линии */
 p.moveTo(18,#moveToY+15);
 p.lineTo(18,#lineToY+15);
-p.moveTo(328,#moveToY+15);
-p.lineTo(328,#lineToY+15);
+p.moveTo(359,#moveToY+15);
+p.lineTo(359,#lineToY+15);
 p.moveTo(519,#moveToY+15);
 p.lineTo(519,#lineToY+15);
 p.moveTo(604,#moveToY+15);
