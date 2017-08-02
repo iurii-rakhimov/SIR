@@ -31,14 +31,14 @@ p.fillText("#ArrayParam[1]",150,80);
 p.fillText("от",200,80);
 p.fillText("от",200.3,80);
 p.fillText("от",200.6,80);
-var date = "#ArrayParam[0]";
-var den = date.slice(0,2);
-var god = date.slice(6,10);
+/* var date = "#ArrayParam[0]"; */
+/* var den = date.slice(0,2); */
+/* var god = date.slice(6,10); */
 /* var mes = "#ArrayParam[13]"; */
-var dateText = den.concat(" ",nameMes);
-dateText = dateText.concat(" ",god);
-dateText = dateText.concat(" ","г.");
-p.fillText(dateText,220,80);
+/* var dateText = den.concat(" ",nameMes); */
+/* dateText = dateText.concat(" ",god); */
+/* dateText = dateText.concat(" ","г."); */
+/* p.fillText(dateText,220,80); */
 p.fillText("ИСПРАВЛЕНИЕ № __ от _________________",18,100);
 p.fillText("ИСПРАВЛЕНИЕ № __ от _________________",18.3,100);
 p.fillText("ИСПРАВЛЕНИЕ № __ от _________________",18.6,100);
