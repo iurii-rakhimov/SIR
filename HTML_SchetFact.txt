@@ -24,10 +24,14 @@ p.fillText("#ArrayParam[1]",150,80);
 p.fillText("от",200,80);
 p.fillText("от",200.3,80);
 p.fillText("от",200.6,80);
+var mes = "Января Февраля Марта Апреля Мая Июня Июля Августа Сентября Октября Ноября Декабря"
+var arrayMes = mes.split(" ");
 var date = "#ArrayParam[0]";
-var den = date.slice(0,2);
-var god = date.slice(6,10);
-var mes = "#ArrayParam[13]";
+var dateDoc = "02/07/2017"
+var arrayDate = dateDoc.split("/");
+var numberMes = arrayDate[1]
+numberMes = numberMes - 1
+var nameMes = arrayMes[numberMes]
 var dateText = den.concat(" ",mes);
 dateText = dateText.concat(" ",god);
 dateText = dateText.concat(" ","г.");
@@ -279,8 +283,8 @@ p.font = "9px Arial";
 p.fillText("ВСЕГО К ОПЛАТЕ",20,#textY+3);
 p.font = "10px Arial";
 p.fillText("$ArrayParam[15]",516,#textY+3);
-p.fillText("$ArrayParam[14]",672,#textY+3);
-p.fillText("$ArrayParam[13]",742,#textY+3);
+p.fillText("$ArrayParam[14]",677,#textY+3);
+p.fillText("$ArrayParam[13]",772,#textY+3);
 p.fillText("X",568,#textY+3);
     /*	Вертикальные линии */
 p.moveTo(18,#moveToY+15);
