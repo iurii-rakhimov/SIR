@@ -123,7 +123,7 @@ p.fillText("Код",256,320);
     /*	Вертикальная линия */
 p.moveTo(275,306);
 p.lineTo(275,341);
-p.font = "7px Arial";
+p.font = "6px Arial";
 p.fillText("условное",276,312);
 p.fillText("обозначение",276,320);
 p.fillText("(национальное)",276,328);
@@ -203,8 +203,8 @@ p.fillText("таможенной",877,310);
 p.fillText("декларации",878,320);
     /* 1 2 3 4 . . . 11 */
 p.fillText("1",135,338);
-p.fillText("2",281,338);
-p.fillText("2а",301,338);
+p.fillText("2",240,338);
+p.fillText("2а",280,338);
 p.fillText("3",334,338);
 p.fillText("4",390,338);
 p.fillText("5",472,338);
@@ -249,8 +249,8 @@ p.font = "10px MonoCondencedDi";
 p.fillText("#0",21,#textY+3);     /* номер */
 <!--#L1=20-->
 p.fillText("#1",32,#textY+3);     /* наименование услуг-товара */
-p.fillText("#2",264,#textY+3);    /* единица измерения */
-p.fillText("$3",#X=366,#textY+3); /* кол-во */
+p.fillText("#2",284,#textY+3);    /* единица измерения */
+p.fillText("$3",#X=356,#textY+3); /* кол-во */
 p.fillText("$4",#X=422,#textY+3); /* цена */
 p.fillText("$5",#X=772,#textY+3);  /* сумма всего */
 p.fillText("$6",#X=583,#textY+3);  /* процент налога */
