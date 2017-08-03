@@ -70,39 +70,39 @@ p.fillText("Дата",850,258);
 p.moveTo(830,277);
 p.lineTo(940,277);
 p.fillText("Номер",844,272);
-p.fillText("Транспортная накладная",354,272);
+p.fillText("Транспортная накладная",724,272);
 p.moveTo(830,291);
 p.lineTo(940,291);
 p.fillText("Дата",850,285);
 p.moveTo(830,305);
 p.lineTo(940,305);
 p.fillText("Вид операции",820,300);
-/* p.moveTo(100,95); */
-/* p.lineTo(450,95); */
-/* p.moveTo(100,75); */
-/* p.lineTo(880,75); */
+p.moveTo(110,95);
+p.lineTo(820,95);
+p.moveTo(110,75);
+p.lineTo(880,75);
 p.font = "7px Arial";
 p.fillText("структурное подразделение",150,100);
 p.font = "10px Arial";
 p.fillText("Грузополучатель",18,120);
 p.fillText("Грузополучатель",18.3,120);
 p.fillText("Грузополучатель",18.6,120);
-p.moveTo(100,143);
-p.lineTo(450,143);
+p.moveTo(110,143);
+p.lineTo(820,143);
 p.fillText("Поставщик",18,165);
 p.fillText("Поставщик",18.3,165);
 p.fillText("Поставщик",18.6,165);
-p.moveTo(100,185);
-p.lineTo(450,185);
+p.moveTo(110,185);
+p.lineTo(820,185);
 p.fillText("Плательщик",18,200);
 p.fillText("Плательщик",18.3,200);
 p.fillText("Плательщик",18.6,200);
-p.moveTo(100,227);
-p.lineTo(450,227);
+p.moveTo(110,227);
+p.lineTo(820,227);
 p.fillText("Основание",18,233);
 p.fillText("Основание",18.3,233);
 p.fillText("Основание",18.6,233);
-p.moveTo(100,238);
+p.moveTo(110,238);
 p.lineTo(880,238);
 p.moveTo(18,250);
 p.lineTo(880,250);
@@ -168,7 +168,7 @@ p.font = "9px Arial";
 p.fillText("#ArrayParam[7]",110,235);
 p.font = "8px Arial";
 p.fillText("#ArrayParam[10]",890,272);
-p.fillText("#ArrayParam[11]",890,287);
+p.fillText("#ArrayParam[9]",890,287);
 
 <!--#textY=370-->
 <!--#moveToY=360-->
