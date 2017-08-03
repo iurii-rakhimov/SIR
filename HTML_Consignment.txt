@@ -171,19 +171,19 @@ p.lineTo(420,280);
 p.moveTo(170,300);
 p.lineTo(420,300);
     /*	Вертикальные линии */
-p.moveTo(170,280);
-p.lineTo(170,300);
-p.moveTo(295,280);
-p.lineTo(295,300);
-p.moveTo(420,280);
-p.lineTo(420,300);
+/*	p.moveTo(170,280); */
+/*	p.lineTo(170,300); */
+/*	p.moveTo(295,280); */
+/*	p.lineTo(295,300); */
+/*	p.moveTo(420,280); */
+/*	p.lineTo(420,300); */
 p.font = "10px Arial";
 p.fillText("Номер документа",175,270);
-p.fillText("Дата составления",250,270);
+p.fillText("Дата составления",250,300);
 p.font = "12px Arial";
-p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18,295);
-p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18.3,295);
-p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18.6,295);
+p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18,285);
+p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18.3,285);
+p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18.6,285);
 p.fillText("#ArrayParam[1]",180,294);
 p.fillText("#ArrayParam[0]",250,294);
 p.font = "8px Arial";
