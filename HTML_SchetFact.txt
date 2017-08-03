@@ -7,6 +7,7 @@ document.getElementById("myList").innerHTML = "Страница #listNumber";
 </script>
 <canvas id="myCanvas" width="950" height="750" style="border:1px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
 <script>
+<!-- Title -->
 var c = document.getElementById("myCanvas");
 var p = c.getContext("2d");
 var mes = "Января Февраля Марта Апреля Мая Июня Июля Августа Сентября Октября Ноября Декабря";
@@ -20,7 +21,6 @@ var den = arrayDate[0];
 var god = arrayDate[2];
 var dateText = den.concat(" ", nameMes);
 dateText = dateText.concat(" ", god);
-<!-- Title -->
 p.font = "8px MonoCondencedDi";
 p.fillText("Приложение №1",880,12);
 p.fillText("к постановлению Правительства",825,20);
