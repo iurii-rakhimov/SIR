@@ -35,7 +35,7 @@ p.fillText("#ArrayParam[1]",150,80);
 p.fillText("от",200,80);
 p.fillText("от",200.3,80);
 p.fillText("от",200.6,80);
-p.fillText(nameMes,220,80);
+p.fillText(dateText,220,80);
 p.fillText("ИСПРАВЛЕНИЕ № __ от _________________",18,100);
 p.fillText("ИСПРАВЛЕНИЕ № __ от _________________",18.3,100);
 p.fillText("ИСПРАВЛЕНИЕ № __ от _________________",18.6,100);
