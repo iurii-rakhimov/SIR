@@ -1,18 +1,25 @@
 #Array HTML_Consignment
 <!DOCTYPE html>
-<html><body>
+<html><body style="transform: rotate(90deg);”>
 <p id="myList"></p>
 <script>
 document.getElementById("myList").innerHTML = "Страница #listNumber";
 </script>
-<canvas id="myCanvas" width="600" height="800" style="border:1px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
+<canvas id="myCanvas" width="950" height="750" style="border:1px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
 <script>
 var c = document.getElementById("myCanvas");
 var p = c.getContext("2d");
 <!-- Title -->
+var dateDoc = "#ArrayParam[0]";
+var arrayDate = dateDoc.split("/");
+var mes = arrayDate[1];
+var den = arrayDate[2];
+var god = arrayDate[0];
+var dateText = den.concat("/", mes);
+dateText = dateText.concat("/", god);
 p.font = "6px Arial";
-p.fillText("Унифицированная форма № ТОРГ-12. Утверждена постановленнием",190,10);
-p.fillText("Государственного комитета РФ по статистике от 25.12.1998г. № 132.",190,20);
+p.fillText("Унифицированная форма № ТОРГ-12.",800,10);
+p.fillText("Утверждена постановленнием Госкомстата России от 25.12.98г. № 132",690,20);
 p.moveTo(185,1);
 p.lineTo(185,26);
 p.moveTo(390,1);
