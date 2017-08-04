@@ -352,9 +352,9 @@ p.lineTo(820,#lineToY);
 p.moveTo(940,#moveToY);
 p.lineTo(940,#lineToY);
 p.font = "10px MonoCondencedDi";
-p.fillText("#0",(60-18)/2+18,#textY+3);
+p.fillText("#Content[0]",(60-18)/2+18,#textY+3);
 <!--#L1=20-->
-p.fillText("#1",(60-18)/2+18,#textY+3);     /* наименование услуг-товара */
+p.fillText("#Content[1]",(60-18)/2+18,#textY+3);     /* наименование услуг-товара */
 p.fillText("#9",280,#textY+3);    /* код единицы измерения */
 p.fillText("#2",320,#textY+3);    /* единица измерения */
 p.fillText("$3",#X=594,#textY+3); /* кол-во */
