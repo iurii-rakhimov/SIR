@@ -216,14 +216,15 @@ p.fillText("артикул товара",(245-60)/2+60,360);
 p.moveTo(277,315);
 p.lineTo(277,375);
 p.fillText("Код",(277-245)/2+245,350);
-    /*	Вертикальные линии */
+    /*	Вертикальная линия */
 p.moveTo(315,330);
 p.lineTo(315,375);
-p.moveTo(348,315);
-p.lineTo(348,375);
 p.fillText("Наиме",(315-277)/2+277,340);
 p.fillText("нова",(315-277)/2+277,348);
 p.fillText("ние",(315-277)/2+277,356);
+    /*	Вертикальная линия */
+p.moveTo(348,315);
+p.lineTo(348,375);
 p.fillText("Код",(348-315)/2+315,340);
 p.fillText("по",(348-315)/2+315,348);
 p.fillText("ОКЕИ",(348-315)/2+315,357);
@@ -326,6 +327,8 @@ p.moveTo(245,#moveToY);
 p.lineTo(245,#lineToY);
 p.moveTo(277,#moveToY);
 p.lineTo(277,#lineToY);
+p.moveTo(315,#moveToY);
+p.lineTo(315,#lineToY);
 p.moveTo(348,#moveToY);
 p.lineTo(348,#lineToY);
 p.moveTo(372,#moveToY);
@@ -349,9 +352,9 @@ p.lineTo(820,#lineToY);
 p.moveTo(940,#moveToY);
 p.lineTo(940,#lineToY);
 p.font = "10px MonoCondencedDi";
-p.fillText("#0",(60-18)/2+18,#textY);
+p.fillText("#0",(60-18)/2+18,#textY+3);
 <!--#L1=20-->
-p.fillText("#1",(60-18)/2+18,#textY);     /* наименование услуг-товара */
+p.fillText("#1",(60-18)/2+18,#textY+3);     /* наименование услуг-товара */
 p.fillText("#9",280,#textY+3);    /* код единицы измерения */
 p.fillText("#2",320,#textY+3);    /* единица измерения */
 p.fillText("$3",#X=594,#textY+3); /* кол-во */
