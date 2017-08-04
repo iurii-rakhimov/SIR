@@ -17,6 +17,9 @@ var den = arrayDate[2];
 var god = arrayDate[0];
 var dateText = den.concat("/", mes);
 dateText = dateText.concat("/", god);
+var x1 = 18
+var x2 = 60
+var x3 = 245
 p.font = "6px Arial";
 p.fillText("Унифицированная форма № ТОРГ-12.",833,10);
 p.fillText("Утверждена постановленнием Госкомстата России от 25.12.98г. № 132",742,17);
@@ -296,7 +299,7 @@ p.fillText("руб.коп.",880,360);
 
 p.font = "8px Arial";
 p.textAlign = "left";
-p.fillText("1",23,#textY+3);
+p.fillText("1",(60-18)/2+18,#textY+3);
 p.fillText("2",174,#textY+3);
 p.fillText("3",261,#textY+3);
 p.fillText("4",294,#textY+3);
@@ -345,10 +348,10 @@ p.moveTo(820,#moveToY);
 p.lineTo(820,#lineToY);
 p.moveTo(940,#moveToY);
 p.lineTo(940,#lineToY);
-p.font = "10px Ubuntu Mono";
-p.fillText("#0",28,#textY);
+p.font = "10px MonoCondencedDi";
+p.fillText("#0",(60-18)/2+18,#textY);
 <!--#L1=20-->
-p.fillText("#1",62,#textY);     /* наименование услуг-товара */
+p.fillText("#1",(60-18)/2+18,#textY);     /* наименование услуг-товара */
 p.fillText("#9",280,#textY+3);    /* код единицы измерения */
 p.fillText("#2",320,#textY+3);    /* единица измерения */
 p.fillText("$3",#X=594,#textY+3); /* кол-во */
