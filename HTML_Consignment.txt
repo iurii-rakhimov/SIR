@@ -32,7 +32,7 @@ var x12 = 602;
 var x13 = 680;
 var x14 = 722;
 var x15 = 820;
-var x16 = x16;
+var x16 = 940;
 p.font = "6px Arial";
 p.fillText("Унифицированная форма № ТОРГ-12.",833,10);
 p.fillText("Утверждена постановленнием Госкомстата России от 25.12.98г. № 132",742,17);
@@ -312,23 +312,24 @@ p.fillText("НДС,",880,347);
 p.fillText("руб.коп.",880,360);
 
 p.font = "8px Arial";
-p.textAlign = "left";
-p.fillText("1",(x2-18)/2+18,#textY+3);
-p.fillText("2",174,#textY+3);
-p.fillText("3",261,#textY+3);
-p.fillText("4",294,#textY+3);
-p.fillText("5",325,#textY+3);
-p.fillText("6",356,#textY+3);
-p.fillText("7",380,#textY+3);
-p.fillText("8",408,#textY+3);
-p.fillText("9",435,#textY+3);
-p.fillText("10",483,#textY+3);
-p.fillText("11",562,#textY+3);
-p.fillText("12",633,#textY+3);
-p.fillText("13",690,#textY+3);
-p.fillText("14",751,#textY+3);
-p.fillText("15",855,#textY+3);
-p.moveTo(18,#moveToY+15);
+p.textAlign = "center"; 
+p.fillText("1",(x2-x1)/2+x1,#textY+3);
+p.fillText("2",(x3-x2)/2+x2,#textY+3);
+p.fillText("3",(x4-x3)/2+x3,#textY+3);
+p.fillText("4",(x5-x4)/2+x4,#textY+3);
+p.fillText("5",(x6-x5)/2+x5,#textY+3);
+p.fillText("6",(x7-x6)/2+x6,#textY+3);
+p.fillText("7",(x8-x7)/2+x7,#textY+3);
+p.fillText("8",(x9-x8)/2+x8,#textY+3);
+p.fillText("9",(x10-x9)/2+x9,#textY+3);
+p.fillText("10",(x11-x10)/2+x10,#textY+3);
+p.fillText("11",(x12-x11)/2+x11,#textY+3);
+p.fillText("12",(x13-x12)/2+x12,#textY+3);
+p.fillText("13",(x14-x13)/2+x13,#textY+3);
+p.fillText("14",(x15-x14)/2+x14,#textY+3);
+p.fillText("15",(x16-x15)/2+x15,#textY+3);
+    /* Горизонтальная линия */
+p.moveTo(x1,#moveToY+15);
 p.lineTo(x16,#moveToY+15);
 
 <!-- Table -->
@@ -365,16 +366,16 @@ p.lineTo(x15,#lineToY);
 p.moveTo(x16,#moveToY);
 p.lineTo(x16,#lineToY);
 p.font = "10px MonoCondencedDi";
-p.textAlign = "center"; 
+/* p.textAlign = "center"; */
+p.textAlign = "left";
 p.fillText("#Content[0]",(x2-x1)/2+x1,#textY+3);
 <!--#L1=42-->
-p.textAlign = "left";
 p.fillText("#Content[1]",(x3-x2)/2+x2,#textY+3);     /* наименование услуг-товара */
 p.textAlign = "center"; 
 p.fillText("#9",280,#textY+3);    /* код единицы измерения */
 p.fillText("#2",320,#textY+3);    /* единица измерения */
 p.textAlign="right";
-p.fillText("$3",#X=594,#textY+3); /* кол-во */
+p.fillText("#3",#X=594,#textY+3); /* кол-во */
 p.fillText("$4",#X=507,#textY+3); /* цена */
 p.fillText("$5",#X=900,#textY+3);  /* сумма всего */
 p.fillText("#6 %",704,#textY+3);  /* процент налога */
