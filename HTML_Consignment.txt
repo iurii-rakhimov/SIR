@@ -366,16 +366,16 @@ p.lineTo(x15,#lineToY);
 p.moveTo(x16,#moveToY);
 p.lineTo(x16,#lineToY);
 p.font = "10px MonoCondencedDi";
-/* p.textAlign = "center"; */
-p.textAlign = "left";
+p.textAlign = "center"; 
 p.fillText("#Content[0]",(x2-x1)/2+x1,#textY+3);
 <!--#L1=42-->
+p.textAlign = "left";
 p.fillText("#Content[1]",(x3-x2)/2+x2,#textY+3);     /* наименование услуг-товара */
 p.textAlign = "center"; 
 p.fillText("#9",280,#textY+3);    /* код единицы измерения */
 p.fillText("#2",320,#textY+3);    /* единица измерения */
 p.textAlign="right";
-p.fillText("#3",#X=594,#textY+3); /* кол-во */
+p.fillText("$3",#X=594,#textY+3); /* кол-во */
 p.fillText("$4",#X=507,#textY+3); /* цена */
 p.fillText("$5",#X=900,#textY+3);  /* сумма всего */
 p.fillText("#6 %",704,#textY+3);  /* процент налога */
