@@ -330,15 +330,16 @@ p.moveTo(940,#moveToY);
 p.lineTo(940,#lineToY);
 p.font = "10px Ubuntu Mono";
 p.fillText("#0",28,#textY);
-<!--#L1=60-->
-p.fillText("#1",62,#textY);
-p.fillText("#2",280,#textY);
-p.fillText("$3",#X=594,#textY);
-p.fillText("$4",#X=507,#textY);
-p.fillText("$5",#X=900,#textY);
-p.fillText("$6",#X=704,#textY);
-p.fillText("$7",#X=677,#textY);
-p.fillText("$8",#X=804,#textY);
+<!--#L1=20-->
+p.fillText("#1",62,#textY);     /* наименование услуг-товара */
+p.fillText("#9",280,#textY+3);    /* код единицы измерения */
+p.fillText("#2",320,#textY+3);    /* единица измерения */
+p.fillText("$3",#X=594,#textY+3); /* кол-во */
+p.fillText("$4",#X=507,#textY+3); /* цена */
+p.fillText("$5",#X=900,#textY+3);  /* сумма всего */
+p.fillText("#6 %",704,#textY+3);  /* процент налога */
+p.fillText("$7",#X=677,#textY+3);  /* сумма без налога */
+p.fillText("$8",#X=804,#textY+3);  /* сумма налога */
 <!-- LineBegin -->
 p.moveTo(18,#lineToY);
 p.lineTo(940,#lineToY);
@@ -368,8 +369,8 @@ p.font="bold 10px Arial";
 p.fillText("Итого",140,#textY);
 p.fillText("Х",350,#textY);
 p.fillText("Х",435,#textY);
-p.fillText("$ArrayParam[15]",508,#textY);
-p.fillText("$ArrayParam[14]",568,#textY);
+p.fillText("$ArrayParam[15]",804,#textY);
+p.fillText("$ArrayParam[14]",677,#textY);
 p.moveTo(18,#moveToY+15);
 p.lineTo(18,#lineToY+15);
 p.moveTo(277,#moveToY+15);
