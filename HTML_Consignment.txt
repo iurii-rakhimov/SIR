@@ -10,8 +10,6 @@ document.getElementById("myList").innerHTML = "Страница #listNumber";
 var c = document.getElementById("myCanvas");
 var p = c.getContext("2d");
 <!-- Title -->
-var x = 0
-var y = 0
 var dateDoc = "#ArrayParam[0]";
 var arrayDate = dateDoc.split("/");
 var mes = arrayDate[1];
@@ -178,8 +176,7 @@ p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18.3,285);
 p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18.6,285);
 p.font = "11px Arial";
 p.textAlign = "center";
-x = (295-170)/2+170
-p.fillText("Номер документа",x,272);
+p.fillText("Номер документа",238,272);
 p.fillText("Дата составления",357,272);
 p.fillText("#ArrayParam[1]",238,294);
 p.fillText(dateText,357,294);
