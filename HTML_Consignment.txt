@@ -17,9 +17,9 @@ var den = arrayDate[2];
 var god = arrayDate[0];
 var dateText = den.concat("/", mes);
 dateText = dateText.concat("/", god);
-var x1 = 18
-var x2 = 60
-var x3 = 245
+var x1 = 18;
+var x2 = 60;
+var x3 = 245;
 p.font = "6px Arial";
 p.fillText("Унифицированная форма № ТОРГ-12.",833,10);
 p.fillText("Утверждена постановленнием Госкомстата России от 25.12.98г. № 132",742,17);
@@ -192,7 +192,7 @@ p.moveTo(18,315);
 p.lineTo(18,375);
 p.font = "10px Arial";
 p.textAlign = "center"; 
-p.fillText("Номер",39,324);
+p.fillText("Номер",(x2-x1)/2+x1,324);
 p.fillText("по",39,332);
 p.fillText("поряд-",39,340);
 p.fillText("ку",39,348);
