@@ -10,6 +10,7 @@ document.getElementById("myList").innerHTML = "Страница #listNumber";
 var c = document.getElementById("myCanvas");
 var p = c.getContext("2d");
 <!-- Title -->
+var x = 0
 var dateDoc = "#ArrayParam[0]";
 var arrayDate = dateDoc.split("/");
 var mes = arrayDate[1];
@@ -18,10 +19,12 @@ var god = arrayDate[0];
 var dateText = den.concat("/", mes);
 dateText = dateText.concat("/", god);
 p.font = "6px Arial";
-p.fillText("Унифицированная форма № ТОРГ-12.",833,10);
-p.fillText("Утверждена постановленнием Госкомстата России от 25.12.98г. № 132",742,17);
+p.textAlign = "right";
+p.fillText("Унифицированная форма № ТОРГ-12.",940,10);
+p.fillText("Утверждена постановленнием Госкомстата России от 25.12.98г. № 132",940,17);
 /*  левая часть  */
 p.font = "8px Arial";
+p.textAlign = "left";
 p.fillText("Коды",900,27);
 p.moveTo(880,20);
 p.lineTo(940,20);
@@ -74,10 +77,10 @@ p.fillText("Дата",850,285);
 /* p.lineTo(940,305); */
 p.fillText("Вид операции",820,300);
 /*  правая часть  */
-p.font = "10px Arial";
+p.font='bold 10px Arial';
 p.fillText("Грузоотправитель",18,60);
-p.fillText("Грузоотправитель",18.3,60);
-p.fillText("Грузоотправитель",18.6,60);
+/*  p.fillText("Грузоотправитель",18.3,60); */
+/*  p.fillText("Грузоотправитель",18.6,60); */
 p.font = "9px Arial";
 p.fillText("#ArrayParam[25]",890,60);
 p.font = "12px Arial";
@@ -170,18 +173,20 @@ p.moveTo(295,260);
 p.lineTo(295,300);
 p.moveTo(420,260);
 p.lineTo(420,300);
-p.font = "11px Arial";
-p.fillText("Номер документа",185,272);
-p.fillText("Дата составления",310,272);
 p.font = "12px Arial";
 p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18,285);
 p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18.3,285);
 p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18.6,285);
+p.font = "11px Arial";
+p.textAlign = "center";
+p.fillText("Номер документа",238,272);
+p.fillText("Дата составления",357,272);
 p.textAlign = "center";
 p.fillText("#ArrayParam[1]",238,294);
-p.textAlign = "left";
-p.fillText(dateText,320,294);
+p.fillText(dateText,357,294);
+/*  трансп. накл. - номер и дата */
 p.font = "8px Arial";
+p.textAlign = "left";
 p.fillText("#ArrayParam[10]",890,272);
 p.fillText("#ArrayParam[9]",890,287);
 
@@ -212,8 +217,7 @@ p.lineTo(245,375);
 p.moveTo(60,330);
 p.lineTo(348,330);
 p.font = "11px Arial";
-p.textAlign = "left";
-p.fillText("Товар",160,325);
+p.fillText("Товар",152,325);
 p.fillText("Наименование,",120,340);
 p.fillText("характеристика, сорт,",100,350);
 p.fillText("артикул товара",120,360);
