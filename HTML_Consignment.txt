@@ -20,6 +20,8 @@ dateText = dateText.concat("/", god);
 var x1 = 18;
 var x2 = 60;
 var x3 = 245;
+var x4 = 277;
+var x5 = 315;
 p.font = "6px Arial";
 p.fillText("Унифицированная форма № ТОРГ-12.",833,10);
 p.fillText("Утверждена постановленнием Госкомстата России от 25.12.98г. № 132",742,17);
@@ -198,8 +200,8 @@ p.fillText("поряд-",39,340);
 p.fillText("ку",39,348);
 p.fillText("№№",39,360);
     /*	Вертикальные линии */
-p.moveTo(60,315);
-p.lineTo(60,375);
+p.moveTo(x2,315);
+p.lineTo(x2,375);
 p.moveTo(245,330);
 p.lineTo(245,375);
     /* Горизонтальная линия */
@@ -352,11 +354,15 @@ p.lineTo(820,#lineToY);
 p.moveTo(940,#moveToY);
 p.lineTo(940,#lineToY);
 p.font = "10px MonoCondencedDi";
-p.fillText("#Content[0]",(60-18)/2+18,#textY+3);
-<!--#L1=20-->
-p.fillText("#Content[1]",(60-18)/2+18,#textY+3);     /* наименование услуг-товара */
+p.textAlign = "center"; 
+p.fillText("#Content[0]",(x2-x1)/2+x1,#textY+3);
+<!--#L1=42-->
+p.textAlign = "left";
+p.fillText("#Content[1]",(x3-x2)/2+x2,#textY+3);     /* наименование услуг-товара */
+p.textAlign = "center"; 
 p.fillText("#9",280,#textY+3);    /* код единицы измерения */
 p.fillText("#2",320,#textY+3);    /* единица измерения */
+p.textAlign="right";
 p.fillText("$3",#X=594,#textY+3); /* кол-во */
 p.fillText("$4",#X=507,#textY+3); /* цена */
 p.fillText("$5",#X=900,#textY+3);  /* сумма всего */
