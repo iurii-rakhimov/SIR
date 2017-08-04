@@ -74,11 +74,9 @@ p.fillText("Дата",850,285);
 /* p.lineTo(940,305); */
 p.fillText("Вид операции",820,300);
 /*  правая часть  */
-p.font = "10px Arial";
+p.font='bold 10px Arial';
 p.fillText("Грузоотправитель",18,60);
-p.fillText("Грузоотправитель",18.3,60);
-p.fillText("Грузоотправитель",18.6,60);
-p.font = "9px Arial";
+p.font = "normal 9px Arial";
 p.fillText("#ArrayParam[25]",890,60);
 p.font = "12px Arial";
 p.fillText("#ArrayParam[16], #ArrayParam[18], #ArrayParam[24],",110,40);
