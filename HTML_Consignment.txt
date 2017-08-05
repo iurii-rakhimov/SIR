@@ -22,9 +22,9 @@ var x2 = 50;
 var x3 = 250;
 var x4 = 280;
 var x5 = 320;
-var x6 = 345;
-var x7 = 410;
-var x8 = 430;
+var x6 = 350;
+var x7 = 405;
+var x8 = 435;
 var x9 = 470;
 var x10 = 500;
 var x11 = 560;
@@ -91,7 +91,7 @@ p.fillText("Дата",850,285);
 p.fillText("Вид операции",820,300);
 /*  правая часть  */
 p.font="bold 10px Arial";
-p.fillText("Грузоотправитель",18,60);
+p.fillText("Грузоотправитель",x1,60);
 p.font = "normal 9px Arial";
 p.fillText("#ArrayParam[25]",890,60);
 p.font = "12px Arial";
@@ -112,7 +112,7 @@ p.font = "7px Arial";
 p.fillText("структурное подразделение",150,107);
 p.font = "10px Arial";
 p.font="bold 10px Arial";
-p.fillText("Грузополучатель",18,130);
+p.fillText("Грузополучатель",x1,130);
 p.font = "normal 9px Arial";
 p.fillText("#ArrayParam[38]",890,130);
 p.font = "11px Arial";
@@ -125,7 +125,7 @@ p.font = "7px Arial";
 p.fillText("Организация, адрес. телефон, факс, банковские реквизиты",120,149);
 /*  Поставщик */
 p.font="bold 10px Arial";
-p.fillText("Поставщик",18,165);
+p.fillText("Поставщик",x1,165);
 p.font = "normal 9px Arial";
 p.fillText("#ArrayParam[48]",890,165);
 p.font = "11px Arial";
@@ -137,7 +137,7 @@ p.lineTo(820,185);
 p.font = "7px Arial";
 p.fillText("Организация, адрес. телефон, факс, банковские реквизиты",120,191);
 p.font="bold 10px Arial";
-p.fillText("Плательщик",18,205);
+p.fillText("Плательщик",x1,205);
 p.font = "normal 9px Arial";
 p.fillText("#ArrayParam[58]",890,205);
 p.font = "11px Arial";
@@ -149,7 +149,7 @@ p.lineTo(820,227);
 p.font = "7px Arial";
 p.fillText("Организация, адрес. телефон, факс, банковские реквизиты",120,233);
 p.font="bold 10px Arial";
-p.fillText("Основание",18,243);
+p.fillText("Основание",x1,243);
 p.font = "normal 9px Arial";
 p.fillText("#ArrayParam[7]",110,243);
 p.moveTo(110,247);
@@ -178,7 +178,7 @@ p.lineTo(295,300);
 p.moveTo(420,260);
 p.lineTo(420,300);
 p.font="bold 12px Arial";
-p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",18,285);
+p.fillText("ТОВАРНАЯ НАКЛАДНАЯ",x1,285);
 p.font = "normal 11px Arial";
 p.textAlign = "center";
 p.fillText("Номер документа",238,272);
@@ -197,12 +197,12 @@ p.fillText("#ArrayParam[9]",890,287);
 <!--#countRecordsTable=40-->
     
 <!-- Header -->
-p.moveTo(18,315);
+p.moveTo(x1,315);
 p.lineTo(x16,315);
-p.moveTo(18,365);
+p.moveTo(x1,365);
 p.lineTo(x16,365);
-p.moveTo(18,315);
-p.lineTo(18,375);
+p.moveTo(x1,315);
+p.lineTo(x1,375);
 p.font = "10px Arial";
 p.textAlign = "center"; 
 p.fillText("Номер",(x2-x1)/2+x1,324);
@@ -232,8 +232,8 @@ p.fillText("Код",(x4-x3)/2+x3,350);
     /*	Вертикальная линия */
 p.moveTo(x5,330);
 p.lineTo(x5,375);
-p.fillText("Наиме",(x5-x4)/2+x4,340);
-p.fillText("нова",(x5-x4)/2+x4,348);
+p.fillText("Наиме-",(x5-x4)/2+x4,340);
+p.fillText("нова-",(x5-x4)/2+x4,348);
 p.fillText("ние",(x5-x4)/2+x4,356);
     /*	Вертикальная линия */
 p.moveTo(x6,315);
@@ -264,10 +264,10 @@ p.fillText("шт.",(x9-x8)/2+x8,348);
     /*	Вертикальная линия */
 p.moveTo(x10,315);
 p.lineTo(x10,375);
-p.fillText("Ма",(x10-x9)/2+x9,325);
-p.fillText("сса",(x10-x9)/2+x9,333);
-p.fillText("бру",(x10-x9)/2+x9,341);
-p.fillText("то",(x10-x9)/2+x9,349);
+p.fillText("Масса",(x10-x9)/2+x9,325);
+p.fillText("",(x10-x9)/2+x9,333);
+p.fillText("брутто",(x10-x9)/2+x9,341);
+p.fillText("",(x10-x9)/2+x9,349);
     /*	Вертикальная линия */
 p.moveTo(x11,315);
 p.lineTo(x11,375);
@@ -331,8 +331,8 @@ p.moveTo(x1,#moveToY+15);
 p.lineTo(x16,#moveToY+15);
 
 <!-- Table -->
-p.moveTo(18,#moveToY);
-p.lineTo(18,#lineToY);
+p.moveTo(x1,#moveToY);
+p.lineTo(x1,#lineToY);
 p.moveTo(x2,#moveToY);
 p.lineTo(x2,#lineToY);
 p.moveTo(x3,#moveToY);
@@ -379,14 +379,14 @@ p.fillText("#6 %",x14-5,#textY+3);  /* процент налога 704 */
 p.fillText("#7",x13-5,#textY+3);  /* сумма без налога "$7",#X=677 */
 p.fillText("#8",x15-5,#textY+3);  /* сумма налога "$8",#X=804 */
 <!-- LineBegin -->
-p.moveTo(18,#lineToY);
+p.moveTo(x1,#lineToY);
 p.lineTo(x16,#lineToY);
 <!-- LineEnd -->
 p.stroke();
 
 <!-- Footer -->
-p.moveTo(18,#moveToY);
-p.lineTo(18,#lineToY);
+p.moveTo(x1,#moveToY);
+p.lineTo(x1,#lineToY);
 p.moveTo(x4,#moveToY);
 p.lineTo(x4,#lineToY);
 p.moveTo(x11,#moveToY);
@@ -411,8 +411,8 @@ p.fillText("Х",(x14-x13)/2+x13,#textY);
 p.fillText("#ArrayParam[13]",x16-5,#textY);
 p.fillText("#ArrayParam[15]",x13-5,#textY);
 p.fillText("#ArrayParam[14]",x15-5,#textY);
-p.moveTo(18,#moveToY+15);
-p.lineTo(18,#lineToY+15);
+p.moveTo(x1,#moveToY+15);
+p.lineTo(x1,#lineToY+15);
 p.moveTo(x4,#moveToY+15);
 p.lineTo(x4,#lineToY+15);
 p.moveTo(x11,#moveToY+15);
@@ -433,15 +433,15 @@ p.fillText("Х",435,#textY+15);
 p.fillText("#ArrayParam[13]",x16-5,#textY+15);
 p.fillText("#ArrayParam[15]",x13-5,#textY+15);
 p.fillText("#ArrayParam[14]",x15-5,#textY+15);
-p.moveTo(18,#lineToY+15);
+p.moveTo(x1,#lineToY+15);
 p.lineTo(x16,#lineToY+15);
     
 p.moveTo(490,#moveToY+75);
 p.lineTo(490,#lineToY+180);
 p.font = "normal 10px Arial";
 p.textAlign = "left";
-p.fillText("Товарная накладная имеет приложение на __________________________________________ листах",18,#textY+35);
-p.fillText("и содержит ________________________________________ порядковых номеров записей",18,#textY+50);
+p.fillText("Товарная накладная имеет приложение на __________________________________________ листах",x1,#textY+35);
+p.fillText("и содержит ________________________________________ порядковых номеров записей",x1,#textY+50);
 p.font = "6px Arial";
 p.fillText("(прописью)",150,#textY+55);
 p.font = "10px Arial";
@@ -449,7 +449,7 @@ p.fillText("Масса груза (нетто) _________________________________
 p.font = "6px Arial";
 p.fillText("(прописью)",400,#textY+65);
 p.font = "10px Arial";
-p.fillText("Всего мест _________________________________",18,#textY+65);
+p.fillText("Всего мест _________________________________",x1,#textY+65);
 p.font = "6px Arial";
 p.fillText("(прописью)",150,#textY+70);
 p.font = "10px Arial";
@@ -458,16 +458,16 @@ p.font = "6px Arial";
 p.fillText("(прописью)",400,#textY+80);
 p.font = "10px Arial";
 p.fillText("По доверенности № _____ от __________________",506,#textY+75);
-p.fillText("Приложение (паспорта / сертифакты и т.п.) на _______________ листах",18,#textY+85);
+p.fillText("Приложение (паспорта / сертифакты и т.п.) на _______________ листах",x1,#textY+85);
 p.font = "6px Arial";
 p.fillText("(прописью)",200,#textY+90);
 p.font = "10px Arial";
 p.fillText("выданной _________________________________________",506,#textY+85);
 p.font="bold 10px Arial";
-p.fillText("Всего отпущено на сумму: ____________________________________________________________________________________",18,#textY+95);
+p.fillText("Всего отпущено на сумму: ____________________________________________________________________________________",x1,#textY+95);
 p.font = "normal 10px Arial";
 p.fillText("Груз принял ____________________________________________",506,#textY+105);
-p.fillText("Отпуск разрешил   ________________________________   _______________ _____________________",18,#textY+115);
+p.fillText("Отпуск разрешил   ________________________________   _______________ _____________________",x1,#textY+115);
 p.font = "6px Arial";
 p.fillText("должность",110,#textY+122);
 p.fillText("подпись",190,#textY+122);
@@ -486,7 +486,7 @@ p.fillText("должность",688,#textY+142);
 p.fillText("подпись",697,#textY+142);
 p.fillText("расшифровка подписи",791,#textY+142);
 p.font = "8px Arial";
-p.fillText("Отпуск груза произвел _____________________________",18,#textY+149);
+p.fillText("Отпуск груза произвел _____________________________",x1,#textY+149);
 p.font = "10px Arial";
 p.fillText("М.П.  «___» ____________20____",55,#textY+164);
 p.fillText("М.П.  «___» ____________20____",562,#textY+164);
