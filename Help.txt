@@ -36,44 +36,50 @@ Help	35	добавлять:	(#27)
 Help	36	редактировать(Edit):	(#3)	EditText20.png
 Help	37	удалять(Del):	(#26)
 Help	38	копировать(Copy):	(#2)	copyText20.png
-Help	39	
-Help	40	На главном экране следующие иконки:
-Help	41	Выход	(#5)	exit_left-20.png
-Help	42	Сервис для базы данных	(#22)	service_20.png
-Help	43	Сервис обмена данными	(#25)	change_20.png
-Help	44	Формирование документов не реализовано	(#4)	document_20.png
-Help	45	Настройки	(#1)	confic_20.png
-Help	46	Помощь	(#7)	Help_20.png
-Help	47	
-Help	48	Замечания и пожелания жду на почтовый 
-Help	49	адрес iuriivlad@icloud.com
-Help	50
-Help	51							
-Help	52	Возможные иконки и их использование
-Help	53	Настройки	(#1)	confic_20.png
-Help	54	копировать	(#2)	copyText20.png
-Help	55	редактировать	(#3)	EditText20.png
-Help	56	Удаление	(#26)	trash_20.png
-Help	57	Добавление	(#27)	add_20.png
-Help	58	Выход из программы	(#5)	exit_left-20.png
-Help	59	Выход из программы	(#6)	exit_right-20.png
-Help	60	Помощь	(#7)	Help_20.png
-Help	61	Показывать нулевое значение	(#9)	downloadX_20.png
-Help	62	Не показывать нулевое значение	(#10)	download0_20.png
-Help	63	Указатель редактируемой записи	(#8)	IconSmall-20.png
-Help	64	Просмотр предыдущей страницы	(#11)	left_20.png
-Help	65	Просмотр следующей страницы	(#17)	right_20.png
-Help	66	Возврат на предыдущий экран	(#12)	Left-20.png
-Help	67	Дата на Год минус	(#13)	left.png
-Help	68	Дата на Год плюс	(#18)	right.png
-Help	69	Дата на Месяц минус	(#14)	LeftSmall.png
-Help	70	Дата на Месяц плюс	(#19)	RightSmall-40.png
-Help	71	Подтверждение выбранной даты	(#15)	ok_20.png
-Help	72	Вывод на печать	(#16)	printer-20.png
-Help	73	Сортировка по убыванию	(#20)	sort_ZA-20.png
-Help	74	Сортировка по возрастанию	(#23)	sort_AZ-20.png
-Help	75	Сохранить данные	(#21)	SaveText20.png
-Help	76	Сервис базы данных	(#22)	service_20.png
-Help	77	Передача данных	(#24)	telegram-20.png
-Help	78	Обмен с базой данных	(#25)	change_20.png
-Help	79	- - - - - - - - - - - - - - - - - - -
+Help	39	Когда по Контрагенту баланс 0 (ноль)
+Help	40	то возможно отключение показа по Контрагенту
+Help	41	нулевых остатков. Для этого в Настройке
+Help	42	"Показывать нулевое значение счета - Да/Нет"
+Help	43	выбрать значение "Нет"	(#10)	download0_20.png
+Help	44	или показывать нулевое значение "Да"	(#9)	downloadX_20.png
+Help	45	
+Help	46	На главном экране следующие иконки:
+Help	47	Выход	(#5)	exit_left-20.png
+Help	48	Сервис для базы данных	(#22)	service_20.png
+Help	49	Сервис обмена данными	(#25)	change_20.png
+Help	50	Формирование документов не реализовано	(#4)	document_20.png
+Help	51	Настройки	(#1)	confic_20.png
+Help	52	Помощь	(#7)	Help_20.png
+Help	53	
+Help	54	Замечания и пожелания жду на почтовый 
+Help	55	адрес iuriivlad@icloud.com
+Help	56
+Help	57							
+Help	58	Возможные иконки и их использование
+Help	59	Настройки	(#1)	confic_20.png
+Help	60	копировать	(#2)	copyText20.png
+Help	61	редактировать	(#3)	EditText20.png
+Help	62	Удаление	(#26)	trash_20.png
+Help	63	Добавление	(#27)	add_20.png
+Help	64	Выход из программы	(#5)	exit_left-20.png
+Help	65	Выход из программы	(#6)	exit_right-20.png
+Help	66	Помощь	(#7)	Help_20.png
+Help	67	Показывать нулевое значение	(#9)	downloadX_20.png
+Help	68	Не показывать нулевое значение	(#10)	download0_20.png
+Help	69	Указатель редактируемой записи	(#8)	IconSmall-20.png
+Help	70	Просмотр предыдущей страницы	(#11)	left_20.png
+Help	71	Просмотр следующей страницы	(#17)	right_20.png
+Help	72	Возврат на предыдущий экран	(#12)	Left-20.png
+Help	73	Дата на Год минус	(#13)	left.png
+Help	74	Дата на Год плюс	(#18)	right.png
+Help	75	Дата на Месяц минус	(#14)	LeftSmall.png
+Help	76	Дата на Месяц плюс	(#19)	RightSmall-40.png
+Help	77	Подтверждение выбранной даты	(#15)	ok_20.png
+Help	78	Вывод на печать	(#16)	printer-20.png
+Help	79	Сортировка по убыванию	(#20)	sort_ZA-20.png
+Help	80	Сортировка по возрастанию	(#23)	sort_AZ-20.png
+Help	81	Сохранить данные	(#21)	SaveText20.png
+Help	82	Сервис базы данных	(#22)	service_20.png
+Help	83	Передача данных	(#24)	telegram-20.png
+Help	84	Обмен с базой данных	(#25)	change_20.png
+Help	85	- - - - - - - - - - - - - - - - - - -
