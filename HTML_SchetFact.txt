@@ -36,7 +36,6 @@ var x10a = 817;
 var x11 = 876;
 var x12 = 940;
 var proc = "";
-var akciz = "";
 p.font = "8px MonoCondencedDi";
 p.fillText("Приложение №1",878,12);
 p.fillText("к постановлению Правительства",823,20);
@@ -276,9 +275,9 @@ p.fillText("#Content[10]",(x10a-x10)/2+x10,#textY+3);    /* код страны 
 p.fillText("#Content[11]",(x11-x10a)/2+x10a,#textY+3);    /* страна призводитель */
 p.fillText("#Content[12]",(x12-x11)/2+x11,#textY+3);    /* номер таможенной декларации */
 p.font = "8px MonoCondencedDi";
-if ("#Content[17]" == "") { p.textAlign = "center"; p.fillText("без акциза",(x7-x6)/2+x6,#textY+3); }   /* без акциз */
-if ("#Content[17]" != "") { p.textAlign="right"; p.fillText(#Content[17],x7-5,#textY+3); }   /* без акциз */
-p.fillText(akciz,(x7-x6)/2+x6,#textY+3);   /* акциз */
+if ("#Content[17]" == "") p.fillText("без акциза",(x7-x6)/2+x6,#textY+3);   /* без акциз */
+p.textAlign="right";
+if ("#Content[17]" != "") p.fillText(#Content[17],x7-5,#textY+3);   /* без акциз */
 <!-- LineBegin -->
 p.moveTo(x1,#lineToY+15);
 p.lineTo(x12,#lineToY+15);
