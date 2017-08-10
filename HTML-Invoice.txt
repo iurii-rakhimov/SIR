@@ -161,9 +161,9 @@ p.textAlign = "center";
 p.fillText("#Content[2]",(x4-x3)/2+x3,#textY);    /* единица измерения */
 <!--#L3=10-->
 p.textAlign="right";
-p.fillText("#Content[3]»,x5-5,#textY);     /* кол-во */
-p.fillText("#Content[4]»,x6-5,#textY);     /* цена с НДС */
-p.fillText("#Content[5]»,x7-5,#textY);    /* сумма с НДС */
+p.fillText("#Content[3]",x5-5,#textY);     /* кол-во */
+p.fillText("#Content[4]",x6-5,#textY);     /* цена с НДС */
+p.fillText("#Content[5]",x7-5,#textY);    /* сумма с НДС */
 <!-- LineBegin -->
 p.moveTo(x1,#lineToY);
 p.lineTo(x7,#lineToY);
