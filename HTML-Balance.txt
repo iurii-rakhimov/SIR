@@ -76,27 +76,22 @@ p.fillText("#Content[5]",255,#textY);
 p.fillText("#Content[6]",380,#textY);
 p.moveTo(10,#moveToY);
 p.lineTo(10,#lineToY);
-p.stroke();
 p.moveTo(70,#moveToY);
 p.lineTo(70,#lineToY);
-p.stroke();
 p.moveTo(130,#moveToY);
 p.lineTo(130,#lineToY);
-p.stroke();
 p.moveTo(190,#moveToY);
 p.lineTo(190,#lineToY);
-p.stroke();
 p.moveTo(250,#moveToY);
 p.lineTo(250,#lineToY);
-p.stroke();
 p.moveTo(375,#moveToY);
 p.lineTo(375,#lineToY);
-p.stroke();
 p.moveTo(575,#moveToY);
 p.lineTo(575,#lineToY);
-p.stroke();
+<!-- LineBegin -->
 p.moveTo(10,#lineToY);
 p.lineTo(575,#lineToY);
+<!-- LineEnd -->
 p.stroke();
 <!-- Footer -->
 </script>
