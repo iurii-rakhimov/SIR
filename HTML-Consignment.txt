@@ -454,7 +454,7 @@ p.fillText("Х",(x12-x11)/2+x11,#textY+15);
 p.fillText("Х",(x14-x13)/2+x13,#textY+15);
 p.fillText("#ArrayParam[13]",x16-5,#textY+15);
 p.fillText("#ArrayParam[15]",x13-5,#textY+15);
-p.fillText("#ArrayParam[14]»,x15-5,#textY+15);
+p.fillText("#ArrayParam[14]",x15-5,#textY+15);
 p.moveTo(x1,#lineToY+15);
 p.lineTo(x16,#lineToY+15);
 /* Линия вертикальная */
