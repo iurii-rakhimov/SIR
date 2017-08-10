@@ -205,19 +205,19 @@ p.fillText("Номер",887,300);
 p.fillText("таможенной",877,310);
 p.fillText("декларации",878,320);
 /* 1 2 3 4 . . . 11 #textY=338 */
-p.fillText("1",(x2-x1)/2+x1,#textY+3);
-p.fillText("2",(x2a-x2)/2+x2,#textY+3);
-p.fillText("2а",(x3-x2a)/2+x2a,#textY+3);
-p.fillText("3",(x4-x3)/2+x3,#textY+3);
-p.fillText("4",(x5-x4)/2+x4,#textY+3);
-p.fillText("5",(x6-x5)/2+x5,#textY+3);
-p.fillText("6",(x7-x6)/2+x6,#textY+3);
-p.fillText("7",(x8-x7)/2+x7,#textY+3);
-p.fillText("8",(x9-x8)/2+x8,#textY+3);
-p.fillText("9",(x10-x9)/2+x9,#textY+3);
-p.fillText("10",(x10a-x10)/2+x10,#textY+3);
-p.fillText("10а",(x11-x10a)/2+x10a,#textY+3);
-p.fillText("11",(x12-x11)/2+x11,#textY+3);
+p.fillText("1",(x2-x1)/2+x1,#textY+5);
+p.fillText("2",(x2a-x2)/2+x2,#textY+5);
+p.fillText("2а",(x3-x2a)/2+x2a,#textY+5);
+p.fillText("3",(x4-x3)/2+x3,#textY+5);
+p.fillText("4",(x5-x4)/2+x4,#textY+5);
+p.fillText("5",(x6-x5)/2+x5,#textY+5);
+p.fillText("6",(x7-x6)/2+x6,#textY+5);
+p.fillText("7",(x8-x7)/2+x7,#textY+5);
+p.fillText("8",(x9-x8)/2+x8,#textY+5);
+p.fillText("9",(x10-x9)/2+x9,#textY+5);
+p.fillText("10",(x10a-x10)/2+x10,#textY+5);
+p.fillText("10а",(x11-x10a)/2+x10a,#textY+5);
+p.fillText("11",(x12-x11)/2+x11,#textY+5);
 /* Горизонтальная линия */
 p.moveTo(x1,340);
 p.lineTo(x12,340);   
@@ -255,19 +255,20 @@ p.font = "10px MonoCondencedDi";
 p.textAlign = "left";
 p.fillText("#Content[0]",x1+3,#textY+3);     /* номер */
 <!--#L1=42-->
-p.fillText("#Content[1]",x1+14,#textY+3);     /* наименование услуг-товара */
-p.fillText("#Content[9]",(x2a-x2)/2+x2,#textY+3);    /* код единицы измерения */
+p.fillText("#Content[1]",x1+20,#textY+3);     /* наименование услуг-товара */
+p.textAlign = "center"; 
+p.fillText("#Content[9]",x2+3,#textY+3);    /* код единицы измерения */
 p.fillText("#Content[2]",(x3-x2a)/2+x2a,#textY+3);    /* единица измерения */
 p.textAlign="right";
-p.fillText("#Content[3]",(x4-x3)/2+x3,#textY+3); /* кол-во */
-p.fillText("#Content[4]",(x5-x4)/2+x4,#textY+3); /* цена */
-p.fillText("#Content[5]",(x6-x5)/2+x5,#textY+3);  /* сумма всего */
+p.fillText("#Content[3]",x4-5,#textY+3); /* кол-во */
+p.fillText("#Content[4]",x5-5,#textY+3); /* цена */
+p.fillText("#Content[5]",x10-5,#textY+3);  /* сумма всего */
 if ("#Content[6]" == "") proc = "";
 if ("#Content[6]" != "") proc = "#Content[6] %";
 p.fillText(proc,(x8-x7)/2+x7,#textY+3);  /* процент налога */
-p.fillText("#Content[7]",(x9-x8)/2+x8,#textY+3);  /* сумма без налога */
-p.fillText("#Content[8]",(x10-x9)/2+x9,#textY+3);  /* сумма налога */
-p.textAlign = "left";
+p.fillText("#Content[7]",x6-5,#textY+3);  /* сумма без налога */
+p.fillText("#Content[8]",x9-5,#textY+3);  /* сумма налога */
+p.textAlign = "center";
 p.fillText("#Content[10]",(x10a-x10)/2+x10,#textY+3);    /* код страны призводителя */
 p.fillText("#Content[11]",(x11-x10a)/2+x10a,#textY+3);    /* страна призводитель */
 p.fillText("#Content[12]",(x12-x11)/2+x11,#textY+3);    /* номер таможенной декларации */
@@ -284,11 +285,13 @@ p.stroke();
 p.moveTo(x1,#lineToY+15);
 p.lineTo(x10,#lineToY+15);
 p.font = "9px Arial";
+p.textAlign = "left";
 p.fillText("ВСЕГО К ОПЛАТЕ",20,#textY+3);
 p.font = "10px Arial";
-p.fillText("$ArrayParam[15]",516,#textY+3);
-p.fillText("$ArrayParam[14]",677,#textY+3);
-p.fillText("$ArrayParam[13]",772,#textY+3);
+p.textAlign="right";
+p.fillText("$ArrayParam[15]",x6-5,#textY+3);
+p.fillText("$ArrayParam[14]",x9-5,#textY+3);
+p.fillText("$ArrayParam[13]",x10-5,#textY+3);
 p.fillText("X",568,#textY+3);
 /* Вертикальные линии */
 p.moveTo(x1,#moveToY+15);
