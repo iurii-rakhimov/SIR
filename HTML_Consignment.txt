@@ -380,7 +380,8 @@ p.textAlign="right";
 p.fillText("#3",x11-5,#textY+3); /* кол-во $3 #X=594 */
 p.fillText("#4",x12-5,#textY+3); /* цена "$4",#X=507 */
 p.fillText("#5",x16-5,#textY+3);  /* сумма всего "$5",#X=900 */
-if ("#6" == "") { proc = "#6 %"; } else { proc = ""; }
+if ("#6" == "") proc = "";
+if ("#6" != "") proc = "#6 %";
 p.fillText(proc,x14-5,#textY+3);  /* процент налога 704 */
 p.fillText("#7",x13-5,#textY+3);  /* сумма без налога "$7",#X=677 */
 p.fillText("#8",x15-5,#textY+3);  /* сумма налога "$8",#X=804 */
