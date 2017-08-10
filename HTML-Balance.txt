@@ -5,7 +5,7 @@
 <script>
 document.getElementById("myList").innerHTML = "Страница #listNumber";
 </script>
-<canvas id="myCanvas" width="600" height="800" style="border:1px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
+<canvas id="myCanvas" width="600" height="800" style="border:0px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
 <script>
 var c = document.getElementById("myCanvas");
 var p = c.getContext("2d");
@@ -62,15 +62,18 @@ p.stroke();
 <!--#L5=22-->
 <!--#L6=37-->
 p.font = "10px Arial";
-p.fillText("#1",15,#textY);
-p.font = "10px PT Mono";
-p.fillText("$2",#X=128,#textY);
-p.fillText("$4",#X=188,#textY);
-p.fillText("$7",#X=248,#textY);
+p.textAlign = "left";
+p.fillText("#Content[1]",15,#textY);
+p.font = "10px MonoCondencedDi";
+p.textAlign="right";
+p.fillText("#Content[2]",128,#textY);
+p.fillText("#Content[4]",188,#textY);
+p.fillText("#Content[7]",248,#textY);
 p.font = "10px Arial";
-p.fillText("#3",255,#textY);
-p.fillText("#5",255,#textY);
-p.fillText("#6",380,#textY);
+p.textAlign = "left";
+p.fillText("#Content[3]",255,#textY);
+p.fillText("#Content[5]",255,#textY);
+p.fillText("#Content[6]",380,#textY);
 p.moveTo(10,#moveToY);
 p.lineTo(10,#lineToY);
 p.stroke();
