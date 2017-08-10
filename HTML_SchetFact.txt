@@ -286,14 +286,14 @@ p.stroke();
 /* Горизонтальная линия */
 p.moveTo(x1,#lineToY+15);
 p.lineTo(x10,#lineToY+15);
-p.font = "9px Arial";
 p.textAlign = "left";
+p.font = "bold 10px Arial";
 p.fillText("ВСЕГО К ОПЛАТЕ",20,#textY+3);
 p.font = "10px Arial";
 p.textAlign="right";
-p.fillText("$ArrayParam[15]",516,#textY+3);
-p.fillText("$ArrayParam[14]",677,#textY+3);
-p.fillText("$ArrayParam[13]",772,#textY+3);
+p.fillText("$ArrayParam[15]",x6,#textY+3);
+p.fillText("$ArrayParam[14]",x9,#textY+3);
+p.fillText("$ArrayParam[13]",x10,#textY+3);
 p.fillText("X",568,#textY+3);
 /* Вертикальные линии */
 p.moveTo(x1,#moveToY+15);
@@ -309,6 +309,7 @@ p.lineTo(x9,#lineToY+15);
 p.moveTo(x10,#moveToY+15);
 p.lineTo(x10,#lineToY+15);
     
+p.textAlign = "left";
 p.font = "10px Arial";
 p.fillText("Руководитель организации",x1,#textY+25);
 p.fillText("или иное уполномоченное лицо     _______________     ___________________________",x1,#textY+40);
