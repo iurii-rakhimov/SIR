@@ -5,7 +5,7 @@
 <script>
 document.getElementById("myList").innerHTML = "Страница #listNumber";
 </script>
-<canvas id="myCanvas" width="950" height="750" style="border:1px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
+<canvas id="myCanvas" width="950" height="750" style="border:0px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
 <script>
 var c = document.getElementById("myCanvas");
 var p = c.getContext("2d");
@@ -375,14 +375,14 @@ p.fillText("#Content[14]",(x8-x7)/2+x7,#textY+3);    /* Количество у�
 p.fillText("#Content[15]",(x9-x8)/2+x8,#textY+3);    /* Мест штук упаковок */
 p.fillText("#Content[16]",(x10-x9)/2+x9,#textY+3);    /* Количество (Масса нетто) */
 p.textAlign="right";
-p.fillText("#Content[3]",x11-5,#textY+3); /* кол-во $3 #X=594 */
-p.fillText("#Content[4]",x12-5,#textY+3); /* цена "$4",#X=507 */
-p.fillText("#Content[5]",x16-5,#textY+3);  /* сумма всего "$5",#X=900 */
+p.fillText("#Content[3]",x11-5,#textY+3); /* кол-во */
+p.fillText("#Content[4]",x12-5,#textY+3); /* цена */
+p.fillText("#Content[5]",x16-5,#textY+3);  /* сумма всего */
 if ("#Content[6]" == "") proc = "";
 if ("#Content[6]" != "") proc = "#Content[6] %";
 p.fillText(proc,x14-5,#textY+3);  /* процент налога 704 */
-p.fillText("#Content[7]",x13-5,#textY+3);  /* сумма без налога "$7",#X=677 */
-p.fillText("#Content[8]",x15-5,#textY+3);  /* сумма налога "$8",#X=804 */
+p.fillText("#Content[7]",x13-5,#textY+3);  /* сумма без налога */
+p.fillText("#Content[8]",x15-5,#textY+3);  /* сумма налога */
 <!-- LineBegin -->
 p.moveTo(x1,#lineToY);
 p.lineTo(x16,#lineToY);
@@ -507,4 +507,3 @@ p.fillText("М.П.  «___» ____________20____",562,#textY+170);
 p.stroke();
 </script>
 </body></html>
-
