@@ -182,7 +182,7 @@ p.fillText("Сумма по счету:",x6-5,#textY+5);
 p.fillText("#ArrayParam[23]",x7-5,#textY+5);
 p.moveTo(x6,#lineToY+5);
 p.lineTo(x7,#lineToY+5);
-p.fillText("Сумма НДС (    % )",x6-5,#textY+25);
+p.fillText("Сумма НДС (     % )",x6-5,#textY+25);
 p.fillText("#ArrayParam[25]",x6-25,#textY+25);
 p.fillText("#ArrayParam[24]",x7-5,#textY+25);
 p.moveTo(x6,#lineToY+25);
