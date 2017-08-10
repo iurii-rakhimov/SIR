@@ -291,9 +291,9 @@ p.font = "bold 10px Arial";
 p.fillText("ВСЕГО К ОПЛАТЕ",20,#textY+3);
 p.font = "10px Arial";
 p.textAlign="right";
-p.fillText("$ArrayParam[15]",x6,#textY+3);
-p.fillText("$ArrayParam[14]",x9,#textY+3);
-p.fillText("$ArrayParam[13]",x10,#textY+3);
+p.fillText("#ArrayParam[15]",x6-5,#textY+3);
+p.fillText("#ArrayParam[14]",x9-5,#textY+3);
+p.fillText("#ArrayParam[13]",x10-5,#textY+3);
 p.fillText("X",568,#textY+3);
 /* Вертикальные линии */
 p.moveTo(x1,#moveToY+15);
