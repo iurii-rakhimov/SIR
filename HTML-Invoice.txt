@@ -5,40 +5,50 @@
 <script>
 document.getElementById("myList").innerHTML = "Страница #listNumber";
 </script>
-<canvas id="myCanvas" width="600" height="800" style="border:1px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
+<canvas id="myCanvas" width="600" height="800" style="border:0px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
 <script>
 var c = document.getElementById("myCanvas");
 var p = c.getContext("2d");
+var x1 = 20;
+var x2 = 45;
+var x3 = 160;
+var x4 = 300;
+var x5 = 340;
+var x6 = 350;
+var x7 = 400;
+var x8 = 480;
+var x9 = 535;
+var x10 = 580;
 <!-- Title -->
 p.font = "20px Arial";
 p.fillText("#ArrayParam[11]",150,20);
 p.font = "10px Arial";
-p.fillText("Адрес:",20,35);
+p.fillText("Адрес:",x1,35);
 p.font = "12px Arial";
 p.fillText("#ArrayParam[13]",70,35);
 p.font = "10px Arial";
-p.fillText("Факт.адрес:",20,50);
+p.fillText("Факт.адрес:",x1,50);
 p.font = "12px Arial";
 p.fillText("#ArrayParam[14]",90,50);
 p.font = "10px Arial";
-p.fillText("Тел:",20,65);
+p.fillText("Тел:",x1,65);
 p.font = "12px Arial";
 p.fillText("#ArrayParam[12]",50,65);
 p.font = "10px Arial";
 p.fillText("Образец заполнения платежного поручения:",150,80);
 
-p.moveTo(20,86);
-p.lineTo(535,86);
-p.moveTo(20,85);
-p.lineTo(20,175);
-p.moveTo(160,85);
-p.lineTo(160,100);
-p.moveTo(350,85);
-p.lineTo(350,175);
-p.moveTo(400,85);
-p.lineTo(400,175);
-p.moveTo(535,85);
-p.lineTo(535,175);
+p.moveTo(x1,86);
+p.lineTo(x9,86);
+p.moveTo(x1,85);
+p.lineTo(x1,175);
+p.moveTo(x3,85);
+p.lineTo(x3,100);
+p.moveTo(x6,85);
+p.lineTo(x6,175);
+p.moveTo(x7,85);
+p.lineTo(x7,175);
+p.moveTo(x9,85);
+p.lineTo(x9,175);
 p.font = "14px Arial";
 p.fillText("ИНН",35,98);
 p.font = "12px Arial";
@@ -47,8 +57,8 @@ p.font = "14px Arial";
 p.fillText("КПП",175,98);
 p.font = "12px Arial";
 p.fillText("#ArrayParam[16]",210,98);
-p.moveTo(20,100);
-p.lineTo(350,100);
+p.moveTo(x1,100);
+p.lineTo(x6,100);
 p.fillText("Получатель:",35,116);
 p.font = "11px Arial";
 p.fillText("Сч.№",360,120);
@@ -56,20 +66,20 @@ p.font = "11px Arial";
 p.fillText("#ArrayParam[17]",405,120);
 p.font = "11px Arial";
 p.fillText("#ArrayParam[11]",35,135);
-p.moveTo(20,144);
-p.lineTo(535,144);
+p.moveTo(x1,144);
+p.lineTo(x9,144);
 p.font = "12px Arial";
 p.fillText("БАНК Получателя:",35,156);
 p.font = "11px Arial";
 p.fillText("#ArrayParam[18]",405,156);
-p.moveTo(20,160);
-p.lineTo(535,160);
+p.moveTo(x1,160);
+p.lineTo(x9,160);
 p.font = "11px Arial";
 p.fillText("#ArrayParam[20]",35,172);
 p.font = "11px Arial";
 p.fillText("#ArrayParam[19]",405,172);
-p.moveTo(20,175);
-p.lineTo(535,175);
+p.moveTo(x1,175);
+p.lineTo(x9,175);
 p.font = "20px Arial";
 p.fillText("Счет",35,200);
 p.fillText("#ArrayParam[2]",90,200);
@@ -95,22 +105,22 @@ p.stroke();
 <!--#countRecordsTable=45-->
 
 <!-- Header -->
-p.moveTo(20,#moveToY);
-p.lineTo(580,#moveToY);
-p.moveTo(20,#moveToY);
-p.lineTo(20,#lineToY);
-p.moveTo(45,#moveToY);
-p.lineTo(45,#lineToY);
-p.moveTo(300,#moveToY);
-p.lineTo(300,#lineToY);
-p.moveTo(340,#moveToY);
-p.lineTo(340,#lineToY);
-p.moveTo(400,#moveToY);
-p.lineTo(400,#lineToY);
-p.moveTo(480,#moveToY);
-p.lineTo(480,#lineToY);
-p.moveTo(580,#moveToY);
-p.lineTo(580,#lineToY);
+p.moveTo(x1,#moveToY);
+p.lineTo(x10,#moveToY);
+p.moveTo(x1,#moveToY);
+p.lineTo(x1,#lineToY);
+p.moveTo(x2,#moveToY);
+p.lineTo(x2,#lineToY);
+p.moveTo(x4,#moveToY);
+p.lineTo(x4,#lineToY);
+p.moveTo(x5,#moveToY);
+p.lineTo(x5,#lineToY);
+p.moveTo(x7,#moveToY);
+p.lineTo(x7,#lineToY);
+p.moveTo(x8,#moveToY);
+p.lineTo(x8,#lineToY);
+p.moveTo(x10,#moveToY);
+p.lineTo(x10,#lineToY);
 p.font = "10px Arial";
 p.fillText("Цена",425,#moveToY+10);
 p.fillText("руб.",430,#moveToY+25);
@@ -122,61 +132,63 @@ p.fillText("№",25,#moveToY+25);
 p.fillText("Наименование",120,#moveToY+25);
 p.fillText("Ед.изм.",303,#moveToY+25);
 p.fillText("Кол-во",355,#moveToY+25);
-p.moveTo(20,#lineToY);
-p.lineTo(580,#lineToY);
+p.moveTo(x1,#lineToY);
+p.lineTo(x10,#lineToY);
 p.stroke();
 
 <!-- Table -->
-p.moveTo(20,#moveToY);
-p.lineTo(20,#lineToY);
-p.moveTo(45,#moveToY);
-p.lineTo(45,#lineToY);
-p.moveTo(300,#moveToY);
-p.lineTo(300,#lineToY);
-p.moveTo(340,#moveToY);
-p.lineTo(340,#lineToY);
-p.moveTo(400,#moveToY);
-p.lineTo(400,#lineToY);
-p.moveTo(480,#moveToY);
-p.lineTo(480,#lineToY);
-p.moveTo(580,#moveToY);
-p.lineTo(580,#lineToY);
-p.font = "10px Ubuntu Mono";
-p.fillText("#0",30,#textY);
+p.moveTo(x1,#moveToY);
+p.lineTo(x1,#lineToY);
+p.moveTo(x2,#moveToY);
+p.lineTo(x2,#lineToY);
+p.moveTo(x4,#moveToY);
+p.lineTo(x4,#lineToY);
+p.moveTo(x5,#moveToY);
+p.lineTo(x5,#lineToY);
+p.moveTo(x7,#moveToY);
+p.lineTo(x7,#lineToY);
+p.moveTo(x8,#moveToY);
+p.lineTo(x8,#lineToY);
+p.moveTo(x10,#moveToY);
+p.lineTo(x10,#lineToY);
+p.font = "10px MonoCondencedDi";
+p.textAlign = "left";
+p.fillText("#Content[0]",30,#textY);     /* номер */
 <!--#L1=56-->
-p.fillText("#1",50,#textY);
+p.fillText("#Content[1]",50,#textY);     /* */
 <!--#L2=7-->
-p.fillText("#2",310,#textY);
+p.fillText("#Content[2]",50,#textY);     /* */
 <!--#L3=10-->
 p.fillText("#3",370,#textY);
-p.fillText("$4",#X=475,#textY);
-p.fillText("$5",#X=570,#textY);
+p.fillText("#Content[3]",370,#textY);     /* */
+p.fillText("#Content[4]",475,#textY);     /* */
+p.fillText("#Content[5]",570,#textY);    /* */
 <!-- LineBegin -->
-p.moveTo(20,#lineToY);
-p.lineTo(580,#lineToY);
+p.moveTo(x1,#lineToY);
+p.lineTo(x10,#lineToY);
 <!-- LineEnd -->
 p.stroke();
 
 <!-- Footer -->
-p.moveTo(480,#moveToY+20);
-p.lineTo(480,#lineToY+45);
-p.moveTo(580,#moveToY+15);
-p.lineTo(580,#lineToY+45);
+p.moveTo(x8,#moveToY+20);
+p.lineTo(x8,#lineToY+45);
+p.moveTo(x10,#moveToY+15);
+p.lineTo(x10,#lineToY+45);
 p.font = "12px Ubuntu Mono";
-p.fillText("Сумма по счету:",340,#textY+5);
-p.fillText("$ArrayParam[23]",#X=572,#textY+5);
-p.moveTo(480,#lineToY+5);
-p.lineTo(580,#lineToY+5);
-p.fillText("Сумма НДС (    % )",340,#textY+25);
+p.fillText("Сумма по счету:",x5,#textY+5);
+p.fillText("#ArrayParam[23]",572,#textY+5);
+p.moveTo(x8,#lineToY+5);
+p.lineTo(x10,#lineToY+5);
+p.fillText("Сумма НДС (    % )",x5,#textY+25);
 p.fillText("#ArrayParam[25]",410,#textY+25);
-p.fillText("$ArrayParam[24]",#X=572,#textY+25);
-p.moveTo(480,#lineToY+25);
-p.lineTo(580,#lineToY+25);
+p.fillText("#ArrayParam[24]",#X=572,#textY+25);
+p.moveTo(x8,#lineToY+25);
+p.lineTo(x10,#lineToY+25);
 p.font = "14px Ubuntu Mono";
-p.fillText("Всего к оплате:",340,#textY+45);
-p.fillText("$ArrayParam[23]",#X=562,#textY+45);
-p.moveTo(480,#lineToY+45);
-p.lineTo(580,#lineToY+45);
+p.fillText("Всего к оплате:",x5,#textY+45);
+p.fillText("#ArrayParam[23]",#X=562,#textY+45);
+p.moveTo(x8,#lineToY+45);
+p.lineTo(x10,#lineToY+45);
 p.fillText("Генеральный директор",50,#textY+70);
 p.fillText("____________________",200,#textY+70);
 p.fillText("#ArrayParam[21]",360,#textY+70);
