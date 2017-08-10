@@ -368,21 +368,21 @@ p.fillText("#Content[0]",(x2-x1)/2+x1,#textY+3);
 p.textAlign = "left";
 p.fillText("#Content[1]",x2+2,#textY+3);     /* наименование услуг-товара */
 p.textAlign = "center"; 
-p.fillText("#2",(x5-x4)/2+x4,#textY+3);    /* единица измерения */
-p.fillText("#9",(x6-x5)/2+x5,#textY+3);    /* код единицы измерения */
-p.fillText("#13",(x7-x6)/2+x6,#textY+3);    /* Вид упаковки */
-p.fillText("#14",(x8-x7)/2+x7,#textY+3);    /* Количество упаковок */
-p.fillText("#15",(x9-x8)/2+x8,#textY+3);    /* Мест штук упаковок */
-p.fillText("#16",(x10-x9)/2+x9,#textY+3);    /* Количество (Масса нетто) */
+p.fillText("#Content[2]",(x5-x4)/2+x4,#textY+3);    /* единица измерения */
+p.fillText("#Content[9]",(x6-x5)/2+x5,#textY+3);    /* код единицы измерения */
+p.fillText("#Content[13]",(x7-x6)/2+x6,#textY+3);    /* Вид упаковки */
+p.fillText("#Content[14]",(x8-x7)/2+x7,#textY+3);    /* Количество упаковок */
+p.fillText("#Content[15]",(x9-x8)/2+x8,#textY+3);    /* Мест штук упаковок */
+p.fillText("#Content[16]",(x10-x9)/2+x9,#textY+3);    /* Количество (Масса нетто) */
 p.textAlign="right";
-p.fillText("#3",x11-5,#textY+3); /* кол-во $3 #X=594 */
-p.fillText("#4",x12-5,#textY+3); /* цена "$4",#X=507 */
-p.fillText("#5",x16-5,#textY+3);  /* сумма всего "$5",#X=900 */
-if ("#6" == "") proc = "";
-if ("#6" != "") proc = "#6 %";
+p.fillText("#Content[3]",x11-5,#textY+3); /* кол-во $3 #X=594 */
+p.fillText("#Content[4]",x12-5,#textY+3); /* цена "$4",#X=507 */
+p.fillText("#Content[5]",x16-5,#textY+3);  /* сумма всего "$5",#X=900 */
+if ("#Content[6]" == "") proc = "";
+if ("#Content[6]" != "") proc = "#Content[6] %";
 p.fillText(proc,x14-5,#textY+3);  /* процент налога 704 */
-p.fillText("#7",x13-5,#textY+3);  /* сумма без налога "$7",#X=677 */
-p.fillText("#8",x15-5,#textY+3);  /* сумма налога "$8",#X=804 */
+p.fillText("#Content[7]",x13-5,#textY+3);  /* сумма без налога "$7",#X=677 */
+p.fillText("#Content[8]",x15-5,#textY+3);  /* сумма налога "$8",#X=804 */
 <!-- LineBegin -->
 p.moveTo(x1,#lineToY);
 p.lineTo(x16,#lineToY);
@@ -507,3 +507,4 @@ p.fillText("М.П.  «___» ____________20____",562,#textY+170);
 p.stroke();
 </script>
 </body></html>
+
