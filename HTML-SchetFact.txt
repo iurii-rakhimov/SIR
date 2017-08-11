@@ -23,12 +23,12 @@ var dateText = den.concat(" ", nameMes);
 dateText = dateText.concat(" ", god);
 var x1 = 0;
 var x2 = 160;
-var x2a = 196;
+var x2a = 190;
 var x3 = 250;
-var x4 = 290;
+var x4 = 285;
 var x5 = 340;
 var x6 = 415;
-var x7 = 450;
+var x7 = 455;
 var x8 = 480;
 var x9 = 550;
 var x10 = 635;
@@ -255,13 +255,13 @@ p.moveTo(x11,#moveToY+15);
 p.lineTo(x11,#lineToY+15);
 p.moveTo(x12,#moveToY+15);
 p.lineTo(x12,#lineToY+15);
-p.font = "10px MonoCondencedDi";
+p.font = "9px Arial";
 p.textAlign = "left";
 p.fillText("#Content[0]",x1+3,#textY+3);     /* номер */
 <!--#L1=42-->
 p.fillText("#Content[1]",x1+20,#textY+3);     /* наименование услуг-товара */
-p.fillText("#Content[9]",x2+3,#textY+3);    /* код единицы измерения */
 p.textAlign = "center"; 
+p.fillText("#Content[9]",(x2a-x2)/2+x2,#textY+3);    /* код единицы измерения */
 p.fillText("#Content[2]",(x3-x2a)/2+x2a,#textY+3);    /* единица измерения */
 p.textAlign="right";
 p.fillText("#Content[3]",x4-5,#textY+3); /* кол-во */
