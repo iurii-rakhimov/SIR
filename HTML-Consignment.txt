@@ -5,7 +5,7 @@
 <script>
 document.getElementById("myList").innerHTML = "Страница #listNumber";
 </script>
-<canvas id="myCanvas" width="700" height="800" style="border:0px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
+<canvas id="myCanvas" width="750" height="800" style="border:0px solid #000000;">Ваш браузер не поддерживает тег Canvas в HTML5.</canvas>
 <script>
 var c = document.getElementById("myCanvas");
 var p = c.getContext("2d");
@@ -35,8 +35,8 @@ var x11 = 325;
 var x12 = 370;
 var x13 = 430;
 var x14 = 450;
-var x15 = 510;
-var x16 = 690;
+var x15 = 660;
+var x16 = 740;
 var proc = "18";
 p.font = "6px Arial";
 p.textAlign="right";
