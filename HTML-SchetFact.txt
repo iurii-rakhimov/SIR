@@ -24,11 +24,11 @@ dateText = dateText.concat(" ", god);
 var x1 = 0;
 var x2 = 160;
 var x2a = 196;
-var x3 = 227;
-var x4 = 269;
+var x3 = 250;
+var x4 = 290;
 var x5 = 340;
-var x6 = 410;
-var x7 = 440;
+var x6 = 415;
+var x7 = 450;
 var x8 = 480;
 var x9 = 550;
 var x10 = 635;
@@ -138,14 +138,14 @@ p.moveTo(x3,285);
 p.lineTo(x3,341);
 p.font = "8px Arial";
 p.fillText("Коли-",(x4-x3)/2+x3,300);
-p.fillText("чество",(x4-x3)/2+x3,312);
-p.fillText("(объём)",(x4-x3)/2+x3,325);
+p.fillText("чество",(x4-x3)/2+x3,310);
+p.fillText("(объём)",(x4-x3)/2+x3,320);
 /* Вертикальная линия */
 p.moveTo(x4,285);
 p.lineTo(x4,341);
 p.fillText("Цена (тариф)",(x5-x4)/2+x4,300);
-p.fillText("за единицу",(x5-x4)/2+x4,315);
-p.fillText("измерения",(x5-x4)/2+x4,325);
+p.fillText("за единицу",(x5-x4)/2+x4,310);
+p.fillText("измерения",(x5-x4)/2+x4,320);
 /* Вертикальная линия */
 p.moveTo(x5,285);
 p.lineTo(x5,341);
@@ -165,15 +165,16 @@ p.fillText("акциза",(x7-x6)/2+x6,320);
 /* Вертикальная линия */
 p.moveTo(x7,285);
 p.lineTo(x7,341);
-p.fillText("Налоговая",(x8-x7)/2+x7,300);
-p.fillText("ставка",(x8-x7)/2+x7,315);
+p.fillText("Нало-",(x8-x7)/2+x7,300);
+p.fillText("говая",(x8-x7)/2+x7,310);
+p.fillText("ставка",(x8-x7)/2+x7,320);
 /* Вертикальная линия */
 p.moveTo(x8,285);
 p.lineTo(x8,341);
 p.font = "9px Arial";
 p.fillText("Сумма налога,",(x9-x8)/2+x8,300);
-p.fillText("предъявляемая",(x9-x8)/2+x8,312);
-p.fillText("покупателю",(x9-x8)/2+x8,325);
+p.fillText("предъявляемая",(x9-x8)/2+x8,310);
+p.fillText("покупателю",(x9-x8)/2+x8,320);
 /* Вертикальная линия */
 p.moveTo(x9,285);
 p.lineTo(x9,341);
