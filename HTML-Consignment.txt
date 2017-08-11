@@ -387,7 +387,7 @@ p.lineTo(x15,#lineToY);
 p.moveTo(x16,#moveToY);
 p.lineTo(x16,#lineToY);
 /* p.font = "10px MonoCondencedDi"; */
-p.font = "8px Arial";
+p.font = "9px Arial";
 p.fillText("#Content[0]",(x2-x1)/2+x1,#textY+3);
 <!--#L1=42-->
 p.textAlign = "left";
