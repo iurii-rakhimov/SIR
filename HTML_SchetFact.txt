@@ -277,7 +277,7 @@ p.fillText("#Content[12]",(x12-x11)/2+x11,#textY+3);    /* номер тамож
 p.font = "8px MonoCondencedDi";
 if ("#Content[17]" == "") p.fillText("без акциза",(x7-x6)/2+x6,#textY+3);   /* без акциз */
 p.textAlign="right";
-if ("#Content[17]" != "") p.fillText(#Content[17],x7-5,#textY+3);   /* без акциз */
+if ("#Content[17]" != "") p.fillText("#Content[17]",x7-5,#textY+3);   /* без акциз */
 <!-- LineBegin -->
 p.moveTo(x1,#lineToY+15);
 p.lineTo(x12,#lineToY+15);
