@@ -1,4 +1,4 @@
-#Array HTML_SchetFact
+#Array HTML-SchetFact
 <!DOCTYPE html>
 <html><body>
 <p id="myList"></p>
