@@ -326,7 +326,7 @@ p.fillText("(ф.и.о.)",310,#textY+46);
 p.font = "10px Arial";
 p.fillText("Главный бухгалтер",400,#textY+25);
 p.fillText("или иное уполномоченное лицо    _________________     _________________",400,#textY+40);
-p.fillText("#ArrayParam[4]",550,#textY+40);
+p.fillText("#ArrayParam[4]",670,#textY+40);
 p.font = "6px Arial";
 p.fillText("(подпись)",550,#textY+46);
 p.fillText("(ф.и.о.)",700,#textY+46);
