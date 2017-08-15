@@ -65,7 +65,7 @@ p.fillText("#ArrayParam[42] / #ArrayParam[43]",120,150);
 p.font = "bold 10px Arial";
 p.fillText("Грузоотправитель и его адрес:",x1,165);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[16], #ArrayParam[18]",170,165);
+p.fillText("#ArrayParam[19], #ArrayParam[21]",170,165);
 p.font = "bold 10px Arial";
 p.fillText("Грузоополучатель и его адрес:",x1,180);
 p.font = "9px Arial";
