@@ -63,7 +63,7 @@ p.fillText("#ArrayParam[42] / #ArrayParam[43]",120,150);
 p.font = "bold 10px Arial";
 p.fillText("Грузоотправитель и его адрес:",x1,165);
 p.font = "9px Arial";
-p.fillText("#ArrayParam[16], #ArrayParam[18]",170,165);
+p.fillText("#ArrayParam[19], #ArrayParam[21]",170,165);
 p.font = "bold 10px Arial";
 p.fillText("Грузоополучатель и его адрес:",x1,180);
 p.font = "9px Arial";
@@ -89,9 +89,7 @@ p.fillText("Валюта: наименование, код ",x1,255);
 p.font = "9px Arial";
 p.fillText("#ArrayParam[12]",160,255);
 p.font = "bold 9px Arial";
-p.fillText("Идентификатор государственного контракта, договора (соглашения) ",x1,270);
-p.font = "9px Arial";
-p.fillText("#ArrayParam[6]",310,270);
+p.fillText("Идентификатор государственного контракта, договора (соглашения) #ArrayParam[6]",x1,270);
     
 <!--#textY=333-->
 <!--#moveToY=310-->
@@ -276,8 +274,7 @@ p.fillText("#Content[11]",(x11-x10a)/2+x10a,#textY+3);    /* страна при
 p.fillText("#Content[12]",(x12-x11)/2+x11,#textY+3);    /* номер таможенной декларации */
 p.font = "8px MonoCondencedDi";
 if ("#Content[17]" == "") p.fillText("без акциза",(x7-x6)/2+x6,#textY+3);   /* без акциз */
-p.textAlign="right";
-if ("#Content[17]" != "") p.fillText("#Content[17]",x7-5,#textY+3);   /* без акциз */
+if ("#Content[17]" != "") p.fillText("#Content[17]",x7-5,#textY+3);   /* сумма акциза */
 <!-- LineBegin -->
 p.moveTo(x1,#lineToY+15);
 p.lineTo(x12,#lineToY+15);
