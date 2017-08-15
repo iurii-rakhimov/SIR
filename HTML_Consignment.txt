@@ -474,6 +474,7 @@ p.fillText("Всего отпущено на сумму: _______________________
 p.fillText("#ArrayParam[59]",155,#textY+103);
 p.font = "normal 10px Arial";
 p.fillText("Отпуск разрешил   ________________________________   _______________ _____________________",x1,#textY+115);
+p.fillText("#ArrayParam[3]",380,#textY+115);
 p.font = "6px Arial";
 p.fillText("должность",200,#textY+122);
 p.fillText("подпись",310,#textY+122);
@@ -486,6 +487,7 @@ p.fillText("подпись",707,#textY+122);
 p.fillText("расшифровка подписи",801,#textY+122);
 p.font = "10px Arial";
 p.fillText("Главный (старший) бухгалтер ______________________   _______________ _____________________",x1,#textY+135);
+p.fillText("#ArrayParam[4]",380,#textY+135);
 p.fillText("Груз получил грузополучатель  _________  ___________    _________________",506,#textY+135);
 p.font = "6px Arial";
 p.fillText("должность",200,#textY+142);
