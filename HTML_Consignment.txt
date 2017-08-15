@@ -441,7 +441,7 @@ p.fillText("#ArrayParam[14]",x15-5,#textY+15);
 p.moveTo(x1,#lineToY+15);
 p.lineTo(x16,#lineToY+15);
 /* Линия вертикальная */
-p.moveTo(490,#moveToY+95);
+p.moveTo(490,#moveToY+115);
 p.lineTo(490,#lineToY+180);
 p.font = "normal 10px Arial";
 p.textAlign = "left";
