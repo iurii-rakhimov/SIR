@@ -1,1 +1,5 @@
-Ваш идентификатор-your identifier
+Ваш идентификатор # your identifier
+Ваш пароль или слово - Нет # Your password or the word - No
+Язык региона # The language of the region
+Дата начала периода # Period start date
+Дата окончания периода # Period end date
