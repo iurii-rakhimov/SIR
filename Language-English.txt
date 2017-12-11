@@ -1,8 +1,0 @@
-#Array Language-English
-Ваш идентификатор#your identifier
-Ваш пароль или слово - Нет#Your password or the word - No
-Язык региона#The language of the region
-Дата начала периода#Period start date
-Дата окончания периода#Period end date
-Загрузить данные за период#Load data for the period
-Запись итогов на конец периода#Record totals at end of period
