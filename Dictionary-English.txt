@@ -1,8 +1,36 @@
 #Array Dictionary-English
-Ваш идентификатор#your identifier
+Ваш e-mail#Your e-mail
+Ваш идентификатор#Your identifier
 Ваш пароль или слово - Нет#Your password or the word - No
-Язык региона#The language of the region
+Страна#Country
 Дата начала периода#Period start date
 Дата окончания периода#Period end date
+Массив базы данных#Array database
+Имя копии сохраняемой базы данных#The name of the copy of the saved database
+Показать дату окончания периода (Да/Нет)#To show the period end date (Yes/No)
+Порядок сортировки начинается с (Min/Max)#The sort order starts with (Min/Max)
+Путь к загружаемому массиву#The path to the downloadable array
+Показывать нулевое значение контрагента - Да/Нет#Show zero value of the contractor - Yes/No
+Показывать нулевое значение счета - Да/Нет#Show zero value invoices - Yes/No
+Получатель синхронизируемых данных Имя/Нет#The recipient of synchronized data Name/No
+Да#Yes
+Нет#No
+Вам перезагрузили настройки#You have Reset the settings
+Настройка#Setting
+Печать#Print
+Ошибка#Error
+при удалении массива#when you delete the array
+Документы#Documents
+больше#more
+Дата начала#Start date
+даты конца#the ending date
+Запись итогов за период с #Record totals for the period from
+до#to
+завершена#completed
+За выбранный период данные отсутствуют. Вы можете загрузить тестовые данные#For the selected time period data not available. You can download the test data
+Выберите действие#Select the action
+Отмена#Cancel
+Загрузить тест из 2-х записей#Download test of 2 records
+Загрузить тест с GitHab#Download test GitHab
 Загрузить данные за период#Load data for the period
 Запись итогов на конец периода#Record totals at end of period
