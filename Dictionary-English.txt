@@ -32,5 +32,16 @@
 Отмена#Cancel
 Загрузить тест из 2-х записей#Download test of 2 records
 Загрузить тест с GitHab#Download test GitHab
+50.Касса USD#50.Cash USD
+50.Касса Руб#50.Cash RUB
+Находилось в сейфе#Was in the safe
+ по курсу 66,73#at the rate 66,73
+99.Остатки#99.The remains
+Начало#Beginning
+Конец#The end
+сегодня#today
+время#time
+Продолжить#Continue
 Загрузить данные за период#Load data for the period
 Запись итогов на конец периода#Record totals at end of period
+Пароль#Password
