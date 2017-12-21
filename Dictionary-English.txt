@@ -45,3 +45,7 @@
 Загрузить данные за период#Load data for the period
 Запись итогов на конец периода#Record totals at end of period
 Пароль#Password
+У вас есть данные начиная с#You have data since
+Измените период загрузки данных#Change the period of data loading
+количество записей#the number of records
+при загрузке массива#when loading the array
