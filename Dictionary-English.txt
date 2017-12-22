@@ -49,4 +49,4 @@
 Измените период загрузки данных#Change the period of data loading
 количество записей#the number of records
 при загрузке массива#when loading the array
-ошибка загрузки файла#error loading file
+загрузки файла#loading file
