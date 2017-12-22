@@ -50,3 +50,4 @@
 количество записей#the number of records
 при загрузке массива#when loading the array
 загрузки файла#loading file
+записи файла#writing file
