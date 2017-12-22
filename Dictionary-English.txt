@@ -51,3 +51,5 @@
 при загрузке массива#when loading the array
 загрузки файла#loading file
 записи файла#writing file
+Нарушение структуры данных#Violation of data structures
+Количество блоков в базе данных не может быть более 9999. Удалите часть информации или обратитесь к разработчику.#The number of blocks in the database can not be more than 9999. Delete some information or contact the developer.
