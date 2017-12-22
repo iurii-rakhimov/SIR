@@ -56,3 +56,8 @@
 Ошибок нет#There are no errors
 Сохранили базу данных#Maintained database
 Имя файла не может начинаться с data#The file name may not start with data
+Ошибка записи в файл#Error writing to file
+Сохранили в файл#Saved to a file
+Внимание#Attention
+восстановление потребует некоторого времени#recovery will take some time
+Создать базу данных из файла#To create a database from a file
