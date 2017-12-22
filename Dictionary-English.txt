@@ -61,3 +61,15 @@
 Внимание#Attention
 восстановление потребует некоторого времени#recovery will take some time
 Создать базу данных из файла#To create a database from a file
+Данные для восстановления отсутствуют#Recovery data is missing
+Ошибка при добавлении записи в базу#Error when adding record in database
+Количество ошибок при восстановлении#The number of errors when restoring
+Данные восстановлены#Data restored
+
+
+
+
+
+
+Ошибка записи#Write error
+
