@@ -53,3 +53,6 @@
 записи файла#writing file
 Нарушение структуры данных#Violation of data structures
 Количество блоков в базе данных не может быть более 9999. Удалите часть информации или обратитесь к разработчику.#The number of blocks in the database can not be more than 9999. Delete some information or contact the developer.
+Ошибок нет#There are no errors
+Сохранили базу данных#Maintained database
+Имя файла не может начинаться с data#The file name may not start with data
