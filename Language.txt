@@ -1,4 +1,4 @@
 #Array Language
-Русский Dictionary-Russian.txt
+Русский Dictionary-Русский.txt
 English Dictionary-English.txt
 German Dictionary-German.txt
