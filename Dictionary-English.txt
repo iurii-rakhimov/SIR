@@ -36,7 +36,7 @@
 50.Касса Руб#50.Cash RUB
 Находилось в сейфе#Was in the safe
  по курсу 66,73#at the rate 66,73
-99.Остатки#99.The remains
+Остатки#The remains
 Начало#Beginning
 Конец#The end
 сегодня#today
@@ -65,11 +65,27 @@
 Ошибка при добавлении записи в базу#Error when adding record in database
 Количество ошибок при восстановлении#The number of errors when restoring
 Данные восстановлены#Data restored
-
-
-
-
-
-
+копия базы данных на#a copy of the database on
+Передача файла#File transfer
+ФАЙЛ НЕ ДОСТУПЕН#THE FILE IS NOT AVAILABLE
+Передача файла не возможна (возможно отсутствие интернет)#File transfer is not possible (maybe the lack of Internet)
+Изменения#Changes
+Начать корректировку базы не нарушая данных#To adjust the database without violating data
 Ошибка записи#Write error
-
+корректировка базы данных завершена#the adjustment of the database completed
+Сервис для базы данных#Service for the database
+Первая запись не#The first entry is not
+блок#bloc
+файл#file
+Удаление журнала. Успешно#Removal of the magazine. Successfully
+Остатки на дату#Balances on the date
+Системная ошибка#System error
+Программная ошибка#Software error
+Дата#Date
+Приход#Getting
+Расход#Expenses
+Итого#Total
+резерв#reserve
+Возможно отсутствие файла#Perhaps the lack of the file
+Ошибка при загрузке файла#Error loading file
+Загрузили массив#Downloaded the array
