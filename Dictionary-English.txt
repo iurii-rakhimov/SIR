@@ -167,3 +167,8 @@ Nначало-Nконец#Nthebeginning Ntheend
 Перейдите в настройки#Go to settings
 Продолжить#Continue
 Новая#New
+Порядковый номер записи#Serial number of the record
+Откуда#From where
+Куда#To where
+Дата изменения#Date changes
+Дата создания#Created date
