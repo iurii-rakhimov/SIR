@@ -89,3 +89,8 @@
 Возможно отсутствие файла#Perhaps the lack of the file
 Ошибка при загрузке файла#Error loading file
 Загрузили массив#Downloaded the array
+Дата операции#The date of the transaction
+Комментарий#Comment
+Кол-во#Count
+Цена#Price
+сумма#sum
