@@ -47,7 +47,7 @@
 Пароль#Password
 У вас есть данные начиная с#You have data since
 Измените период загрузки данных#Change the period of data loading
-количество#the number
+Количество#The number
 записей#records
 при загрузке массива#when loading the array
 загрузки файла#loading file
