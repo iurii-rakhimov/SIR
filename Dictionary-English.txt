@@ -158,8 +158,9 @@ Nначало-Nконец#Nthebeginning Ntheend
 Записей произведён#Records produced
 Загрузка изменений базы данных из облака#Download database changes from the cloud
 Нет записей на выгрузку#No records to upload
-нажмите 'Продолжить'#click 'Continue'
+нажмите#click
 Нет записей на удаление#No records to delete
 Выгрузка изменений базы данных в облако#Upload database changes to the cloud
 Нет получателя синхронизируемых данных#No recipient of information to be synchronized
 Перейдите в настройки#Go to settings
+Продолжить#Continue
