@@ -172,3 +172,4 @@ Nначало-Nконец#Nthebeginning Ntheend
 Куда#To where
 изменения#replacement
 создания#created
+Загрузить массив#Load the array
