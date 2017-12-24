@@ -83,7 +83,7 @@
 Остатки на дату#Balances on the date
 Системная ошибка#System error
 Программная ошибка#Software error
-Дата#Date
+Дата#The date
 Приход#Getting
 Расход#Expenses
 Итого#Total
@@ -170,5 +170,5 @@ Nначало-Nконец#Nthebeginning Ntheend
 Порядковый номер записи#Serial number of the record
 Откуда#From where
 Куда#To where
-изменения#changes
+изменения#replacement
 создания#created
