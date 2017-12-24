@@ -94,3 +94,57 @@
 Кол-во#Count
 Цена#Price
 сумма#sum
+Счета#Account
+Отправить сообщение можно только получателю с установленым Messanger#You can send a message only to the recipient with the mounted Messanger
+Отправка сообщения#Sending a message
+Сообщение#Message
+Сообщение отправлено#The message is sent
+Не удалось отправить#Failed to send
+Изменения в базе будут отправлены#Changes to the database will be sent
+Отправить изменения#To submit changes
+Изменений базы данных нет на#Database changes no
+при записи в файл#when writing to a file
+изменения базы данных передано#database changes are transferred
+Передача файла не возможна#File transfer not possible
+Удалить запись#To delete a record
+не полная запись#no complete record
+без НДС#without VAT
+с НДС#VAT
+Сохранить запись#Save the record
+Нет изменений#No change
+Сохранили#Saved
+Записали#Recorded
+В массиве нет#In the mountains there
+В базе нет массива#Not in the database array
+В пункте Главного меню#In the Main menu
+Сервис обмена данными#Service data exchange
+Загрузить форму счета с Githab#Download form account Githab
+Печать счет-фактуры#Print invoice
+Печать накладной#Print invoice
+вертикальная#vertical
+горизонтальная#horizontal
+Редактирование#Edit
+Редактирование реквизита#Edit props
+Редактирование порядка сортировки#Edit the sort order
+задайте номер#set the number
+задайте номер начала и конца в формате Nначало-Nконец#ecify a beginning and end format Nthebeginning Ntheend
+Заменить#Replace
+Копирование в облако#Up in the cloud
+начиная с#since
+Nначало-Nконец#Nthebeginning Ntheend
+Копировать#Copy
+Отказ#Failure
+Ошибка периода записей#Period error records
+формат#format
+Завершение копирования в журнал#The end of the copy in the magazine
+Перейдите на выгрузку изменений в облако#Click to upload changes to the cloud
+Ошибка передачи#Communications error
+сообщения#messages
+Успешно#Successfully
+Передача изменений#Changes transfer
+Очистить журнал#Clear log
+В журнале#In the journal
+Запись#record
+
+Цена#Price
+Цена#Price
