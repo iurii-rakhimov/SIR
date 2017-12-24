@@ -148,3 +148,18 @@ Nначало-Nконец#Nthebeginning Ntheend
 Это не запись#This is not a recording
 Загрузить документ#Download the document
 Все контрагенты по счету#All partners on the account
+Изменить#To change
+Загружаем#Downloadable
+В облаке#In the cloud
+из полученных посылок#of the resulting parcels
+Ошибка удаления записи#Error deleting record
+Очистить облако#To clear the cloud
+Приём#Reception
+Записей произведён#Records produced
+Загрузка изменений базы данных из облака#Download database changes from the cloud
+Нет записей на выгрузку#No records to upload
+нажмите 'Продолжить'#click 'Continue'
+Нет записей на удаление#No records to delete
+Выгрузка изменений базы данных в облако#Upload database changes to the cloud
+Нет получателя синхронизируемых данных#No recipient of information to be synchronized
+Перейдите в настройки#Go to settings
