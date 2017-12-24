@@ -39,7 +39,7 @@
 Остатки#The remains
 Начало#Beginning
 Конец#The end
-сегодня#today
+Сегодня#today
 время#time
 Продолжить#Continue
 Загрузить данные за период#Load data for the period
@@ -47,7 +47,8 @@
 Пароль#Password
 У вас есть данные начиная с#You have data since
 Измените период загрузки данных#Change the period of data loading
-количество записей#the number of records
+количество#the number
+записей#records
 при загрузке массива#when loading the array
 загрузки файла#loading file
 записи файла#writing file
@@ -55,6 +56,7 @@
 Количество блоков в базе данных не может быть более 9999. Удалите часть информации или обратитесь к разработчику.#The number of blocks in the database can not be more than 9999. Delete some information or contact the developer.
 Ошибок нет#There are no errors
 Сохранили базу данных#Maintained database
+Количество записей#The number of records
 Имя файла не может начинаться с data#The file name may not start with data
 Ошибка записи в файл#Error writing to file
 Сохранили в файл#Saved to a file
@@ -68,7 +70,7 @@
 копия базы данных на#a copy of the database on
 Передача файла#File transfer
 ФАЙЛ НЕ ДОСТУПЕН#THE FILE IS NOT AVAILABLE
-Передача файла не возможна (возможно отсутствие интернет)#File transfer is not possible (maybe the lack of Internet)
+(возможно отсутствие интернет)#(maybe the lack of Internet)
 Изменения#Changes
 Начать корректировку базы не нарушая данных#To adjust the database without violating data
 Ошибка записи#Write error
@@ -77,7 +79,7 @@
 Первая запись не#The first entry is not
 блок#bloc
 файл#file
-Удаление журнала. Успешно#Removal of the magazine. Successfully
+Удаление журнала#Removal of the magazine
 Остатки на дату#Balances on the date
 Системная ошибка#System error
 Программная ошибка#Software error
@@ -164,3 +166,4 @@ Nначало-Nконец#Nthebeginning Ntheend
 Нет получателя синхронизируемых данных#No recipient of information to be synchronized
 Перейдите в настройки#Go to settings
 Продолжить#Continue
+Новая#New
