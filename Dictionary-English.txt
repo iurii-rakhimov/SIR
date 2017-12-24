@@ -145,6 +145,6 @@ Nначало-Nконец#Nthebeginning Ntheend
 Очистить журнал#Clear log
 В журнале#In the journal
 Запись#record
-
-Цена#Price
-Цена#Price
+Это не запись#This is not a recording
+Загрузить документ#Download the document
+Все контрагенты по счету#All partners on the account
