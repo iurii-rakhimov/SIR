@@ -184,10 +184,10 @@ Nначало-Nконец#Nthebeginning Ntheend
 Нет контрагента#No counterparty
 Реквизит#Detail
 документ для печати передан#the print document is transmitted
-Резерв1#Reserve1
-Резерв2#Reserve2
-Резерв3#Reserve3
-Резерв4#Reserve4
+Проверить базу данных#To check the database
+Сохранить базу на устройстве#To keep the base on the device
+Восстановить базу на устройстве#To restore the database on the device
+Отправить базу данных на почту#To send database mail
 Январь#January
 Февраль#February
 Март#March
