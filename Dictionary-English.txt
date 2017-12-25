@@ -188,6 +188,18 @@ Nначало-Nконец#Nthebeginning Ntheend
 Сохранить базу на устройстве#To keep the base on the device
 Восстановить базу на устройстве#To restore the database on the device
 Отправить базу данных на почту#To send database mail
+Скопировать базу в хранилище#To copy the database to the vault
+Восстановить базу из хранилища#To restore the database from the repository
+Загрузить форму баланса по контрагенту с#Download the form balance sheet to a counterparty with
+Загрузить форму накладной#Download form invoice
+Загрузить форму счет-фактуры#Download form invoice
+Отправить смс на#Send SMS to
+Отправить изменения на почту#Send changes to mail
+Копировать часть базы в облако#To copy a part of database in the cloud
+Счет#Account
+Накладная, счет-фактура#Invoice, account fact
+Предприятия#Enterprise
+Товары, услуги#Goods, services
 Январь#January
 Февраль#February
 Март#March
