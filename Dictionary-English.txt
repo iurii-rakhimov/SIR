@@ -181,7 +181,7 @@ Nначало-Nконец#Nthebeginning Ntheend
 Операция#Transaction
 Удалить массив базы данных#To remove the array database
 Нормальное завершение удаления массива#Normal completion of deleting the array
-Нет#No
+******#******
 Нет контрагента#No counterparty
 Реквизит#Detail
 документ для печати передан#the print document is transmitted
