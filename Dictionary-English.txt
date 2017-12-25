@@ -173,3 +173,27 @@ Nначало-Nконец#Nthebeginning Ntheend
 изменения#replacement
 создания#created
 Загрузить массив#Load the array
+Отсутствует доступ к хранилищу#No access to store
+Нормальное завершение передачи#Normal end of transmission
+Загрузку начать#The download to start
+Реквизиты документа#The details of the document
+Реквизиты счета#Account details
+Операция#Transaction
+Удалить массив базы данных#To remove the array database
+Нормальное завершение удаления массива#Normal completion of deleting the array
+Нет#No
+Нет контрагента#No counterparty
+Реквизит#Detail
+документ для печати передан#the print document is transmitted
+Январь#January
+Февраль#February
+Март#March
+Апрель#April
+Май#May
+Июнь#June
+Июль#July
+Август#August
+Сентябрь#September
+Октябрь#October
+Ноябрь#November
+Декабрь#December
