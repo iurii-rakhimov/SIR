@@ -120,7 +120,7 @@
 В базе нет массива#Not in the database array
 В пункте Главного меню#In the Main menu
 Сервис обмена данными#Service data exchange
-Загрузить форму счета с Githab#Download form account Githab
+Загрузить форму счета с#Download form account of
 Печать счет-фактуры#Print invoice
 Печать накладной#Print invoice
 вертикальная#vertical
