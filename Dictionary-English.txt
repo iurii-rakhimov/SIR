@@ -213,3 +213,10 @@ Nначало-Nконец#Nthebeginning Ntheend
 Ноябрь#November
 Декабрь#December
 Календарь#Calendar
+Пн#Mon
+Вт#Tu
+Ср#Wid
+Чт#Thu
+Пт#Fri
+Сб#Sut
+Вс#Sun
