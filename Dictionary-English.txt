@@ -112,7 +112,7 @@
 не полная запись#no complete record
 без НДС#without VAT
 с НДС#VAT
-Сохранить запись#Save the record
+Сохранить#Save
 Нет изменений#No change
 Сохранили#Saved
 Записали#Recorded
