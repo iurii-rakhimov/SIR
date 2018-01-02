@@ -65,7 +65,7 @@
 Создать базу данных из файла#To create a database from a file
 Данные для восстановления отсутствуют#Recovery data is missing
 Ошибка при добавлении записи в базу#Error when adding record in database
-Количество ошибок при восстановлении#The number of errors when restoring
+Количество ошибок#The number of errors
 Данные восстановлены#Data restored
 копия базы данных на#a copy of the database on
 Передача файла#File transfer
@@ -200,6 +200,8 @@ Nначало-Nконец#Nthebeginning Ntheend
 Накладная, счет-фактура#Invoice, account fact
 Предприятия#Enterprise
 Товары, услуги#Goods, services
+при восстановлении#when restoring
+Календарь#Calendar
 Январь#January
 Февраль#February
 Март#March
@@ -212,7 +214,6 @@ Nначало-Nконец#Nthebeginning Ntheend
 Октябрь#October
 Ноябрь#November
 Декабрь#December
-Календарь#Calendar
 Пн#Mon
 Вт#Tu
 Ср#Wid
