@@ -1,0 +1,83 @@
+About the program: SIR My finances and business
+The program is easy to use and does not require
+special knowledge in the field of accounting.
+
+1. To get started, click the Settings button :  (#1)
+located in the upper right corner
+Then select "Your ID"
+In the input area to replace the User on Your
+the name (identifier).
+The changes necessary to fix 
+pressing the Record button  (#21)
+Exit to the previous screen by pressing 
+the buttons in the upper left corner    (#12)
+You can fill in the settings "Your password" and
+in the future, modify it at your convenience
+or populate this field with the word "No."
+It is important to determine the sort order of your data.
+To do this, select in the settings
+"The sorting starts (Min/Max)" and
+to assign Min or Max
+2. To work with the data you must click
+"Load data for period" .
+If data for selected period is not, then you
+gonna suggest 2 options for test data selection
+In the first variant demonstrates entry 2
+records in the remnants.
+Account from the sub account separated by a space
+In the 2nd version demonstrates how to entry 12
+records from GitHub, so should be online
+In this embodiment, shown quantified.
+After loading test data into the database 
+you will have a list of Accounts 
+then the list of Contractors (sub-accounts),
+further data on the counterparty, which can
+add:    (#27)
+edit(Edit): (#3)
+delete(Del):    (#26)
+copy(Copy): (#2)
+When the Counterparty balance to 0 (zero)
+it is possible to disable displaying by a Contractor
+zero residues. For this Setup
+"Show zero value invoices - Yes/No"
+select the value "No"
+or show a zero value "Yes"
+
+On the main screen the following icons:
+Exit    (#5)
+Service for database    (#22)
+Service data exchange   (#25)
+Creation of documents   (#4)
+Setting (#1)
+Help    (#7)
+
+Comments and suggestions waiting at the post 
+address iuriivlad@icloud.com
+
+Possible icons and their use
+Setting (#1)
+copy    (#2)
+edit    (#3)
+Deletion    (#26)
+Addendum    (#27)
+The output from the program (#5)
+The output from the program (#6)
+Help    (#7)
+Show a value of zero    (#9)
+Not to show a null value    (#10)
+Index of the edited recording   (#8)
+To display the previous page    (#11)
+View next page  (#17)
+Return to the previous screen   (#12)
+Date Year minus (#13)
+Date for a Year plus    (#18)
+Date of the Month minus (#11)
+Date for the Month plus (#17)
+Confirmation of the selected date   (#15)
+Print   (#16)
+Sort descending (#20)
+Sort ascending  (#23)
+Save data   (#21)
+The database service    (#22)
+Data transfer   (#24)
+Exchange database   (#25)
