@@ -201,6 +201,7 @@ Nначало-Nконец#Nthebeginning Ntheend
 Предприятия#Enterprise
 Товары, услуги#Goods, services
 при восстановлении#when restoring
+отсутствует#missing
 Календарь#Calendar
 Январь#January
 Февраль#February
