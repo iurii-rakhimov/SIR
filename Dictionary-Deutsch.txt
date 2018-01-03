@@ -1,206 +1,206 @@
 #Array Dictionary-Deutsch
-Ваш e-mail#Ihre e-mail
-Ваш идентификатор#Id einander
-Ваш пароль или слово - Нет#Ihr Wort oder Passwort - OK
+Ваш e-mail#Ihre E-Mail
+Ваш идентификатор#Ihre id
+Ваш пароль или слово - Нет#Ihr Passwort oder Wort-Nein
 Страна#Land
-Дата начала периода#Datum begi erdbebenwid
-Дата окончания периода#Enddatum erdbebenwid
-Массив базы данных#Die possutotschnaja array-Daten
-Имя копии сохраняемой базы данных#Tageweise gespeicherten данныха Namen der Kopie
-Показать дату окончания периода (Да/Нет)#Datum показати Ende erdbebenwid (Ja/Nein)
-Порядок сортировки начинается с (Min/Max)#Beachten beginnt mit der Sortierung (Min/Max)
-Путь к загружаемому массиву#Der Pfad zu dem zu ladenden array
-Показывать нулевое значение контрагента - Да/Нет#Zeigen Sie den Wert der Gegenpartei null - Ja/Nein
-Показывать нулевое значение счета - Да/Нет#Zeigen Sie den Wert der Rechnung null - Ja/Nein
-Получатель синхронизируемых данных Имя/Нет#Данныха synchronisierten name des Empfängers/OK
-Да#Und
-Нет#Sammlung
-Вам перезагрузили настройки#Van neugestartet Einstellungen
-Настройка#Einstellungen
+Дата начала периода#Datum des Zeitraums
+Дата окончания периода#Das Enddatum der Periode
+Массив базы данных#Array Datenbank
+Имя копии сохраняемой базы данных#Name der Kopie der zu speichernden Datenbank
+Показать дату окончания периода (Да/Нет)#Enddatum Des Zeitraums anzeigen (ja / Nein)
+Порядок сортировки начинается с (Min/Max)#Die Sortierreihenfolge beginnt mit (min/max)
+Путь к загружаемому массиву#Pfad zum geladenen array
+Показывать нулевое значение контрагента - Да/Нет#Kontrahenten-null-ja / Nein anzeigen
+Показывать нулевое значение счета - Да/Нет#Kontonummer null-ja / Nein anzeigen
+Получатель синхронизируемых данных Имя/Нет#Empfänger der Synchronisierten Daten name / keine
+Да#Ja
+Нет#Nein
+Вам перезагрузили настройки#Sie Einstellungen neugestartet
+Настройка#Einstellung
 Печать#Drucken
 Ошибка#Fehler
-при удалении массива#beim löschen массивой
-Документы#Dokumente
+при удалении массива#löschen eines Arrays
+Документы#Unterlagen
 больше#mehr
-Дата начала#Datum begi
-даты конца#Datum пытыдым
-Запись итогов за период с#Für den Zeitraum von итогову Aufnahme
+Дата начала#Startdatum
+даты конца#Enddatum
+Запись итогов за период с#Aufzeichnen der Ergebnisse für den Zeitraum
 до#bis
 завершена#abgeschlossen
-За выбранный период данные отсутствуют. Вы можете загрузить тестовые данные#Für den Zeitraum gilt abwesend vorgewählt. Sie können herunterladen Test gelten
-Выберите действие#Wählen Sie eine Aktion
+За выбранный период данные отсутствуют. Вы можете загрузить тестовые данные#Für den ausgewählten Zeitraum gibt es keine Daten. Sie können Testdaten herunterladen
+Выберите действие#Wählen Sie eine Aktion aus
 Отмена#Abbrechen
-Загрузить тест из 2-х записей#Laden Sie die Tests aus 2 Aufnahmen
-Загрузить тест с GitHab#Download Test githab S.
-50.Касса USD#50.USD Kasse
-50.Касса Руб#50.Kassen RUR
-Находилось в сейфе#Im Safe находилося
+Загрузить тест из 2-х записей#Test aus 2 Aufnahmen herunterladen
+Загрузить тест с GitHab#Download Test mit GitHab
+50.Касса USD#50.Kasse USD
+50.Касса Руб#50.Die Kasse
+Находилось в сейфе#War im Safe
 по курсу 66,73#zum Kurs 66,73
-Остатки#Reste
-Начало#Anfang
+Остатки#Rückstände
+Начало#Beginn
 Конец#Ende
-Сегодня#Tach
+Сегодня#Heute
 время#Zeit
-Продолжить#Weiter
-Загрузить данные за период#Für den Zeitraum wurden Geladen
-Запись итогов на конец периода#Die Aufnahme am Ende erdbebenwid итогову
+Продолжить#Fortsetzen
+Загрузить данные за период#Daten für den Zeitraum herunterladen
+Запись итогов на конец периода#Aufzeichnung der Ergebnisse am Ende der Periode
 Пароль#Passwort
-У вас есть данные начиная с#Sie gelten ab
-Измените период загрузки данных#Данныха Ändern Sie die Boot
+У вас есть данные начиная с#Sie haben Daten ab
+Измените период загрузки данных#Ändern Sie die Ladezeit der Daten
 Количество#Anzahl
 записей#Eintrag
-при загрузке массива#beim laden массивой
-загрузки файла#Datei herunterladen
-записи файла#schreiben von Dateien
+при загрузке массива#beim laden eines Arrays
+загрузки файла#herunterladen einer Datei
+записи файла#schreiben einer Datei
 Нарушение структуры данных#Verletzung der Datenstrukturen
-Количество блоков в базе данных не может быть более 9999. Удалите часть информации или обратитесь к разработчику.#Блоковов Basis данныха in einer Menge von nicht mehr als 9999 kann. Wenden Sie sich an den Entwickler oder Sie wollen Teil der Informationen.
-Ошибок нет#Fehler nicht
-Сохранили базу данных#Данныха Datenbank Gespeichert
-Количество записей#Die Anzahl der Datensätze
-Имя файла не может начинаться с data#Der name darf nicht beginnen mit der Datei Data
-Ошибка записи в файл#Fehler beim schreiben in Datei
-Сохранили в файл#In der Datei Gespeichert
-Внимание#Achtung
-восстановление потребует некоторого времени#Abklingzeit einiger потребуе
-Создать базу данных из файла#Erstellen Sie eine Datei aus den Daten der Datenbank
-Данные для восстановления отсутствуют#Gilt für abwesend восстановлениею
-Ошибка при добавлении записи в базу#Fehler beim schreiben in die Datenbank hinzufügen
-Количество ошибок#Die Anzahl der Fehler
-Данные восстановлены#Angewendet wird wiederhergestellt
-копия базы данных на#tägliche Kopie auf данныха
-Передача файла#Übertragen von Dateien
-ФАЙЛ НЕ ДОСТУПЕН#DATEI IST NICHT VERFÜGBAR
-(возможно отсутствие интернет)#(Demonstration der Abwesenheit des Internets)
-Изменения#Änderungen
-Начать корректировку базы не нарушая данных#Die possutotschnaja начила данныха ohne Korrektur
+Количество блоков в базе данных не может быть более 9999. Удалите часть информации или обратитесь к разработчику.#Die Anzahl der Blöcke in der Datenbank darf nicht mehr als 9999 sein. Entfernen Sie einige Informationen oder wenden Sie sich an den Entwickler.
+Ошибок нет#Keine Fehler
+Сохранили базу данных#Datenbank gespeichert
+Количество записей#Anzahl der Datensätze
+Имя файла не может начинаться с data#Der Dateiname kann nicht mit data beginnen
+Ошибка записи в файл#Fehler beim schreiben in eine Datei
+Сохранили в файл#Gespeichert in Datei
+Внимание#Aufmerksamkeit
+восстановление потребует некоторого времени#die Wiederherstellung dauert einige Zeit
+Создать базу данных из файла#Datenbank aus Datei erstellen
+Данные для восстановления отсутствуют#Keine Daten zur Wiederherstellung
+Ошибка при добавлении записи в базу#Fehler beim hinzufügen eines Eintrags zur Datenbank
+Количество ошибок#Anzahl der Fehler
+Данные восстановлены#Daten wiederhergestellt
+копия базы данных на#Kopie der Datenbank auf
+Передача файла#Dateiübertragung
+ФАЙЛ НЕ ДОСТУПЕН#DATEI NICHT VERFÜGBAR
+(возможно отсутствие интернет)#(vielleicht kein Internet)
+Изменения#Veränderungen
+Начать корректировку базы не нарушая данных#Starten Sie die Datenbank-Korrektur ohne Daten zu stören
 Ошибка записи#Schreibfehler
-корректировка базы данных завершена#tägliche Anpassungen заверше Daten
-Сервис для базы данных#Service für die tägliche Daten
-Первая запись не#Nicht der erste Eintrag
+корректировка базы данных завершена#die Datenbank-Korrektur wurde abgeschlossen
+Сервис для базы данных#Service für die Datenbank
+Первая запись не#Der erste Eintrag
 блок#Block
 файл#Datei
-Удаление журнала#Löschen des Protokolls
-Остатки на дату#Die Reste der auf das Datum
-Системная ошибка#Системнае Fehler
-Программная ошибка#Softwarefehler
+Удаление журнала#Löschen eines Protokolls
+Остатки на дату#Die Reste auf das Datum
+Системная ошибка#Systemfehler
+Программная ошибка#Bug
 Дата#Datum
-Приход#Gemeinde
-Расход#Mindestens
+Приход#Pfarrei
+Расход#Verbrauch
 Итого#Gesamt
 резерв#Reserve
-Возможно отсутствие файла#Demonstration der fehlenden Datei
+Возможно отсутствие файла#Keine Datei vorhanden
 Ошибка при загрузке файла#Fehler beim laden der Datei
-Загрузили массив#Hochgeladen array
+Загрузили массив#Array geladen
 Дата операции#Datum der Operation
-Комментарий#Kommentare
-Кол-во#Fisch-in
+Комментарий#Kommentar
+Кол-во#Menge
 Цена#Preis
 сумма#Summe
-Счета#Konto
-Отправить сообщение можно только получателю с установленым Messanger#Diese Nachricht kann nur mit dem Empfänger Messenger installiert
+Счета#Konten
+Отправить сообщение можно только получателю с установленым Messanger#Senden Sie eine Nachricht kann nur der Empfänger mit установленым Messenger
 Отправка сообщения#Nachricht senden
 Сообщение#Nachricht
 Сообщение отправлено#Nachricht gesendet
-Не удалось отправить#Senden Sie Nicht удалося
-Изменения в базе будут отправлены#Gesendet лийже Änderungen in der Datenbank.
-Отправить изменения#Senden Sie die änderungen
-Изменений базы данных нет на#Auf tageweise mieten данныха nicht изменених
-при записи в файл#beim schreiben in die Datei
-изменения базы данных передано#tageweise änderungen an den Daten übertragen
-Передача файла не возможна#Dateiübertragung nicht möglich
-Удалить запись#Eintrag Löschen
-не полная запись#nicht volle Aufnahme
-без НДС#ohne MwSt
-с НДС#MwSt.
-Сохранить#Speichern
-Нет изменений#Nicht изменених
-Сохранили#Gespeichert
-Записали#Zeichneten
-В массиве нет#Nicht Im array
-В базе нет массива#In der Datenbank массивой OK
-В пункте Главного меню#Im Hauptmenü Absatz
-Сервис обмена данными#Service восьмибитовой Daten
-Загрузить форму счета с#Laden Sie das Formular Konten S.
-Печать счет-фактуры#Drucken der Rechnung
-Печать накладной#Drucken von Lieferscheinen
-вертикальная#vertikale
-горизонтальная#horizontale
-Редактирование#Bearbeiten
-Редактирование реквизита#Bearbeiten von Requisiten
-Редактирование порядка сортировки#Sortieren Bearbeiten порядкой
-задайте номер#Nummer Fragen
-задайте номер начала и конца в формате Nначало-Nконец#Nначало пытыдым Yuncheng geben Sie die Nummer im Format er-Nконец
+Не удалось отправить#Senden fehlgeschlagen
+Изменения в базе будут отправлены#Änderungen an der Datenbank werden gesendet
+Отправить изменения#Änderungen senden
+Изменений базы данных нет на#Keine Datenbankänderungen auf
+при записи в файл#beim schreiben in eine Datei
+изменения базы данных передано#Datenbankänderungen wurden übergeben
+Передача файла не возможна#Dateiübertragung ist nicht möglich
+Удалить запись#Datensatz löschen
+не полная запись#nicht vollständige Aufnahme
+без НДС#ohne MwSt.
+с НДС#mit MwSt
+Сохранить#Beibehalten
+Нет изменений#Keine änderung
+Сохранили#Beibehalten
+Записали#Notieren
+В массиве нет#Kein array
+В базе нет массива#In der Datenbank kein array
+В пункте Главного меню#Im Hauptmenü
+Сервис обмена данными#Service Datenaustausch
+Загрузить форму счета с#Laden Sie das Konto-Formular von
+Печать счет-фактуры#Drucken einer Rechnung
+Печать накладной#Drucken von FRACHTBRIEFE
+вертикальная#vertikal
+горизонтальная#horizontal
+Редактирование#Editieren
+Редактирование реквизита#Bearbeiten eines Requisiten
+Редактирование порядка сортировки#Bearbeiten der Sortierreihenfolge
+задайте номер#legen Sie die Nummer
+задайте номер начала и конца в формате Nначало-Nконец#geben Sie die Start-und Endnummer im Format Nnal-nkonets an
 Заменить#Ersetzen
-Копирование в облако#Kopieren in пылым
-начиная с#ab S.
-Nначало-Nконец#Nначало-Nконец
+Копирование в облако#Kopieren in die cloud
+начиная с#seit
+Nначало-Nконец#Nnatalo-Nkonetz
 Копировать#Kopieren
-Отказ#Haftungsausschluss
-Ошибка периода записей#Schreibfehler erdbebenwid
+Отказ#Verzicht
+Ошибка периода записей#Fehler beim aufzeichnungszeitraum
 формат#Format
-Завершение копирования в журнал#Im Abschluss des Kopiervorgangs der Zeitschrift
-Перейдите на выгрузку изменений в облако#In пылым klicken Sie auf entladen
+Завершение копирования в журнал#Beenden des protokollierens
+Перейдите на выгрузку изменений в облако#Gehen Sie zum hochladen der änderungen in die cloud
 Ошибка передачи#Ein übertragungsfehler
-сообщения#Nachricht
+сообщения#Nachrichten
 Успешно#Erfolgreich
-Передача изменений#Übertragung изменених
-Очистить журнал#Magazin очистя
+Передача изменений#Übertragen von änderungen
+Очистить журнал#Protokoll löschen
 В журнале#In der Zeitschrift
 Запись#Eintrag
-Это не запись#Es ist nicht die Aufnahme
-Загрузить документ#Laden Sie Ihr Dokument
-Все контрагенты по счету#Auf der ganzen Rechnung Kontrahenten
-Изменить#Geändert
+Это не запись#Es ist kein Datensatz
+Загрузить документ#Dokument hochladen
+Все контрагенты по счету#Alle Kontrahenten auf der Rechnung
+Изменить#Ändern
 Загружаем#Laden
-В облаке#In der cloud
-из полученных посылок#aus посылоками полученныхи
-Ошибка удаления записи#Fehler beim löschen der Datensätze
-Очистить облако#Пылым очистя
+В облаке#In der Wolke
+из полученных посылок#aus empfangenen Paketen
+Ошибка удаления записи#Fehler beim löschen eines Eintrags
+Очистить облако#Wolke löschen
 Приём#Empfang
-Записей произведён#Aufnahme ausgeglichen
-Загрузка изменений базы данных из облака#Die possutotschnaja облаки изменених Herunterladen von Daten
-Нет записей на выгрузку#Eintrag zu entladen OK
-нажмите#klicken Sie
-Нет записей на удаление#Löschen der Aufnahme auf OK
-Выгрузка изменений базы данных в облако#Die possutotschnaja Daten Hochladen изменених in пылым
-Нет получателя синхронизируемых данных#Empfänger einer nicht synchronisierten Daten
-Перейдите в настройки#Gehen Sie in die Einstellungen
-Продолжить#Weiter
-Новая#Neue
-Порядковый номер записи#Die Nummer des Eintrags
+Записей произведён#Einträge erzeugt
+Загрузка изменений базы данных из облака#Laden von Datenbankänderungen aus der cloud
+Нет записей на выгрузку#Keine Einträge zum entladen
+нажмите#drücken
+Нет записей на удаление#Keine Einträge löschen
+Выгрузка изменений базы данных в облако#Hochladen von Datenbankänderungen in die cloud
+Нет получателя синхронизируемых данных#Keine synchronisierten Datenempfänger
+Перейдите в настройки#Gehen Sie zu Einstellungen
+Продолжить#Fortsetzen
+Новая#Nova
+Порядковый номер записи#Sequenznummer des Eintrags
 Откуда#Woher
-Куда#Stein
-изменения#änderungen
-создания#созданиею
-Загрузить массив#Array geladen
-Отсутствует доступ к хранилищу#Zugriff auf das Projektarchiv отсутствуй
-Нормальное завершение передачи#Normales beenden der übertragung
-Загрузку начать#Начает Download
-Реквизиты документа#Dokumente Bankverbindung
+Куда#Wohin
+изменения#Veränderungen
+создания#Schaffung
+Загрузить массив#Array laden
+Отсутствует доступ к хранилищу#Kein Zugriff auf den Speicher
+Нормальное завершение передачи#Normaler Abschluss der übertragung
+Загрузку начать#Download starten
+Реквизиты документа#Dokument Details
 Реквизиты счета#Kontodaten
 Операция#Operation
-Удалить массив базы данных#Tageweise array Entfernen данныха
-Нормальное завершение удаления массива#Entfernung Normales beenden массивой
-Нет контрагента#Nicht die Gegenpartei
-Реквизит#Details
-документ для печати передан#schützen Sie zum drucken von Dokumenten
-Проверить базу данных#Die Datenbank überprüfen
-Сохранить базу на устройстве#Speichern auf die Einbeziehung der Basis
-Восстановить базу на устройстве#Basis für Anwerbung восстановя
-Отправить базу данных на почту#Senden Sie auf Basis данныха-Mail
-Скопировать базу в хранилище#Kopieren in Speicher-Basis
-Восстановить базу из хранилища#Aus восстановя Basis Speicher
-Загрузить форму баланса по контрагенту с#Nach dem Kontrahenten Gleichgewicht Formular S. Download
-Загрузить форму накладной#Herunterladen Frachtbrief-Formular
-Загрузить форму счет-фактуры#Laden Sie das Formular Rechnung
-Отправить смс на#Senden Sie eine SMS an
-Отправить изменения на почту#Schickte änderungen auf die post
-Копировать часть базы в облако#Die possutotschnaja kopieren in Teil пылым
-Счет#Durch
-Накладная, счет-фактура#Lieferschein, Rechnung
-Предприятия#Предприятией
-Товары, услуги#Produkte und Dienstleistungen
-при восстановлении#bei der Wiederherstellung
+Удалить массив базы данных#Datenbank-array löschen
+Нормальное завершение удаления массива#Normales löschen eines Arrays
+Нет контрагента#Keine Kontrahenten
+Реквизит#Requisiten
+документ для печати передан#das Dokument wurde gesendet
+Проверить базу данных#Datenbank überprüfen
+Сохранить базу на устройстве#Datenbank auf dem Gerät speichern
+Восстановить базу на устройстве#Datenbank auf dem Gerät wiederherstellen
+Отправить базу данных на почту#Datenbank an E-Mail senden
+Скопировать базу в хранилище#Datenbank in den Tresor kopieren
+Восстановить базу из хранилища#Datenbank aus dem Tresor wiederherstellen
+Загрузить форму баланса по контрагенту с#Laden Sie die bilanzformular für einen Kontrahenten mit
+Загрузить форму накладной#Frachtbrief-Formular herunterladen
+Загрузить форму счет-фактуры#Das Rechnungsformular herunterladen
+Отправить смс на#Senden Sie SMS an
+Отправить изменения на почту#Änderungen an E-Mail senden
+Копировать часть базы в облако#Kopieren Teil in der cloud
+Счет#Konto
+Накладная, счет-фактура#Rechnung, Rechnung
+Предприятия#Betriebe
+Товары, услуги#Waren, Dienstleistungen
+при восстановлении#beim wiederherstellen
 отсутствует#fehlen
 Календарь#Kalender
 Январь#Januar
@@ -215,10 +215,10 @@ Nначало-Nконец#Nначало-Nконец
 Октябрь#Oktober
 Ноябрь#November
 Декабрь#Dezember
-Пн#PN
-Вт#W
-Ср#Vgl
-Чт#Blo
+Пн#Mo
+Вт#Watt
+Ср#Mitte
+Чт#Cht
 Пт#FR
 Сб#Sa
-Вс#Sonne
+Вс#Alle
