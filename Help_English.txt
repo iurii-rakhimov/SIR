@@ -11,7 +11,7 @@ the name (identifier).
 The changes necessary to fix 
 pressing the Record button  (#21)
 Exit to the previous screen by pressing 
-the buttons in the upper left corner    (#12)
+the buttons in the upper left corner  (#12)
 You can fill in the settings "Your password" and
 in the future, modify it at your convenience
 or populate this field with the word "No."
