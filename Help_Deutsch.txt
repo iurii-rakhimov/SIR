@@ -1,0 +1,85 @@
+#Array Help_Deutsch
+Über Das Programm: Sir meine Finanzen und WIRTSCHAFT
+Das Programm ist einfach zu bedienen und erfordert keine
+spezielle Kenntnisse im Bereich der Rechnungslegung.
+ 
+1. Drücken Sie die Taste Einstellungen :		(#1)
+das ist in der oberen rechten Ecke
+Wählen Sie dann " Ihre id"
+Im Eingabefeld Benutzer durch Ihre ersetzen
+name (id).
+Änderungen müssen behoben werden 
+klicken Sie auf die Schaltfläche aufzeichnen 	(#21)
+Ausgang zum vorherigen Bildschirm erfolgt durch drücken 
+Schaltflächen in der oberen linken Ecke 	(#12)
+Sie können in den Einstellungen "Ihr Passwort eingeben» Und
+später ändern Sie es nach Ihrem Ermessen
+oder füllen Sie dieses Feld mit dem Wort «Nein"aus.
+Es ist wichtig, die Sortierreihenfolge Ihrer Daten zu bestimmen.
+Dazu wählen Sie in den Einstellungen
+"Die Sortierreihenfolge beginnt mit (min/max)" und
+min oder max zuweisen
+2. Um mit den Daten zu arbeiten, klicken Sie auf
+"Daten für den Zeitraum laden" .
+Wenn die Daten für den ausgewählten Zeitraum nicht vorhanden sind, haben Sie
+es stehen zwei Testdaten zur Auswahl
+In der ersten Version zeigt die Eintragung der 2-x
+die Aufzeichnungen in die Reste.
+Rechnung vom Unterkonto getrennt durch ein Leerzeichen
+In der 2. Variante wird die Eintragung 12 demonstriert
+Einträge mit GitHub, so sollte das Internet sein
+Diese Variante zeigt die quantitative Buchhaltung.
+Nach dem laden der Testinformationen in die Datenbank 
+Sie haben eine Liste von Konten, 
+dann die Liste der Kontrahenten (Unterkonto),
+weitere Angaben zu den Kontrahenten, die
+hinzufügen: 	(#27)
+Bearbeiten: 	(#3)
+löschen(del): 	(#26)
+kopieren: 	(#2)
+Wenn der Kontrahenten Gleichgewicht 0 (Null)
+es ist möglich, die Anzeige auf dem Auftragnehmer Deaktivieren
+keine Rückstände. Dafür einzurichten
+"Null - Account-Wert anzeigen-ja/Nein"
+wählen Sie "Nein"
+oder zeigen null Wert "Ja"
+ 
+Auf dem Home-Bildschirm sind die folgenden Symbole:
+Ausgang 	(#5)
+Datenbank-Service 	(#22)
+Kommunikationsdienst 	(#25)
+Die Bildung der Dokumente 	(#4)
+Einstellungen 	(#1)
+Hilfe 	(#7)
+ 
+Kommentare und Wünsche warten auf die post 
+Adresse iuriivlad@icloud.com
+ 
+Mögliche Symbole und deren Verwendung
+Einstellungen 	(#1)
+kopieren 	(#2)
+Bearbeiten 	(#3)
+Löschen 	(#26)
+Hinzufügen 	(#27)
+Beenden des Programms 	(#5)
+Beenden des Programms 	(#6)
+Hilfe 	(#7)
+Zeigen null 	(#9)
+Nicht zeigen null 	(#10)
+Zeiger des bearbeitbaren Eintrags 	(#8)
+Vorherige Seite anzeigen 	(#11)
+Nächste Seite anzeigen 	(#17)
+Zurück zum vorherigen Bildschirm 	(#12)
+Datum für Jahr minus 	(#13)
+Datum für das Jahr Plus 	(#18)
+Datum für Monat minus 	(#11)
+Datum für den Monat Plus 	(#17)
+Bestätigen des ausgewählten Datums 	(#15)
+Drucken 	(#16)
+Sortieren nach absteigend 	(#20)
+Aufsteigend Sortieren 	(#23)
+Daten speichern 	(#21)
+Datenbank-Service 	(#22)
+Datenübertragung 	(#24)
+Datenbankaustausch 	(#25)
+- - - - - - - - - - - - - - - - - - -
