@@ -1,3 +1,4 @@
+#Array Help_English
 About the program: SIR My finances and business
 The program is easy to use and does not require
 special knowledge in the field of accounting.
