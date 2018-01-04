@@ -55,21 +55,21 @@
 Нарушение структуры данных#Verletzung der Datenstrukturen
 Количество блоков в базе данных не может быть более 9999. Удалите часть информации или обратитесь к разработчику.#Die Anzahl der Blöcke in der Datenbank darf nicht mehr als 9999 sein. Entfernen Sie einige Informationen oder wenden Sie sich an den Entwickler.
 Ошибок нет#Keine Fehler
-Сохранили базу данных#Datenbank gespeichert
+Сохранили базу данных# Datenbank gespeichert
 Количество записей#Anzahl der Datensätze
 Имя файла не может начинаться с data#Der Dateiname kann nicht mit data beginnen
 Ошибка записи в файл#Fehler beim schreiben in eine Datei
 Сохранили в файл#Gespeichert in Datei
 Внимание#Aufmerksamkeit
 восстановление потребует некоторого времени#die Wiederherstellung dauert einige Zeit
-Создать базу данных из файла#Datenbank aus Datei erstellen
+Создать базу данных из файла# Datenbank aus Datei erstellen
 Данные для восстановления отсутствуют#Keine Daten zur Wiederherstellung
 Ошибка при добавлении записи в базу#Fehler beim hinzufügen eines Eintrags zur Datenbank
 Количество ошибок#Anzahl der Fehler
-Данные восстановлены#Daten wiederhergestellt
+Данные восстановлены# Daten wiederhergestellt
 копия базы данных на#Kopie der Datenbank auf
-Передача файла#Dateiübertragung
-ФАЙЛ НЕ ДОСТУПЕН#DATEI NICHT VERFÜGBAR
+Передача файла# Dateiübertragung
+ФАЙЛ НЕ ДОСТУПЕН# DATEI NICHT VERFÜGBAR
 (возможно отсутствие интернет)#(vielleicht kein Internet)
 Изменения#Veränderungen
 Начать корректировку базы не нарушая данных#Starten Sie die Datenbank-Korrektur ohne Daten zu stören
@@ -78,7 +78,7 @@
 Сервис для базы данных#Service für die Datenbank
 Первая запись не#Der erste Eintrag
 блок#Block
-файл#Datei
+файл# Datei
 Удаление журнала#Löschen eines Protokolls
 Остатки на дату#Die Reste auf das Datum
 Системная ошибка#Systemfehler
@@ -106,9 +106,9 @@
 Отправить изменения#Änderungen senden
 Изменений базы данных нет на#Keine Datenbankänderungen auf
 при записи в файл#beim schreiben in eine Datei
-изменения базы данных передано#Datenbankänderungen wurden übergeben
-Передача файла не возможна#Dateiübertragung ist nicht möglich
-Удалить запись#Datensatz löschen
+изменения базы данных передано# Datenbankänderungen wurden übergeben
+Передача файла не возможна# Dateiübertragung ist nicht möglich
+Удалить запись# Datensatz löschen
 не полная запись#nicht vollständige Aufnahme
 без НДС#ohne MwSt.
 с НДС#mit MwSt
@@ -179,17 +179,17 @@ Nначало-Nконец#Nnatalo-Nkonetz
 Реквизиты документа#Dokument Details
 Реквизиты счета#Kontodaten
 Операция#Operation
-Удалить массив базы данных#Datenbank-array löschen
+Удалить массив базы данных# Datenbank-array löschen
 Нормальное завершение удаления массива#Normales löschen eines Arrays
 Нет контрагента#Keine Kontrahenten
 Реквизит#Requisiten
 документ для печати передан#das Dokument wurde gesendet
-Проверить базу данных#Datenbank überprüfen
-Сохранить базу на устройстве#Datenbank auf dem Gerät speichern
-Восстановить базу на устройстве#Datenbank auf dem Gerät wiederherstellen
-Отправить базу данных на почту#Datenbank an E-Mail senden
-Скопировать базу в хранилище#Datenbank in den Tresor kopieren
-Восстановить базу из хранилища#Datenbank aus dem Tresor wiederherstellen
+Проверить базу данных# Datenbank überprüfen
+Сохранить базу на устройстве# Datenbank auf dem Gerät speichern
+Восстановить базу на устройстве# Datenbank auf dem Gerät wiederherstellen
+Отправить базу данных на почту# Datenbank an E-Mail senden
+Скопировать базу в хранилище# Datenbank in den Tresor kopieren
+Восстановить базу из хранилища# Datenbank aus dem Tresor wiederherstellen
 Загрузить форму баланса по контрагенту с#Laden Sie die bilanzformular für einen Kontrahenten mit
 Загрузить форму накладной#Frachtbrief-Formular herunterladen
 Загрузить форму счет-фактуры#Das Rechnungsformular herunterladen
