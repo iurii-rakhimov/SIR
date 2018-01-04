@@ -61,7 +61,7 @@
 Ошибка записи в файл#Error writing to file
 Сохранили в файл#Saved to a file
 Внимание#Attention
-восстановление потребует некоторого времени#recovery will take some time
+восстановление#recovery
 Создать базу данных из файла#To create a database from a file
 Данные для восстановления отсутствуют#Recovery data is missing
 Ошибка при добавлении записи в базу#Error when adding record in database
@@ -201,7 +201,7 @@ Nначало-Nконец#Nthebeginning Ntheend
 Предприятия#Enterprise
 Товары, услуги#Goods, services
 при восстановлении#when restoring
-отсутствует#missing
+потребует некоторого времени#will take some time
 Календарь#Calendar
 Январь#January
 Февраль#February
