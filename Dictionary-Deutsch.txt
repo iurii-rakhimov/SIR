@@ -42,8 +42,8 @@
 Сегодня#Heute
 время#Zeit
 Продолжить#Fortsetzen
-Загрузить данные за период#Daten für den Zeitraum herunterladen
-Запись итогов на конец периода#Aufzeichnen von Ergebnissen für einen Zeitraum
+Загрузить данные за период# Daten für den Zeitraum herunterladen
+Запись итогов на конец периода#Aufzeichnen von Ergebnissen
 Пароль#Passwort
 У вас есть данные начиная с#Sie haben Daten ab
 Измените период загрузки данных#Ändern Sie die Ladezeit der Daten
