@@ -61,7 +61,7 @@
 Ошибка записи в файл#Fehler beim schreiben in eine Datei
 Сохранили в файл#Gespeichert in Datei
 Внимание#Aufmerksamkeit
-восстановление потребует некоторого времени#die Wiederherstellung dauert einige Zeit
+восстановление#die Wiederherstellung
 Создать базу данных из файла# Datenbank aus Datei erstellen
 Данные для восстановления отсутствуют#Keine Daten zur Wiederherstellung
 Ошибка при добавлении записи в базу#Fehler beim hinzufügen eines Eintrags zur Datenbank
@@ -201,7 +201,7 @@ Nначало-Nконец#Nnatalo-Nkonetz
 Предприятия#Betriebe
 Товары, услуги#Waren, Dienstleistungen
 при восстановлении#beim wiederherstellen
-отсутствует#fehlen
+потребует некоторого времени#dauert einige Zeit
 Календарь#Kalender
 Январь#Januar
 Февраль#Februar
