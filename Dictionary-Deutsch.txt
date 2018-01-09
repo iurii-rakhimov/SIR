@@ -153,7 +153,7 @@ Nначало-Nконец#Nnatalo-Nkonetz
 Изменить#Ändern
 Загружаем#Laden
 В облаке#In der Wolke
-из полученных посылок#aus empfangenen Paketen
+полученных посылок#empfangene pakete
 Ошибка удаления записи#Fehler beim löschen eines Eintrags
 Очистить облако#Wolke löschen
 Приём#Empfang
