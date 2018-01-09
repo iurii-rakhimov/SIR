@@ -153,7 +153,7 @@ Nначало-Nконец#Nthebeginning Ntheend
 Изменить#To change
 Загружаем#Downloadable
 В облаке#In the cloud
-из полученных посылок#of the resulting parcels
+полученных посылок#the parcel
 Ошибка удаления записи#Error deleting record
 Очистить облако#To clear the cloud
 Приём#Reception
