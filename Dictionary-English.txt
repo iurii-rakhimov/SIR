@@ -201,8 +201,9 @@ Nначало-Nконец#Nthebeginning Ntheend
 Предприятия#Enterprise
 Товары, услуги#Goods, services
 при восстановлении#when restoring
-потребует некоторого времени#will take some time
 Календарь#Calendar
+потребует некоторого времени#will take some time
+Нет записей на загрузку#No records to load
 Январь#January
 Февраль#February
 Март#March
