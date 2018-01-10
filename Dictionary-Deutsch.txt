@@ -201,8 +201,9 @@ Nначало-Nконец#Nnatalo-Nkonetz
 Предприятия#Betriebe
 Товары, услуги#Waren, Dienstleistungen
 при восстановлении#beim wiederherstellen
-потребует некоторого времени#dauert einige Zeit
 Календарь#Kalender
+потребует некоторого времени#dauert einige Zeit
+Нет записей на загрузку#Keine downloads
 Январь#Januar
 Февраль#Februar
 Март#März
