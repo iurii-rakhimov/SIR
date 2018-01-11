@@ -204,6 +204,7 @@ Nначало-Nконец#Nthebeginning Ntheend
 Календарь#Calendar
 потребует некоторого времени#will take some time
 Нет записей на загрузку#No records to load
+Контрагенты прихода и расхода не могут быть одинаковы#Contractors are coming(from) and consumption(where) can not be the same
 Январь#January
 Февраль#February
 Март#March
