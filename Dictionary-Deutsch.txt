@@ -204,6 +204,7 @@ Nначало-Nконец#Nnatalo-Nkonetz
 Календарь#Kalender
 потребует некоторого времени#dauert einige Zeit
 Нет записей на загрузку#Keine downloads
+Контрагенты прихода(откуда) и расхода(куда) не могут быть одинаковы#Die Kontrahenten der Gemeinde(Woher) und der Kosten(wohin) können nicht identisch sein
 Январь#Januar
 Февраль#Februar
 Март#März
