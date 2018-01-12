@@ -205,6 +205,7 @@ Nначало-Nконец#Nthebeginning Ntheend
 потребует некоторого времени#will take some time
 Нет записей на загрузку#No records to load
 Контрагенты прихода(откуда) и расхода(куда) не могут быть одинаковы#Contractors are coming(from) and consumption(where) can not be the same
+с суммой#with the amount
 Январь#January
 Февраль#February
 Март#March
