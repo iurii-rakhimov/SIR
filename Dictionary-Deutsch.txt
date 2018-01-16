@@ -206,7 +206,8 @@ Nначало-Nконец#Nnatalo-Nkonetz
 Нет записей на загрузку#Keine downloads
 Контрагенты прихода(откуда) и расхода(куда) не могут быть одинаковы#Die Kontrahenten der Gemeinde(Woher) und der Kosten(wohin) können nicht identisch sein
 с суммой#mit der Summe
-Синхронизировать данные за период#Synchronisieren von Daten für einen Zeitraum
+Выгрузить#Ausladen
+данные за период#daten für den zeitraum
 Январь#Januar
 Февраль#Februar
 Март#März
