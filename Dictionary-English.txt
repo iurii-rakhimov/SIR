@@ -206,7 +206,7 @@ Nначало-Nконец#Nthebeginning Ntheend
 Нет записей на загрузку#No records to load
 Контрагенты прихода(откуда) и расхода(куда) не могут быть одинаковы#Contractors are coming(from) and consumption(where) can not be the same
 с суммой#with the amount
-Синхронизировать данные за последний месяц#To synchronize the data for the last month
+Синхронизировать данные за период#To synchronize data for the period
 Январь#January
 Февраль#February
 Март#March
