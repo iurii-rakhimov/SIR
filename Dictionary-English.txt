@@ -208,6 +208,10 @@ Nначало-Nконец#Nthebeginning Ntheend
 с суммой#with the amount
 Выгрузить#Unload
 данные за период#data for the period
+из#from
+в#in
+облака#clouds
+облако#cloud
 Январь#January
 Февраль#February
 Март#March
