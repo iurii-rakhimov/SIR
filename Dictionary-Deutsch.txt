@@ -208,6 +208,10 @@ Nначало-Nконец#Nnatalo-Nkonetz
 с суммой#mit der Summe
 Выгрузить#Ausladen
 данные за период#daten für den zeitraum
+из#aus
+в#zu
+облака#wolke
+облако#wolke
 Январь#Januar
 Февраль#Februar
 Март#März
