@@ -24,7 +24,7 @@
 больше#more
 Дата начала#Start date
 даты конца#the ending date
-Запись итогов за период с #Record totals for the period from
+Запись итогов за период с#Record totals for the period from
 до#to
 завершена#completed
 За выбранный период данные отсутствуют. Вы можете загрузить тестовые данные#For the selected time period data not available. You can download the test data
