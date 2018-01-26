@@ -2,3 +2,4 @@
 Русский Dictionary-Русский.txt
 English Dictionary-English.txt
 Deutsch Dictionary-Deutsch.txt
+Tajik Dictionary-Tajik.txt
