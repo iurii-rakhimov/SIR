@@ -1,0 +1,3 @@
+^Date = GetDateNextMonth(^Date, -1)
+Date = ^Date
+ShowMonth(Date)
