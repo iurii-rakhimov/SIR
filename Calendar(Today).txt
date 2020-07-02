@@ -1,0 +1,3 @@
+Date = GetDate()
+^Date = Date
+ShowMonth(Date)
