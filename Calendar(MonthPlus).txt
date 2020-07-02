@@ -1,0 +1,4 @@
+^Date = GetDateNextMonth(^Date, 1)
+Date = ^Date
+wait 1000, message="Ждите !!!"
+ShowMonth(Date)
