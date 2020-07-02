@@ -1,3 +1,15 @@
+Calendar(Appear).txt
+Calendar(Exit).txt
+Calendar(MonthMinus).txt
+Calendar(MonthPlus).txt
+Calendar(SelectDate).txt
+Calendar(Today).txt
+CalendarNew(Appear).txt
+CalendarNew(Clean).txt
+CalendarNew(Exit).txt
+CalendarNew(MonthMinus).txt
+CalendarNew(MonthPlus).txt
+CalendarNew(SelectDate).txt
 MF(Appear).txt
 MF(DateBegin).txt
 MF(DateBeginMinus).txt
