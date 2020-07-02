@@ -1,0 +1,21 @@
+// MF[DayBeginPlus].txt
+DateBegin = GetDateNextDay(^DateBegin, 1)
+BeginDate = DateOfFormat("yyyy/MM/dd", DateBegin)
+EndDate = DateOfFormat("yyyy/MM/dd", ^DateEnd)
+if BeginDate < EndDate
+{
+	^DateBegin = DateBegin
+	DateBegin.text = ^DateBegin
+	View DateBegin
+	^Key = "Дата начала периода"
+	^Data = ^DateBegin
+	kv = DataBaseWriteDataForKey(^Key, ^Data)
+	if kv != 0
+	{
+		DoModule ErrorWriteBaseData
+	}
+}
+else
+{
+	ErrorDate()
+}
