@@ -1,0 +1,20 @@
+DateEnd = GetDateNextMonth(^DateEnd, -1)
+BeginDate = DateOfFormat("yyyy/MM/dd", ^DateBegin)
+EndDate = DateOfFormat("yyyy/MM/dd", DateEnd)
+if BeginDate < EndDate
+{
+  ^DateEnd = DateEnd
+  DateEnd.text = ^DateEnd
+  View DateEnd
+  ^Key = "Дата окончания периода"
+  ^Data = ^DateEnd
+  kv = DataBaseWriteDataForKey(^Key, ^Data)
+  if kv != 0
+  {
+    DoModule ErrorWriteBaseData
+  }
+}
+else
+{
+  DoModule ErrorDate
+}
