@@ -1,0 +1,13 @@
+DoModule Clean
+^Date = GetDateNextMonth(^Date, -1)
+Date = ^Date
+ShowObjectForm("CalendarNew", "Data31")
+Data31.TextColor = "Black"
+Data31.BackgroundColor = "White"
+ShowObjectForm("CalendarNew", "Data30")
+Data30.TextColor = "Black"
+Data30.BackgroundColor = "White"
+ShowObjectForm("CalendarNew", "Data29")
+Data29.TextColor = "Black"
+Data29.BackgroundColor = "White"
+DoModule Appear
