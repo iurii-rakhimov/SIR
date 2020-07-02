@@ -3,3 +3,11 @@ MF(DateBegin).txt
 MF(DateBeginMinus).txt
 MF(DateBeginPlus).txt
 MF(DateEnd).txt
+MF(DateEndMinus).txt
+MF(DateEndPlus).txt
+MF(DateMinus).txt
+MF(DatePlus).txt
+MF(DayBeginMinus).txt
+MF(DayBeginPlus).txt
+MF(DayEndMinus).txt
+MF(DayEndPlus).txt
