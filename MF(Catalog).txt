@@ -1,2 +1,5 @@
 MF(Appear).txt
-MF(Catalog).txt
+MF(DateBegin).txt
+MF(DateBeginMinus).txt
+MF(DateBeginPlus).txt
+MF(DateEnd).txt
