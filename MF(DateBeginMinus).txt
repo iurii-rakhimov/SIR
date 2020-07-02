@@ -1,0 +1,14 @@
+^DateBegin = GetDateNextMonth(^DateBegin, -1)
+ArrayDate = Components(^DateBegin, "/")
+Month = ArrayDate[1]
+Year = ArrayDate[2]
+^DateBegin = "01/" + Month + "/" + Year
+DateBegin.text = ^DateBegin
+View DateBegin
+^Key = "Дата начала периода"
+^Data = ^DateBegin
+kv = DataBaseWriteDataForKey(^Key, ^Data)
+if kv != 0
+{
+	DoModule ErrorWriteBaseData
+}
