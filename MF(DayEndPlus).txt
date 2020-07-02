@@ -1,0 +1,11 @@
+// MF[DayEndPlus].txt
+^DateEnd = GetDateNextDay(^DateEnd, 1)
+DateEnd.text = ^DateEnd
+View DateEnd
+^Key = "Дата окончания периода"
+^Data = ^DateEnd
+kv = DataBaseWriteDataForKey(^Key, ^Data)
+if kv != 0
+{
+  DoModule ErrorWriteBaseData
+}
