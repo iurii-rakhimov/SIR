@@ -1,0 +1,93 @@
+Remove ExternalVariables
+Remove AllVisualObject
+
+^DelimiterSpace = IntToChar(40)
+^DelimiterTab = IntToChar(9)
+^DelimiterNewLine = IntToChar(10)
+^OrderSort = "MaxMin"
+^DelimiterBag = IntToChar(128188)
+^Path = GetPathDirectoryDocument()
+^Key = ""
+^DateBegin = ""
+^DateEnd = ""
+^SaveRecord = "No"
+
+LoadModule  Function[Pyton].txt
+
+LoadModule  Function[ShowMonth].txt
+LoadModule  Function[GeneralBalance].txt
+LoadModule  Function[SelectionListOperaciiKontragent].txt
+LoadModule  Function[ViewSelectionListOperaciiKontragent].txt
+LoadModule  Function[SaveRecord].txt
+LoadModule  Function[TrashRecord].txt
+
+LoadModule  Function[ErrorDate].txt
+LoadModule  Function[ErrorWriteBaseData].txt
+LoadModule  Function[ErrorWriteFile].txt
+
+^Key = "Сортировка данных"
+^OrderSort = DataBaseReadDataForKey(^Key)
+if ^OrderSort == ""
+{
+	^Data = "MaxMin"
+	kv = DataBaseWriteDataForKey(^Key, ^Data)
+	if kv != 0
+	{
+		DoModule ErrorWriteBaseData
+	}
+	OrderSort = ^Data
+}
+
+^Key = "Дата начала периода"
+DateBegin = DataBaseReadDataForKey(^Key)
+if DateBegin == ""
+{
+	DateBegin = GetDate()
+	arrayDateBegin = Components(DateBegin, "/")
+	arrayDateBegin[0] = "01"
+	DateBegin = Joined(arrayDateBegin, "/")
+	^Data = DateBegin
+	kv = DataBaseWriteDataForKey(^Key, ^Data)
+	if kv != 0
+	{
+		DoModule ErrorWriteBaseData
+	}
+}
+^DateBegin = DateBegin
+DateBegin.text = ^DateBegin
+View DateBegin
+
+^Key = "Дата окончания периода"
+DateEnd = DataBaseReadDataForKey(^Key)
+Minus1=-1
+Plus1=1
+if DateEnd == ""
+{
+	DateEnd = GetDate()
+	arrayDateEnd = Components(DateBegin, "/")
+	arrayDateEnd[0] = ""
+	DateEnd = Joined(arrayDateEnd, "/")
+	DateEnd = GetDateNextMonth(DateEnd, Plus1)
+	DateEnd = GetDateNextMonth(DateEnd, Minus1)
+	^Data = DateEnd
+	kv = DataBaseWriteDataForKey(^Key, ^Data)
+	if kv != 0
+	{
+		DoModule ErrorWriteBaseData
+	}
+}
+^DateEnd = DateEnd
+DateEnd.text = ^DateEnd
+View DateEnd
+
+NameFile = ^Path + "MF_Comment.txt"
+ContentFile = FileRead(NameFile)
+^ArrayComment = Components(ContentFile, ^DelimiterNewLine)
+
+//^NameChangeTextField = ""
+
+arrayDateBegin = Components(DateBegin, "/")
+arrayDateEnd = Components(DateEnd, "/")
+
+Remove arrayDateBegin
+Remove arrayDateEnd
