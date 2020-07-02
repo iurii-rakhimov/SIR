@@ -1,0 +1,5 @@
+// MF[DateEnd].txt
+ShowObjectForm("MF", "DayBeginMinus")
+ShowObjectForm("MF", "DayBeginPlus")
+ShowObjectForm("MF", "DayEndMinus")
+ShowObjectForm("MF", "DayEndPlus")
