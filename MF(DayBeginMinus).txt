@@ -1,0 +1,11 @@
+// MF[DayBeginMinus].txt
+^DateBegin = GetDateNextDay(^DateBegin, -1)
+DateBegin.text = ^DateBegin
+View DateBegin
+^Key = "Дата начала периода"
+^Data = ^DateBegin
+kv = DataBaseWriteDataForKey(^Key, ^Data)
+if kv != 0
+{
+	DoModule ErrorWriteBaseData
+}
