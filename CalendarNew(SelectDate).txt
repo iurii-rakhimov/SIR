@@ -1,0 +1,15 @@
+IndexObjectAction = GetIndexObjectAction()
+NameObjectAction = GetNameObjectAction(IndexObjectAction)
+strData = "^value=" + NameObjectAction + ".text"
+CompilationExecution(strData)
+if ^value < 10
+{
+  ^value = ^value + 100
+  ^value = SubString(^value, 1, 2)
+}
+Date = ^Date
+ArrayDate = Components(Date, "/")
+ArrayDate[0] = ^value
+^Date = Joined(ArrayDate, "/")
+^SaveRecord = "Yes"
+ExitForm
