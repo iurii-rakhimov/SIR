@@ -1,0 +1,27 @@
+function Pyton(NameFile)
+{
+	PathNameFile = ^Path + NameFile
+	ContentFile = FileRead(PathNameFile)
+	ArrayRecords = Components(ContentFile, ^DelimiterNewLine)
+	сountRecords = CountElementsOfArray(ArrayRecords)
+	Cycle i = 0 ; i < сountRecords
+	{
+		strRecord = ArrayRecords[i]
+		print strRecord
+		strNewRecord = AnalizStrng(strRecord)
+		print strNewRecord
+	}
+	return
+}
+function AnalizStrng(str)
+{
+	l = LengthString(str)
+	ArrayChar = Components(str, "")
+	strChar = ""
+	Cycle i = 0 ; i < l
+	{
+		char = ArrayChar[i]
+		strChar = strChar + "'" + char + "' "
+	}
+	return strChar
+}
