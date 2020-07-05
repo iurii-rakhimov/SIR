@@ -1,0 +1,71 @@
+//ListKontragent[Appear].txt
+
+indexCell = ^indexCellSchet
+DelimiterTab = ^DelimiterTab
+strSchet = GetComponentString(^ArraySchet[indexCell], " ", 0)
+
+CountRecords = CountElementsOfArray(^ArrayKontragent)
+n=0
+Remove ^ArraySelectKontragent
+SelectSchet = GetComponentString(strSchet, DelimiterTab, 0)
+KontragentTitle.text = SelectSchet
+
+Struct StructKontragent { nameKontragent, Summa, Quantity }
+For i = 0 ; i < CountRecords ; i++
+{
+	strRecord = ^ArrayKontragent[i]
+	GetComponentsOfStruct(StructKontragent, strRecord, DelimiterTab)
+	SchetKontragent = GetComponentString(nameKontragent, " ", 0)
+	if Summa == ""
+	{
+		continue
+	}
+	if SchetKontragent == SelectSchet
+	{
+		^ArraySelectKontragent[n] = strRecord
+		n++
+	}
+}
+
+// Описание таблицы
+
+Create Label { Name = NameKontragent, Action = SelectKontragent, TextColor = "Black", BackgroundColor = "White", X=0, Y = 0, Width = 180, Height = 20, FontName = "systemFont", FontSize=12, Alignment = "Left", CornerRadius = 0, ModelCell=modelCellVertically[0], LocationDevice="vertically"}
+Create Label { Name = NameKontragent, Action = SelectKontragent, TextColor = "Black", BackgroundColor = "White", X=0, Y = 0, Width = 180, Height = 20, FontName = "systemFont", FontSize=12, Alignment = "Left", CornerRadius = 0, ModelCell=modelCellHorizontally[0], LocationDevice="horizontally"}
+
+Create Label { Name = SummaKontragent, Action = SelectKontragent, TextColor = "Black", BackgroundColor = "White", X=185, Y = 0, Width = 120, Height = 20, FontName = "systemFont", FontSize=14, Alignment = "Right", CornerRadius = 0, ModelCell=modelCellVertically[1], LocationDevice="vertically"}
+Create Label { Name = SummaKontragent, Action = SelectKontragent, TextColor = "Black", BackgroundColor = "White", X=185, Y = 0, Width = 120, Height = 20, FontName = "systemFont", FontSize=14, Alignment = "Right", CornerRadius = 0, ModelCell=modelCellHorizontally[1], LocationDevice="horizontally"}
+
+xTableView = 5
+heightTitle = 40
+yBar = 50
+yTableView = yBar + heightTitle + 10
+wTableView = 310
+hTableViewVertically = ^ScreenHeightPhone - yTableView - 5
+hTableViewHorizontally = ^ScreenWidthPhone - yTableView - 5
+
+Create Rectangle { Name = Rectangle1, Color = "Black", X=xTableView-2, Y = yTableView-2, Width = wTableView+4, Height = hTableViewVertically+4, CornerRadius = 0, LocationDevice="vertically"}
+Create Rectangle { Name = Rectangle1, Color = "Black", X=xTableView-2, Y = yTableView-2, Width = wTableView+4, Height = hTableViewHorizontally+4, CornerRadius = 0, LocationDevice="horizontally"}
+
+Create Rectangle { Name = Rectangle2, Color = "White", X=xTableView-1, Y = yTableView-1, Width = wTableView+2, Height = hTableViewVertically+2, CornerRadius = 0, LocationDevice="vertically"}
+Create Rectangle { Name = Rectangle2, Color = "White", X=xTableView-1, Y = yTableView-1, Width = wTableView+2, Height = hTableViewHorizontally+2, CornerRadius = 0, LocationDevice="horizontally"}
+
+Create TableView { Name = ListKontragentTable, Action= SelectKontragent, X=xTableView, Y=yTableView, Width=wTableView, Height=hTableViewVertically, ModelCell=modelCellVertically, LocationDevice="vertically"}
+Create TableView { Name = ListKontragentTable, Action= SelectKontragent, X=xTableView, Y=yTableView, Width=wTableView, Height=hTableViewHorizontally, ModelCell=modelCellHorizontally, LocationDevice="horizontally"}
+
+Remove modelCellVertically
+Remove modelCellHorizontally
+
+Struct TableView { NameKontragent, SummaKontragent } 
+
+CountRecords = CountElementsOfArray(^ArraySelectKontragent)
+For i = 0 ; i < CountRecords ; i++
+{
+	strRecord = ^ArraySelectKontragent[i]
+	GetComponentsOfStruct(StructKontragent, strRecord, DelimiterTab)
+	Summa = CurrencyFormat(Summa)
+	Summa = FormatStringSeparatorGroupsDischarges(Summa, " ")
+	TableView.NameKontragent = nameKontragent
+	TableView.SummaKontragent = Summa
+	ListKontragentTable[i] = TableView
+}
+MessageBarUp( "Выберите контрагента" )
