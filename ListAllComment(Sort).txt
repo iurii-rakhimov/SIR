@@ -1,0 +1,3 @@
+// ListAllComment[Sort].txt
+Sort(^ArrayComment, "MinMax")
+DoModule Appear
