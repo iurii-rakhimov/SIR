@@ -1,0 +1,8 @@
+^SaveRecordComment = "Yes"
+
+//char=GetCharChangeTextField()
+//Print “char=” + char
+//Str=GetStringToChangeTextField()
+//Print “StringToChangeTextField=” + Str
+//Str = GetStringAfterChangeTextField()
+//Print “StringAfterChangeTextField=” + Str
