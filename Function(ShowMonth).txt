@@ -1,0 +1,103 @@
+function ShowMonth(Date)
+{
+	DayWeek1.text = "пн"
+	View DayWeek1
+	DayWeek2.text = "вт"
+	View DayWeek2
+	DayWeek3.text = "ср"
+	View DayWeek3
+	DayWeek4.text = "чт"
+	View DayWeek4
+	DayWeek5.text = "пт"
+	View DayWeek5
+	DayWeek6.text = "сб"
+	View DayWeek6
+	DayWeek7.text = "вс"
+	View DayWeek7
+
+	DayMonth = "31/28/31/30/31/30/31/31/30/31/30/31"
+	Struct StructDate { Day, Month, Year }
+	GetComponentsOfStruct(StructDate, Date, "/")
+	Day = 0 + Day
+	MonthDate = Month
+
+	Month = Month - 1
+	MonthAndYear = GetNameMonth(Month)
+	MonthAndYear = MonthAndYear + " " + Year
+	MonthYear.Text = MonthAndYear
+	MonthYear.BackgroundColor = "LightGrey"
+	View MonthYear
+
+	countDeyInMonth = GetComponentString(DayMonth, "/", Month)
+
+	YearNew = Year / 4
+	YearNew = YearNew * 4
+	if Year == YearNew
+	{
+		if Month == 1
+		{
+			countDeyInMonth = 29
+		}
+	}
+	Date = Year + "/" + MonthDate + "/01"
+	NumberDayOfWeek = GetNumberDayOfWeek(Date)
+	NumberDayOfWeek = NumberDayOfWeek - 1
+	if NumberDayOfWeek == 0
+	{
+		NumberDayOfWeek = 7
+	}
+//зачистка календаря пробелами 
+	^ColorText = "White"
+	^ColorBack = "White"
+	^Text = ""
+	strData = ""
+	For i = 1 ; i < NumberDayOfWeek ; i++
+	{
+		strData = strData + "Data0" + i + ".text = " + ^Text
+		strData = strData + ^DelimiterNewLine
+		strData = strData + "Data0" + i + ".TextColor = ^ColorText" + ^DelimiterNewLine
+		strData = strData + "Data0" + i + ".BackgroundColor = ^ColorBack" + ^DelimiterNewLine
+		strData = strData + "View Data0" + i + ^DelimiterNewLine
+	}
+	CompilationExecution(strData)
+
+	^ColorText="Black"
+	^ColorTextWhite ="White"
+	^ColorBackgroundDarkBlue ="DarkBlue"
+	^DayInMonth = ""
+	strData = ""
+	For i = NumberDayOfWeek ; i < 38 ; i++
+	{
+		Data = "Data"
+		if i<10
+		{
+			Data = "Data0"
+		}
+		DayInMonth = i - NumberDayOfWeek + 1
+		if DayInMonth > countDeyInMonth
+		{
+			DayInMonth = ""
+			strData = strData + Data + i + ".text = ^DayInMonth"
+		}
+		else
+		{
+			strData = strData + Data + i + ".text = " + DayInMonth
+		}
+
+		strData = strData + ^DelimiterNewLine
+		strData = strData + Data + i + ".TextColor = ^ColorText" + ^DelimiterNewLine
+		if Day == DayInMonth
+		{
+			strData = strData + Data + i + ".BackgroundColor = ^ColorBackgroundDarkBlue" + ^DelimiterNewLine
+			strData = strData + Data + i + ".TextColor = ^ColorTextWhite" + ^DelimiterNewLine
+		}
+		else
+		{
+			strData = strData + Data + i + ".BackgroundColor = ^ColorBack" + ^DelimiterNewLine
+		}
+		strData = strData + "View " + Data + i + ^DelimiterNewLine
+	}
+	CompilationExecution(strData)
+	MessageBarUp("")
+	return
+}
