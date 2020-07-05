@@ -1,0 +1,9 @@
+function ErrorWriteBaseData()
+{
+	x=10
+	y=100
+	w= ^ScreenWidth-20
+	h=400
+	strMessage="Ошибка записи в базу данных-ключ: '" + ^Key + "' Данные: '" + ^Data + "'"
+	Message(strMessage, "")
+}
