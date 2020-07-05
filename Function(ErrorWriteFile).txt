@@ -1,0 +1,9 @@
+function ErrorWriteFile()
+{
+	x=10
+	y=100
+	w= ^ScreenWidth-20
+	h=400
+	strMessage="Ошибка записи в файл: '" + ^PathNameFileOld
+	Message(strMessage, "")
+}
