@@ -1,0 +1,6 @@
+// ListOperaciiKontragent[SelectOperaciiKontragent].txt
+Struct StructGeneral { nameKontragentOut, Date, Order, ID, Summa, nameKontragentIn, Comment, Quantity, Price }
+
+SummaItogo = 0
+
+CREATE ARRAY (^ArrayOperaciiKontragent, ^StructOperaciiKontragent, ^DelimiterTab) FROM (^ArraySelectNameKontragent, StructGeneral, ^DelimiterTab) SET (ViewDate = DateOfFormat('dd/MM/yyyy', Date), SummaItogo = SummaItogo + Summa, SummaItogo = CurrencyFormat(SummaItogo), SummaFormatItogo = FormatStringSeparatorGroupsDischarges(SummaItogo, " "), KontragentIn = nameKontragentIn  WHERE (Summa > 0), SummaIn = FormatStringSeparatorGroupsDischarges(Summa, " ")  WHERE (Summa > 0), KontragentIn = nameKontragentIn  WHERE (Summa <= 0), SummaOut = FormatStringSeparatorGroupsDischarges(0-Summa, " ")  WHERE (Summa <= 0))
