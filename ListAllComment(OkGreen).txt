@@ -1,0 +1,25 @@
+// ListAllComment[OkGreen].txt
+if ^SaveRecordComment == "Yes"
+{
+	^ArrayComment[^indexCellListAllComment] = Comment.text
+	PathNameFile = ^Path + "MF_Comment.txt"
+	ContentFile = Joined(^ArrayComment, ^DelimiterNewLine)
+	kv = FileWrite(PathNameFile, ContentFile)
+	if kv != 0
+	{
+		DoModule ErrorWriteFile
+	}
+}
+^Comment = ^ArrayComment[^indexCellListAllComment]
+
+// структура ^ArrayOperaciiKontragent
+Struct StructOperaciiKontragent { Date, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaFormatItogo, NumberRecord }
+strOperaciiKontragent = ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent]
+GetComponentsOfStruct(StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
+
+Comment = ^Comment
+
+strOperaciiKontragent = JoinedComponentsToStruct(StructOperaciiKontragent, ^DelimiterTab)
+^ArrayOperaciiKontragent[^indexCellOperaciiKontragent] = strOperaciiKontragent
+^SaveRecord = "Yes"
+ExitForm
