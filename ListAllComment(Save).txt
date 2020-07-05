@@ -1,0 +1,8 @@
+// ListAllComment[Save].txt
+PathNameFile = ^Path + "MF_Comment.txt"
+ContentFile = Joined(^ArrayComment, ^DelimiterNewLine)
+kv = FileWrite(PathNameFile, ContentFile )
+if kv != 0
+{
+	DoModule ErrorWriteFile
+}
