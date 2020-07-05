@@ -1,0 +1,1 @@
+DoForm ListOperaciiKontragent, wait=1000, message="Загрузка списка операций"
