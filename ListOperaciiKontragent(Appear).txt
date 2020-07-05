@@ -1,0 +1,21 @@
+// ListOperaciiKontragent[Appear].txt
+HideObject("Edit")
+HideObject("Trash")
+HideObject("Copy")
+
+strRecord = ^ArraySelectKontragent[^indexCellSelectKontragent]
+nameKontragent = GetComponentString(strRecord, ^DelimiterTab, 0)
+KontragentName.text = nameKontragent
+^NameKontragent = nameKontragent
+//print "^SaveRecord=" + ^SaveRecord
+if ^SaveRecord == "Yes"
+{
+	strReturn = SelectionListOperaciiKontragent()
+	ArrayReturn = Components(strReturn, ':')
+	^SummaInItogo = ArrayReturn[0]
+	^SummaOutItogo = ArrayReturn[1]
+	^QuantityItogo = ArrayReturn[2]
+}
+ViewSelectionListOperaciiKontragent(^SummaInItogo, ^SummaOutItogo, ^QuantityItogo)
+
+MessageBarUp( "Загрузили" )
