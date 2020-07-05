@@ -1,5 +1,4 @@
 Calendar(Appear).txt
-Calendar(ObjectBuild).txt
 Calendar(Exit).txt
 Calendar(MonthMinus).txt
 Calendar(MonthPlus).txt
