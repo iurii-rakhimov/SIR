@@ -23,3 +23,4 @@ MF(DayBeginMinus).txt
 MF(DayBeginPlus).txt
 MF(DayEndMinus).txt
 MF(DayEndPlus).txt
+MF[GodMinus].txt
