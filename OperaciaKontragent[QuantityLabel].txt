@@ -1,0 +1,1 @@
+// OperaciaKontragent[QuantityLabel].txt
