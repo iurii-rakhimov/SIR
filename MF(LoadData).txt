@@ -1,12 +1,7 @@
-Struct ^StructRecord { Date, Order, NameKontragentOut, Summa, NameKontragentIn, Comment, Quantity, Price, ID }
-Struct ^StructGeneral { NameKontragentIn, Date, Order, ID, Summa, NameKontragentOut, Comment, Quantity, Price }
-Struct ^StructKontragent { NameKontragent, SummaKontragent, QuantityKontragent }
-Struct ^StructSchet { NameSchet, SummaSchet }
-Struct ^StructOperaciiKontragent { Date, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaFormatItogo, ID, Selector, ViewDate }
-
+// MF[LoadData].txt
 Remove ^ArraySelectKontragent
 Remove ^ArrayOperaciiKontragent
-Remove ArrayRecords
+Remove ^ArrayRecords
 Remove ^ArrayGeneral
 Remove ^ArrayKontragent
 Remove ^ArraySchet
@@ -76,7 +71,7 @@ Remove ArrayDate
 if strFinAll == ""
 {
 	ShowObject("NoData")
-	ShowObject("NoDataLabel")
+	Title.text = "Нет данных за период с " + ^DateBegin + " по " + ^DateEnd
 	return
 }
 ArrayRecords = Components(strFinAll, ^DelimiterNewLine)
@@ -111,24 +106,14 @@ if ContentFile != ""
 	{
 		GetComponentsOfStruct(StructKontragent, ArrayBalanceKontragent[i], ^DelimiterTab)
 //print "NameKontragent =" + NameKontragent+" Summa =" + Summa
-		if Summa < 0
+		if Summa == "0.00"
 		{
-			NameKontragentIn = NameKontragent
-			NameKontragentOut = "00.Переходящий остаток"
+			continue
 		}
-		else
-		{
-			if Summa != "0.00"
-			{
-				NameKontragentOut = NameKontragent
-				NameKontragentIn = "00.Переходящий остаток"
-			}
-			else
-			{
-				continue
-			}
-		}
-		ID = GetDateTime() + " " + i
+		NameKontragentOut = NameKontragent
+		NameKontragentIn = "00.Переходящий остаток"
+		ID = GetDateTime() + " " + ^DelimiterBag + " " + i
+		Selector = ^DelimiterBag
 		strRecord = JoinedComponentsToStruct(^StructRecord, ^DelimiterTab)
 //print "CountElementsOfArrayRecord =" + CountElementsOfArrayRecord +" strRecord =" + strRecord
 		ArrayRecords[CountElementsOfArrayRecord] = strRecord
@@ -146,11 +131,11 @@ if flagSaveFile == 1
 {
 	ContentFile = Joined(^ArrayRecords, ^DelimiterNewLine)
 //print "ContentFile =" + ContentFile
-    Year = GetComponentString(^DateBegin, "/", 2)
-    Month = GetComponentString(^DateBegin, "/", 1)
-    Txt = "_Data.txt"
-    NameFile = MF + Year + Month + Txt
-    PathNameFile = ^Path + NameFile
+	Year = GetComponentString(^DateBegin, "/", 2)
+	Month = GetComponentString(^DateBegin, "/", 1)
+	Txt = "_Data.txt"
+	NameFile = MF + Year + Month + Txt
+	PathNameFile = ^Path + NameFile
 	kv = FileWrite(PathNameFile, ContentFile )
 	if kv != 0
 	{
