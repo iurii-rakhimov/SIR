@@ -1,0 +1,3 @@
+^Date = DateOperacii.text
+//DoForm Calendar, wait=1000, message="Ждите !!! Загрузка календаря"
+DoForm CalendarNew
