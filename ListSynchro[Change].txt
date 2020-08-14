@@ -1,2 +1,0 @@
-// ListSynchro[Change].txt
-DoModule Appear, wait=1000, message="Ждите"
