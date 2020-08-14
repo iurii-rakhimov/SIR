@@ -1,0 +1,3 @@
+// ListSynchro[Exit].txt
+Remove ^ArrayRecordsSynchro
+Remove ^indexCellListSynchro
