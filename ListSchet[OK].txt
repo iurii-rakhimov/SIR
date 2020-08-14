@@ -1,0 +1,28 @@
+// ListSchet[OK].txt
+Sort(^ArrayKontragent, "MinMax")
+// удалим повторы
+// структура ^ArrayKontragent NameKontragent[0] Summa[1] Quantity[2]
+Struct StructKontragent { NameKontragent SummaNew Quantity }
+NameKontragentOld = ""
+CountElementsOfArrayKontragent = CountElementsOfArray(^ArrayKontragent)
+n = CountElementsOfArrayKontragent - 1
+strRecord = ^ArrayKontragent[n]
+NameKontragentOld = GetComponentString(strRecord, ^DelimiterTab, 0)
+For i = 1 ; i < CountElementsOfArrayKontragent ; i++
+{
+	n = CountElementsOfArrayKontragent - 1 - i
+	strRecord = ^ArrayKontragent[n]
+	GetComponentsOfStruct(StructKontragent, ^ArrayKontragent[n], ^DelimiterTab)
+print "NameKontragent="+ NameKontragent+" NameKontragentOld "+ NameKontragentOld
+	if NameKontragent == NameKontragentOld
+	{
+		if SummaNew == ""
+		{
+			Remove ^ArrayKontragent[n]
+		}
+	}
+	else
+	{
+		NameKontragentOld = NameKontragent
+	}
+}
