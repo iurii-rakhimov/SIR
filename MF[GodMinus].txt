@@ -1,9 +1,0 @@
-for i=0; i<12; i++
-{
-  ^DateBegin = GetDateNextMonth(^DateBegin, -1)
-  ^DateEnd = GetDateNextMonth(^DateEnd, -1)
-}
-DateBegin.text = ^DateBegin
-View DateBegin
-DateEnd.text = ^DateEnd
-View DateEnd
