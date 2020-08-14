@@ -1,0 +1,18 @@
+//if ^SaveRecord == "No"
+//{
+//	print "SaveRecord"
+//	return
+//}
+//NumberRecord = ^NumberRecord
+//arrayRecords = ^arrayRecords
+//strRecord = arrayRecords[NumberRecord]
+//arrayFields = Components(strRecord, ^DelimiterTab)
+//Date = ^Date
+//Date = DateOfFormat("yyyy/MM/dd", Date) // 24/07/2019-> 2019/07/24
+//arrayFields[0] = Date
+//strRecord = Joined(arrayFields, ^DelimiterTab)
+//arrayRecords[NumberRecord] = strRecord 
+//^arrayRecords = arrayRecords
+//GeneralBalance()
+
+
