@@ -1,3 +1,0 @@
-// OperaciaKontragent[CleaOut].txt
-SummaOutTextField.text = ""
-View SummaOutTextField
