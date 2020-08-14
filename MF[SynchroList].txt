@@ -1,0 +1,4 @@
+// MF[SynchroList].txt
+collectionBase = "MyFinance"
+FirebaseReadCollection(collectionBase)
+DoForm ListSynchro, wait=1000, message="Загрузка файлов"
