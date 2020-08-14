@@ -1,0 +1,13 @@
+// MF[Qlogo1].txt
+CountryCity[0] = "Russia:Moscow:Kremlin"
+CountryCity[1] = "USA:Washington:The White House"
+CountryCity[2] = "Kazakhstan:Nursultan:Baiterek"
+CountryCity[3] = "USA:New York:Broadway"
+CountryCity[4] = "Russia:Smolensk:ул. Барклая-де-Толли"
+CountryCity[5] = "Kazakhstan:Almaty:Дворец Республики"
+StructRecordCountryCity = "Country, City, Object"
+StructRecordCityObject = "City, Object"
+
+CREATE ARRAY (^City, StructRecordCityObject, ":") FROM (CountryCity, StructRecordCountryCity, ":") WHERE (Country = "USA" OR Country = "Russia")
+
+Title.text = "********"
