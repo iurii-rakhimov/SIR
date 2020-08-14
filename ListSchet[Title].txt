@@ -1,0 +1,3 @@
+// ListSchet[Title].txt "51.СБ-Юра карта Visa"
+^NameKontragent = "51.СБ"
+^ArraySelectNameKontragent = GetArrayForSelectedField(^ArrayGeneral, ^NameKontragent, ^DelimiterTab, 0)
