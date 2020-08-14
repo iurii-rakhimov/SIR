@@ -1,0 +1,23 @@
+// ListSynchro[CloudIn].txt
+MF = "MF_"
+DataTxt = "_Data.txt"
+YearMonthSave = SynchroTitle.text
+arrayDate = Components(YearMonthSave, ".")
+Year = arrayDate[0]
+Month = arrayDate[1]
+NameFile = MF + Year + Month + DataTxt
+Path = GetPathDirectoryDocument()
+PathAndNameFile = Path + NameFile
+RecordsInDevice = FileRead(PathAndNameFile)
+if RecordsInDevice == ""
+{
+	if RecordsInCloud == ""
+	{
+		Title.text = "Нет данных"
+		return
+	}
+}
+collectionBase = "MyFinance"
+FirebaseAddRecord(collectionBase, YearMonthSave, RecordsInDevice)
+HideObject("CloudIn")
+SynchroTitle.text = "Записали. Нажми иконку Обновить"
