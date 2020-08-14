@@ -1,7 +1,0 @@
-// OperaciaKontragent[DateMinus].txt
-Date = DateOperacii.text
-Date = GetDateNextDay(Date, -1)
-DateOperacii.text = Date
-^Date = Date
-ShowObjectForm("OperaciaKontragent", "Save")
-^SaveRecord = "Yes"
