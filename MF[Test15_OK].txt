@@ -1,0 +1,4 @@
+MyLocationLatitude = LocationDeviceLatitude()
+MyLocationLongitude = LocationDeviceLongitude()
+Title.fontsize=24
+Title.text = "Широта=" + MyLocationLatitude + " Долгота=" + MyLocationLongitude
