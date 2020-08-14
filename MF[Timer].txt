@@ -1,0 +1,9 @@
+// MF[Timer].txt
+if ^i == ^CountFiles
+{
+	Remove Module(Task1)
+	Remove Module(Timer)
+}
+Message.text = ^i + " " + ^CountFiles
+^i++
+wait 2000
