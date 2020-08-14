@@ -1,0 +1,23 @@
+// ListOperaciiKontragent[Sort].txt
+if ^OrderSort == "MaxMin"
+{
+	^OrderSort = "MinMax"
+}
+else
+{
+	^OrderSort = "MaxMin"
+}
+Sort(^ArrayOperaciiKontragent, ^OrderSort)
+
+// запишем в базу данных
+^Key = "Сортировка данных"
+^Data = ^OrderSort
+kv = DataBaseWriteDataForKey(^Key, ^Data)
+if kv != 0
+{
+	DoModule ErrorWriteBaseData
+}
+
+// вывод с новой сортировкой
+
+ViewSelectionListOperaciiKontragent(^SummaInItogo, ^SummaOutItogo, ^QuantityItogo)
