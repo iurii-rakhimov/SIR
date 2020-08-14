@@ -1,0 +1,77 @@
+// OperaciaKontragent[ViewMain].txt
+//breakpoint 1
+strOperaciiKontragent = ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent]
+//print "strOperaciiKontragent=" + strOperaciiKontragent
+
+Struct ^StructOperaciiKontragent { Date, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaFormatItogo, ID, Selector, ViewDate }
+
+GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
+
+nameKontragent = ^NameKontragent
+SummaIn = ReplacingString(SummaIn, " ", "")
+SummaOut = ReplacingString(SummaOut, " ", "")
+if ID == ""
+{
+	ID = GetDateTime()
+}
+^ID = ID
+IDValue.text = ID
+Date = ^Date
+Date = DateOfFormat("dd/MM/yyyy", Date)
+
+DateOperacii.text = Date
+OrderData.text = Order
+CommentTextField.text = Comment
+Quantity.text = Quantity
+Price.text = Price
+//breakpoint 2
+//print "^NameKontragent=" + ^NameKontragent
+//print "KontragentIn =" + KontragentIn
+//print "SummaIn =" + SummaIn
+//print "KontragentOut =" + KontragentOut
+//print "SummaOut =" + SummaOut
+if SummaIn == ""
+{
+	^KontragentIn = nameKontragent
+	InTextView.text = ^KontragentIn
+
+	^KontragentOut = KontragentOut
+	OutTextView.text = ^KontragentOut
+
+	SummaOutTextField.text = SummaOut
+
+	HideObject("ChangeInOut")
+// откуда
+	HideObject("InKontragent")
+	ShowObject("InTitleLabel")
+// куда
+	ShowObject("OutKontragent")
+	HideObject("OutTitleLabel")
+
+	HideObject("CleaIn")
+//	HideObject('SummaInLabel')
+	HideObject('SummaInRectangle')
+	HideObject('SummaInTextField')
+}
+if SummaOut == ""
+{
+	^KontragentIn = KontragentIn
+	InTextView.text = ^KontragentIn
+	^KontragentOut = nameKontragent
+	OutTextView.text = ^KontragentOut
+
+	SummaInTextField.text = SummaIn
+
+	HideObject("ChangeOutIn")
+// откуда
+	HideObject("InTitleLabel")
+	ShowObject("InKontragent")
+// куда
+	ShowObject("OutTitleLabel")
+	HideObject("OutKontragent")
+
+	HideObject("CleaOut")
+//	HideObject('SummaOutLabel')
+	HideObject('SummaOutRectangle')
+	HideObject('SummaOutTextField')
+}
