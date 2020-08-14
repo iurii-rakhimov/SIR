@@ -1,0 +1,3 @@
+// OperaciaKontragent[CleaIn].txt 738,04
+SummaInTextField.text = ""
+View SummaInTextField
