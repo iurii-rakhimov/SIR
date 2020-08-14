@@ -1,0 +1,19 @@
+// MF[LabelDateBegin].txt
+ShopPrice[0] = 'Fruits:🍏:Apple:80'
+ShopPrice[1] = 'Fruits:🍐:Pear:120'
+ShopPrice[2] = 'Fruits:🍋:Lemon:150'
+ShopPrice[3] = 'Fruits:🍌:Banan:70'
+ShopPrice[4] = 'Fruits:🍑:Peach:90'
+ShopPrice[5] = 'Vegetables:🍅:Tomato:100'
+ShopPrice[6] = 'Vegetables:🥔:Potato:40'
+ShopPrice[7] = 'Vegetables:🥕:Carrot:50'
+ShopPrice[8] = 'Berries:🍒:Cherries:160'
+ShopPrice[9] = 'Berries:🍓:Strawberry:250'
+
+// на входе:
+Struct StructShop { Product, ImageProduct, NameProduct, Price }
+// на выходе:
+Struct StructPriceFruits { ImageProduct, NameProduct, Price }
+
+CREATE ARRAY (^ArrayPriceVegetables, StructPriceFruits, ':') FROM (ShopPrice, StructShop, ':') WHERE (Product == 'Vegetables') SET (Price = CurrencyFormat(Price*1.1) WHERE (Price > 40), ImageProduct = ImageProduct, NameProduct = NameProduct)
+
