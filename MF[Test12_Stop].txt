@@ -1,8 +1,0 @@
-// MF[Stop].txt
-// MF[MonthMinusLabel].txt
-// на входе:
-	Struct StructRecord { Date, Order, NameKontragentOut, Summa, NameKontragentIn, Comment, Quantity, Price }
-// на выходе:
-	Struct StructGeneral { NameKontragent1, Date, Order, NumberRecord, Summa, NameKontragent2, Comment, Quantity, Price }
-n=0
-	CREATE ARRAY (^ArrayGeneralIn, StructGeneral, ^DelimiterTab) FROM (^ArrayRecords, StructRecord, ^DelimiterTab) SET (n=n+1, NumberRecord = n, NameKontragent1 = NameKontragentOut, NameKontragent2 = NameKontragentIn)
