@@ -1,0 +1,16 @@
+// OperaciaKontragent[Appear].txt
+Date = ^Date
+Date = DateOfFormat("dd/MM/yyyy", Date)
+DateOperacii.text = Date
+HideObject("OkGreen")
+
+if ^SaveRecord == "Yes"
+{
+	ShowObject("Save")
+}
+else
+{
+	HideObject("Save")
+}
+
+DoModule ViewMain
