@@ -1,0 +1,9 @@
+// ListSynchro[Trash].txt
+collectionBase = "MyFinance"
+indexCellListSynchro = GetIndexSelectCellTableView()
+GetComponentsOfStruct(^StructRecordSynchro, ^ArrayRecordsSynchro[indexCellListSynchro], ^DelimiterRecord)
+if Identifier != ""
+{
+	FirebaseRemoveRecord(collectionBase, Identifier)
+}
+SynchroTitle.text = "Удалили. Нажми иконку Обновить"
