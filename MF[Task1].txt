@@ -1,0 +1,6 @@
+// MF[Task1].txt
+while true
+{
+	Title.text = ^ArrayFiles[^i]
+	wait 2000
+}
