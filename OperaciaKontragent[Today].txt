@@ -1,6 +1,0 @@
-Date = GetDate()
-DateOperacii.text = Date
-View DateOperacii
-^Date = Date
-ShowObjectForm("OperaciaKontragent", "Save")
-^SaveRecord = "Yes"
