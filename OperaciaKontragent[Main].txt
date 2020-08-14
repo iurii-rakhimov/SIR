@@ -1,9 +1,0 @@
-// "OperaciaKontragent[Main]"
-x = Save.x
-OkGreen.x = x
-HideObject("Save")
-HideObject("OkGreen")
-^SaveRecord = "No"
-
-^Date = GetComponentString(^ArrayOperaciiKontragent[^indexCellOperaciiKontragent], ^DelimiterTab, 0)
-MessageBarUp("")
