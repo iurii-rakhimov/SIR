@@ -1,0 +1,15 @@
+//ListAllComment[SelectSynchro].txt
+indexCellListSynchro = GetIndexSelectCellTableView()
+GetComponentsOfStruct(^StructRecordSynchro, ^ArrayRecordsSynchro[indexCellListSynchro], ^DelimiterRecord)
+SynchroTitle.text = YearMonth
+if Identifier == ""
+{
+	ShowObject("CloudIn")
+	HideObject("CloudOut")
+}
+else
+{
+	ShowObject("CloudOut")
+	HideObject("CloudIn")
+}
+ShowObject("Trash")
