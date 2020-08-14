@@ -11,6 +11,15 @@ CalendarNew(MonthMinus).txt
 CalendarNew(MonthPlus).txt
 CalendarNew(SelectDate).txt
 Function[ErrorDate].txt
+Function[ErrorWriteBaseData].txt
+Function[ErrorWriteFile].txt
+Function[GeneralBalance].txt
+Function[Pyton].txt
+Function[SaveRecord].txt
+Function[SelectionListOperaciiKontragent].txt
+Function[ShowMonth].txt
+Function[TrashRecord].txt
+Function[ViewSelectionListOperaciiKontragent].txt
 MF(Appear).txt
 MF(DateBegin).txt
 MF(DateBeginMinus).txt
