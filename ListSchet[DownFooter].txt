@@ -1,0 +1,3 @@
+// ListSchet[DownFooter].txt
+yBar = ^ScreenBarHeight
+DownFooter.text= yBar
