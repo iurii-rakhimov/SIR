@@ -1,0 +1,20 @@
+// MF[Test15_Telegram].txt
+MF = "MF_"
+DataTxt = "_Data.txt"
+Path = GetPathDirectoryDocument()
+DateBegin = ^DateBegin
+ArrayDate = Components(DateBegin, "/")
+GodBegin = ArrayDate[2]
+MonthBegin = ArrayDate[1]
+NameFileBegin = MF + GodBegin + MonthBegin + DataTxt
+PathAndNameFile = Path + NameFileBegin
+StrArrayRecords = FileRead(PathAndNameFile)
+arrayRecords = Components(StrArrayRecords, ^DelimiterNewLine)
+indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, 'ID', ^DelimiterTab)
+GetComponentsOfStruct(^StructRecord, arrayRecords[indexMaxID], ^DelimiterTab)
+maxInCloudID = ID
+Identifier = ""
+YearMonth = GodBegin + "." + MonthBegin
+^ArrayRecordsSynchro[0] = JoinedComponentsToStruct(^StructRecordSynchro, ^DelimiterRecord)
+print YearMonth + " " + ID
+
