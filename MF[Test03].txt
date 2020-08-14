@@ -1,0 +1,9 @@
+// MF[Test3].txt
+StructRecord = "Date, Order, NameKontragentOut, Summa, NameKontragentIn, Comment, Quantity, Price"
+StructForOut = "NameKontragentOut, Date, Order, NumberRecord, Summa, NameKontragentIn, Comment, Quantity, Price"
+^NameKontragent = "51.СБ-Юра карта Visa"
+CREATE ARRAY (^ArrayDateOut, StructForOut, ^DelimiterTab) FROM (^ArrayRecords, StructRecord, ^DelimiterTab) WHERE (NameKontragentOut = ^NameKontragent OR NameKontragentIn = ^NameKontragent)
+// SET (if Summa == "" { Summa = 0 }, if Summa != "" { Summa = 0 - Summa } )
+
+сountRecords = CountElementsOfArray(^ArrayRecords)
+Title.text = "Количество записей="+ сountRecords
