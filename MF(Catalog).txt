@@ -85,7 +85,7 @@ MF(LabelQlogo1).txt
 MF(LoadData).txt
 MF(Main).txt
 MF(NoData).txt
-MF(Python.txt
+MF(Python).txt
 MF(Qlogo1).txt
 MF(SynchroCloud).txt
 MF(SynchroList).txt
