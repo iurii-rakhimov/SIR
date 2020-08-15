@@ -1,0 +1,13 @@
+// MF[Test01].txt
+Message.text = 'Start Timer ' + GetDateTime()
+i = 0
+while true
+{
+	Title.text = GetDateTime()
+	wait 1000
+	if i == 10
+	{
+		break
+	}
+	i++
+}
