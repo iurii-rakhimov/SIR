@@ -1,0 +1,12 @@
+// MF[Test8].txt
+userPathURL ="https://github.com/iurii-rakhimov/SIR/blob/master/"
+//nameFile = "MF(Catalog).txt"
+nameFile = "Calendar(ObjectBuild).txt"
+strNameFileURL = userPathURL + nameFile
+^ArrayFile = FileReadGitHubWithURL(strNameFileURL)
+^CountFiles = CountElementsOfArray(^ArrayFile) - 1
+^DelimiterNewLine = IntToChar(10)
+^NumberFile = 0
+^AllFile = ""
+TimerInterval = 1000 // = 1 сек
+//DoModule Timer, StartInterval=TimerInterval
