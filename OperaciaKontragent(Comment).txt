@@ -1,0 +1,30 @@
+// OperaciaKontragent[Comment].txt
+indexCell = ^indexCellOperaciiKontragent
+
+strOperaciiKontragent = ^ArrayOperaciiKontragent[indexCell]
+
+GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
+
+Date  = DateOperacii.text
+Date = DateOfFormat("yyyy/MM/dd", Date)
+Order = OrderData.text
+Comment = CommentTextField.text
+KontragentIn = InTextView.text
+SummaIn = SummaInTextField.text
+KontragentOut = OutTextView.text
+SummaOut = SummaOutTextField.text
+Quantity = Quantity.text
+Price = Price.text
+if KontragentIn == ^NameKontragent
+{
+	KontragentIn = ""
+}
+
+if KontragentOut == ^NameKontragent
+{
+	KontragentOut = ""
+}
+
+^ArrayOperaciiKontragent[indexCell] = JoinedComponentsToStruct(^StructOperaciiKontragent, ^DelimiterTab)
+
+DoForm ListAllComment
