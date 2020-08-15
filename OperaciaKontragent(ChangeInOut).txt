@@ -1,0 +1,18 @@
+// OperaciaKontragent[ChangeInOut].txt
+InKontragent = InTextView.text
+OutKontragent = OutTextView.text
+OutTextView.text = InKontragent
+InTextView.text = OutKontragent
+Summa = SummaInTextField.text
+SummaOutTextField.text = Summa
+SummaInTextField.text = ""
+HideObject("ChangeInOut")
+ShowObject("ChangeOutIn")
+ShowObject("InKontragent")
+HideObject("OutKontragent")
+HideObject('SummaInRectangle')
+HideObject('SummaInTextField')
+ShowObject('SummaOutRectangle')
+ShowObject('SummaOutTextField')
+ShowObject("CleaOut")
+HideObject("CleaIn")
