@@ -1,0 +1,11 @@
+Title.fontsize=24
+TimerInterval = 1000 // = 1 сек
+userPathURL ="https://github.com/iurii-rakhimov/SIR/blob/master/"
+nameFile = "MF(Catalog).txt"
+Path = userPathURL + nameFile
+^ArrayFiles = FileReadGitHubWithURL(Path)
+^CountFiles = CountElementsOfArray(^ArrayFiles) - 1
+^i = 0
+DoModule Timer
+DoModule Task1
+Message.text = 'Загружено файлов = '+ ^CountFiles
