@@ -1,0 +1,14 @@
+// MF[LabelPython].txt
+//TriggerLocationDevice
+//MyLocationLatitude = LocationDeviceLatitude()
+//MyLocationLongitude = LocationDeviceLongitude()
+//LabelPython.fontsize=24
+//LabelPython.text = "Широта=" + MyLocationLatitude + " Долгота=" + MyLocationLongitude
+a=1
+b=2
+c=3
+breakpoint 1
+d=a+b
+e=b+c
+f=d-a
+g=e-d
