@@ -1,0 +1,11 @@
+// MF[Test6].txt
+Struct ^StructRecord { Date, Order, NameKontragentOut, Summa, NameKontragentIn, Comment, Quantity, Price, ID }
+Struct ^StructGeneral { NameKontragentIn, Date, Order, ID, Summa, NameKontragentOut, Comment, Quantity, Price }
+
+	CREATE ARRAY (^ArrayGeneralIn, ^StructGeneral, ^DelimiterTab) FROM (^ArrayRecords, ^StructRecord, ^DelimiterTab)
+
+	CREATE ARRAY (^ArrayGeneralOut, ^StructGeneral, ^DelimiterTab) FROM (^ArrayRecords, ^StructRecord, ^DelimiterTab) SET (Summa = 0-Summa)
+
+Title.text = "fight"
+view Title
+
