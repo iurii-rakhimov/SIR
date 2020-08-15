@@ -1,0 +1,10 @@
+// MF[Test7].txt
+Struct StructPriceFruits { ImageProduct, NameProduct, Price }
+^ArrayPriceFruits[0]="🍋:Lemon:150"
+^ArrayPriceFruits[1]="🍏:Apple:80"
+^ArrayPriceFruits[2]="🍐:Pear:120"
+^ArrayPriceFruits[3]="🍌:Banan:70"
+^ArrayPriceFruits[4]="🍑:Peach:90"
+
+IndexSelected = GetIndexArrayMaxValueComponentStruct(^ArrayPriceFruits, StructPriceFruits, 'NameProduct', ':')
+Title.text = "IndexSelected =" + IndexSelected
