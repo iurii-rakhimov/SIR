@@ -1,0 +1,4 @@
+// OperaciaKontragent[OkGreen].txt
+HideObject("OkGreen")
+wait 1000, message="Ждите !!! Загрузка списка операций"
+ExitForm
