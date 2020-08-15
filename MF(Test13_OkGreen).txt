@@ -1,0 +1,61 @@
+//mail addressEmail="iuriivlad@icloud.com", messageEmail="Hello !!!"
+//Print ^ScreenWidthPhone
+//Print ^ScreenHeightPhone
+ 
+MyLocation = LocationDevice()
+
+Create Image { Name = ImageProduct, Action=MyAction, X=0, Y=0, Width=30, Height=30, BackgroundColor ="White", ModelCell=modelCell[0], LocationDevice=MyLocation}
+ 
+Create Label { Name = MyProduct, Action = MyAction, TextColor = "Black", BackgroundColor = "White", X=35, Y=5, Width = 160, Height = 20, FontName = "systemFont", FontSize=14, Alignment = "Left", CornerRadius = 0, ModelCell=modelCell[1], LocationDevice=MyLocation}
+ 
+Create Label { Name = MyPrice, Action = MyAction, TextColor = "Black", BackgroundColor = "White", X=200, Y=10, Width = 110, Height = 35, FontName = "systemFont", FontSize=14, Alignment = "Right", CornerRadius = 0, ModelCell=modelCell[2], LocationDevice=MyLocation} 
+
+x = 5
+y = 100
+//print MyLocation
+if MyLocation == "vertically"
+{
+	w = ^ScreenWidthPhone - 10
+//print "vertically="+w
+}
+else
+{
+	w = ^ScreenHeightPhone - 10
+//print "horizontally="+w
+}
+h = 150
+Create TableView { Name = ListMyProduct, Action=MyAction, X=x, Y=y, Width=w, Height=h, ModelCell=modelCell, LocationDevice=MyLocation}
+
+Struct TablePriceListProduct { ImageProduct, MyProduct, MyPrice }
+MyProduct = IntToChar(127820) 
+MyProduct = MyProduct + " Banan (Банан)" 
+TablePriceListProduct.ImageProduct = "ChangeSizeDown40x40"
+TablePriceListProduct.MyProduct = MyProduct
+TablePriceListProduct.MyPrice = "60.00"
+ListMyProduct[2] = TablePriceListProduct
+
+MyProduct = IntToChar(127823) 
+MyProduct = MyProduct + " Apple (Яблоко)" 
+TablePriceListProduct.ImageProduct = "ChangeSizeLeft40x40"
+TablePriceListProduct.MyProduct = MyProduct
+TablePriceListProduct.MyPrice = "80.00"
+ListMyProduct[3] = TablePriceListProduct
+
+MyProduct = IntToChar(127824) 
+MyProduct = MyProduct + " Pear (Груша)" 
+TablePriceListProduct.ImageProduct = "ChangeSizeRight40x40"
+TablePriceListProduct.MyProduct = MyProduct
+TablePriceListProduct.MyPrice = "50.00"
+ListMyProduct[0] = TablePriceListProduct
+
+MyProduct = IntToChar(127813) 
+MyProduct = MyProduct + " Tomato (Помидор)" 
+TablePriceListProduct.ImageProduct = "ChangeSizeUp40x40"
+TablePriceListProduct.MyProduct = MyProduct
+TablePriceListProduct.MyPrice = "30.00"
+ListMyProduct[1] = TablePriceListProduct
+ImageProduct = "ChangeSizeUp40x40"
+MyProduct = MyProduct
+MyPrice = "30.00"
+//ListMyProduct[1] = JoinedComponentsTableView(TablePriceListProduct)
+
