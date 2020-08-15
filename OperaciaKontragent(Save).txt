@@ -1,0 +1,97 @@
+//wait 1000, message="Перерасчет операций"
+DateNew  = DateOperacii.text
+Order = OrderData.text
+Comment = CommentTextField.text
+KontragentOut = OutTextView.text
+KontragentIn = InTextView.text
+Quantity = Quantity.text
+Price = Price.text
+
+if KontragentIn != ^NameKontragent
+{
+	Summa = SummaInTextField.text
+}
+
+if KontragentOut != ^NameKontragent
+{
+	Summa = SummaOutTextField.text
+}
+Summa = ReplacingString(Summa, ",", ".")
+Summa = IsFloat(Summa)
+if Summa == ""
+{
+	Summa = "0.00"
+}
+else
+{
+	Summa = CurrencyFormat(Summa)
+}
+// вывод назад в .text
+if KontragentIn == ^NameKontragent
+{
+	SummaOutTextField.text = Summa
+}
+
+if KontragentOut == ^NameKontragent
+{
+	SummaInTextField.text = Summa
+}
+
+DateNew = DateOfFormat("yyyy/MM/dd", DateNew)
+YearNew = GetComponentString(DateNew, "/", 0)
+MonthNew = GetComponentString(DateNew, "/", 1)
+NameFileNew = "MF_" + YearNew + MonthNew + "_Data.txt"
+IDNew = GetDateTime()
+Struct StructRecord { DateNew, Order, KontragentOut, Summa, KontragentIn, Comment, Quantity, Price, IDNew }
+strRecordNew = JoinedComponentsToStruct(StructRecord, ^DelimiterTab)
+
+ID = ^ID
+//print "Удалим запись по ID =" + ID
+if ID == ""
+{
+	ID = GetDateTime()
+}
+else
+{
+	TrashRecord(ID)
+}
+// получили ID и переходим на удаление записи
+// запишем новую запись в файл
+Path = GetPathDirectoryDocument()
+PathNameFileNew = Path + NameFileNew
+
+ContentFile = FileRead(PathNameFileNew)
+if ContentFile != ""
+{
+	arrayFileRecords = Components(ContentFile, ^DelimiterNewLine)
+	CountRecords = CountElementsOfArray(arrayFileRecords)
+	arrayFileRecords[CountRecords] = strRecordNew
+	Sort(arrayFileRecords, "MinMax")
+	if arrayFileRecords[0] == ""
+	{
+		remove arrayFileRecords[0]
+	}
+	ContentFile = Joined(arrayFileRecords, ^DelimiterNewLine)
+}
+else
+{
+	ContentFile = strRecordNew
+	CountRecords = 1
+}
+kv = FileWrite(PathNameFileNew, ContentFile)
+if kv != 0
+{
+	DoModule ErrorWriteFile
+}
+// замена на новую в основном массиве ^ArrayRecords
+NumberRecord = CountRecords - 1
+^ArrayRecords[NumberRecord] = strRecordNew
+//print "Новая запись strRecordNew =" + strRecordNew
+
+GeneralBalance()
+HideObject("Save")
+ShowObject("OkGreen")
+
+^indexCellOperaciiKontragent = -1
+//MessageBarUp( "Нажми ОК" )
+ExitForm
