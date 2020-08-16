@@ -1,0 +1,9 @@
+ListAllComment	Title	Label	@	0	51	320	20		Справочник комментариев	255:255:255	2:2:2	0	17	systemFont	center	Label		vertically		
+ListAllComment	Add	Image	@	50	26	20	20	Add	242:242:242	242:242:242	0	Add40x40		vertically	
+ListAllComment	Trash	Image	@	250	26	20	20	Trash	242:242:242	242:242:242	0	Trash40x40		vertically	
+ListAllComment	CommentRectangle	Label	@	99	80	213	20			226:226:226	2:2:2	5	0	systemFont	center	Label		vertically		
+ListAllComment	Comment	TextField	@	101	81	210	18				255:255:255	2:2:2	5	17	systemFont		vertically	vertically		
+ListAllComment	LabelComment	Label	@	0	81	100	20		Комментарий	255:255:255	2:2:2	0	14	systemFont	влево	Label		vertically		
+ListAllComment	Sort	Image	@	100	26	20	20	Sort	242:242:242	242:242:242	0	SortAZ40x40		vertically	
+ListAllComment	OkGreen	Image	@	200	26	20	20	OkGreen	242:242:242	242:242:242	0	OkGreen40x40		vertically	
+ListAllComment	Save	Image	@	150	26	20	20	Save	242:242:242	242:242:242	0	Save40x40		vertically	
