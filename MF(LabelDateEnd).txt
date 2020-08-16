@@ -1,17 +1,17 @@
 // MF[LabelDateEnd].txt
-ShopPrice[0] = 'Fruits:🍏:Apple:80:4'
-ShopPrice[1] = 'Fruits:🍏:Apple:80:-3'
-ShopPrice[2] = 'Fruits:🍐:Pear:120:6'
-ShopPrice[3] = 'Fruits:🍋:Lemon:150:3'
-ShopPrice[4] = 'Fruits:🍌:Banan:70:8'
-ShopPrice[5] = 'Fruits:🍌:Banan:70:-3'
-ShopPrice[6] = 'Fruits:🍑:Peach:90:5'
-ShopPrice[7] = 'Vegetables:🍅:Tomato:100:10'
-ShopPrice[8] = 'Vegetables:🍅:Tomato:100:-5'
-ShopPrice[9] = 'Vegetables:🥔:Potato:40:20'
-ShopPrice[10] = 'Vegetables:🥕:Carrot:50:15'
-ShopPrice[11] = 'Berries:🍒:Cherries:160:2'
-ShopPrice[12] = 'Berries:🍓:Strawberry:250:7'
+ShopPrice[0] = "Fruits:🍏:Apple:80:4"
+ShopPrice[1] = "Fruits:🍏:Apple:80:-3"
+ShopPrice[2] = "Fruits:🍐:Pear:120:6"
+ShopPrice[3] = "Fruits:🍋:Lemon:150:3"
+ShopPrice[4] = "Fruits:🍌:Banan:70:8"
+ShopPrice[5] = "Fruits:🍌:Banan:70:-3"
+ShopPrice[6] = "Fruits:🍑:Peach:90:5"
+ShopPrice[7] = "Vegetables:🍅:Tomato:100:10"
+ShopPrice[8] = "Vegetables:🍅:Tomato:100:-5"
+ShopPrice[9] = "Vegetables:🥔:Potato:40:20"
+ShopPrice[10] = "Vegetables:🥕:Carrot:50:15"
+ShopPrice[11] = "Berries:🍒:Cherries:160:2"
+ShopPrice[12] = "Berries:🍓:Strawberry:250:7"
 
 // на входе:
 Struct StructShop { Product, ImageProduct, NameProduct, Price, Count }
@@ -19,7 +19,7 @@ Struct StructShop { Product, ImageProduct, NameProduct, Price, Count }
 Struct StructStock { Product, ImageProduct, NameProduct, Price, Count, SummaIn, SummaOut, SummaItogo}
 SummaItogoIn = 0
 SummaItogoOut = 0
-CREATE ARRAY (^ArrayStockProduct, StructStock, ':') FROM (ShopPrice, StructShop, ':') SET (SummaIn = CurrencyFormat(Price * Count), SummaOut = '', SummaItogoIn = SummaItogoIn + SummaIn WHERE (Count > 0), SummaOut = CurrencyFormat(Price * Count), SummaIn = '', SummaItogoOut = SummaItogoOut - SummaOut WHERE (Count < 0), SummaItogo = SummaItogoIn - SummaItogoOut)
+CREATE ARRAY (^ArrayStockProduct, StructStock, ":") FROM (ShopPrice, StructShop, ":") SET (SummaIn = CurrencyFormat(Price * Count), SummaOut = "", SummaItogoIn = SummaItogoIn + SummaIn WHERE (Count > 0), SummaOut = CurrencyFormat(Price * Count), SummaIn = "", SummaItogoOut = SummaItogoOut - SummaOut WHERE (Count < 0), SummaItogo = SummaItogoIn - SummaItogoOut)
 
 
 // вывод таблицы на экран
@@ -47,8 +47,8 @@ Struct TablePriceListProduct { MyProduct, MyPrice, MyCount, MySummaIn, MySummaOu
 сountRecords = CountElementsOfArray(ShopPrice)
 Cycle i = 0 ; i < сountRecords
 {
-	GetComponentsOfStruct(StructStock, ^ArrayStockProduct[i], ':')
-	TablePriceListProduct.MyProduct = ImageProduct + ' " + NameProduct
+	GetComponentsOfStruct(StructStock, ^ArrayStockProduct[i], ":")
+	TablePriceListProduct.MyProduct = ImageProduct + " " + NameProduct
 	TablePriceListProduct.MyPrice = Price
 	TablePriceListProduct.MyCount = Count
 	TablePriceListProduct.MySummaIn = SummaIn
