@@ -2,8 +2,9 @@ function TrashRecord(ID)
 {
 // удалим запись из файла
 
+//print "TrashRecord ID = " + ID
 //	IndexRecord = GetIndexArrayForComponentWithNumber(^ArrayRecords, ID, ^DelimiterTab, 8)
-	IndexRecord = GetIndexArrayForSelectedComponentStruct(^ArrayRecords, ^StructRecord, 'ID', ID, ^DelimiterTab)
+	IndexRecord = GetIndexArrayForSelectedComponentStruct(^ArrayRecords, ^StructRecord, "ID", ID, ^DelimiterTab)
 //print "IndexRecord = " + IndexRecord
 
 //	strRecordOld = JoinedComponentsToStruct(StructSetRecord, ^DelimiterTab)
@@ -20,8 +21,14 @@ function TrashRecord(ID)
 	PathNameFileOld = Path + NameFileOld
 	ContentFile = FileRead(PathNameFileOld)
 //print "ContentFile = " + ContentFile
-
-	ContentFile = ReplacingString(ContentFile, strRecordOld, '')
+	IndexString = GetIndexStringInString(ContentFile, strRecordOld)
+//print "IndexString = " + IndexString
+	if IndexString == -1
+	{
+		MessageBarUp("Не удаляемая запись")
+		return
+	}
+	ContentFile = ReplacingString(ContentFile, strRecordOld, "")
 
 	strRecordOld = ^DelimiterNewLine + ^DelimiterNewLine
 	ContentFile = ReplacingString(ContentFile, strRecordOld, ^DelimiterNewLine)
