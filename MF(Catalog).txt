@@ -1,13 +1,3 @@
-Calendar(ObjectBuild).txt
-CalendarNew(ObjectBuild).txt
-ListAllComment(ObjectBuild).txt
-ListAllKontragent(ObjectBuild).txt
-ListKontragent(ObjectBuild).txt
-ListOperaciiKontragent(ObjectBuild).txt
-ListSchet(ObjectBuild).txt
-ListSynchro(ObjectBuild).txt
-MF(ObjectBuild).txt
-OperaciaKontragent(ObjectBuild).txt
 Calendar(Appear).txt
 Calendar(Exit).txt
 Calendar(MonthMinus).txt
@@ -149,3 +139,13 @@ OperaciaKontragent(TextEdit).txt
 OperaciaKontragent(Today).txt
 OperaciaKontragent(ViewMain).txt
 TestPrint(Account).txt
+Calendar(ObjectBuild).txt
+CalendarNew(ObjectBuild).txt
+ListAllComment(ObjectBuild).txt
+ListAllKontragent(ObjectBuild).txt
+ListKontragent(ObjectBuild).txt
+ListSchet(ObjectBuild).txt
+ListSynchro(ObjectBuild).txt
+MF(ObjectBuild).txt
+OperaciaKontragent(ObjectBuild).txt
+ListOperaciiKontragent(ObjectBuild).txt
