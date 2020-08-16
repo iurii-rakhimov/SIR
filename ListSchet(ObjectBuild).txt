@@ -1,0 +1,8 @@
+ListSchet	DownFooterVertically	Label	@	0	565	320	3			255:0:0	2:2:2	0	17	systemFont	center	Label		vertically		
+ListSchet	DownFooterHorizontally	Label	@	0	317	568	3			255:0:0	2:2:2	0	17	systemFont	center	Label		horizontally		
+ListSchet	Title	Label	@	0	51	568	40		Основные счета	255:255:255	2:2:2	0	22	systemFont	center	Label		horizontally		
+ListSchet	Title	Label	@	0	51	320	30	Title	Основные счета за период	255:255:255	2:2:2	0	22	systemFont	center	Label		vertically		
+ListSchet	DateBegin	Label	@	26	80	100	30	DateBegin	DateBegin	255:255:255	2:2:2	0	17	systemFont	center	Label		vertically		
+ListSchet	DateEnd	Label	@	208	80	100	30	DateEnd	DateEnd	255:255:255	2:2:2	0	17	systemFont	center	Label		vertically		
+ListSchet	ListSchet0000	Label	@	0	77	20	30		с	255:255:255	2:2:2	0	20	systemFont	center	Label		vertically		
+ListSchet	ListSchet0001	Label	@	170	77	40	30		по	255:255:255	2:2:2	0	20	systemFont	center	Label		vertically		
