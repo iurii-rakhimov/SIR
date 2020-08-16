@@ -1,3 +1,21 @@
+// MF[Test14_Terminal].txt
+ShopPrice[0] = "Fruits:🍏:Apple:80"
+ShopPrice[1] = "Fruits:🍐:Pear:120"
+ShopPrice[2] = "Fruits:🍋:Lemon:150"
+ShopPrice[3] = "Fruits:🍌:Banan:70"
+ShopPrice[4] = "Fruits:🍑:Peach:90"
+ShopPrice[5] = "Vegetables:🍅:Tomato:100"
+ShopPrice[6] = "Vegetables:🥔:Potato:40"
+ShopPrice[7] = "Vegetables:🥕:Carrot:50"
+ShopPrice[8] = "Berries:🍒:Cherries:160"
+ShopPrice[9] = "Berries:🍓:Strawberry:250"
+
+// на входе:
+Struct StructShop { Product, ImageProduct, NameProduct, Price }
+// на выходе:
+Struct StructPriceFruits { ImageProduct, NameProduct, Price }
+
+CREATE ARRAY (^ArrayPriceFruits, StructPriceFruits, ":") FROM (ShopPrice, StructShop, ":")  WHERE (Product == "Fruits")
 // MF[Test15_Telegram].txt
 MF = "MF_"
 DataTxt = "_Data.txt"
@@ -10,7 +28,7 @@ NameFileBegin = MF + GodBegin + MonthBegin + DataTxt
 PathAndNameFile = Path + NameFileBegin
 StrArrayRecords = FileRead(PathAndNameFile)
 arrayRecords = Components(StrArrayRecords, ^DelimiterNewLine)
-indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, 'ID', ^DelimiterTab)
+indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, "ID", ^DelimiterTab)
 GetComponentsOfStruct(^StructRecord, arrayRecords[indexMaxID], ^DelimiterTab)
 maxInCloudID = ID
 Identifier = ""
