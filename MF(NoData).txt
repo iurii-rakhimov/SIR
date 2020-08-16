@@ -1,6 +1,6 @@
 // MF[NoData].txt
 Date = ^DateBegin
-arrayDate = Components(Date, '/')
+arrayDate = Components(Date, "/")
 Year = arrayDate[2]
 Month = arrayDate[1]
 
