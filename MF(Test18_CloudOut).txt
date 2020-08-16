@@ -9,7 +9,7 @@ strNameFileURL = userPathURL + nameFile
 ^i = 0
 DoModule Timer
 DoModule Task1
-Message.text = 'Загружено файлов = '+ ^CountFiles
+Message.text = "Загружено файлов = "+ ^CountFiles
 
 Cycle i = 0 ; i < ^CountFiles
 {
