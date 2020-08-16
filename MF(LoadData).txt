@@ -124,9 +124,9 @@ if ContentFile != ""
 
 Remove ArrayBalanceKontragent
 NumberRecord = -1
-CREATE ARRAY (ArrayRecords, ^StructRecord, ^DelimiterTab) FROM (ArrayRecords, ^StructRecord, ^DelimiterTab) WHERE (Summa != '')
+CREATE ARRAY (ArrayRecords, ^StructRecord, ^DelimiterTab) FROM (ArrayRecords, ^StructRecord, ^DelimiterTab) WHERE (Summa != "")
 flagSaveFile = 0
-CREATE ARRAY (^ArrayRecords, ^StructRecord, ^DelimiterTab) FROM (ArrayRecords, ^StructRecord, ^DelimiterTab) SET (flagSaveFile  = 1, NumberRecord = NumberRecord +1, strDateTime = GetDateTime(), ID = strDateTime + ' ' + NumberRecord WHERE (ID == ''))
+CREATE ARRAY (^ArrayRecords, ^StructRecord, ^DelimiterTab) FROM (ArrayRecords, ^StructRecord, ^DelimiterTab) SET (flagSaveFile  = 1, NumberRecord = NumberRecord +1, strDateTime = GetDateTime(), ID = strDateTime + " " + NumberRecord WHERE (ID == ""))
 //print "flagSaveFile =" + flagSaveFile +" NumberRecord =" + NumberRecord
 if flagSaveFile == 1
 {
