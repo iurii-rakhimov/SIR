@@ -6,5 +6,5 @@ Struct StructPriceFruits { ImageProduct, NameProduct, Price }
 ^ArrayPriceFruits[3]="🍌:Banan:70"
 ^ArrayPriceFruits[4]="🍑:Peach:90"
 
-IndexSelected = GetIndexArrayMaxValueComponentStruct(^ArrayPriceFruits, StructPriceFruits, 'NameProduct', ':')
+IndexSelected = GetIndexArrayMaxValueComponentStruct(^ArrayPriceFruits, StructPriceFruits, "NameProduct", ":")
 Title.text = "IndexSelected =" + IndexSelected
