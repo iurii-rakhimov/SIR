@@ -1,0 +1,5 @@
+ListSynchro	SynchroTitle	Label	@	0	51	318	20	SynchroTitle	Синхронизация	255:255:255	2:2:2	0	17	systemFont	center	Label		vertically		
+ListSynchro	CloudIn	Image	@	71	26	20	20	CloudIn	242:242:242	242:242:242	0	iCloudIn40x40		vertically	
+ListSynchro	Trash	Image	@	233	26	20	20	Trash	242:242:242	242:242:242	0	Trash40x40		vertically	
+ListSynchro	CloudOut	Image	@	100	26	20	20	CloudOut	242:242:242	242:242:242	0	iCloudOut40x40		vertically	
+ListSynchro	Change	Image	@	160	26	20	20	Change	242:242:242	242:242:242	0	Change40x40		vertically	
