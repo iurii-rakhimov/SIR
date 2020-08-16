@@ -5,9 +5,11 @@ HideListObjectForm("ListOperaciiKontragent", "Edit,Trash,Copy", ",")
 strOperaciiKontragent = ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent]
 //print "strOperaciiKontragent =" + strOperaciiKontragent
 
+//Struct ^StructOperaciiKontragent { Date, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaFormatItogo, ID, Selector, ViewDate }
 GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
+
 //print "ID =" + ID
-IndexRecord = GetIndexArrayForSelectedComponentStruct(^ArrayRecords, ^StructRecord, 'ID', ID, ^DelimiterTab)
+IndexRecord = GetIndexArrayForSelectedComponentStruct(^ArrayRecords, ^StructRecord, "ID", ID, ^DelimiterTab)
 //print "IndexRecord =" + IndexRecord
 
 // получили IndexRecord
@@ -16,14 +18,20 @@ strRecordOld = ^ArrayRecords[IndexRecord]
 // читаем старую запись
 GetComponentsOfStruct(^StructRecord, strRecordOld, ^DelimiterTab)
 ID = GetDateTime()
+Order = Order + 1
+Order = AddCharBeginString(Order, "0", 2)
 strRecordNew = JoinedComponentsToStruct(^StructRecord, ^DelimiterTab)
 //print "strRecordNew =" + strRecordNew
 
 CountRecords = CountElementsOfArray(^ArrayRecords)
 //print "CountRecords =" + CountRecords
-^ArrayRecords[CountRecords] = strRecordNew
+^ArrayRecords[CountRecords] = strRecordOld
+^ArrayRecords[IndexRecord] = strRecordNew
 
-// запишем новую запись в файл
+// запишем новую (та, что была и будет старой) запись в файл. Запишем старую запись с новым ID
 SaveRecord(Date, strRecordNew)
-
+// начнем редактирование новой т.е. старой записи с новым ID и Order
+strOperaciiKontragent = JoinedComponentsToStruct(^StructOperaciiKontragent, ^DelimiterTab)
+^ArrayOperaciiKontragent[^indexCellOperaciiKontragent] = strOperaciiKontragent
+^SaveRecord = "Yes"
 DoForm OperaciaKontragent
