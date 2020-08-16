@@ -1,0 +1,71 @@
+MF	LineLeftDown	Label	@	0	51	2	517			255:89:0	2:2:2	0	14	systemFont	center	Label		vertically		
+MF	Message	Label	@	5	89	309	30	Message		255:255:255	2:2:2	0	20	systemFont	center	Label		vertically		
+MF	SIR	Image	@	70	190	180	180	SIR	255:255:255	242:242:242	0	SIR		vertically	
+MF	LineRightDown	Label	@	318	51	2	517			255:89:0	2:2:2	0	1	systemFont	center	Label		vertically		
+MF	LineUp	Label	@	0	50	320	2			255:89:0	2:2:2	0	14	systemFont	center	Label		vertically		
+MF	LineLeft	Label	@	0	50	2	517			255:89:0	2:2:2	0	14	systemFont	center	Label		vertically		
+MF	LineRight	Label	@	318	50	2	517			255:89:0	2:2:2	0	1	systemFont	center	Label		vertically		
+MF	LineDown	Label	@	0	566	320	2			255:89:0	2:2:2	0	14	systemFont	center	Label		vertically		
+MF	Title	Label	@	4	51	309	30	Title	Мои финансы	255:255:255	2:2:2	0	30	systemFont	center	Label		vertically		
+MF	Test09_Service	Image	@	3	300	20	20	Test09_Service	255:255:255	242:242:242	0	Service40x40		vertically	
+MF	Test13_OkGreen	Image	@	3	350	20	20	Test13_OkGreen	255:255:255	242:242:242	0	OkGreen40x40		vertically	
+MF	Test15_OK	Image	@	258	350	20	20	Test15_OK	255:255:255	242:242:242	0	OK40x40		vertically	
+MF	DateBeginMinus	Image	@	20	490	45	45	DateBeginMinus	255:255:255	242:242:242	0	ArrowLeft40x40		vertically	
+MF	DateBeginPlus	Image	@	100	490	45	45	DateBeginPlus	255:255:255	242:242:242	0	ArrowRight40x40		vertically	
+MF	DateEndMinus	Image	@	180	490	45	45	DateEndMinus	255:255:255	242:242:242	0	ArrowLeft40x40		vertically	
+MF	DateEndPlus	Image	@	250	490	45	45	DateEndPlus	255:255:255	242:242:242	0	ArrowRight40x40		vertically	
+MF	LabelDateBegin	Label	@	40	400	120	30	LabelDateBegin	Начало периода	255:255:255	2:2:2	0	14	systemFont	center	Label		vertically		
+MF	DateBegin	Label	@	30	430	100	30	DateBegin	DateBegin	255:255:255	2:2:2	0	17	systemFont	center	Label		vertically		
+MF	DateEnd	Label	@	185	430	100	30	DateEnd	DateEnd	255:255:255	2:2:2	0	17	systemFont	center	Label		vertically		
+MF	LoadData	Label	@	50	160	260	30	LoadData	Загрузить данные за период	79:100:160	255:255:255	15	17	boldSystemFont	center	Label		vertically		
+MF	LabelDateEnd	Label	@	160	400	120	30	LabelDateEnd	Конец периода	255:255:255	2:2:2	0	14	systemFont	center	Label		vertically		
+MF	DayBeginMinus	Image	@	5	430	25	25	DayBeginMinus	255:255:255	242:242:242	0	ArrowLeft40x40		vertically	
+MF	DayBeginPlus	Image	@	130	430	25	25	DayBeginPlus	255:255:255	242:242:242	0	ArrowRight40x40		vertically	
+MF	DayEndMinus	Image	@	160	430	25	25	DayEndMinus	255:255:255	242:242:242	0	ArrowLeft40x40		vertically	
+MF	DayEndPlus	Image	@	288	430	25	25	DayEndPlus	255:255:255	242:242:242	0	ArrowRight40x40		vertically	
+MF	DateEnd	Label	@	416	248	100	30		DateEnd	255:255:255	2:2:2	0	17	systemFont	center	Label		horizontally		
+MF	DateBegin	Label	@	54	246	100	30		DateBegin	255:255:255	2:2:2	0	17	systemFont	center	Label		horizontally		
+MF	LoadData	Label	@	5	128	558	30	LoadData	Загрузить данные за период	79:100:160	255:255:255	15	20	boldSystemFont	center	Label		horizontally		
+MF	Title	Label	@	0	51	568	30	Title	Мои финансы	255:255:255	2:2:2	0	20	systemFont	center	Label		horizontally		
+MF	LabelDateBegin	Label	@	43	221	120	30		Начало периода	255:255:255	2:2:2	0	14	systemFont	center	Label		horizontally		
+MF	MF_0000	Label	@	403	221	120	30		Конец периода	255:255:255	2:2:2	0	14	systemFont	center	Label		horizontally		
+MF	GodMinus	Image	@	5	222	30	30	GodMinus	255:255:255	242:242:242	0	DoubleLeft40x40		horizontally	
+MF	GodPlus	Image	@	529	222	30	30	GodPlus	255:255:255	242:242:242	0	DoubleRight40x40		horizontally	
+MF	DateMinus	Image	@	20	280	35	30	DateMinus	255:255:255	242:242:242	0	DoubleLeft40x40		horizontally	
+MF	DatePlus	Image	@	501	280	35	30	DatePlus	255:255:255	242:242:242	0	DoubleRight40x40		horizontally	
+MF	DateBeginMinus	Image	@	77	280	30	30	DateBeginMinus	255:255:255	242:242:242	0	ArrowLeft40x40		horizontally	
+MF	MF_0001	Image	@	137	280	30	30	DateBeginPlus	255:255:255	242:242:242	0	ArrowRight40x40		horizontally	
+MF	MF_0002	Image	@	400	280	30	30	DateEndMinus	255:255:255	242:242:242	0	ArrowLeft40x40		horizontally	
+MF	MF_0003	Image	@	460	280	30	30	DateEndPlus	255:255:255	242:242:242	0	ArrowRight40x40		horizontally	
+MF	MF_0004	Image	@	170	26	20	20	OkGreen	242:242:242	242:242:242	0	OkGreen40x40		horizontally	
+MF	Test11_Folder	Image	@	258	300	20	20	Test11_Folder	242:242:242	242:242:242	0	Folder40x40		vertically	
+MF	Qlogo1	Image	@	231	220	79	79	Qlogo1	255:255:255	242:242:242	0	QL1400		vertically	
+MF	Python	Image	@	16	220	79	79	Python	255:255:255	242:242:242	0	Python		vertically	
+MF	LabelQlogo1	Label	@	257	190	45	30		Qlogo1	255:255:255	2:2:2	0	14	systemFont	влево	Label		vertically		
+MF	LabelPython	Label	@	19	190	45	30	LabelPython	Python	255:255:255	2:2:2	0	14	systemFont	влево	Label		vertically		
+MF	NoData	Label	@	10	90	300	30	NoData	Загрузить тестовые данные	79:100:160	255:255:255	15	20	boldSystemFont	center	Label		vertically		
+MF	Test01	Label	@	2	125	38	30	Test01	Test1	255:255:255	2:2:2	0	14	systemFont	влево	Label		vertically		
+MF	Test02	Label	@	40	125	40	30	Test02	Test2	255:255:255	2:2:2	0	14	systemFont	влево	Label		vertically		
+MF	Test03	Label	@	80	125	40	30	Test03	Test3	255:255:255	2:2:2	0	14	systemFont	влево	Label		vertically		
+MF	Test04	Label	@	120	125	40	30	Test04	Test4	255:255:255	2:2:2	0	14	systemFont	влево	Label		vertically		
+MF	Test05	Label	@	160	125	40	30	Test05	Test5	255:255:255	2:2:2	0	14	systemFont	влево	Label		vertically		
+MF	Test06	Label	@	200	125	40	30	Test06	Test6	255:255:255	2:2:2	0	14	systemFont	влево	Label		vertically		
+MF	Test07	Label	@	240	125	40	30	Test07	Test7	255:255:255	2:2:2	0	14	systemFont	влево	Label		vertically		
+MF	Test08	Label	@	280	125	38	30	Test08	Test8	255:255:255	2:2:2	0	14	systemFont	влево	Label		vertically		
+MF	SynchroList	Label	@	52	370	260	30	SynchroList	Синхронизация с облаком	79:100:160	255:255:255	15	17	boldSystemFont	center	Label		vertically		
+MF	LoadDatabaseBar	Image	@	100	25	20	20	LoadData	242:242:242	242:242:242	0	LoadDatabase40x40		vertically	
+MF	SynchroListBarImage	Image	@	200	25	20	20	SynchroList	242:242:242	242:242:242	0	LoadCloudDatabase40x40		vertically	
+MF	LoadDatabaseImage	Image	@	10	160	30	30	LoadData	255:255:255	242:242:242	0	LoadDatabase40x40		vertically	
+MF	SynchroListImage	Image	@	10	370	30	30	SynchroList	242:242:242	242:242:242	0	LoadCloudDatabase40x40		vertically	
+MF	GodMinus	Label	@	10	535	140	30	GodMinus	Год -	79:100:160	255:255:255	15	17	boldSystemFont	center	Label		vertically		
+MF	GodPlus	Label	@	170	535	140	30	GodPlus	Год +	79:100:160	255:255:255	15	17	boldSystemFont	center	Label		vertically		
+MF	DatePlus	Label	@	170	460	140	30	DatePlus	Месяц +	79:100:160	255:255:255	15	17	boldSystemFont	center	Label		vertically		
+MF	DateMinus	Label	@	10	460	140	30	DateMinus	Месяц -	79:100:160	255:255:255	15	17	boldSystemFont	center	Label		vertically		
+MF	Test10_Search	Image	@	40	300	20	20	Test10_Search	255:255:255	242:242:242	0	Search40x40		vertically	
+MF	Test14_Terminal	Image	@	40	350	20	20	Test14_Terminal	255:255:255	242:242:242	0	Terminal40x40		vertically	
+MF	Test12_Stop	Image	@	297	300	20	20	Test12_Stop	242:242:242	242:242:242	0	Stop40x40		vertically	
+MF	Test16_Telegram	Image	@	297	350	20	20	Test16_Telegram	255:255:255	242:242:242	0	Telegram40x40		vertically	
+MF	Test17_CloudIn	Image	@	3	325	20	20	Test17_CloudIn	255:255:255	242:242:242	0	iCloudIn40x40		vertically	
+MF	Test18_CloudOut	Image	@	40	325	20	20	Test18_CloudOut	255:255:255	242:242:242	0	iCloudOut40x40		vertically	
+MF	Test19_ListForm	Image	@	258	325	20	20	Test19_ListForm	255:255:255	242:242:242	0	ListForm40x40		vertically	
+MF	Test20_ListFile	Image	@	297	325	20	20	Test20_ListFile	255:255:255	242:242:242	0	ListFile40x40		vertically	
