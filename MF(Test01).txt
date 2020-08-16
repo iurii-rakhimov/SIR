@@ -1,5 +1,5 @@
 // MF[Test01].txt
-Message.text = 'Start Timer ' + GetDateTime()
+Message.text = "Start Timer " + GetDateTime()
 i = 0
 while true
 {
