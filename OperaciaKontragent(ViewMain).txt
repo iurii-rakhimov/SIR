@@ -49,9 +49,9 @@ if SummaIn == ""
 	HideObject("OutTitleLabel")
 
 	HideObject("CleaIn")
-//	HideObject('SummaInLabel')
-	HideObject('SummaInRectangle')
-	HideObject('SummaInTextField')
+//	HideObject("SummaInLabel")
+	HideObject("SummaInRectangle")
+	HideObject("SummaInTextField")
 }
 if SummaOut == ""
 {
@@ -71,7 +71,7 @@ if SummaOut == ""
 	HideObject("OutKontragent")
 
 	HideObject("CleaOut")
-//	HideObject('SummaOutLabel')
-	HideObject('SummaOutRectangle')
-	HideObject('SummaOutTextField')
+//	HideObject("SummaOutLabel")
+	HideObject("SummaOutRectangle")
+	HideObject("SummaOutTextField")
 }
