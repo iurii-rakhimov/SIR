@@ -4,6 +4,6 @@ function ErrorWriteFile()
 	y=100
 	w= ^ScreenWidth-20
 	h=400
-	strMessage="Ошибка записи в файл: '" + ^PathNameFileOld
+	strMessage="Ошибка записи в файл: " + ^PathNameFileOld
 	Message(strMessage, "")
 }
