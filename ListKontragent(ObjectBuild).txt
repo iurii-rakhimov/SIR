@@ -1,0 +1,6 @@
+ListKontragent	DownFooter	Label	@	0	565	320	3			0:0:0	2:2:2	0	17	systemFont	center	Label		vertically		
+ListKontragent	TitleLabel	Label	@	0	52	100	30		Контрагент:	255:255:255	2:2:2	0	16	systemFont	center	Label		vertically		
+ListKontragent	TitleLabel	Label	@	0	51	100	30		Контрагент:	255:255:255	2:2:2	0	17	systemFont	center	Label		horizontally		
+ListKontragent	KontragentTitle	Label	@	110	52	210	30			255:255:255	2:2:2	0	22	systemFont	center	Label		vertically		
+ListKontragent	KontragentTitle	Label	@	120	51	210	30			255:255:255	2:2:2	0	22	systemFont	center	Label		horizontally		
+ListKontragent	DownFooter	Label	@	0	317	320	3			0:0:0	2:2:2	0	17	systemFont	center	Label		horizontally		
