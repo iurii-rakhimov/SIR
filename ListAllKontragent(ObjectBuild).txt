@@ -1,0 +1,1 @@
+ListAllKontragent	Title	Label	@	0	51	320	30		Справочник контрагентов	255:255:255	2:2:2	0	17	systemFont	center	Label		vertically		
