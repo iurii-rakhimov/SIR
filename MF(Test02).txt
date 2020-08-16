@@ -1,8 +1,8 @@
 // MF[Test02].txt
-Array[0] = 'a/1'
-Array[1] = 'b/2'
-Array[2] = 'a/3'
-IndexSelected0 = GetIndexArrayForComponentWithNumber(Array, 'b', '/', 0)
-IndexSelected1 = GetIndexArrayForComponentWithNumber(Array, 'a', '/', 0)
-IndexSelected2 = GetIndexArrayForComponentWithNumber(Array, '3', '/', 1)
+Array[0] = "a/1"
+Array[1] = "b/2"
+Array[2] = "a/3"
+IndexSelected0 = GetIndexArrayForComponentWithNumber(Array, "b", "/", 0)
+IndexSelected1 = GetIndexArrayForComponentWithNumber(Array, "a", "/", 0)
+IndexSelected2 = GetIndexArrayForComponentWithNumber(Array, "3", "/", 1)
 Title.text = "IndexSelected =" + IndexSelected0+" "+IndexSelected1+" "+IndexSelected2
