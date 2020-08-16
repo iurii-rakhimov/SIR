@@ -6,21 +6,21 @@ delimiterTab = IntToChar(9)
         // модель таблицы
 Create Image { Name = ImageFile, Action=SelectFileImage, X=5, Y=5, Width=20, Height=20, ModelCell=modelCell[0] }
         
-Create Label { Name = NameFile, Text = '', Action = SelectFileName, TextColor = 'Black', BackgroundColor = 'White', X=30, Y=0, Width = 290, Height = 30, FontName = 'systemFont', FontSize=14, Alignment = 'Left', CornerRadius = 0, ModelCell=modelCell[1] }
+Create Label { Name = NameFile, Text = "", Action = SelectFileName, TextColor = "Black", BackgroundColor = "White", X=30, Y=0, Width = 290, Height = 30, FontName = "systemFont", FontSize=14, Alignment = "Left", CornerRadius = 0, ModelCell=modelCell[1] }
         
         // создание фона таблицы
 x = 3
 y = 100
 w = 314
 h = 568 - y - 10
-Create Rectangle { Name = ListNameFile.Background, Color='Black', X=x, Y=y, Width=w, Height=h, CornerRadius=4, LocationDevice='Vertically' }
+Create Rectangle { Name = ListNameFile.Background, Color="Black", X=x, Y=y, Width=w, Height=h, CornerRadius=4, LocationDevice="Vertically" }
         
         // создание таблицы
 x = 5
 y = y + 2
 w = 310
 h = 568-y-14
-Create TableView { Name = ListNameFile, Action='', X=x, Y=y, Width=w, Height=h, ModelCell=modelCell }
+Create TableView { Name = ListNameFile, Action="", X=x, Y=y, Width=w, Height=h, ModelCell=modelCell }
         
         // читаем каталог и заполним массив
 Struct StructArrayRecords { Name, Prefix }
@@ -29,12 +29,12 @@ Struct TableFilesList { ImageFile, NameFile }
 Path = GetPathDirectoryDocument()
 ListFilesFolder = GetListFilesFolder(Path)
 arrayRecords = Components(ListFilesFolder, delimiterUr)
-Sort(arrayRecords, 'MinMax')
+Sort(arrayRecords, "MinMax")
         // заполнение таблицы
-CREATE ARRAY (arrayFiles, StructArrayFiles, delimiterTab) FROM (arrayRecords, StructArrayRecords, '.') WHERE (Prefix != 'DS_Store') SET (ImageFile = 'Document40x40', NameFile = Name+'.'+Prefix WHERE (Prefix != ''), ImageFile = 'Folder40x40', NameFile = Name WHERE (Prefix == '') )
+CREATE ARRAY (arrayFiles, StructArrayFiles, delimiterTab) FROM (arrayRecords, StructArrayRecords, ".") WHERE (Prefix != "DS_Store") SET (ImageFile = "Document40x40", NameFile = Name+"."+Prefix WHERE (Prefix != ""), ImageFile = "Folder40x40", NameFile = Name WHERE (Prefix == "") )
 
 UPDATE TableView (TableFilesList, arrayFiles, StructArrayFiles, delimiterTab)
 
 
 ^arrayFiles = arrayFiles
-MessageBarUp('')
+MessageBarUp("")
