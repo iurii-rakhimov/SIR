@@ -1,16 +1,28 @@
+// MF[Main].txt
 Remove ExternalVariables
 Remove AllVisualObject
 
 ^DelimiterSpace = IntToChar(40)
+^DelimiterRecord = IntToChar(11)
 ^DelimiterTab = IntToChar(9)
 ^DelimiterNewLine = IntToChar(10)
 ^OrderSort = "MaxMin"
-^DelimiterBag = IntToChar(128188)
+^DelimiterBag = IntToChar(128188) // 💼
+^DelimiterCardIndexDividers = IntToChar(128450) // 🗂
+^DelimiterMagnifyingGlass = IntToChar(128269) // 🔍
+^DelimiterMemo = IntToChar(128221) // 📝
 ^Path = GetPathDirectoryDocument()
 ^Key = ""
 ^DateBegin = ""
 ^DateEnd = ""
 ^SaveRecord = "No"
+
+Struct ^StructRecordSynchro { YearMonth, MaxInCloudID, Identifier, StrArrayRecords }
+Struct ^StructRecord { Date, Order, NameKontragentOut, Summa, NameKontragentIn, Comment, Quantity, Price, ID }
+Struct ^StructGeneral { NameKontragentIn, Date, Order, ID, Summa, NameKontragentOut, Comment, Quantity, Price, Selector }
+Struct ^StructKontragent { NameKontragent, SummaKontragent, QuantityKontragent }
+Struct ^StructSchet { NameSchet, SummaSchet }
+Struct ^StructOperaciiKontragent { Date, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaFormatItogo, ID, Selector, ViewDate }
 
 LoadModule  Function[Pyton].txt
 
@@ -83,11 +95,3 @@ View DateEnd
 NameFile = ^Path + "MF_Comment.txt"
 ContentFile = FileRead(NameFile)
 ^ArrayComment = Components(ContentFile, ^DelimiterNewLine)
-
-//^NameChangeTextField = ""
-
-arrayDateBegin = Components(DateBegin, "/")
-arrayDateEnd = Components(DateEnd, "/")
-
-Remove arrayDateBegin
-Remove arrayDateEnd
