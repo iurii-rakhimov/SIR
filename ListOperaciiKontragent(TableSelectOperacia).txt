@@ -19,7 +19,7 @@
 //}
 //^indexCellOperaciiKontragent = indexCellOperaciiKontragent
 
-CREATE ARRAY (^ArrayOperaciiKontragent, ^StructOperaciiKontragent, ^DelimiterTab) FROM (^ArrayOperaciiKontragent, ^StructOperaciiKontragent, ^DelimiterTab) SET (Selector = '')
+CREATE ARRAY (^ArrayOperaciiKontragent, ^StructOperaciiKontragent, ^DelimiterTab) FROM (^ArrayOperaciiKontragent, ^StructOperaciiKontragent, ^DelimiterTab) SET (Selector = "")
 
 strOperaciiKontragent = ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent]
 GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
