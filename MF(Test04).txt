@@ -1,10 +1,10 @@
 // MF[Test4].txt
-Array[0] = 'a/1'
-Array[1] = 'b/2'
-Array[2] = 'a/3'
+Array[0] = "a/1"
+Array[1] = "b/2"
+Array[2] = "a/3"
 Struct StructArray { Name, ID }
 
-IndexSelected0 = GetIndexArrayForSelectedComponentStruct(Array, StructArray, 'Name', 'b', '/')
-IndexSelected1 = GetIndexArrayForSelectedComponentStruct(Array, StructArray, 'Name', 'a', '/')
-IndexSelected2 = GetIndexArrayForSelectedComponentStruct(Array, StructArray, 'ID', '3', '/')
+IndexSelected0 = GetIndexArrayForSelectedComponentStruct(Array, StructArray, "Name", "b", "/")
+IndexSelected1 = GetIndexArrayForSelectedComponentStruct(Array, StructArray, "Name", "a", "/")
+IndexSelected2 = GetIndexArrayForSelectedComponentStruct(Array, StructArray, "ID", "3", "/")
 Title.text = "IndexSelected =" + IndexSelected0 + " " + IndexSelected1 + " " + IndexSelected2
