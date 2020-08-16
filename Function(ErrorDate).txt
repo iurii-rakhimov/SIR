@@ -13,7 +13,7 @@ function ErrorWriteBaseData()
 	y=100
 	w= ^ScreenWidth-20
 	h=400
-	strMessage="Ошибка записи в базу данных-ключ: '" + ^Key + "' Данные: '" + ^Data + "'"
+	strMessage="Ошибка записи в базу данных-ключ: <" + ^Key + "> Данные: <" + ^Data + ">"
 	Message(strMessage, "")
 	return
 }
@@ -23,7 +23,7 @@ function ErrorWriteFile()
 	y=100
 	w= ^ScreenWidth-20
 	h=400
-	strMessage="Ошибка записи в файл: '" + ^PathNameFileOld
+	strMessage="Ошибка записи в файл: " + ^PathNameFileOld
 	Message(strMessage, "")
 	return
 }
