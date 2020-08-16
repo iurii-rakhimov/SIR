@@ -11,11 +11,12 @@ KontragentName.text = nameKontragent
 if ^SaveRecord == "Yes"
 {
 	strReturn = SelectionListOperaciiKontragent()
-	ArrayReturn = Components(strReturn, ':')
+	ArrayReturn = Components(strReturn, ":")
 	^SummaInItogo = ArrayReturn[0]
 	^SummaOutItogo = ArrayReturn[1]
 	^QuantityItogo = ArrayReturn[2]
 }
+^indexCellOperaciiKontragent = 9999999
 ViewSelectionListOperaciiKontragent(^SummaInItogo, ^SummaOutItogo, ^QuantityItogo)
 
 MessageBarUp( "Загрузили" )
