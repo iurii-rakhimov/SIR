@@ -1,0 +1,70 @@
+CalendarNew	Data01	Label	@	25	125	30	30	SelectDate	1	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data02	Label	@	65	125	30	30	SelectDate	2	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data03	Label	@	105	125	30	30	SelectDate	3	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data04	Label	@	145	125	30	30	SelectDate	4	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data05	Label	@	185	125	30	30	SelectDate	5	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data06	Label	@	225	125	30	30	SelectDate	6	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data07	Label	@	265	125	30	30	SelectDate	7	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data08	Label	@	25	175	30	30	SelectDate	8	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data09	Label	@	65	175	30	30	SelectDate	9	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data10	Label	@	105	175	30	30	SelectDate	10	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data11	Label	@	145	175	30	30	SelectDate	11	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data12	Label	@	185	175	30	30	SelectDate	12	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data13	Label	@	225	175	30	30	SelectDate	13	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data14	Label	@	265	175	30	30	SelectDate	14	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data15	Label	@	25	225	30	30	SelectDate	15	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data16	Label	@	65	225	30	30	SelectDate	16	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data17	Label	@	105	225	30	30	SelectDate	17	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data18	Label	@	145	225	30	30	SelectDate	18	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data19	Label	@	185	225	30	30	SelectDate	19	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data20	Label	@	225	225	30	30	SelectDate	20	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data21	Label	@	265	225	30	30	SelectDate	21	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data22	Label	@	25	275	30	30	SelectDate	22	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data23	Label	@	65	275	30	30	SelectDate	23	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data24	Label	@	105	275	30	30	SelectDate	24	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data25	Label	@	145	275	30	30	SelectDate	25	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data26	Label	@	185	275	30	30	SelectDate	26	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data27	Label	@	225	275	30	30	SelectDate	27	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data28	Label	@	265	275	30	30	SelectDate	28	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data29	Label	@	25	325	30	30	SelectDate	29	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data30	Label	@	65	325	30	30	SelectDate	30	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data31	Label	@	105	325	30	30	SelectDate	31	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	MonthMinus	Image	@	50	26	17	17	MonthMinus	242:242:242	242:242:242	0	ArrowLeft40x40		vertically	
+CalendarNew	MonthYear	Label	@	81	27	150	20		MonthYear	242:242:242	2:2:2	0	16	systemFont	center	Label		vertically		
+CalendarNew	MonthPlus	Image	@	250	26	17	17	MonthPlus	242:242:242	242:242:242	0	ArrowRight40x40		vertically	
+CalendarNew	Today	Label	@	10	439	300	30	Today	Cегодня	79:100:160	255:255:255	15	20	boldSystemFont	center	Label		vertically		
+CalendarNew	Data01	Label	@	25	75	30	30	SelectDate	1	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data02	Label	@	65	75	30	30	SelectDate	2	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data03	Label	@	105	75	30	30	SelectDate	3	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data04	Label	@	145	75	30	30	SelectDate	4	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data05	Label	@	185	75	30	30	SelectDate	5	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data06	Label	@	225	75	30	30	SelectDate	6	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data07	Label	@	265	75	30	30	SelectDate	7	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data08	Label	@	25	125	30	30	SelectDate	8	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data09	Label	@	65	125	30	30	SelectDate	9	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data10	Label	@	105	125	30	30	SelectDate	10	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data11	Label	@	145	125	30	30	SelectDate	11	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data12	Label	@	185	125	30	30	SelectDate	12	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data13	Label	@	225	125	30	30	SelectDate	13	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data14	Label	@	265	125	30	30	SelectDate	14	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data15	Label	@	25	175	30	30	SelectDate	15	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data16	Label	@	65	175	30	30	SelectDate	16	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data17	Label	@	105	175	30	30	SelectDate	17	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data18	Label	@	145	175	30	30	SelectDate	18	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data19	Label	@	185	175	30	30	SelectDate	19	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data20	Label	@	225	175	30	30	SelectDate	20	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data21	Label	@	265	175	30	30	SelectDate	21	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data22	Label	@	25	225	30	30	SelectDate	22	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data23	Label	@	65	225	30	30	SelectDate	23	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data24	Label	@	105	225	30	30	SelectDate	24	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data25	Label	@	145	225	30	30	SelectDate	25	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data26	Label	@	185	225	30	30	SelectDate	26	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data27	Label	@	225	225	30	30	SelectDate	27	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data28	Label	@	265	225	30	30	SelectDate	28	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	MonthMinus	Image	@	50	26	17	17	MonthMinus	242:242:242	242:242:242	0	ArrowLeft40x40		horizontally	
+CalendarNew	Data29	Label	@	25	275	30	30	SelectDate	29	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data30	Label	@	65	275	30	30	SelectDate	30	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	Data31	Label	@	105	275	30	30	SelectDate	31	255:255:255	0:0:0	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	MonthYear	Label	@	81	27	150	20		MonthYear	242:242:242	2:2:2	0	16	systemFont	center	Label		horizontally		
+CalendarNew	Today	Label	@	387	128	100	100	Today	Cегодня	79:100:160	255:255:255	15	20	boldSystemFont	center	Label		horizontally		
+CalendarNew	MonthPlus	Image	@	250	26	17	17	MonthPlus	242:242:242	242:242:242	0	ArrowRight40x40		horizontally	
