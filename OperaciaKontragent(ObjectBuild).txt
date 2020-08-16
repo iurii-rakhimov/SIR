@@ -1,0 +1,84 @@
+OperaciaKontragent	OkGreen	Image	@	100	26	20	20	OkGreen	242:242:242	242:242:242	0	OkGreen40x40		vertically	
+OperaciaKontragent	Save	Image	@	159	26	17	17	Save	242:242:242	242:242:242	0	Save40x40		vertically	
+OperaciaKontragent	DateLabel	Label	@	0	53	100	20	DateLabel	Дата операции	255:255:255	2:2:2	0	12	systemFont	center	Label		vertically		
+OperaciaKontragent	Today	Label	@	135	51	70	20	Today	Сегодня	79:100:160	255:255:255	10	14	systemFont	center	Label		vertically		
+OperaciaKontragent	NewDate	Label	@	265	51	55	20	NewDate	Новая	79:100:160	255:255:255	10	14	systemFont	center	Label		vertically		
+OperaciaKontragent	OrderLabel	Label	@	0	105	200	20		Порядковый номер записи за день	255:255:255	2:2:2	0	11	systemFont	влево	Label		vertically		
+OperaciaKontragent	OrderDataRegtangle	Label	@	239	104	42	22			226:226:226	2:2:2	4	0	systemFont	center	Label		vertically		
+OperaciaKontragent	InTitleLabel	Label	@	90	130	140	25		Откуда	255:255:255	2:2:2	0	17	systemFont	center	Label		vertically		
+OperaciaKontragent	OrderData	TextField	@	240	105	40	20				255:255:255	2:2:2	5	14	systemFont	центр	vertically	vertically		
+OperaciaKontragent	InKontragent	Label	@	90	135	140	20	InKontragent	Откуда	79:100:160	255:255:255	10	14	systemFont	center	Label		vertically		
+OperaciaKontragent	InRectangle	Label	@	3	160	314	20			226:226:226	2:2:2	4	0	systemFont	center	Label		vertically		
+OperaciaKontragent	InTextView	TextField	@	4	161	310	18				255:255:255	2:2:2	0	17	systemFont		vertically	vertically		
+OperaciaKontragent	OutRectangle	Label	@	3	220	314	20			226:226:226	2:2:2	4	0	systemFont	center	Label		vertically		
+OperaciaKontragent	OutTitleLabel	Label	@	90	190	140	20		Куда	255:255:255	2:2:2	0	17	systemFont	center	Label		vertically		
+OperaciaKontragent	OutKontragent	Label	@	90	190	140	20	OutKontragent	Куда	79:100:160	255:255:255	10	14	systemFont	center	Label		vertically		
+OperaciaKontragent	OutTextView	TextField	@	5	221	310	18				255:255:255	2:2:2	0	17	systemFont		vertically	vertically		
+OperaciaKontragent	SummaInLabel	Label	@	30	245	70	20		Приход	255:255:255	2:2:2	0	17	systemFont	center	Label		vertically		
+OperaciaKontragent	SummaInRectangle	Label	@	4	269	102	22			226:226:226	2:2:2	4	0	systemFont	center	Label		vertically		
+OperaciaKontragent	SummaInTextField	TextField	@	5	270	100	20				255:255:255	2:2:2	5	14	systemFont	вправо	vertically	vertically		
+OperaciaKontragent	ChangeOutIn	Label	@	140	247	40	20	ChangeOutIn	<-	79:100:160	255:255:255	10	14	systemFont	center	Label		vertically		
+OperaciaKontragent	SummaOutLabel	Label	@	215	246	70	20		Расход	255:255:255	2:2:2	0	17	systemFont	center	Label		vertically		
+OperaciaKontragent	SummaOutRectangle	Label	@	215	268	102	22			226:226:226	2:2:2	4	0	systemFont	center	Label		vertically		
+OperaciaKontragent	SummaOutTextField	TextField	@	216	269	100	20				255:255:255	2:2:2	5	14	systemFont	вправо	vertically	vertically		
+OperaciaKontragent	ChangeInOut	Label	@	140	247	40	20	ChangeInOut	->	79:100:160	255:255:255	10	14	systemFont	center	Label		vertically		
+OperaciaKontragent	ComentRegtangle	Label	@	2	328	316	23			226:226:226	2:2:2	4	0	systemFont	center	Label		vertically		
+OperaciaKontragent	Comment	Label	@	90	300	140	20	Comment	Комментарий	79:100:160	255:255:255	10	17	systemFont	center	Label		vertically		
+OperaciaKontragent	CommentTextField	TextField	@	3	330	314	20				255:255:255	2:2:2	0	14	systemFont	влево	vertically	vertically		
+OperaciaKontragent	QuantityLabel	Label	@	0	361	100	30	QuantityLabel	Количество	255:255:255	2:2:2	0	17	systemFont	влево	Label		vertically		
+OperaciaKontragent	QuantityRegtangle	Label	@	109	364	102	22			226:226:226	2:2:2	4	0	systemFont	center	Label		vertically		
+OperaciaKontragent	Quantity	TextField	@	110	365	100	20				255:255:255	2:2:2	5	14	systemFont	вправо	vertically	vertically		
+OperaciaKontragent	DateMinus	Label	@	40	80	50	20	DateMinus	-	79:100:160	255:255:255	10	14	systemFont	center	Label		vertically		
+OperaciaKontragent	DatePlus	Label	@	210	80	50	20	DatePlus	+	79:100:160	255:255:255	10	14	systemFont	center	Label		vertically		
+OperaciaKontragent	OrderMinus	Label	@	200	105	35	20	OrderMinus	-	79:100:160	255:255:255	10	14	systemFont	center	Label		vertically		
+OperaciaKontragent	OrderPlus	Label	@	285	105	35	20	OrderPlus	+	79:100:160	255:255:255	10	14	systemFont	center	Label		vertically		
+OperaciaKontragent	CleaIn	Image	@	5	245	20	20	CleaIn	255:255:255	242:242:242	0	Clea40x40		vertically	
+OperaciaKontragent	CleaOut	Image	@	290	245	20	20	CleaOut	255:255:255	242:242:242	0	Clea40x40		vertically	
+OperaciaKontragent	PriceRegtangle	Label	@	109	393	102	22			226:226:226	2:2:2	4	0	systemFont	center	Label		vertically		
+OperaciaKontragent	Price	TextField	@	110	394	100	20				255:255:255	2:2:2	5	14	systemFont	вправо	vertically	vertically		
+OperaciaKontragent	PriceLabel	Label	@	0	388	100	30	PriceLabel	Цена	255:255:255	2:2:2	0	17	systemFont	влево	Label		vertically		
+OperaciaKontragent	PriceLabel	Label	@	321	288	60	30		Цена	255:255:255	2:2:2	0	17	systemFont	влево	Label		horizontally		
+OperaciaKontragent	LineEnd	Label	@	0	420	320	4			255:0:0	2:2:2	0	22	systemFont	center	Label		vertically		
+OperaciaKontragent	DateLabel	Label	@	0	53	100	20		Дата операции	255:255:255	2:2:2	0	12	systemFont	center	Label		horizontally		
+OperaciaKontragent	Today	Label	@	135	51	70	20	Today	Сегодня	79:100:160	255:255:255	10	14	systemFont	center	Label		horizontally		
+OperaciaKontragent	OkGreen	Image	@	100	26	20	20	OkGreen	242:242:242	242:242:242	0	OkGreen40x40		horizontally	
+OperaciaKontragent	Save	Image	@	159	26	17	17	Save	242:242:242	242:242:242	0	Save40x40		horizontally	
+OperaciaKontragent	NewDate	Label	@	265	51	55	20	NewDate	Новая	79:100:160	255:255:255	10	14	systemFont	center	Label		horizontally		
+OperaciaKontragent	DateMinus	Label	@	40	80	50	20	DateMinus	-	79:100:160	255:255:255	10	14	systemFont	center	Label		horizontally		
+OperaciaKontragent	DateOperacii	Label	@	100	75	100	30		Date	255:255:255	2:2:2	0	17	systemFont	center	Label		horizontally		
+OperaciaKontragent	DatePlus	Label	@	210	80	50	20	DatePlus	+	79:100:160	255:255:255	10	14	systemFont	center	Label		horizontally		
+OperaciaKontragent	OrderLabel	Label	@	0	105	200	20		Порядковый номер записи за день	255:255:255	2:2:2	0	11	systemFont	влево	Label		horizontally		
+OperaciaKontragent	OrderMinus	Label	@	200	105	35	20	OrderMinus	-	79:100:160	255:255:255	10	14	systemFont	center	Label		horizontally		
+OperaciaKontragent	OrderDataRegtangle	Label	@	239	104	42	22			226:226:226	2:2:2	4	0	systemFont	center	Label		horizontally		
+OperaciaKontragent	OrderData	TextField	@	240	105	40	20				255:255:255	2:2:2	5	14	systemFont	центр	horizontally	horizontally		
+OperaciaKontragent	InTitleLabel	Label	@	90	130	140	25		Откуда	255:255:255	2:2:2	0	17	systemFont	center	Label		horizontally		
+OperaciaKontragent	OrderPlus	Label	@	285	105	35	20	OrderPlus	+	79:100:160	255:255:255	10	14	systemFont	center	Label		horizontally		
+OperaciaKontragent	InKontragent	Label	@	90	135	140	20	InKontragent	Откуда	79:100:160	255:255:255	10	14	systemFont	center	Label		horizontally		
+OperaciaKontragent	OutTitleLabel	Label	@	361	136	140	20		Куда	255:255:255	2:2:2	0	17	systemFont	center	Label		horizontally		
+OperaciaKontragent	InRectangle	Label	@	3	160	274	20			226:226:226	2:2:2	4	0	systemFont	center	Label		horizontally		
+OperaciaKontragent	InTextView	TextField	@	5	161	270	18				255:255:255	2:2:2	0	17	systemFont		horizontally	horizontally		
+OperaciaKontragent	OutKontragent	Label	@	360	135	140	20	OutKontragent	Куда	79:100:160	255:255:255	10	14	systemFont	center	Label		horizontally		
+OperaciaKontragent	OutRectangle	Label	@	289	160	274	20			226:226:226	2:2:2	4	0	systemFont	center	Label		horizontally		
+OperaciaKontragent	OutTextView	TextField	@	290	161	270	18				255:255:255	2:2:2	0	17	systemFont		horizontally	horizontally		
+OperaciaKontragent	CleaIn	Image	@	10	200	20	20	CleaIn	255:255:255	242:242:242	0	Clea40x40		horizontally	
+OperaciaKontragent	SummaInLabel	Label	@	41	200	70	20		Приход	255:255:255	2:2:2	0	17	systemFont	center	Label		horizontally		
+OperaciaKontragent	SummaOutLabel	Label	@	362	200	70	20		Расход	255:255:255	2:2:2	0	17	systemFont	center	Label		horizontally		
+OperaciaKontragent	CleaOut	Image	@	340	200	20	20	CleaOut	255:255:255	242:242:242	0	Clea40x40		horizontally	
+OperaciaKontragent	SummaInRectangle	Label	@	123	200	102	22			226:226:226	2:2:2	4	0	systemFont	center	Label		horizontally		
+OperaciaKontragent	SummaInTextField	TextField	@	124	201	100	20				255:255:255	2:2:2	5	14	systemFont	вправо	horizontally	horizontally		
+OperaciaKontragent	SummaOutRectangle	Label	@	449	200	102	22			226:226:226	2:2:2	4	0	systemFont	center	Label		horizontally		
+OperaciaKontragent	SummaOutTextField	TextField	@	450	201	100	20				255:255:255	2:2:2	5	14	systemFont	вправо	horizontally	horizontally		
+OperaciaKontragent	ChangeInOut	Label	@	260	200	40	20	ChangeInOut	->	79:100:160	255:255:255	10	14	systemFont	center	Label		horizontally		
+OperaciaKontragent	Comment	Label	@	208	230	140	20	Comment	Комментарий	79:100:160	255:255:255	10	17	systemFont	center	Label		horizontally		
+OperaciaKontragent	ComentRegtangle	Label	@	7	259	552	23			226:226:226	2:2:2	4	0	systemFont	center	Label		horizontally		
+OperaciaKontragent	CommentTextField	TextField	@	8	261	550	20				255:255:255	2:2:2	0	14	systemFont	влево	horizontally	horizontally		
+OperaciaKontragent	QuantityLabel	Label	@	0	285	100	30		Количество	255:255:255	2:2:2	0	17	systemFont	влево	Label		horizontally		
+OperaciaKontragent	QuantityRegtangle	Label	@	106	292	102	22			226:226:226	2:2:2	4	0	systemFont	center	Label		horizontally		
+OperaciaKontragent	Quantity	TextField	@	107	293	100	20				255:255:255	2:2:2	5	14	systemFont	вправо	horizontally	horizontally		
+OperaciaKontragent	PriceRegtangle	Label	@	389	293	102	22			226:226:226	2:2:2	4	0	systemFont	center	Label		horizontally		
+OperaciaKontragent	Price	TextField	@	390	294	100	20				255:255:255	2:2:2	5	14	systemFont	вправо	horizontally	horizontally		
+OperaciaKontragent	ChangeOutIn	Label	@	260	200	40	20	ChangeOutIn	<-	79:100:160	255:255:255	10	14	systemFont	center	Label		horizontally		
+OperaciaKontragent	DateOperacii	TextField	@	100	80	100	20				255:255:255	2:2:2	5	14	systemFont	вправо	vertically	vertically		
+OperaciaKontragent	DateOperaciiRectangle	Label	@	99	79	102	22			226:226:226	2:2:2	4	0	systemFont	center	Label		vertically		
+OperaciaKontragent	IDLabel	Label	@	0	440	120	30	IDLabel	Идентификатор	255:255:255	2:2:2	0	15	systemFont	влево	Label		vertically		
+OperaciaKontragent	IDValue	Label	@	120	440	190	30	IDValue	Значение	255:255:255	2:2:2	0	14	systemFont	влево	Label		vertically		
