@@ -71,7 +71,8 @@ Remove ArrayDate
 if strFinAll == ""
 {
 	ShowObject("NoData")
-	Title.text = "Нет данных за период с " + ^DateBegin + " по " + ^DateEnd
+	Title.FontSize = 12
+	Title.text = "Данные за период с " + ^DateBegin + " по " + ^DateEnd
 	return
 }
 ArrayRecords = Components(strFinAll, ^DelimiterNewLine)
