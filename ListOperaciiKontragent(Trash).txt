@@ -10,7 +10,7 @@ GeneralBalance()
 wait 1000, message="Перерасчет"
 
 strReturn = SelectionListOperaciiKontragent()
-ArrayReturn = Components(strReturn, ':')
+ArrayReturn = Components(strReturn, ":")
 ^SummaInItogo = ArrayReturn[0]
 ^SummaOutItogo = ArrayReturn[1]
 ^QuantityItogo = ArrayReturn[2]
