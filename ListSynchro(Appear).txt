@@ -68,7 +68,7 @@ while true
 	}
 	DateBegin = GetDateNextMonth(DateBegin, 1)
 }
-Sort(^ArrayRecordsSynchro, 'MaxMin')
+Sort(^ArrayRecordsSynchro, "MaxMin")
 CountRecords = CountElementsOfArray(^ArrayRecordsSynchro)
 For i = 0 ; i < CountRecords ;  i++
 {
