@@ -1,0 +1,93 @@
+// MF[SynchroCloud].txt
+arrayDate = Components(^DateEnd, "/")
+DayEnd = arrayDate[0]
+MonthEnd = arrayDate[1]
+YearEnd = arrayDate[2]
+YearMonthSave = YearEnd + "." + MonthEnd
+collectionBase = "MyFinance"
+FirebaseReadCollection(collectionBase)
+countRecords = FirebaseCountRecords()
+YearMonth = ""
+RecordsInCloud = ""
+For i = 0 ; i < countRecords ;  i++
+{
+	arrayFields = FirebaseGetRecordCollection(i)
+	if arrayFields[1] != YearMonthSave
+	{
+		continue
+	}
+	YearMonth = arrayFields[1]
+	RecordsInCloud = arrayFields[2]
+}
+
+
+MF = "MF_"
+DataTxt = "_Data.txt"
+NameFile = MF + YearEnd + MonthEnd + DataTxt
+Path = GetPathDirectoryDocument()
+PathAndNameFile = Path + NameFile
+RecordsInDevice = FileRead(PathAndNameFile)
+if RecordsInDevice == ""
+{
+	if RecordsInCloud == ""
+	{
+		Title.text = "Нет данных"
+		return
+	}
+	kv = FileWrite(PathAndNameFile, RecordsInCloud)
+	if kv != 0
+	{
+		DoModule ErrorWriteFile
+		return
+	}
+	strMessage = "запись из облака " + YearMonthSave
+	Title.text = strMessage
+	return
+}
+
+
+if YearMonth == ""
+{
+	strMessage = "запись в облако " + YearMonthSave
+//print strMessage
+// вывод в облако
+//print "RecordsInDevice=" + RecordsInDevice
+        FirebaseAddRecord(collectionBase, YearMonthSave, RecordsInDevice)
+	Title.text = strMessage
+	return
+}
+if RecordsInCloud == RecordsInDevice
+{
+	Title.text = "Данные идентичны"
+	return
+}
+// Данные не идентичны - начнем сравнение
+arrayRecords = Components(RecordsInDevice, ^DelimiterNewLine)
+indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, &#39;ID&#39;, ^DelimiterTab)
+GetComponentsOfStruct(^StructRecord, arrayRecords[indexMaxID], ^DelimiterTab)
+maxInDeviceID = ID
+//print "maxInDeviceID=" + maxInDeviceID
+
+
+arrayRecords = Components(RecordsInCloud, ^DelimiterNewLine)
+indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, &#39;ID&#39;, ^DelimiterTab)
+GetComponentsOfStruct(^StructRecord, arrayRecords[indexMaxID], ^DelimiterTab)
+maxInCloudID = ID
+//print "maxInCloudID=" + maxInCloudID
+if maxInCloudID < maxInDeviceID
+{
+	strMessage = "запись в облако " + YearMonthSave
+        FirebaseAddRecord(collectionBase, YearMonthSave, RecordsInDevice)
+	Title.text = strMessage
+	return
+}
+kv = FileWrite(PathAndNameFile, RecordsInCloud)
+if kv != 0
+{
+	DoModule ErrorWriteFile
+	return
+}
+strMessage = "запись из облака " + YearMonthSave
+Title.text = strMessage
+
+
