@@ -13,7 +13,7 @@ Create Label { Name = RectangleTableSynchro, Action = SelectSynchro, TextColor =
 Create TableView { Name = ListSynchroTable, Action= SelectSynchro, X=x, Y=y, Width=w, Height=h, ModelCell=modelCell }
   
 Struct TableSynchro { NameSynchro }
-
+n = 0
 countRecords = FirebaseCountRecords()
 For i = 0 ; i < countRecords ;  i++
 {
