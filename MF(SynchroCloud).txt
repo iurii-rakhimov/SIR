@@ -63,14 +63,14 @@ if RecordsInCloud == RecordsInDevice
 }
 // Данные не идентичны - начнем сравнение
 arrayRecords = Components(RecordsInDevice, ^DelimiterNewLine)
-indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, &#39;ID&#39;, ^DelimiterTab)
+indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, "ID", ^DelimiterTab)
 GetComponentsOfStruct(^StructRecord, arrayRecords[indexMaxID], ^DelimiterTab)
 maxInDeviceID = ID
 //print "maxInDeviceID=" + maxInDeviceID
 
 
 arrayRecords = Components(RecordsInCloud, ^DelimiterNewLine)
-indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, &#39;ID&#39;, ^DelimiterTab)
+indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, "ID", ^DelimiterTab)
 GetComponentsOfStruct(^StructRecord, arrayRecords[indexMaxID], ^DelimiterTab)
 maxInCloudID = ID
 //print "maxInCloudID=" + maxInCloudID
