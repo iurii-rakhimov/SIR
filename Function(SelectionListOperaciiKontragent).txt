@@ -1,0 +1,39 @@
+function SelectionListOperaciiKontragent()
+{
+// передача параметра
+//	nameKontragent  = ^NameKontragent
+
+// на входе: ^ArrayGeneral
+// на выходе: ^ArrayOperaciiKontragent
+
+//timeStart = GetTimeInMiliseconds()
+// из массива ^ArrayGeneral выделяем массив ^ArraySelectNameKontragent с ^NameKontragent
+	Struct StructGeneral { nameKontragentOut, Date, Order, ID, Summa, nameKontragentIn, Comment, Quantity, Price, Selector }
+	CREATE ARRAY (^ArraySelectNameKontragent, StructGeneral, ^DelimiterTab) FROM (^ArrayGeneral, StructGeneral, ^DelimiterTab) WHERE (nameKontragentOut = ^NameKontragent)
+
+	Sort(^ArraySelectNameKontragent, "MinMax")
+
+	Remove ^ArrayOperaciiKontragent
+
+	SummaItogo = 0
+	SummaInItogo = 0
+	SummaOutItogo = 0
+	QuantityItogo = 0
+	nameItogo = "00.Переходящий остаток"
+	CREATE ARRAY (^ArrayOperaciiKontragent, ^StructOperaciiKontragent, ^DelimiterTab) FROM (^ArraySelectNameKontragent, StructGeneral, ^DelimiterTab) SET (ViewDate = DateOfFormat("dd/MM/yyyy", Date), SummaItogo = SummaItogo + Summa, SummaItogo = CurrencyFormat(SummaItogo), SummaFormatItogo = FormatStringSeparatorGroupsDischarges(SummaItogo, " ")  WHERE (Summa != 0), KontragentIn = nameKontragentIn, SummaFormat = CurrencyFormat(Summa), SummaIn = FormatStringSeparatorGroupsDischarges(SummaFormat, " "), SummaInItogo = SummaInItogo + Summa  WHERE (Summa >= 0), KontragentOut = nameKontragentIn, SummaFormat = CurrencyFormat(0-Summa), SummaOut = FormatStringSeparatorGroupsDischarges(SummaFormat, " "), SummaOutItogo = SummaOutItogo + Summa WHERE (Summa <= 0), Selector = ^DelimiterBag WHERE (nameItogo == nameKontragentIn))
+	if ^OrderSort == "MaxMin"
+	{
+		Sort(^ArrayOperaciiKontragent, "MaxMin")
+	}
+	strReturn = SummaInItogo + ":" + SummaOutItogo + ":" + QuantityItogo
+	^SummaInItogo = SummaInItogo
+	^SummaOutItogo = SummaOutItogo
+//timeEnd = GetTimeInMiliseconds()
+//print "timeEnd = " + timeEnd
+//timeWork = timeEnd - timeStart
+//сountRecords = CountElementsOfArray(^ArraySelectNameKontragent)
+//timeOperacia = timeWork / сountRecords
+//print "SelectionListOperaciiKontragent: timeWork = " + timeWork + " сountRecords = " + сountRecords + " timeOperacia = " + timeOperacia
+//	Remove ^ArraySelectNameKontragent
+	return strReturn
+}
