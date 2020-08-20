@@ -1,0 +1,48 @@
+// ListOperaciiKontragent[TableSelectOperacia].txt
+^indexCellOperaciiKontragent = GetIndexSelectCellTableView()
+//if indexCellOperaciiKontragent == ^indexCellOperaciiKontragent
+//{
+//	MessageBarUp("")
+//	return
+//}
+//if ^indexCellOperaciiKontragent == 9999999
+//{
+//	^indexCellOperaciiKontragent = indexCellOperaciiKontragent
+//}
+//else
+//{
+//	strOperaciiKontragent = ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent]
+//	GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
+//	Selector = ""
+//	strOperaciiKontragent = JoinedComponentsToStruct(^StructOperaciiKontragent, ^DelimiterTab)
+//	^ArrayOperaciiKontragent[^indexCellOperaciiKontragent] = strOperaciiKontragent
+//}
+//^indexCellOperaciiKontragent = indexCellOperaciiKontragent
+
+CREATE ARRAY (^ArrayOperaciiKontragent, ^StructOperaciiKontragent, ^DelimiterTab) FROM (^ArrayOperaciiKontragent, ^StructOperaciiKontragent, ^DelimiterTab) SET (Selector = "")
+
+strOperaciiKontragent = ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent]
+GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
+if Selector != ^DelimiterBag
+{
+	Selector = ^DelimiterMemo
+	strOperaciiKontragent = JoinedComponentsToStruct(^StructOperaciiKontragent, ^DelimiterTab)
+	^ArrayOperaciiKontragent[^indexCellOperaciiKontragent] = strOperaciiKontragent
+}
+
+сountCellTableView = CountCellTableView()
+сountCellTableView = сountCellTableView - 2
+if ^indexCellOperaciiKontragent < сountCellTableView
+{
+	ShowObject("Edit")
+	ShowObject("Trash")
+	ShowObject("Copy")
+}
+else
+{
+	HideObject("Edit")
+	HideObject("Trash")
+	HideObject("Copy")
+}
+//ViewSelectionListOperaciiKontragent(^SummaInItogo, ^SummaOutItogo, ^QuantityItogo)
+MessageBarUp("")
