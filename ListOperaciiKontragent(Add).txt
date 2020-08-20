@@ -8,11 +8,9 @@ if indexCell < 0
 }
 ^indexCellOperaciiKontragent = indexCell
 strOperaciiKontragent = ^ArrayOperaciiKontragent[indexCell]
-Struct StructOperaciiKontragent { Date, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaFormatItogo, NumberRecord }
-GetComponentsOfStruct(StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
-
-// получили NumberRecord
-strRecord = ^ArrayRecords[NumberRecord]
+GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
+IndexRecord = GetIndexArrayForSelectedComponentStruct(^ArrayRecords, ^StructRecord, 'ID', ID, ^DelimiterTab)
+strRecord = ^ArrayRecords[IndexRecord]
 CountRecords = CountElementsOfArray(^ArrayRecords)
 ^ArrayRecords[CountRecords] = strRecord
 
