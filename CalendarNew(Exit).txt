@@ -1,11 +1,7 @@
 // Calendar[Exit].txt
 
-indexCell = ^indexCellOperaciiKontragent
-
-// структура ^ArrayOperaciiKontragent
-Struct StructOperaciiKontragent { Date, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaFormatItogo, NumberRecord }
-strRecord = ^ArrayOperaciiKontragent[indexCell]
-GetComponentsOfStruct(StructOperaciiKontragent, strRecord, ^DelimiterTab)
+strRecord = ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent]
+GetComponentsOfStruct(^StructOperaciiKontragent, strRecord, ^DelimiterTab)
 Date = DateOfFormat("yyyy/MM/dd", ^Date)
-strRecord = JoinedComponentsToStruct(StructOperaciiKontragent, ^DelimiterTab)
-^ArrayOperaciiKontragent[indexCell] = strRecord
+strRecord = JoinedComponentsToStruct(^StructOperaciiKontragent, ^DelimiterTab)
+^ArrayOperaciiKontragent[^indexCellOperaciiKontragent] = strRecord
