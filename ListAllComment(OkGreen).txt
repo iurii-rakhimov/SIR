@@ -13,13 +13,12 @@ if ^SaveRecordComment == "Yes"
 ^Comment = ^ArrayComment[^indexCellListAllComment]
 
 // структура ^ArrayOperaciiKontragent
-Struct StructOperaciiKontragent { Date, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaFormatItogo, NumberRecord }
 strOperaciiKontragent = ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent]
-GetComponentsOfStruct(StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
+GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
 
 Comment = ^Comment
 
-strOperaciiKontragent = JoinedComponentsToStruct(StructOperaciiKontragent, ^DelimiterTab)
+strOperaciiKontragent = JoinedComponentsToStruct(^StructOperaciiKontragent, ^DelimiterTab)
 ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent] = strOperaciiKontragent
 ^SaveRecord = "Yes"
 ExitForm
