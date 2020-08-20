@@ -1,0 +1,24 @@
+//ListOperaciiKontragent[Trash].txt
+wait 1000, message="Ждите !!!"
+//print "Trash ^indexCellOperaciiKontragent =" + ^indexCellOperaciiKontragent
+GetComponentsOfStruct(^StructOperaciiKontragent, ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent], ^DelimiterTab)
+//print "Trash ID =" + ID
+// получили ID и переходим на удаление записи
+TrashRecord(ID)
+
+GeneralBalance()
+wait 1000, message="Перерасчет"
+
+strReturn = SelectionListOperaciiKontragent()
+ArrayReturn = Components(strReturn, ":")
+^SummaInItogo = ArrayReturn[0]
+^SummaOutItogo = ArrayReturn[1]
+^QuantityItogo = ArrayReturn[2]
+
+ViewSelectionListOperaciiKontragent(^SummaInItogo, ^SummaOutItogo, ^QuantityItogo)
+
+MessageBarUp("")
+
+HideObject("Edit")
+HideObject("Trash")
+HideObject("Copy")
