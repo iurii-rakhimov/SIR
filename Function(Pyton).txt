@@ -18,10 +18,11 @@ function AnalizStrng(str)
 	l = LengthString(str)
 	ArrayChar = Components(str, "")
 	strChar = ""
+	simApostrof = IntToChar(39)
 	Cycle i = 0 ; i < l
 	{
 		char = ArrayChar[i]
-		strChar = strChar + "'" + char + "' "
+		strChar = strChar + simApostrof + char + simApostrof + " "
 	}
 	return strChar
 }
