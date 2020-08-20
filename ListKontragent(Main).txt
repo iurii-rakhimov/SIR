@@ -1,3 +1,0 @@
-^indexCellSchet = GetIndexSelectCellTableView()
-
-^SaveRecord = "Yes"
