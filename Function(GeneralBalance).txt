@@ -3,7 +3,7 @@ function GeneralBalance()
 //timeStart = GetTimeInMiliseconds()
 	CREATE ARRAY (ArrayGeneralOut, ^StructGeneral, ^DelimiterTab) FROM (^ArrayRecords, ^StructRecord, ^DelimiterTab) SET (Summa = 0-Summa)
 
-	Struct StructRecord { Date, Order, NameKontragentIn, Summa, NameKontragentOut, Comment, Quantity, Price, NumberRecord }
+	Struct StructRecord { Date, Order, NameKontragentIn, Summa, NameKontragentOut, Comment, Quantity, Price, ID, Selector }
 	CREATE ARRAY (ArrayGeneralIn, ^StructGeneral, ^DelimiterTab) FROM (^ArrayRecords, StructRecord, ^DelimiterTab)
 
 	^ArrayGeneral = ArrayGeneralIn + ArrayGeneralOut
@@ -39,7 +39,8 @@ function GeneralBalance()
 	}
 
 	CREATE ARRAY (^ArraySchet, ^StructSchet, ^DelimiterTab) FROM (^ArrayKontragent, ^StructKontragent, ^DelimiterTab) SELECT (NameSchet = GetComponentString(NameKontragent, " ", 0), SummaSchet  = SUM(SummaKontragent))
-
+	CREATE ARRAY (^ArraySchet, ^StructSchet, ^DelimiterTab) FROM (^ArraySchet, ^StructSchet, ^DelimiterTab) WHERE (NameSchet != "00.Переходящий" AND NameSchet != "99.Остатки")
+	CREATE ARRAY (^ArraySchet, ^StructSchet, ^DelimiterTab) FROM (^ArraySchet, ^StructSchet, ^DelimiterTab) SET (SummaSchet = 0-SummaSchet WHERE SummaSchet <= 0)
 
 //timeEnd = GetTimeInMiliseconds()
 //print "timeEnd = " + timeEnd
