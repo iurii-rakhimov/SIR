@@ -1,0 +1,7 @@
+// Calendar[Exit].txt
+
+strRecord = ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent]
+GetComponentsOfStruct(^StructOperaciiKontragent, strRecord, ^DelimiterTab)
+Date = DateOfFormat("yyyy/MM/dd", ^Date)
+strRecord = JoinedComponentsToStruct(StructOperaciiKontragent, ^DelimiterTab)
+^ArrayOperaciiKontragent[^indexCellOperaciiKontragent] = strRecord
