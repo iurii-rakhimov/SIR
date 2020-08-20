@@ -1,5 +1,0 @@
-//ListAllComment[SelectComment].txt
-^indexCellListAllComment = GetIndexSelectCellTableView()
-^Comment = ^ArrayComment[^indexCellListAllComment]
-Comment.text = ^Comment
-ShowObjectForm("ListAllComment", "OkGreen")
