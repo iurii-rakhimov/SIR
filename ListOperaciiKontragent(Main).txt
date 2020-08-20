@@ -1,0 +1,7 @@
+^indexCellSelectKontragent = GetIndexSelectCellTableView()
+
+^indexCellOperaciiKontragent = -1
+
+HideObject("Edit")
+HideObject("Trash")
+HideObject("Copy")
