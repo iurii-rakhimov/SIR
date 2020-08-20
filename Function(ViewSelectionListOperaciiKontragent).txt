@@ -5,9 +5,10 @@ function ViewSelectionListOperaciiKontragent(SummaInItogo, SummaOutItogo, Quanti
 	Struct TableOperacii { Date, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaItogo, NumberRecord, Selector }
 	countRecords = CountElementsOfArray(^ArrayOperaciiKontragent)
 
-	Struct OperaciiKontragent { SortDate, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaItogo, NumberRecord, Selector, Date }
+	Struct StructOperaciiKontragent { SortDate, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaItogo, ID, Selector, Date }
+//	Struct ^StructOperaciiKontragent { Date, Order, SummaIn, NameKontragent, SummaOut, Comment, Quantity, Price, SummaFormatItogo, ID, Selector, ViewDate }
 
-	UPDATE TableView (TableOperacii, ^ArrayOperaciiKontragent, OperaciiKontragent, ^DelimiterTab)
+	UPDATE TableView (TableOperacii, ^ArrayOperaciiKontragent, StructOperaciiKontragent, ^DelimiterTab)
 
 	TableOperacii.Date = ""
 	TableOperacii.KontragentIn = ""
