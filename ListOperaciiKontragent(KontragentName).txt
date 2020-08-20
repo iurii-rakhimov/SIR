@@ -1,1 +1,2 @@
 // ListOperaciiKontragent[KontragentName].txt
+ViewSelectionListOperaciiKontragent(^SummaInItogo, ^SummaOutItogo, ^QuantityItogo)
