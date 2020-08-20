@@ -1,22 +1,19 @@
 //ListAllKontragent[SelectKontragent].txt
 //breakpoint 1
 ^indexCellListAllKontragent = GetIndexSelectCellTableView()
-Struct StructKontragent { NameKontragent, Summa, Quantity }
-GetComponentsOfStruct(StructKontragent, ^ArrayKontragent[^indexCellListAllKontragent], ^DelimiterTab)
-
-// структура ^ArrayOperaciiKontragent
-Struct StructOperaciiKontragent { Date, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaFormatItogo, NumberRecord, Selector, ViewDate }
+GetComponentsOfStruct(^StructKontragent, ^ArrayKontragent[^indexCellListAllKontragent], ^DelimiterTab)
+nameKontragent = NameKontragent
 strOperaciiKontragent = ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent]
-GetComponentsOfStruct(StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
+GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
 if SummaIn != ""
 {
-	KontragentOut = NameKontragent
+	KontragentIn = nameKontragent
 }
-if SummaOut != ""
+else
 {
-	KontragentIn = NameKontragent
+	KontragentOut = nameKontragent
 }
-strOperaciiKontragent = JoinedComponentsToStruct(StructOperaciiKontragent, ^DelimiterTab)
+strOperaciiKontragent = JoinedComponentsToStruct(^StructOperaciiKontragent, ^DelimiterTab)
 ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent] = strOperaciiKontragent
 ^SaveRecord = "Yes"
 ExitForm
