@@ -10,6 +10,7 @@ Remove ^ArraySelectKontragent
 SelectSchet = GetComponentString(strSchet, DelimiterTab, 0)
 KontragentTitle.text = SelectSchet
 
+
 Struct StructKontragent { nameKontragent, Summa, Quantity }
 For i = 0 ; i < CountRecords ; i++
 {
@@ -35,10 +36,15 @@ Create Label { Name = NameKontragent, Action = SelectKontragent, TextColor = "Bl
 Create Label { Name = SummaKontragent, Action = SelectKontragent, TextColor = "Black", BackgroundColor = "White", X=185, Y = 0, Width = 120, Height = 20, FontName = "systemFont", FontSize=14, Alignment = "Right", CornerRadius = 0, ModelCell=modelCellVertically[1], LocationDevice="vertically"}
 Create Label { Name = SummaKontragent, Action = SelectKontragent, TextColor = "Black", BackgroundColor = "White", X=185, Y = 0, Width = 120, Height = 20, FontName = "systemFont", FontSize=14, Alignment = "Right", CornerRadius = 0, ModelCell=modelCellHorizontally[1], LocationDevice="horizontally"}
 
+yKontragentTitle = KontragentTitle.Y
+yKontragentTitle = ConvertFloatToInt(yKontragentTitle / ^SystemCoefficientSizeForRun)
+
+hKontragentTitle = KontragentTitle.Height
+hKontragentTitle = ConvertFloatToInt(hKontragentTitle / ^SystemCoefficientSizeForRun)
+
 xTableView = 5
-heightTitle = 40
-yBar = 50
-yTableView = yBar + heightTitle + 10
+yTableView = yKontragentTitle + hKontragentTitle + 5
+
 wTableView = 310
 hTableViewVertically = ^ScreenHeightPhone - yTableView - 5
 hTableViewHorizontally = ^ScreenWidthPhone - yTableView - 5
