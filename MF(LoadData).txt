@@ -1,0 +1,150 @@
+// MF[LoadData].txt
+Remove ^ArraySelectKontragent
+Remove ^ArrayOperaciiKontragent
+Remove ^ArrayRecords
+Remove ^ArrayGeneral
+Remove ^ArrayKontragent
+Remove ^ArraySchet
+
+Path = GetPathDirectoryDocument()
+strFinAll = ""
+ArrayDate = Components(^DateBegin, "/")
+DayBegin = ArrayDate[0]
+MonthBegin = ArrayDate[1]
+YearBegin = ArrayDate[2]
+YearMonthDayBegin = YearBegin+"/"+MonthBegin+"/"+DayBegin
+ArrayDate = Components(^DateEnd, "/")
+DayEnd = ArrayDate[0]
+MonthEnd = ArrayDate[1]
+YearEnd = ArrayDate[2]
+if MonthBegin != MonthEnd
+{
+	DayBegin = ""
+}
+MF = "MF_"
+DataTxt = "_Data.txt"
+NameFileEnd = MF + YearEnd + MonthEnd + DataTxt
+DateBegin = ^DateBegin
+//print "LoadData: Start"
+while true
+{
+	ArrayDate = Components(DateBegin, "/")
+	GodBegin = ArrayDate[2]
+	MonthBegin = ArrayDate[1]
+	NameFileBegin = MF + GodBegin + MonthBegin + DataTxt
+//print "NameFileBegin" + NameFileBegin + "NameFileEnd" + NameFileEnd
+	if NameFileBegin > NameFileEnd
+	{
+		break
+	}
+	PathAndNameFile = Path + NameFileBegin
+	ContentFile = FileRead(PathAndNameFile)
+	if ContentFile != ""
+	{
+//print "ContentFile=" + ContentFile
+		if MonthBegin == MonthEnd
+		{
+			if DayBegin != ""
+			{
+				ArrayRecords = Components(ContentFile, ^DelimiterNewLine)
+				CountElementsOfArrayRecords = CountElementsOfArray(ArrayRecords)
+				strArrayRecords = ""
+				Cycle i = 0 ; i < CountElementsOfArrayRecords
+				{
+					strRecord = ArrayRecords[i]
+					Date = GetComponentString(strRecord, ^DelimiterTab, 0) 
+					if Date < YearMonthDayBegin
+					{
+						continue
+					}
+					strArrayRecords = strArrayRecords + strRecord + ^DelimiterNewLine
+				}
+				ContentFile = strArrayRecords
+			}
+		}
+		strFinAll = strFinAll + ContentFile + ^DelimiterNewLine
+	}
+	DateBegin = GetDateNextMonth(DateBegin, 1)
+}
+Remove ArrayDate
+
+if strFinAll == ""
+{
+	ShowObject("NoData")
+	Title.FontSize = 12
+	Title.text = "Данные за период с " + ^DateBegin + " по " + ^DateEnd
+	return
+}
+ArrayRecords = Components(strFinAll, ^DelimiterNewLine)
+CountElementsOfArrayRecords = CountElementsOfArray(ArrayRecords)
+CountElementsOfArrayRecords = CountElementsOfArrayRecords - 1
+Remove ArrayRecords[CountElementsOfArrayRecords]
+
+DateBegin = GetDateNextMonth(^DateBegin, -1)
+YearBegin = GetComponentString(DateBegin, "/", 2)
+MonthBegin = GetComponentString(DateBegin, "/", 1)
+BalanceTxt = "_Balance.txt"
+NameFileBegin = MF + YearBegin + MonthBegin + BalanceTxt
+
+NumberRecord = 0
+PathNameFileBegin = ^Path + NameFileBegin
+ContentFile = FileRead(PathNameFileBegin)
+if ContentFile != ""
+{
+	DateBegin = ^DateBegin
+	YearBegin = GetComponentString(DateBegin, "/", 2)
+	MonthBegin = GetComponentString(DateBegin, "/", 1)
+	ArrayBalanceKontragent = Components(ContentFile, ^DelimiterNewLine)
+	Date = YearBegin + "/" + MonthBegin + "/01"
+	Order = "00"
+	Comment = "Переходящий остаток"
+	Quantity = ""
+	Price = ""
+	Struct StructKontragent { NameKontragent, Summa, Quantity }
+	CountElementsOfArrayBalanceKontragent = CountElementsOfArray(ArrayBalanceKontragent)
+	CountElementsOfArrayRecord = CountElementsOfArray(ArrayRecords)
+	Cycle i = 0 ; i < CountElementsOfArrayBalanceKontragent
+	{
+		GetComponentsOfStruct(StructKontragent, ArrayBalanceKontragent[i], ^DelimiterTab)
+//print "NameKontragent =" + NameKontragent+" Summa =" + Summa
+		if Summa == "0.00"
+		{
+			continue
+		}
+		NameKontragentOut = NameKontragent
+		NameKontragentIn = "00.Переходящий остаток"
+		ID = GetDateTime() + " " + ^DelimiterBag + " " + i
+		Selector = ^DelimiterBag
+		strRecord = JoinedComponentsToStruct(^StructRecord, ^DelimiterTab)
+//print "CountElementsOfArrayRecord =" + CountElementsOfArrayRecord +" strRecord =" + strRecord
+		ArrayRecords[CountElementsOfArrayRecord] = strRecord
+		CountElementsOfArrayRecord++
+	}
+}
+
+Remove ArrayBalanceKontragent
+NumberRecord = -1
+CREATE ARRAY (ArrayRecords, ^StructRecord, ^DelimiterTab) FROM (ArrayRecords, ^StructRecord, ^DelimiterTab) WHERE (Summa != "")
+flagSaveFile = 0
+CREATE ARRAY (^ArrayRecords, ^StructRecord, ^DelimiterTab) FROM (ArrayRecords, ^StructRecord, ^DelimiterTab) SET (flagSaveFile  = 1, NumberRecord = NumberRecord +1, strDateTime = GetDateTime(), ID = strDateTime + " " + NumberRecord WHERE (ID == ""))
+//print "flagSaveFile =" + flagSaveFile +" NumberRecord =" + NumberRecord
+if flagSaveFile == 1
+{
+	ContentFile = Joined(^ArrayRecords, ^DelimiterNewLine)
+//print "ContentFile =" + ContentFile
+	Year = GetComponentString(^DateBegin, "/", 2)
+	Month = GetComponentString(^DateBegin, "/", 1)
+	Txt = "_Data.txt"
+	NameFile = MF + Year + Month + Txt
+	PathNameFile = ^Path + NameFile
+	kv = FileWrite(PathNameFile, ContentFile )
+	if kv != 0
+	{
+		^PathNameFileBegin = PathNameFileBegin
+		DoModule ErrorWriteFile
+	}
+}
+
+wait 1000, message="Идёт расчёт"
+GeneralBalance()
+DoForm ListSchet, wait=1000, message="Загрузка счетов"
