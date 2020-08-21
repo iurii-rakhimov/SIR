@@ -2,7 +2,6 @@ function GeneralBalance()
 {
 //timeStart = GetTimeInMiliseconds()
 	CREATE ARRAY (ArrayGeneralOut, ^StructGeneral, ^DelimiterTab) FROM (^ArrayRecords, ^StructRecord, ^DelimiterTab) SET (Summa = 0-Summa)
-
 	Struct StructRecord { Date, Order, NameKontragentIn, Summa, NameKontragentOut, Comment, Quantity, Price, ID, Selector }
 	CREATE ARRAY (ArrayGeneralIn, ^StructGeneral, ^DelimiterTab) FROM (^ArrayRecords, StructRecord, ^DelimiterTab)
 
