@@ -15,12 +15,10 @@ if Day < 31
 		}
 	}
 }
-
 Struct StructDate { Day, Month, Year }
 GetComponentsOfStruct(StructDate, ^Date, "/")
 Day = 0 + Day
 MonthDate = Month
-
 Month = Month - 1
 MonthAndYear = GetNameMonth(Month)
 MonthAndYear = MonthAndYear + " " + Year
