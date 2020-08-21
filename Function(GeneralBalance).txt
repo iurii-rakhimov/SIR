@@ -5,7 +5,6 @@ function GeneralBalance()
 	Struct StructRecord { Date, Order, NameKontragentIn, Summa, NameKontragentOut, Comment, Quantity, Price, ID, Selector }
 	CREATE ARRAY (ArrayGeneralIn, ^StructGeneral, ^DelimiterTab) FROM (^ArrayRecords, StructRecord, ^DelimiterTab)
 	^ArrayGeneral = ArrayGeneralIn + ArrayGeneralOut
-
 	n = CountElementsOfArray(^ArrayGeneral)
 	if n == 0
 	{
