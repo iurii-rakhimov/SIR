@@ -18,9 +18,9 @@
 //	^ArrayOperaciiKontragent[^indexCellOperaciiKontragent] = strOperaciiKontragent
 //}
 //^indexCellOperaciiKontragent = indexCellOperaciiKontragent
-
+//
 CREATE ARRAY (^ArrayOperaciiKontragent, ^StructOperaciiKontragent, ^DelimiterTab) FROM (^ArrayOperaciiKontragent, ^StructOperaciiKontragent, ^DelimiterTab) SET (Selector = "")
-
+//
 strOperaciiKontragent = ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent]
 GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
 if Selector != ^DelimiterBag
@@ -29,7 +29,7 @@ if Selector != ^DelimiterBag
 	strOperaciiKontragent = JoinedComponentsToStruct(^StructOperaciiKontragent, ^DelimiterTab)
 	^ArrayOperaciiKontragent[^indexCellOperaciiKontragent] = strOperaciiKontragent
 }
-
+//
 сountCellTableView = CountCellTableView()
 сountCellTableView = сountCellTableView - 2
 if ^indexCellOperaciiKontragent < сountCellTableView
