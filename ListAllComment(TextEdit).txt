@@ -1,5 +1,5 @@
 ^SaveRecordComment = "Yes"
-
+//
 //char=GetCharChangeTextField()
 //Print “char=” + char
 //Str=GetStringToChangeTextField()
