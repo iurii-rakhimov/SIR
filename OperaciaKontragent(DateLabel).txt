@@ -1,4 +1,0 @@
-// OperaciaKontragent[DateLabel].txt
-ID = ^ID
-IndexSelected1 = GetIndexArrayForSelectedComponentStructArray(^ArrayRecords, ID, ^DelimiterTab, 8)
-//print "IndexSelected1 = " + IndexSelected1
