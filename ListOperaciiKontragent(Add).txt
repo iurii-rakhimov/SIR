@@ -13,8 +13,8 @@ IndexRecord = GetIndexArrayForSelectedComponentStruct(^ArrayRecords, ^StructReco
 strRecord = ^ArrayRecords[IndexRecord]
 CountRecords = CountElementsOfArray(^ArrayRecords)
 ^ArrayRecords[CountRecords] = strRecord
-
+//
 // запишем новую запись в файл
 SaveRecord(Date, strRecord)
-
+//
 DoForm OperaciaKontragent
