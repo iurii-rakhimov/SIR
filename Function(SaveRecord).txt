@@ -5,7 +5,7 @@ function SaveRecord(Date, strRecord)
 	YearNew = GetComponentString(DateNew, "/", 0)
 	MonthNew = GetComponentString(DateNew, "/", 1)
 	NameFileNew = "MF_" + YearNew + MonthNew + "_Data.txt"
-
+//
 	Path = GetPathDirectoryDocument()
 	PathNameFileNew = Path + NameFileNew
 	ContentFile = FileRead(PathNameFileNew)
