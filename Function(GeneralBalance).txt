@@ -1,0 +1,49 @@
+function GeneralBalance()
+{
+//timeStart = GetTimeInMiliseconds()
+	CREATE ARRAY (ArrayGeneralOut, ^StructGeneral, ^DelimiterTab) FROM (^ArrayRecords, ^StructRecord, ^DelimiterTab) SET (Summa = 0-Summa)
+	Struct StructRecord { Date, Order, NameKontragentIn, Summa, NameKontragentOut, Comment, Quantity, Price, ID, Selector }
+	CREATE ARRAY (ArrayGeneralIn, ^StructGeneral, ^DelimiterTab) FROM (^ArrayRecords, StructRecord, ^DelimiterTab)
+	^ArrayGeneral = ArrayGeneralIn + ArrayGeneralOut
+	n = CountElementsOfArray(^ArrayGeneral)
+	if n == 0
+	{
+		return
+	}
+//
+	Sort(^ArrayGeneral, "MinMax")
+	Remove ^ArrayKontragent
+//
+	CREATE ARRAY (ArrayKontragent, ^StructKontragent, ^DelimiterTab) FROM (^ArrayGeneral, ^StructGeneral, ^DelimiterTab) SELECT (NameKontragent = NameKontragentIn, SummaKontragent = SUM(Summa), QuantityKontragent  = SUM(Quantity))
+//
+	CREATE ARRAY (^ArrayKontragent, ^StructKontragent, ^DelimiterTab) FROM (ArrayKontragent, ^StructKontragent, ^DelimiterTab) SET (SummaKontragent = CurrencyFormat(SummaKontragent))
+//
+// Запишем переходящие остатки
+	ContentFile = Joined(^ArrayKontragent, ^DelimiterNewLine)
+	DateEnd = DateOfFormat("yyyy/MM/dd", ^DateEnd)
+	YearEnd = GetComponentString(DateEnd, "/", 0)
+	MonthEnd = GetComponentString(DateEnd, "/", 1)
+	MF = "MF_"
+	BalanceTxt = "_Balance.txt"
+	NameFileEnd = MF + YearEnd + MonthEnd + BalanceTxt
+	PathNameFileEnd = ^Path + NameFileEnd
+//print "NameFileEnd = " + NameFileEnd
+	kv = FileWrite(PathNameFileEnd, ContentFile )
+	if kv != 0
+	{
+		^PathNameFileOld = PathNameFileOld
+		DoModule ErrorWriteFile
+	}
+//
+	CREATE ARRAY (^ArraySchet, ^StructSchet, ^DelimiterTab) FROM (^ArrayKontragent, ^StructKontragent, ^DelimiterTab) SELECT (NameSchet = GetComponentString(NameKontragent, " ", 0), SummaSchet  = SUM(SummaKontragent))
+	CREATE ARRAY (^ArraySchet, ^StructSchet, ^DelimiterTab) FROM (^ArraySchet, ^StructSchet, ^DelimiterTab) WHERE (NameSchet != "00.Переходящий" AND NameSchet != "99.Остатки")
+	CREATE ARRAY (^ArraySchet, ^StructSchet, ^DelimiterTab) FROM (^ArraySchet, ^StructSchet, ^DelimiterTab) SET (SummaSchet = 0-SummaSchet WHERE SummaSchet <= 0)
+//
+//timeEnd = GetTimeInMiliseconds()
+//print "timeEnd = " + timeEnd
+//timeWork = timeEnd - timeStart
+//сountRecords = CountElementsOfArray(^ArrayRecords)
+//timeOperacia = timeWork / сountRecords
+//print "GeneralBalance: timeWork = " + timeWork + " сountRecords = " + сountRecords + " timeOperacia = " + timeOperacia
+	return
+}
