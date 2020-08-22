@@ -18,7 +18,7 @@ countRecords = FirebaseCountRecords()
 For i = 0 ; i < countRecords ;  i++
 {
 	arrayRecordsSynchro = FirebaseGetRecordCollection(i)
-
+//
 	Identifier = arrayRecordsSynchro[0]
 	YearMonth = arrayRecordsSynchro[1]
 	StrArrayRecords = arrayRecordsSynchro[2]
