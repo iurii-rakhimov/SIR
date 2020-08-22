@@ -6,12 +6,12 @@ KontragentOut = OutTextView.text
 KontragentIn = InTextView.text
 Quantity = Quantity.text
 Price = Price.text
-
+//
 if KontragentIn != ^NameKontragent
 {
 	Summa = SummaInTextField.text
 }
-
+//
 if KontragentOut != ^NameKontragent
 {
 	Summa = SummaOutTextField.text
@@ -31,12 +31,12 @@ if KontragentIn == ^NameKontragent
 {
 	SummaOutTextField.text = Summa
 }
-
+//
 if KontragentOut == ^NameKontragent
 {
 	SummaInTextField.text = Summa
 }
-
+//
 DateNew = DateOfFormat("yyyy/MM/dd", DateNew)
 YearNew = GetComponentString(DateNew, "/", 0)
 MonthNew = GetComponentString(DateNew, "/", 1)
@@ -44,7 +44,7 @@ NameFileNew = "MF_" + YearNew + MonthNew + "_Data.txt"
 IDNew = GetDateTime()
 Struct StructRecord { DateNew, Order, KontragentOut, Summa, KontragentIn, Comment, Quantity, Price, IDNew }
 strRecordNew = JoinedComponentsToStruct(StructRecord, ^DelimiterTab)
-
+//
 ID = ^ID
 //print "Удалим запись по ID =" + ID
 if ID == ""
@@ -59,7 +59,7 @@ else
 // запишем новую запись в файл
 Path = GetPathDirectoryDocument()
 PathNameFileNew = Path + NameFileNew
-
+//
 ContentFile = FileRead(PathNameFileNew)
 if ContentFile != ""
 {
@@ -87,11 +87,11 @@ if kv != 0
 NumberRecord = CountRecords - 1
 ^ArrayRecords[NumberRecord] = strRecordNew
 //print "Новая запись strRecordNew =" + strRecordNew
-
+//
 GeneralBalance()
 HideObject("Save")
 ShowObject("OkGreen")
-
+//
 ^indexCellOperaciiKontragent = -1
 //MessageBarUp( "Нажми ОК" )
 ExitForm
