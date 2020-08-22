@@ -8,7 +8,7 @@ else
 	^OrderSort = "MaxMin"
 }
 Sort(^ArrayOperaciiKontragent, ^OrderSort)
-
+//
 // запишем в базу данных
 ^Key = "Сортировка данных"
 ^Data = ^OrderSort
@@ -17,7 +17,7 @@ if kv != 0
 {
 	DoModule ErrorWriteBaseData
 }
-
+//
 // вывод с новой сортировкой
-
+//
 ViewSelectionListOperaciiKontragent(^SummaInItogo, ^SummaOutItogo, ^QuantityItogo)
