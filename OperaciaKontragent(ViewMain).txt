@@ -69,7 +69,7 @@ if SummaOut == ""
 // куда
 	ShowObject("OutTitleLabel")
 	HideObject("OutKontragent")
-
+//
 	HideObject("CleaOut")
 //	HideObject("SummaOutLabel")
 	HideObject("SummaOutRectangle")
