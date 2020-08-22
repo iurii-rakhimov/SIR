@@ -9,7 +9,7 @@ if indexCell < 0
 ^indexCellOperaciiKontragent = indexCell
 strOperaciiKontragent = ^ArrayOperaciiKontragent[indexCell]
 GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
-IndexRecord = GetIndexArrayForSelectedComponentStruct(^ArrayRecords, ^StructRecord, 'ID', ID, ^DelimiterTab)
+IndexRecord = GetIndexArrayForSelectedComponentStruct(^ArrayRecords, ^StructRecord, "ID", ID, ^DelimiterTab)
 strRecord = ^ArrayRecords[IndexRecord]
 CountRecords = CountElementsOfArray(^ArrayRecords)
 ^ArrayRecords[CountRecords] = strRecord
