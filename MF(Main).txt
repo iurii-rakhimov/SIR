@@ -1,7 +1,7 @@
 // MF[Main].txt
 Remove ExternalVariables
 Remove AllVisualObject
-
+//
 ^DelimiterSpace = IntToChar(40)
 ^DelimiterRecord = IntToChar(11)
 ^DelimiterTab = IntToChar(9)
@@ -16,27 +16,27 @@ Remove AllVisualObject
 ^DateBegin = ""
 ^DateEnd = ""
 ^SaveRecord = "No"
-
+//
 Struct ^StructRecordSynchro { YearMonth, MaxInCloudID, Identifier, StrArrayRecords }
 Struct ^StructRecord { Date, Order, NameKontragentOut, Summa, NameKontragentIn, Comment, Quantity, Price, ID }
 Struct ^StructGeneral { NameKontragentIn, Date, Order, ID, Summa, NameKontragentOut, Comment, Quantity, Price, Selector }
 Struct ^StructKontragent { NameKontragent, SummaKontragent, QuantityKontragent }
 Struct ^StructSchet { NameSchet, SummaSchet }
 Struct ^StructOperaciiKontragent { Date, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaFormatItogo, ID, Selector, ViewDate }
-
+//
 LoadModule  Function[Pyton].txt
-
+//
 LoadModule  Function[ShowMonth].txt
 LoadModule  Function[GeneralBalance].txt
 LoadModule  Function[SelectionListOperaciiKontragent].txt
 LoadModule  Function[ViewSelectionListOperaciiKontragent].txt
 LoadModule  Function[SaveRecord].txt
 LoadModule  Function[TrashRecord].txt
-
+//
 LoadModule  Function[ErrorDate].txt
 LoadModule  Function[ErrorWriteBaseData].txt
 LoadModule  Function[ErrorWriteFile].txt
-
+//
 ^Key = "Сортировка данных"
 ^OrderSort = DataBaseReadDataForKey(^Key)
 if ^OrderSort == ""
@@ -49,7 +49,7 @@ if ^OrderSort == ""
 	}
 	OrderSort = ^Data
 }
-
+//
 ^Key = "Дата начала периода"
 DateBegin = DataBaseReadDataForKey(^Key)
 if DateBegin == ""
@@ -68,7 +68,7 @@ if DateBegin == ""
 ^DateBegin = DateBegin
 DateBegin.text = ^DateBegin
 View DateBegin
-
+//
 ^Key = "Дата окончания периода"
 DateEnd = DataBaseReadDataForKey(^Key)
 Minus1=-1
@@ -91,7 +91,7 @@ if DateEnd == ""
 ^DateEnd = DateEnd
 DateEnd.text = ^DateEnd
 View DateEnd
-
+//
 NameFile = ^Path + "MF_Comment.txt"
 ContentFile = FileRead(NameFile)
 ^ArrayComment = Components(ContentFile, ^DelimiterNewLine)
