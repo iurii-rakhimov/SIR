@@ -9,10 +9,10 @@ ShopPrice[6] = "Egypt_Vegetables:🥔:Potato:40"
 ShopPrice[7] = "Egypt_Vegetables:🥕:Carrot:50"
 ShopPrice[8] = "Egypt_Berries:🍓:Strawberry:250"
 ShopPrice[9] = "Italy_Fruits:🍑:Peach:90"
-
+//
 // на входе:
 Struct StructShop { Product, ImageProduct, NameProduct, Price }
 // на выходе:
 Struct StructBasket { BasketProduct, Summa, Count }
-
+//
 CREATE ARRAY (^ArrayBasket, StructBasket, ":") FROM (ShopPrice, StructShop, ":") SELECT (BasketProduct = GetComponentString(Product, "_", 0), Summa = SUM(Price), Count  = COUNT())
