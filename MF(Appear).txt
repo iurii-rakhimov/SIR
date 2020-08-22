@@ -1,6 +1,6 @@
 // MF[Appear].txt
 HideObject("NoData")
-
+//
 HideObject("DayBeginMinus")
 HideObject("DayBeginPlus")
 HideObject("DayEndMinus")
