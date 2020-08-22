@@ -8,4 +8,3 @@ Struct ^StructGeneral { NameKontragentIn, Date, Order, ID, Summa, NameKontragent
 //
 Title.text = "fight"
 view Title
-
