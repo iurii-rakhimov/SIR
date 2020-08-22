@@ -10,7 +10,7 @@ function Minus(a, b)
 d = a - b
 return d
 }
-
+//
 // старт программы
 a = 10
 b = 20
