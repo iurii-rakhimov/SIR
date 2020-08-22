@@ -12,7 +12,7 @@ ShopPrice[9] = "Vegetables:🥔:Potato:40:20"
 ShopPrice[10] = "Vegetables:🥕:Carrot:50:15"
 ShopPrice[11] = "Berries:🍒:Cherries:160:2"
 ShopPrice[12] = "Berries:🍓:Strawberry:250:7"
-
+//
 // на входе:
 Struct StructShop { Product, ImageProduct, NameProduct, Price, Count }
 // на выходе:
@@ -20,30 +20,29 @@ Struct StructStock { Product, ImageProduct, NameProduct, Price, Count, SummaIn, 
 SummaItogoIn = 0
 SummaItogoOut = 0
 CREATE ARRAY (^ArrayStockProduct, StructStock, ":") FROM (ShopPrice, StructShop, ":") SET (SummaIn = CurrencyFormat(Price * Count), SummaOut = "", SummaItogoIn = SummaItogoIn + SummaIn WHERE (Count > 0), SummaOut = CurrencyFormat(Price * Count), SummaIn = "", SummaItogoOut = SummaItogoOut - SummaOut WHERE (Count < 0), SummaItogo = SummaItogoIn - SummaItogoOut)
-
-
+//
 // вывод таблицы на экран
 MyLocation = LocationDevice()
 Create Label { Name = MyProduct, Action = MyAction, TextColor = "Black", BackgroundColor = "White", X=5, Y=5, Width = 85, Height = 20, FontName = "systemFont", FontSize=12, Alignment = "Left", CornerRadius = 0, ModelCell=modelCell[0], LocationDevice=MyLocation}
- 
+// 
 Create Label { Name = MyPrice, Action = MyAction, TextColor = "Black", BackgroundColor = "White", X=90, Y=10, Width = 30, Height = 20, FontName = "systemFont", FontSize=12, Alignment = "Right", CornerRadius = 0, ModelCell=modelCell[1], LocationDevice=MyLocation} 
-
+//
 Create Label { Name = MyCount, Action = MyAction, TextColor = "Black", BackgroundColor = "White", X=120, Y=10, Width = 30, Height = 20, FontName = "systemFont", FontSize=12, Alignment = "Right", CornerRadius = 0, ModelCell=modelCell[2], LocationDevice=MyLocation} 
-
+//
 Create Label { Name = MySummaIn, Action = MyAction, TextColor = "Black", BackgroundColor = "White", X=150, Y=10, Width = 50, Height = 20, FontName = "systemFont", FontSize=10, Alignment = "Right", CornerRadius = 0, ModelCell=modelCell[3], LocationDevice=MyLocation} 
-
+//
 Create Label { Name = MySummaOut, Action = MyAction, TextColor = "Black", BackgroundColor = "White", X=200, Y=10, Width = 50, Height = 20, FontName = "systemFont", FontSize=10, Alignment = "Right", CornerRadius = 0, ModelCell=modelCell[4], LocationDevice=MyLocation} 
-
+//
 Create Label { Name = MySummaItogo, Action = MyAction, TextColor = "Black", BackgroundColor = "White", X=250, Y=10, Width = 50, Height = 20, FontName = "systemFont", FontSize=10, Alignment = "Right", CornerRadius = 0, ModelCell=modelCell[5], LocationDevice=MyLocation} 
-
+//
 x = 5
 y = 100
 w = ^ScreenWidthPhone - 10
 h = 350
 Create TableView { Name = ListMyProduct, Action=MyAction, X=x, Y=y, Width=w, Height=h, ModelCell=modelCell, LocationDevice=MyLocation}
-
+//
 Struct TablePriceListProduct { MyProduct, MyPrice, MyCount, MySummaIn, MySummaOut, MySummaItogo}
-
+//
 сountRecords = CountElementsOfArray(ShopPrice)
 Cycle i = 0 ; i < сountRecords
 {
