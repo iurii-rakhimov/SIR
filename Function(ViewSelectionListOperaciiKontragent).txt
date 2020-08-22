@@ -1,15 +1,15 @@
 function ViewSelectionListOperaciiKontragent(SummaInItogo, SummaOutItogo, QuantityItogo)
 {
 // вывод на экран в таблицу ^ArrayOperaciiKontragent
-
+//
 	Struct TableOperacii { Date, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaItogo, NumberRecord, Selector }
 	countRecords = CountElementsOfArray(^ArrayOperaciiKontragent)
-
+//
 	Struct StructOperaciiKontragent { SortDate, Order, KontragentIn, SummaIn, KontragentOut, SummaOut, Comment, Quantity, Price, SummaItogo, ID, Selector, Date }
 //	Struct ^StructOperaciiKontragent { Date, Order, SummaIn, NameKontragent, SummaOut, Comment, Quantity, Price, SummaFormatItogo, ID, Selector, ViewDate }
-
+//
 	UPDATE TableView (TableOperacii, ^ArrayOperaciiKontragent, StructOperaciiKontragent, ^DelimiterTab)
-
+//
 	TableOperacii.Date = ""
 	TableOperacii.KontragentIn = ""
 	TableOperacii.SummaIn = ""
@@ -22,13 +22,13 @@ function ViewSelectionListOperaciiKontragent(SummaInItogo, SummaOutItogo, Quanti
 	TableOperacii.Selector = ""
 	TableOperacii.Order = ""
 	ListOperaciiKontragentTable[countRecords] = TableOperacii
-
+//
 	TableOperacii.Date = "Итого"
 	TableOperacii.KontragentIn = ""
-
+//
 	SummaInItogo = ^SummaInItogo
 	SummaOutItogo = ^SummaOutItogo
-
+//
 	SummaInItogo = CurrencyFormat(SummaInItogo)
 	SummaViewItogo = FormatStringSeparatorGroupsDischarges(SummaInItogo, " ")
 	TableOperacii.SummaIn = SummaViewItogo
@@ -47,6 +47,6 @@ function ViewSelectionListOperaciiKontragent(SummaInItogo, SummaOutItogo, Quanti
 	TableOperacii.Order = ""
 	countRecords ++
 	ListOperaciiKontragentTable[countRecords] = TableOperacii
-
+//
 	return
 }
