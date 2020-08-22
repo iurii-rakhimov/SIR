@@ -11,13 +11,13 @@ if ^SaveRecordComment == "Yes"
 	}
 }
 ^Comment = ^ArrayComment[^indexCellListAllComment]
-
+//
 // структура ^ArrayOperaciiKontragent
 strOperaciiKontragent = ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent]
 GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
-
+//
 Comment = ^Comment
-
+//
 strOperaciiKontragent = JoinedComponentsToStruct(^StructOperaciiKontragent, ^DelimiterTab)
 ^ArrayOperaciiKontragent[^indexCellOperaciiKontragent] = strOperaciiKontragent
 ^SaveRecord = "Yes"
