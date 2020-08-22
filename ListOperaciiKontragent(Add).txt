@@ -1,0 +1,20 @@
+// ListOperaciiKontragent[Copy].txt
+//wait 1000, message="Ждите !"
+HideListObjectForm("ListOperaciiKontragent", "Edit:Trash:Copy", ":")
+indexCell = ^indexCellOperaciiKontragent
+if indexCell < 0
+{
+	indexCell = 0
+}
+^indexCellOperaciiKontragent = indexCell
+strOperaciiKontragent = ^ArrayOperaciiKontragent[indexCell]
+GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
+IndexRecord = GetIndexArrayForSelectedComponentStruct(^ArrayRecords, ^StructRecord, 'ID', ID, ^DelimiterTab)
+strRecord = ^ArrayRecords[IndexRecord]
+CountRecords = CountElementsOfArray(^ArrayRecords)
+^ArrayRecords[CountRecords] = strRecord
+//
+// запишем новую запись в файл
+SaveRecord(Date, strRecord)
+//
+DoForm OperaciaKontragent
