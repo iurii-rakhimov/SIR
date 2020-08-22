@@ -3,20 +3,20 @@ Date = ^DateBegin
 arrayDate = Components(Date, "/")
 Year = arrayDate[2]
 Month = arrayDate[1]
-
+//
 Day = "01"
 Date = Year + "/" + Month + "/" + Day
 strRecord = Date + "	00	51.Банк1 карта 1	1000.00	99.Остатки	Перевод		"
 // запишем новую запись в файл
 SaveRecord(Date, strRecord)
 ^ArrayRecords[0] = strRecord
-
+//
 Day = "02"
 Date = Year + "/" + Month + "/" + Day
 strRecord = Date + "	01	00.Итого Расход Продукты	500.00	51.Банк1 карта 1	Магазин		"
 // запишем новую запись в файл
 SaveRecord(Date, strRecord)
 ^ArrayRecords[1] = strRecord
-
+//
 GeneralBalance()
 DoForm ListSchet, wait=1000, message="Загрузка счетов"
