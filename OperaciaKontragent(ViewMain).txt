@@ -47,7 +47,7 @@ if SummaIn == ""
 // куда
 	ShowObject("OutKontragent")
 	HideObject("OutTitleLabel")
-
+//
 	HideObject("CleaIn")
 //	HideObject("SummaInLabel")
 	HideObject("SummaInRectangle")
