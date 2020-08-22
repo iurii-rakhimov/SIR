@@ -1,10 +1,10 @@
 // OperaciaKontragent[Comment].txt
 indexCell = ^indexCellOperaciiKontragent
-
+//
 strOperaciiKontragent = ^ArrayOperaciiKontragent[indexCell]
-
+//
 GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
-
+//
 Date  = DateOperacii.text
 Date = DateOfFormat("yyyy/MM/dd", Date)
 Order = OrderData.text
@@ -19,12 +19,12 @@ if KontragentIn == ^NameKontragent
 {
 	KontragentIn = ""
 }
-
+//
 if KontragentOut == ^NameKontragent
 {
 	KontragentOut = ""
 }
-
+//
 ^ArrayOperaciiKontragent[indexCell] = JoinedComponentsToStruct(^StructOperaciiKontragent, ^DelimiterTab)
-
+//
 DoForm ListAllComment
