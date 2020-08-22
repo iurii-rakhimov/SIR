@@ -34,12 +34,12 @@ if SummaIn == ""
 {
 	^KontragentIn = nameKontragent
 	InTextView.text = ^KontragentIn
-
+//
 	^KontragentOut = KontragentOut
 	OutTextView.text = ^KontragentOut
-
+//
 	SummaOutTextField.text = SummaOut
-
+//
 	HideObject("ChangeInOut")
 // откуда
 	HideObject("InKontragent")
@@ -59,9 +59,9 @@ if SummaOut == ""
 	InTextView.text = ^KontragentIn
 	^KontragentOut = nameKontragent
 	OutTextView.text = ^KontragentOut
-
+//
 	SummaInTextField.text = SummaIn
-
+//
 	HideObject("ChangeOutIn")
 // откуда
 	HideObject("InTitleLabel")
