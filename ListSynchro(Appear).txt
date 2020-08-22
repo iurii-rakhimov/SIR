@@ -1,17 +1,17 @@
 // ListSynchro[Appear].txt
-
+//
 Remove ^ArrayRecordsSynchro
-
+//
 Create Label { Name = NameSynchro, Action = SelectSynchro, TextColor = "Black", BackgroundColor = "White", X=0, Y = 0, Width = 300, Height = 20, FontName = "systemFont", FontSize=12, Alignment = "Left", CornerRadius = 0, ModelCell = modelCell[0] }
-
+//
 x = 10
 y = 120
 w = 300
 h = 568-y-10
 Create Label { Name = RectangleTableSynchro, Action = SelectSynchro, TextColor = "Black", BackgroundColor = "Black", X=x-2, Y = y-2, Width = w+4, Height = h+4, CornerRadius = 0 }
-
+//
 Create TableView { Name = ListSynchroTable, Action= SelectSynchro, X=x, Y=y, Width=w, Height=h, ModelCell=modelCell }
-  
+//  
 Struct TableSynchro { NameSynchro }
 n = 0
 countRecords = FirebaseCountRecords()
@@ -22,12 +22,12 @@ For i = 0 ; i < countRecords ;  i++
 	Identifier = arrayRecordsSynchro[0]
 	YearMonth = arrayRecordsSynchro[1]
 	StrArrayRecords = arrayRecordsSynchro[2]
-
+//
 	arrayRecords = Components(StrArrayRecords, ^DelimiterNewLine)
 	indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, "ID", ^DelimiterTab)
 	GetComponentsOfStruct(^StructRecord, arrayRecords[indexMaxID], ^DelimiterTab)
 	MaxInCloudID = ID
-
+//
 	^ArrayRecordsSynchro[i] = JoinedComponentsToStruct(^StructRecordSynchro, ^DelimiterRecord)
 //print YearMonth + " " + i
 	n = i + 1
@@ -35,7 +35,7 @@ For i = 0 ; i < countRecords ;  i++
 MF = "MF_"
 DataTxt = "_Data.txt"
 Path = GetPathDirectoryDocument()
-
+//
 ArrayDate = Components(^DateEnd, "/")
 DayEnd = ArrayDate[0]
 MonthEnd = ArrayDate[1]
