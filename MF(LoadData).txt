@@ -5,7 +5,7 @@ Remove ^ArrayRecords
 Remove ^ArrayGeneral
 Remove ^ArrayKontragent
 Remove ^ArraySchet
-
+//
 Path = GetPathDirectoryDocument()
 strFinAll = ""
 ArrayDate = Components(^DateBegin, "/")
@@ -67,7 +67,7 @@ while true
 	DateBegin = GetDateNextMonth(DateBegin, 1)
 }
 Remove ArrayDate
-
+//
 if strFinAll == ""
 {
 	ShowObject("NoData")
@@ -79,13 +79,13 @@ ArrayRecords = Components(strFinAll, ^DelimiterNewLine)
 CountElementsOfArrayRecords = CountElementsOfArray(ArrayRecords)
 CountElementsOfArrayRecords = CountElementsOfArrayRecords - 1
 Remove ArrayRecords[CountElementsOfArrayRecords]
-
+//
 DateBegin = GetDateNextMonth(^DateBegin, -1)
 YearBegin = GetComponentString(DateBegin, "/", 2)
 MonthBegin = GetComponentString(DateBegin, "/", 1)
 BalanceTxt = "_Balance.txt"
 NameFileBegin = MF + YearBegin + MonthBegin + BalanceTxt
-
+//
 NumberRecord = 0
 PathNameFileBegin = ^Path + NameFileBegin
 ContentFile = FileRead(PathNameFileBegin)
@@ -121,7 +121,7 @@ if ContentFile != ""
 		CountElementsOfArrayRecord++
 	}
 }
-
+//
 Remove ArrayBalanceKontragent
 NumberRecord = -1
 CREATE ARRAY (ArrayRecords, ^StructRecord, ^DelimiterTab) FROM (ArrayRecords, ^StructRecord, ^DelimiterTab) WHERE (Summa != "")
@@ -144,7 +144,7 @@ if flagSaveFile == 1
 		DoModule ErrorWriteFile
 	}
 }
-
+//
 wait 1000, message="Идёт расчёт"
 GeneralBalance()
 DoForm ListSchet, wait=1000, message="Загрузка счетов"
