@@ -10,7 +10,7 @@ strNameFileURL = userPathURL + nameFile
 DoModule Timer
 DoModule Task1
 Message.text = "Загружено файлов = "+ ^CountFiles
-
+//
 Cycle i = 0 ; i < ^CountFiles
 {
 	Title.text = ^ArrayFiles[i]
