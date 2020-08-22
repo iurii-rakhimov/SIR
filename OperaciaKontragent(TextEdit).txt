@@ -1,18 +1,18 @@
 ShowObjectForm("OperaciaKontragent", "Save")
 ^SaveRecord = "Yes"
-
+//
 charChangeTextField=GetCharChangeTextField()
 strInt = CharToInt(charChangeTextField)
 //Print “charChangeTextField =” + charChangeTextField + “strInt = ” + strInt
-
+//
 nameActiveTextField = GetNameActiveTextField()
 //Print “nameActiveTextField =” + nameActiveTextField
-
+//
 strActionChangeTextField = GetActionChangeTextField()
 //Print “strActionChangeTextField =” + strActionChangeTextField
-
+//
 Str=GetStringToChangeTextField()
 //Print “StringToChangeTextField=” + Str
-
+//
 Str = GetStringAfterChangeTextField()
 //Print “StringAfterChangeTextField=” + Str
