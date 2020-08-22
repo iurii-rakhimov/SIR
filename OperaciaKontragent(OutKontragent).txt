@@ -1,15 +1,15 @@
 // OperaciaKontragent[OutKontragent].txt
 indexCell = ^indexCellOperaciiKontragent
-
+//
 strOperaciiKontragent = ^ArrayOperaciiKontragent[indexCell]
-
+//
 GetComponentsOfStruct(^StructOperaciiKontragent, strOperaciiKontragent, ^DelimiterTab)
-
+//
 Date  = DateOperacii.text
 Date = DateOfFormat("yyyy/MM/dd", Date)
-
+//
 //print "Date="+Date
-
+//
 Order = OrderData.text
 Comment = CommentTextField.text
 KontragentIn = InTextView.text
@@ -22,12 +22,12 @@ if KontragentIn == ^NameKontragent
 {
 	KontragentIn = ""
 }
-
+//
 if KontragentOut == ^NameKontragent
 {
 	KontragentOut = ""
 }
-
+//
 ^ArrayOperaciiKontragent[indexCell] = JoinedComponentsToStruct(^StructOperaciiKontragent, ^DelimiterTab)
-
+//
 DoForm ListAllKontragent
