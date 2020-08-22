@@ -2,19 +2,19 @@ function SelectionListOperaciiKontragent()
 {
 // передача параметра
 //	nameKontragent  = ^NameKontragent
-
+//
 // на входе: ^ArrayGeneral
 // на выходе: ^ArrayOperaciiKontragent
-
+//
 //timeStart = GetTimeInMiliseconds()
 // из массива ^ArrayGeneral выделяем массив ^ArraySelectNameKontragent с ^NameKontragent
 	Struct StructGeneral { nameKontragentOut, Date, Order, ID, Summa, nameKontragentIn, Comment, Quantity, Price, Selector }
 	CREATE ARRAY (^ArraySelectNameKontragent, StructGeneral, ^DelimiterTab) FROM (^ArrayGeneral, StructGeneral, ^DelimiterTab) WHERE (nameKontragentOut = ^NameKontragent)
-
+//
 	Sort(^ArraySelectNameKontragent, "MinMax")
-
+//
 	Remove ^ArrayOperaciiKontragent
-
+//
 	SummaItogo = 0
 	SummaInItogo = 0
 	SummaOutItogo = 0
