@@ -14,22 +14,22 @@ function ShowMonth(Date)
 	View DayWeek6
 	DayWeek7.text = "вс"
 	View DayWeek7
-
+//
 	DayMonth = "31/28/31/30/31/30/31/31/30/31/30/31"
 	Struct StructDate { Day, Month, Year }
 	GetComponentsOfStruct(StructDate, Date, "/")
 	Day = 0 + Day
 	MonthDate = Month
-
+//
 	Month = Month - 1
 	MonthAndYear = GetNameMonth(Month)
 	MonthAndYear = MonthAndYear + " " + Year
 	MonthYear.Text = MonthAndYear
 	MonthYear.BackgroundColor = "LightGrey"
 	View MonthYear
-
+//
 	countDeyInMonth = GetComponentString(DayMonth, "/", Month)
-
+//
 	YearNew = Year / 4
 	YearNew = YearNew * 4
 	if Year == YearNew
@@ -60,7 +60,7 @@ function ShowMonth(Date)
 		strData = strData + "View Data0" + i + ^DelimiterNewLine
 	}
 	CompilationExecution(strData)
-
+//
 	^ColorText="Black"
 	^ColorTextWhite ="White"
 	^ColorBackgroundDarkBlue ="DarkBlue"
@@ -83,7 +83,7 @@ function ShowMonth(Date)
 		{
 			strData = strData + Data + i + ".text = " + DayInMonth
 		}
-
+//
 		strData = strData + ^DelimiterNewLine
 		strData = strData + Data + i + ".TextColor = ^ColorText" + ^DelimiterNewLine
 		if Day == DayInMonth
