@@ -19,8 +19,7 @@ For i = 0 ; i < countRecords ;  i++
 	YearMonth = arrayFields[1]
 	RecordsInCloud = arrayFields[2]
 }
-
-
+//
 MF = "MF_"
 DataTxt = "_Data.txt"
 NameFile = MF + YearEnd + MonthEnd + DataTxt
@@ -44,8 +43,7 @@ if RecordsInDevice == ""
 	Title.text = strMessage
 	return
 }
-
-
+//
 if YearMonth == ""
 {
 	strMessage = "запись в облако " + YearMonthSave
@@ -63,14 +61,13 @@ if RecordsInCloud == RecordsInDevice
 }
 // Данные не идентичны - начнем сравнение
 arrayRecords = Components(RecordsInDevice, ^DelimiterNewLine)
-indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, "ID", ^DelimiterTab)
+indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, 'ID', ^DelimiterTab)
 GetComponentsOfStruct(^StructRecord, arrayRecords[indexMaxID], ^DelimiterTab)
 maxInDeviceID = ID
 //print "maxInDeviceID=" + maxInDeviceID
-
-
+//
 arrayRecords = Components(RecordsInCloud, ^DelimiterNewLine)
-indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, "ID", ^DelimiterTab)
+indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, 'ID', ^DelimiterTab)
 GetComponentsOfStruct(^StructRecord, arrayRecords[indexMaxID], ^DelimiterTab)
 maxInCloudID = ID
 //print "maxInCloudID=" + maxInCloudID
@@ -89,5 +86,3 @@ if kv != 0
 }
 strMessage = "запись из облака " + YearMonthSave
 Title.text = strMessage
-
-
