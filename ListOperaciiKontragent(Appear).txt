@@ -2,7 +2,7 @@
 HideObject("Edit")
 HideObject("Trash")
 HideObject("Copy")
-
+//
 strRecord = ^ArraySelectKontragent[^indexCellSelectKontragent]
 nameKontragent = GetComponentString(strRecord, ^DelimiterTab, 0)
 KontragentName.text = nameKontragent
@@ -18,5 +18,5 @@ if ^SaveRecord == "Yes"
 }
 ^indexCellOperaciiKontragent = 9999999
 ViewSelectionListOperaciiKontragent(^SummaInItogo, ^SummaOutItogo, ^QuantityItogo)
-
+//
 MessageBarUp( "Загрузили" )
