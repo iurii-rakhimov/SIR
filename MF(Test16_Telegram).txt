@@ -9,12 +9,12 @@ ShopPrice[6] = "Vegetables:🥔:Potato:40"
 ShopPrice[7] = "Vegetables:🥕:Carrot:50"
 ShopPrice[8] = "Berries:🍒:Cherries:160"
 ShopPrice[9] = "Berries:🍓:Strawberry:250"
-
+//
 // на входе:
 Struct StructShop { Product, ImageProduct, NameProduct, Price }
 // на выходе:
 Struct StructPriceFruits { ImageProduct, NameProduct, Price }
-
+//
 CREATE ARRAY (^ArrayPriceFruits, StructPriceFruits, ":") FROM (ShopPrice, StructShop, ":")  WHERE (Product == "Fruits")
 // MF[Test15_Telegram].txt
 MF = "MF_"
@@ -34,5 +34,4 @@ maxInCloudID = ID
 Identifier = ""
 YearMonth = GodBegin + "." + MonthBegin
 ^ArrayRecordsSynchro[0] = JoinedComponentsToStruct(^StructRecordSynchro, ^DelimiterRecord)
-print YearMonth + " " + ID
-
+//print YearMonth + " " + ID
