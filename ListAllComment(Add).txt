@@ -1,6 +1,6 @@
 // ListAllComment[Add].txt
 Struct TableComment { NameComment } 
-
+//
 CountRecords = CountElementsOfArray(^ArrayComment)
 DelimiterTab = ^DelimiterTab
 For i = 0 ; i < CountRecords ;  i++
