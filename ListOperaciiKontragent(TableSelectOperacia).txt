@@ -44,5 +44,5 @@ else
 	HideObject("Trash")
 	HideObject("Copy")
 }
-//ViewSelectionListOperaciiKontragent(^SummaInItogo, ^SummaOutItogo, ^QuantityItogo)
+ViewSelectionListOperaciiKontragent(^SummaInItogo, ^SummaOutItogo, ^QuantityItogo)
 MessageBarUp("")
