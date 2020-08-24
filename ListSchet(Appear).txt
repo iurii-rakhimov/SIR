@@ -18,15 +18,22 @@ hDateEnd = DateEnd. Height
 hDateEnd = ConvertFloatToInt(hDateEnd / ^SystemCoefficientSizeForRun)
 //
 xTableView = 5
+wTableView = 310
+MyLocation = LocationDevice() 
+//print MyLocation
+If MyLocation == "horizontally"
+{
+	xTableView = ConvertFloatToInt(^ScreenHeightPhone - wTableView / 2)
+}
+//print "xTableView=" + xTableView
 //
 yTableView = yDateEnd + hDateEnd + 5
 //
-wTableView = 310
 hTableViewVertically = ^ScreenHeightPhone - yTableView - 5
 hTableViewHorizontally = ^ScreenWidthPhone - yTableView - 5
 //
 Create Rectangle { Name = Rectangle1, Color = "Black", X=xTableView-2, Y = yTableView-2, Width = wTableView+4, Height = hTableViewVertically+4, CornerRadius = 0, LocationDevice="vertically"}
-Create Rectangle { Name = Rectangle1, Color = "Black", X=xTableView-2, Y = yTableView-2, Width = wTableView+4, Height = hTableViewHorizontally+4, CornerRadius = 0, LocationDevice="horizontally"}
+Create Rectangle { Name = Rectangle1, Color = "Black", X=xTableView-2, Y = yTableView-3, Width = wTableView+5, Height = hTableViewHorizontally+5, CornerRadius = 0, LocationDevice="horizontally"}
 //
 Create Rectangle { Name = Rectangle2, Color = "White", X=xTableView-1, Y = yTableView-1, Width = wTableView+2, Height = hTableViewVertically+2, CornerRadius = 0, LocationDevice="vertically"}
 Create Rectangle { Name = Rectangle2, Color = "White", X=xTableView-1, Y = yTableView-1, Width = wTableView+2, Height = hTableViewHorizontally+2, CornerRadius = 0, LocationDevice="horizontally"}
