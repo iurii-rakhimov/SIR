@@ -21,4 +21,5 @@ if kv != 0
 }
 //
 HideObject("CloudOut")
+SynchroTitle.FontSize=12
 SynchroTitle.text = "Записали из облака на устройство."
