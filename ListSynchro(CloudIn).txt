@@ -21,4 +21,5 @@ if RecordsInDevice == ""
 collectionBase = "MyFinance"
 FirebaseAddRecord(collectionBase, strYearMonth, RecordsInDevice)
 HideObject("CloudIn")
+SynchroTitle.FontSize=12
 SynchroTitle.text = "Записали. Нажми иконку Обновить"
