@@ -73,13 +73,21 @@ CountRecords = CountElementsOfArray(^ArrayRecordsSynchro)
 For i = 0 ; i < CountRecords ;  i++
 {
 	GetComponentsOfStruct(^StructRecordSynchro, ^ArrayRecordsSynchro[i], ^DelimiterRecord)
+	strDate = GetComponentString(MaxInCloudID, ' ', 0)
+	strTime = GetComponentString(MaxInCloudID, ' ', 1)
+	ArrayDate = Components(strDate, "/")
+	strDate = ArrayDate[2] + "." + ArrayDate[1] + "." + ArrayDate[0]
+	numberYear = GetComponentString(YearMonth, '.', 0)
+	numberMonth = GetComponentString(YearMonth, '.', 1) - 1
+	nameMonth = GetNameMonth(numberMonth)
+	strMonthYear = nameMonth + " " + numberYear
 	if Identifier == ""
 	{
-		TableSynchro.NameSynchro = YearMonth + " 💾  (Max DateTime=" + MaxInCloudID + ")"
+		TableSynchro.NameSynchro = strMonthYear + " 💾 копия от " + strDate + " время " + strTime
 	}
 	else
 	{
-		TableSynchro.NameSynchro = YearMonth + " ☁  (Max DateTime=" + MaxInCloudID + ")"
+		TableSynchro.NameSynchro = strMonthYear + " ☁ копия от " + strDate + " время " + strTime
 	}
 	ListSynchroTable[i] = TableSynchro
 }
