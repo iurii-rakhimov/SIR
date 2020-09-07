@@ -1,8 +1,9 @@
 // ListSynchro[CloudIn].txt
 MF = "MF_"
 DataTxt = "_Data.txt"
-YearMonthSave = SynchroTitle.text
-arrayDate = Components(YearMonthSave, ".")
+YearMonth = SynchroTitle.text
+strYearMonth = GetComponentString(YearMonth, " ", 1)
+arrayDate = Components(strYearMonth, ".")
 Year = arrayDate[0]
 Month = arrayDate[1]
 NameFile = MF + Year + Month + DataTxt
@@ -18,6 +19,6 @@ if RecordsInDevice == ""
 	}
 }
 collectionBase = "MyFinance"
-FirebaseAddRecord(collectionBase, YearMonthSave, RecordsInDevice)
+FirebaseAddRecord(collectionBase, strYearMonth, RecordsInDevice)
 HideObject("CloudIn")
 SynchroTitle.text = "Записали. Нажми иконку Обновить"
