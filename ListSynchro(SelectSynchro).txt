@@ -10,7 +10,7 @@ strMonth = GetComponentString(YearMonth, ".", 1)
 numberMonth = strMonth - 1
 nameMonth = GetNameMonth(numberMonth)
 strMonthYear = nameMonth + " " + numberYear + "." + strMonth
-SynchroTitle.FontSize=12
+SynchroTitle.FontSize=10
 if Identifier == ""
 {
 	ShowObject("CloudIn")
