@@ -6,10 +6,11 @@ strTime = GetComponentString(MaxInCloudID, " ", 1)
 ArrayDate = Components(strDate, "/")
 strDate = ArrayDate[2] + "." + ArrayDate[1] + "." + ArrayDate[0]
 numberYear = GetComponentString(YearMonth, ".", 0)
-numberMonth = GetComponentString(YearMonth, ".", 1) - 1
+strMonth = GetComponentString(YearMonth, ".", 1)
+numberMonth = strMonth - 1
 nameMonth = GetNameMonth(numberMonth)
-strMonthYear = nameMonth + " " + numberYear
-SynchroTitle.FontSize=22
+strMonthYear = nameMonth + " " + numberYear + "." + strMonth
+SynchroTitle.FontSize=20
 if Identifier == ""
 {
 	ShowObject("CloudIn")
