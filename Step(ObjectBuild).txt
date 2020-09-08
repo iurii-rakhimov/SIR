@@ -1,0 +1,5 @@
+Step	Start	Label	@	10	170	300	40	Start	старт	79:100:158	255:255:255	20	16	boldSystemFont	Центр	Label		vertically		
+Step	Stop	Label	@	10	300	300	40	Stop	стоп	79:100:158	255:255:255	20	16	boldSystemFont	Центр	Label		vertically		
+Step	Title	Label	@	0	81	320	30		Расчёт дистанции	255:255:255	2:2:2	0	17	systemFont	center	Label		vertically		
+Step	Distance1	Label	@	0	220	320	30		Расстояние 1	255:255:255	2:2:2	0	17	systemFont	center	Label		vertically		
+Step	Distance2	Label	@	0	250	320	30		Расстояние 2	255:255:255	2:2:2	0	17	systemFont	center	Label		vertically		
