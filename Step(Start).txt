@@ -1,0 +1,6 @@
+// Step[Start].txt
+A=4
+TriggerLocationDevice
+^StartLatitude = LocationDeviceLatitude()
+^StartLongitude = LocationDeviceLongitude()
+Title.text = ^StartLatitude + "  " + ^StartLongitude
