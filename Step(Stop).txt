@@ -1,0 +1,6 @@
+// Step[Stop].txt
+StopLatitude = LocationDeviceLatitude()
+StopLongitude = LocationDeviceLongitude()
+Distance = GetDistanceBetweenPoints(^StartLatitude, ^StartLongitude, StopLatitude, StopLongitude)
+//GetDistanceBettwenLocation
+Title.text = StopLatitude + " " + StopLongitude
