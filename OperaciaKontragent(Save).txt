@@ -46,7 +46,7 @@ Struct StructRecord { DateNew, Order, KontragentOut, Summa, KontragentIn, Commen
 strRecordNew = JoinedComponentsToStruct(StructRecord, ^DelimiterTab)
 //
 ID = ^ID
-//print "Удалим запись по ID =" + ID
+print "Удалим запись по ID =" + ID
 if ID == ""
 {
 	ID = GetDateTime()
@@ -60,7 +60,7 @@ else
 Path = GetPathDirectoryDocument()
 PathNameFileNew = Path + NameFileNew
 //
-ContentFile = FileRead(PathNameFileNew)
+ContentFile =  (PathNameFileNew)
 if ContentFile != ""
 {
 	arrayFileRecords = Components(ContentFile, ^DelimiterNewLine)
@@ -76,7 +76,6 @@ if ContentFile != ""
 else
 {
 	ContentFile = strRecordNew
-	CountRecords = 1
 }
 kv = FileWrite(PathNameFileNew, ContentFile)
 if kv != 0
@@ -84,7 +83,7 @@ if kv != 0
 	DoModule ErrorWriteFile
 }
 // замена на новую в основном массиве ^ArrayRecords
-NumberRecord = CountRecords - 1
+NumberRecord = CountElementsOfArray(^ArrayRecords)
 ^ArrayRecords[NumberRecord] = strRecordNew
 //print "Новая запись strRecordNew =" + strRecordNew
 //
