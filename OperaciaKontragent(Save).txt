@@ -46,7 +46,7 @@ Struct StructRecord { DateNew, Order, KontragentOut, Summa, KontragentIn, Commen
 strRecordNew = JoinedComponentsToStruct(StructRecord, ^DelimiterTab)
 //
 ID = ^ID
-print "Удалим запись по ID =" + ID
+//print "Удалим запись по ID =" + ID
 if ID == ""
 {
 	ID = GetDateTime()
@@ -59,8 +59,9 @@ else
 // запишем новую запись в файл
 Path = GetPathDirectoryDocument()
 PathNameFileNew = Path + NameFileNew
+//print "NameFileNew =" + NameFileNew
 //
-ContentFile =  (PathNameFileNew)
+ContentFile = FileRead(PathNameFileNew)
 if ContentFile != ""
 {
 	arrayFileRecords = Components(ContentFile, ^DelimiterNewLine)
