@@ -1,9 +1,25 @@
 // ListSynchro[Trash].txt
-collectionBase = "MyFinance"
 indexCellListSynchro = GetIndexSelectCellTableView()
 GetComponentsOfStruct(^StructRecordSynchro, ^ArrayRecordsSynchro[indexCellListSynchro], ^DelimiterRecord)
-if Identifier != ""
+if NumberRecordInCloud == ""
 {
-	FirebaseRemoveRecord(collectionBase, Identifier)
+	HideObject("Trash")
+	SynchroTitle.text = "Ошибка: нельзя удалять файл на устройстве"
 }
-SynchroTitle.text = "Удалили. Нажми иконку Обновить"
+else
+{
+	ShowObject("WriteCloudToFile")
+	HideObject("WriteFileToCloud")
+	strDate = GetComponentString(MaxInCloudID, " ", 0)
+	strTime = GetComponentString(MaxInCloudID, " ", 1)
+	ArrayDate = Components(strDate, "/")
+	strDate = ArrayDate[2] + "." + ArrayDate[1] + "." + ArrayDate[0]
+	numberYear = GetComponentString(YearMonth, ".", 0)
+	strMonth = GetComponentString(YearMonth, ".", 1)
+	numberMonth = strMonth - 1
+	nameMonth = GetNameMonth(numberMonth)
+	strMonthYear = nameMonth + " " + numberYear + "." + strMonth
+	SynchroTitle.text = strMonthYear + " ☁ копия от " + strDate + " время " + strTime
+	CloudDataBaseRemoveRecord(NumberRecordInCloud)
+	SynchroTitle.text = "Удалили. Нажми иконку Обновить"
+}
