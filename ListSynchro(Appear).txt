@@ -7,29 +7,26 @@ Create Label { Name = NameSynchro, Action = SelectSynchro, TextColor = "Black", 
 x = 10
 y = 120
 w = 300
-h = 568-y-10
+h = 568-y-20
 Create Label { Name = RectangleTableSynchro, Action = SelectSynchro, TextColor = "Black", BackgroundColor = "Black", X=x-2, Y = y-2, Width = w+4, Height = h+4, CornerRadius = 0 }
 //
 Create TableView { Name = ListSynchroTable, Action= SelectSynchro, X=x, Y=y, Width=w, Height=h, ModelCell=modelCell }
 //  
 Struct TableSynchro { NameSynchro }
 n = 0
-countRecords = FirebaseCountRecords()
+countRecords = CloudDatabaseCountRecords()
+//print "countRecords = " + countRecords
 For i = 0 ; i < countRecords ;  i++
 {
-	arrayRecordsSynchro = FirebaseGetRecordCollection(i)
-//
-	Identifier = arrayRecordsSynchro[0]
-	YearMonth = arrayRecordsSynchro[1]
-	StrArrayRecords = arrayRecordsSynchro[2]
-//
+	StrArrayRecords = CloudDataBaseGetRecord(i)
+//	print i + " " + StrArrayRecords
 	arrayRecords = Components(StrArrayRecords, ^DelimiterNewLine)
 	indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, "ID", ^DelimiterTab)
 	GetComponentsOfStruct(^StructRecord, arrayRecords[indexMaxID], ^DelimiterTab)
 	MaxInCloudID = ID
-//
-	^ArrayRecordsSynchro[i] = JoinedComponentsToStruct(^StructRecordSynchro, ^DelimiterRecord)
-//print YearMonth + " " + i
+	NumberRecordInCloud = n
+	YearMonth = arrayRecords[0]
+	^ArrayRecordsSynchro[n] = JoinedComponentsToStruct(^StructRecordSynchro, ^DelimiterRecord)
 	n = i + 1
 }
 MF = "MF_"
@@ -60,7 +57,7 @@ while true
 		indexMaxID = GetIndexArrayMaxValueComponentStruct(arrayRecords, ^StructRecord, "ID", ^DelimiterTab)
 		GetComponentsOfStruct(^StructRecord, arrayRecords[indexMaxID], ^DelimiterTab)
 		MaxInCloudID = ID
-		Identifier = ""
+		NumberRecordInCloud = ""
 		YearMonth = GodBegin + "." + MonthBegin
 		^ArrayRecordsSynchro[n] = JoinedComponentsToStruct(^StructRecordSynchro, ^DelimiterRecord)
 //print YearMonth + " " + n
@@ -72,7 +69,12 @@ Sort(^ArrayRecordsSynchro, "MaxMin")
 CountRecords = CountElementsOfArray(^ArrayRecordsSynchro)
 For i = 0 ; i < CountRecords ;  i++
 {
-	GetComponentsOfStruct(^StructRecordSynchro, ^ArrayRecordsSynchro[i], ^DelimiterRecord)
+	strRecord = ^ArrayRecordsSynchro[i]
+	if strRecord == ""
+	{
+		continue
+	}
+	GetComponentsOfStruct(^StructRecordSynchro, strRecord, ^DelimiterRecord)
 	strDate = GetComponentString(MaxInCloudID, " ", 0)
 	strTime = GetComponentString(MaxInCloudID, " ", 1)
 	ArrayDate = Components(strDate, "/")
@@ -80,8 +82,10 @@ For i = 0 ; i < CountRecords ;  i++
 	numberYear = GetComponentString(YearMonth, ".", 0)
 	numberMonth = GetComponentString(YearMonth, ".", 1) - 1
 	nameMonth = GetNameMonth(numberMonth)
+//print numberMonth + " " + nameMonth
+
 	strMonthYear = nameMonth + " " + numberYear
-	if Identifier == ""
+	if NumberRecordInCloud == ""
 	{
 		TableSynchro.NameSynchro = strMonthYear + " 💾 копия от " + strDate + " время " + strTime
 	}
@@ -91,6 +95,7 @@ For i = 0 ; i < CountRecords ;  i++
 	}
 	ListSynchroTable[i] = TableSynchro
 }
-HideObject("CloudIn")
-HideObject("CloudOut")
+HideObject("WriteFileToCloud")
+HideObject("WriteCloudToFile")
 HideObject("Trash")
+MessageBarDown("")
