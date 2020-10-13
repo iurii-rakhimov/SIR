@@ -56,8 +56,8 @@ ListSchetTable(Appear).txt
 ListSchetTable(Exit).txt
 ListSynchro(Appear).txt
 ListSynchro(Change).txt
-ListSynchro(CloudIn).txt
-ListSynchro(CloudOut).txt
+ListSynchro(WriteCloudToFile).txt
+ListSynchro(WriteFileToCloud).txt
 ListSynchro(Exit).txt
 ListSynchro(SelectSynchro).txt
 ListSynchro(SynchroData).txt
