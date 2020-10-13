@@ -1,0 +1,23 @@
+// ListSynchro(WriteFileToCloud).txt
+MF = "MF_"
+DataTxt = "_Data.txt"
+YearMonth = SynchroTitle.text
+strYearMonth = GetComponentString(YearMonth, " ", 1)
+arrayDate = Components(strYearMonth, ".")
+Year = arrayDate[0]
+Month = arrayDate[1]
+NameFile = MF + Year + Month + DataTxt
+Path = GetPathDirectoryDocument()
+PathAndNameFile = Path + NameFile
+RecordsInDevice = FileRead(PathAndNameFile)
+if RecordsInDevice == ""
+{
+	if RecordsInCloud == ""
+	{
+		Title.text = "Нет данных"
+		return
+	}
+}
+strAddRecord = strYearMonth + ^DelimiterNewLine + RecordsInDevice
+CloudDataBaseAddRecord(strAddRecord)
+SynchroTitle.text = "Записали. Нажми иконку Обновить"
