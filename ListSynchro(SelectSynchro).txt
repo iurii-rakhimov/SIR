@@ -10,17 +10,16 @@ strMonth = GetComponentString(YearMonth, ".", 1)
 numberMonth = strMonth - 1
 nameMonth = GetNameMonth(numberMonth)
 strMonthYear = nameMonth + " " + numberYear + "." + strMonth
-SynchroTitle.FontSize=10
-if Identifier == ""
+if NumberRecordInCloud == ""
 {
-	ShowObject("CloudIn")
-	HideObject("CloudOut")
+	ShowObject("WriteFileToCloud")
+	HideObject("WriteCloudToFile")
 	SynchroTitle.text = strMonthYear + " 💾 копия от " + strDate + " время " + strTime
 }
 else
 {
-	ShowObject("CloudOut")
-	HideObject("CloudIn")
+	ShowObject("WriteCloudToFile")
+	HideObject("WriteFileToCloud")
 	SynchroTitle.text = strMonthYear + " ☁ копия от " + strDate + " время " + strTime
 }
 ShowObject("Trash")
