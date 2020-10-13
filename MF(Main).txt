@@ -1,7 +1,7 @@
 // MF[Main].txt
 Remove ExternalVariables
 Remove AllVisualObject
-//
+// a=1
 ^DelimiterSpace = IntToChar(40)
 ^DelimiterRecord = IntToChar(11)
 ^DelimiterTab = IntToChar(9)
@@ -17,7 +17,7 @@ Remove AllVisualObject
 ^DateEnd = ""
 ^SaveRecord = "No"
 //
-Struct ^StructRecordSynchro { YearMonth, MaxInCloudID, Identifier, StrArrayRecords }
+Struct ^StructRecordSynchro { YearMonth, MaxInCloudID, NumberRecordInCloud, StrArrayRecords }
 Struct ^StructRecord { Date, Order, NameKontragentOut, Summa, NameKontragentIn, Comment, Quantity, Price, ID }
 Struct ^StructGeneral { NameKontragentIn, Date, Order, ID, Summa, NameKontragentOut, Comment, Quantity, Price, Selector }
 Struct ^StructKontragent { NameKontragent, SummaKontragent, QuantityKontragent }
@@ -95,3 +95,4 @@ View DateEnd
 NameFile = ^Path + "MF_Comment.txt"
 ContentFile = FileRead(NameFile)
 ^ArrayComment = Components(ContentFile, ^DelimiterNewLine)
+//Title.text = GetNameMonth(5)
