@@ -33,8 +33,7 @@ MF	GodMinus	Image	@	5	222	30	30	GodMinus	255:255:255	242:242:242	0	DoubleLeft40x
 MF	GodPlus	Image	@	529	222	30	30	GodPlus	255:255:255	242:242:242	0	DoubleRight40x40		horizontally	
 MF	DateMinus	Image	@	20	280	35	30	DateMinus	255:255:255	242:242:242	0	DoubleLeft40x40		horizontally	
 MF	DatePlus	Image	@	501	280	35	30	DatePlus	255:255:255	242:242:242	0	DoubleRight40x40		horizontally	
-MF	DateBeginMinus	Image	@	77	280	30	30	DateBeginMinus	255:255:255	242:242:242	0	ArrowLeft40x40		horizontally	
-MF	MF_0001	Image	@	137	280	30	30	DateBeginPlus	255:255:255	242:242:242	0	ArrowRight40x40		horizontally	
+MF	DateBeginMinus	Image	@	51	281	30	30	DateBeginMinus	255:255:255	242:242:242	0	ArrowLeft40x40		horizontally	
 MF	MF_0002	Image	@	400	280	30	30	DateEndMinus	255:255:255	242:242:242	0	ArrowLeft40x40		horizontally	
 MF	MF_0003	Image	@	460	280	30	30	DateEndPlus	255:255:255	242:242:242	0	ArrowRight40x40		horizontally	
 MF	MF_0004	Image	@	170	26	20	20	OkGreen	242:242:242	242:242:242	0	OkGreen40x40		horizontally	
@@ -69,3 +68,4 @@ MF	Test17_CloudIn	Image	@	3	325	20	20	Test17_CloudIn	255:255:255	242:242:242	0	i
 MF	Test18_CloudOut	Image	@	40	325	20	20	Test18_CloudOut	255:255:255	242:242:242	0	iCloudOut40x40		vertically	
 MF	Test19_ListForm	Image	@	258	325	20	20	Test19_ListForm	255:255:255	242:242:242	0	ListForm40x40		vertically	
 MF	Test20_ListFile	Image	@	297	325	20	20	Test20_ListFile	255:255:255	242:242:242	0	ListFile40x40		vertically	
+MF	DateBeginPlus	Image	@	121	281	30	30	DateBeginPlus	255:255:255	242:242:242	0	ArrowRight40x40		horizontally	
