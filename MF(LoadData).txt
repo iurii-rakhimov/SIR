@@ -5,7 +5,7 @@ Remove ^ArrayRecords
 Remove ^ArrayGeneral
 Remove ^ArrayKontragent
 Remove ^ArraySchet
-//
+// A=2
 Path = GetPathDirectoryDocument()
 strFinAll = ""
 ArrayDate = Components(^DateBegin, "/")
