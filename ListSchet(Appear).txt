@@ -11,11 +11,11 @@ Create Label { Name = NameSchet, Action = SelectSchet, TextColor = "Black", Back
 Create Label { Name = SummaSchet, Action = SelectSchet, TextColor = "Black", BackgroundColor = "White", X=200, Y = 0, Width = 100, Height = 20, FontName = "monospacedDigitSystemFont", FontSize=14, Alignment = "Right", CornerRadius = 0, ModelCell=modelCellVertically[1], LocationDevice="vertically"}
 Create Label { Name = SummaSchet, Action = SelectSchet, TextColor = "Black", BackgroundColor = "White", X=200, Y = 0, Width = 100, Height = 20, FontName = "monospacedDigitSystemFont", FontSize=14, Alignment = "Right", CornerRadius = 0, ModelCell=modelCellHorizontally[1], LocationDevice="horizontally"}
 //
-yDateEnd = DateEnd.Y
-yDateEnd = ConvertFloatToInt(yDateEnd / ^SystemCoefficientSizeForRun)
+yTitle = Title.Y
+yTitle = ConvertFloatToInt(yTitle / ^SystemCoefficientSizeForRun)
 //
-hDateEnd = DateEnd. Height
-hDateEnd = ConvertFloatToInt(hDateEnd / ^SystemCoefficientSizeForRun)
+hTitle = Title.Height
+hTitle = ConvertFloatToInt(hTitle / ^SystemCoefficientSizeForRun)
 //
 xTableView = 5
 wTableView = 310
@@ -27,7 +27,7 @@ If MyLocation == "horizontally"
 }
 //print "xTableView=" + xTableView
 //
-yTableView = yDateEnd + hDateEnd + 5
+yTableView = yTitle + hTitle + 5
 //
 hTableViewVertically = ^ScreenHeightPhone - yTableView - 5
 hTableViewHorizontally = ^ScreenWidthPhone - yTableView - 5
