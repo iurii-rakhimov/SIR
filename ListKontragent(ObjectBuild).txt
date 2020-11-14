@@ -4,3 +4,7 @@ ListKontragent	TitleLabel	Label	@	0	51	100	30		Контрагент:	255:255:255
 ListKontragent	KontragentTitle	Label	@	110	52	210	30			255:255:255	2:2:2	0	22	systemFont	center	Label		vertically		
 ListKontragent	KontragentTitle	Label	@	120	51	210	30			255:255:255	2:2:2	0	22	systemFont	center	Label		horizontally		
 ListKontragent	DownFooter	Label	@	0	317	320	3			0:0:0	2:2:2	0	17	systemFont	center	Label		horizontally		
+ListKontragent	ListKontragent0000	Label	@	40	26	75	20		Период с	242:242:242	2:2:2	0	14	systemFont	center	Label		vertically		
+ListKontragent	DateBegin	Label	@	110	26	80	20	DateBegin	DateBegin	242:242:242	2:2:2	0	14	systemFont	center	Label		vertically		
+ListKontragent	ListKontragent0002	Label	@	185	26	30	20		по	242:242:242	2:2:2	0	14	systemFont	center	Label		vertically		
+ListKontragent	DateEnd	Label	@	210	26	80	20	DateEnd	DateEnd	242:242:242	2:2:2	0	14	systemFont	center	Label		vertically		
