@@ -1,4 +1,6 @@
 //ListKontragent[Appear].txt
+DateBegin.text = ^DateBegin
+DateEnd.text = ^DateEnd
 //
 indexCell = ^indexCellSchet
 DelimiterTab = ^DelimiterTab
