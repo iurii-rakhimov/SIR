@@ -11,7 +11,8 @@ Path = GetPathDirectoryDocument()
 PathAndNameFile = Path + NameFile
 //
 indexCellListSynchro = GetIndexSelectCellTableView()
-GetComponentsOfStruct(^StructRecordSynchro, ^ArrayRecordsSynchro[indexCellListSynchro], ^DelimiterRecord)
+Struct StructRecordSynchro { YearMonth, MaxInCloudID, NumberRecordInCloud, StrArrayRecords }
+GetComponentsOfStruct(StructRecordSynchro, ^ArrayRecordsSynchro[indexCellListSynchro], ^DelimiterRecord)
 StrArrayRecords  = CloudDataBaseGetRecord(NumberRecordInCloud)
 //
 kv = FileWrite(PathAndNameFile, StrArrayRecords)
