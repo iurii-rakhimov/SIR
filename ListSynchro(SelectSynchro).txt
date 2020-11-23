@@ -1,6 +1,7 @@
 //ListAllComment[SelectSynchro].txt
 indexCellListSynchro = GetIndexSelectCellTableView()
-GetComponentsOfStruct(^StructRecordSynchro, ^ArrayRecordsSynchro[indexCellListSynchro], ^DelimiterRecord)
+Struct StructRecordSynchro { YearMonth, MaxInCloudID, NumberRecordInCloud, StrArrayRecords }
+GetComponentsOfStruct(StructRecordSynchro, ^ArrayRecordsSynchro[indexCellListSynchro], ^DelimiterRecord)
 strDate = GetComponentString(MaxInCloudID, " ", 0)
 strTime = GetComponentString(MaxInCloudID, " ", 1)
 ArrayDate = Components(strDate, "/")
