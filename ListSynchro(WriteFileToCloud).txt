@@ -9,15 +9,12 @@ Month = arrayDate[1]
 NameFile = MF + Year + Month + DataTxt
 Path = GetPathDirectoryDocument()
 PathAndNameFile = Path + NameFile
-RecordsInDevice = FileRead(PathAndNameFile)
-if RecordsInDevice == ""
+strData = FileRead(PathAndNameFile)
+if strData == ""
 {
-	if RecordsInCloud == ""
-	{
-		Title.text = "Нет данных"
-		return
-	}
+	Title.text = "Нет данных"
+	return
 }
-strAddRecord = strYearMonth + ^DelimiterNewLine + RecordsInDevice
-CloudDataBaseAddRecord(strAddRecord)
+strKey = Year + "." + Month
+CloudDataBaseAddRecord(strKey, strData)
 SynchroTitle.text = "Записали. Нажми иконку Обновить"
