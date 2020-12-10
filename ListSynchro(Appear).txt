@@ -22,7 +22,8 @@ countRecords = CloudDatabaseCountRecords()
 //print "countRecords = " + countRecords
 For i = 0 ; i < countRecords ;  i++
 {
-	strArrayRecords = CloudDataBaseGetKeyDataRecord(i)
+	strArrayRecords = CloudDataBaseGetRecord(i)
+//	strArrayRecords = CloudDataBaseGetKeyDataRecord(i)
 //	print i + " " + strArrayRecords
 	arrayRecords = Components(strArrayRecords, DelimiterU5)
 	strKeyData = arrayRecords[0]
