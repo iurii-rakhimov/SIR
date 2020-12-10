@@ -1,6 +1,7 @@
 // ListSynchro[Trash].txt
 indexCellListSynchro = GetIndexSelectCellTableView()
-GetComponentsOfStruct(^StructRecordSynchro, ^ArrayRecordsSynchro[indexCellListSynchro], ^DelimiterRecord)
+Struct StructRecordSynchro { YearMonth, MaxInCloudID, NumberRecordInCloud, StrArrayRecords }
+GetComponentsOfStruct(StructRecordSynchro, ^ArrayRecordsSynchro[indexCellListSynchro], ^DelimiterRecord)
 if NumberRecordInCloud == ""
 {
 	HideObject("Trash")
