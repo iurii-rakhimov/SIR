@@ -14,7 +14,6 @@ Create TableView { Name = ListSynchroTable, Action= SelectSynchro, X=x, Y=y, Wid
 //  
 Struct TableSynchro { NameSynchro }
 Struct StructRecordSynchro { YearMonth, MaxInCloudID, NumberRecordInCloud, StrArrayRecords }
-DelimiterU4 = IntToChar(4)
 DelimiterU5 = IntToChar(5)
 MaxInCloudID = ""
 n = 0
@@ -23,19 +22,16 @@ countRecords = CloudDatabaseCountRecords()
 For i = 0 ; i < countRecords ;  i++
 {
 	strArrayRecords = CloudDataBaseGetRecord(i)
-//	strArrayRecords = CloudDataBaseGetKeyDataRecord(i)
 //	print i + " " + strArrayRecords
 	arrayRecords = Components(strArrayRecords, DelimiterU5)
-	strKeyData = arrayRecords[0]
+	strKey = arrayRecords[0]
 	countFields = CountElementsOfArray(arrayRecords)
 	Identity = ""
-	if countFields > 1
+	if countFields > 2
 	{
-		Identity = arrayRecords[1]
+		Identity = arrayRecords[2]
 	}
 	
-	arrayRecords = Components(strKeyData,  DelimiterU4)
-	strKey = arrayRecords[0]
 	YearMonth = strKey
 //	print "strKey=" + strKey
 	countFields = CountElementsOfArray(arrayRecords)
@@ -112,15 +108,6 @@ For i = 0 ; i < CountRecords ;  i++
 	strDate = GetComponentString(MaxInCloudID, " ", 0)
 	strTime = GetComponentString(MaxInCloudID, " ", 1)
 	ArrayDate = Components(strDate, "/")
-//	strDate = ArrayDate[2] + "." + ArrayDate[1] + "." + ArrayDate[0]
-//	numberYear = GetComponentString(YearMonth, ".", 0)
-//	numberMonth = GetComponentString(YearMonth, ".", 1)
- //	numberMonth = numberMonth - 1
-//	nameMonth = GetNameMonth(numberMonth)
-//print numberMonth + " " + nameMonth
-
-
-//	strMonthYear = nameMonth + " " + numberYear
 	strMonthYear = YearMonth
 	if NumberRecordInCloud == ""
 	{
