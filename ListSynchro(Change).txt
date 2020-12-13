@@ -1,2 +1,5 @@
 // ListSynchro[Change].txt
-DoModule Appear, wait=2000, message="Ждите"
+collectionBase = "MyFinance"
+CloudDataBaseReadCollection(collectionBase)
+DoModule Appear
+SynchroTitle.text = "Синхронизация"
