@@ -21,6 +21,7 @@ else
 	nameMonth = GetNameMonth(numberMonth)
 	strMonthYear = nameMonth + " " + numberYear + "." + strMonth
 	SynchroTitle.text = strMonthYear + " ☁ копия от " + strDate + " время " + strTime
-	CloudDataBaseRemoveRecord(NumberRecordInCloud)
+//print "NumberRecordInCloud ="+ NumberRecordInCloud
+	CloudDataBaseRemoveByNumberRecord(NumberRecordInCloud)
 	SynchroTitle.text = "Удалили. Нажми иконку Обновить"
 }
