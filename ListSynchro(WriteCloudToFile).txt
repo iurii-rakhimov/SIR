@@ -13,14 +13,15 @@ PathAndNameFile = Path + NameFile
 indexCellListSynchro = GetIndexSelectCellTableView()
 Struct StructRecordSynchro { YearMonth, MaxInCloudID, NumberRecordInCloud, StrArrayRecords }
 GetComponentsOfStruct(StructRecordSynchro, ^ArrayRecordsSynchro[indexCellListSynchro], ^DelimiterRecord)
-StrArrayRecords  = CloudDataBaseGetRecord(NumberRecordInCloud)
-//
-kv = FileWrite(PathAndNameFile, StrArrayRecords)
+strArrayRecords = CloudDataBaseGetRecord(NumberRecordInCloud)
+strData = CloudDataBaseGetData(strArrayRecords)
+kv = FileWrite(PathAndNameFile, strData)
 if kv != 0
 {
 	DoModule ErrorWriteFile
 	return
 }
+strMessage = "Записали из облака на устройство."
 //
 HideObject("WriteCloudToFile")
-SynchroTitle.text = "Записали из облака на устройство."
+SynchroTitle.text = strMessage
