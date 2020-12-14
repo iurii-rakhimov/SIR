@@ -1,4 +1,5 @@
 // MF[SynchroList].txt
-collectionBase = "Finance"
+//https://console.firebase.google.com/project/quickprogramming-fb93d/firestore/data/MyFinance
+collectionBase = "MyFinance"
 CloudDataBaseReadCollection(collectionBase)
 DoForm ListSynchro, wait=2000, message="Загрузка файлов"
